@@ -1,0 +1,1980 @@
+730001
+
+Error Message
+
+%ASA-7-730001 Group groupname , User username , IP ipaddr : VLAN MAPPING to VLAN
+vlanid
+
+Explanation
+
+VLAN mapping succeeded.
+- groupname - The group name
+- username - The username
+- ipaddr - The IP address of this session
+- vlanid - The VLAN ID that is used for the VLAN mapping session
+
+Recommended Action
+
+None required.
+
+730002
+
+Error Message
+
+%ASA-7-730002 Group groupname , User username , IP ipaddr : VLAN MAPPING to VLAN
+vlanid failed
+
+Explanation
+
+VLAN mapping failed.
+- groupname - The group name
+- username - The username
+- ipaddr - The IP address of this session
+- vlanid - The VLAN ID that is used for the VLAN mapping session
+
+Recommended Action
+
+Verify that all the VLAN mapping-related configurations are correct, and that
+the VLAN ID is valid.
+
+730003
+
+Error Message
+
+%ASA-7-730003: NACApp sets IP ipaddr VLAN to vlanid
+
+Explanation
+
+ASA receives an SNMP set message from NACApp to set the new VLAN ID for the
+session.
+- ipaddr - The IP address of this session
+- vlanid - The VLAN ID that is used for the VLAN mapping session
+
+Recommended Action
+
+None required
+
+730004
+
+Error Message
+
+%ASA-6-730004: Group groupname User username IP ipaddr VLAN ID vlanid from AAA
+ignored.
+
+Explanation
+
+The VLAN ID received from AAA is different from the current one in use, and it
+is ignored for the current session.
+- groupname - The group name
+- username - The username
+- ipaddr - The IP address of this session
+- vlanid - The VLAN ID that is used for the VLAN mapping session
+
+Recommended Action
+
+If the newly received VLAN ID must be used, then the current session needs to be
+torn down. Otherwise, no action is required.
+
+730005
+
+Error Message
+
+%ASA-3-730005: Group DfltGrpPolicy User username IP VLAN Mapping error. VLAN
+vlan_id may be out of range, unassigned to any interface or assigned to multiple
+interfaces
+
+Explanation
+
+A VLAN mapping error has occurred. A VLAN may be out of range, unassigned to any
+interfaces, or assigned to multiple interfaces.
+
+Recommended Action
+
+Verify the VLAN ID configurations on the AAA server and ASA are both correct.
+
+730006
+
+Error Message
+
+%ASA-7-730006: Group groupname , User username , IP ipaddr : is on NACApp AUTH
+VLAN vlanid .
+
+Explanation
+
+The session is under NACApp posture assessment.
+- groupname - The group name
+- username - The username
+- ipaddr - The IP address of this session
+- vlanid - The VLAN ID that is used for the VLAN mapping session
+
+Recommended Action
+
+None required.
+
+730007
+
+Error Message
+
+%ASA-7-730007: Group groupname , User username , IP ipaddr : changed VLAN to <%s
+> ID vlanid
+
+Explanation
+
+NACApp (Cisco NAC appliance) posture assessment is done with the session, the
+VLAN is changed from AUTH VLAN to a new VLAN.
+- groupname - The group name
+- username - The username
+- ipaddr - The IP address of this session
+- %s - A string
+- vlanid - The VLAN ID that is used for the VLAN mapping session
+
+Recommended Action
+
+None required.
+
+730008
+
+Error Message
+
+%ASA-6-730008: Group groupname, User username, IP ipaddr, VLAN MAPPING timeout
+waiting NACApp.
+
+Explanation
+
+NACApp (Cisco NAC appliance) posture assessment takes longer than the timeout
+value configured.
+- groupname - The group name
+- username - The username
+- ipaddr - The IP address of this session
+
+Recommended Action
+
+Check the status of the NACApp setup.
+
+730009
+
+Error Message
+
+%ASA-5-730009: Group groupname , User username, IP ipaddr , CAS casaddr ,
+capacity exceeded, terminating connection.
+
+Explanation
+
+The load capacity of the NACApp (Cisco NAC appliance) CAS is execeeded, the new
+incoming session that uses it is terminating.
+- groupname - The group name
+- username - The username
+- ipaddr - The IP address of this session
+- casaddr - The IP Address of CAS (Clean Access Server)
+
+Recommended Action
+
+Review and revise planning for how many groups, and which groups, are associated
+with the CAS to ensure that its load capacity is not exceeded.
+
+730010
+
+Error Message
+
+%ASA-7-730010: Group groupname , User username, IP ipaddr , VLAN Mapping is
+enabled on VLAN vlanid .
+
+Explanation
+
+VLAN mapping is enabled in the session.
+- groupname - The group name
+- username - The username
+- ipaddr - The IP address of this session
+- vlanid - The VLAN ID that is used for the VLAN mapping session
+
+Recommended Action
+
+None required.
+
+731001
+
+Error Message
+
+%ASA-6-731001: NAC policy added: name: policyname Type: policytype .
+
+Explanation
+
+A new NAC-policy has been added to the ASA.
+- policyname - The NAC policy name
+- policytype - The type of NAC policy
+
+Recommended Action
+
+None required.
+
+731002
+
+Error Message
+
+%ASA-6-731002: NAC policy deleted: name: policyname Type: policytype .
+
+Explanation
+
+A NAC policy has been removed from the ASA.
+- policyname - The NAC policy name
+- policytype - The type of NAC policy
+
+Recommended Action
+
+None required.
+
+731003
+
+Error Message
+
+%ASA-6-731003: nac-policy unused: name: policyname Type: policytype .
+
+Explanation
+
+The NAC policy is unused because there is an existing NAC policy with the same
+name, but a different type.
+- policyname - The NAC policy name
+- policytype - The type of NAC policy
+
+Recommended Action
+
+If the new NAC policy must be used, the existing NAC policy must be removed
+first. Otherwise, no action is required.
+
+732001
+
+Error Message
+
+%ASA-6-732001: Group groupname, User username, IP ipaddr, Fail to parse
+NAC-SETTINGS nac-settings-id , terminating connection.
+
+Explanation
+
+The ASA cannot apply the NAC settings because no memory is available.
+- groupname - The group name
+- username - The username
+- ipaddr - The IP address of this session
+- nac-settings-id - The ID that is used for the NAC filter
+
+Recommended Action
+
+Upgrade the ASA memory. Resolve any errors in the log before this problem
+occurs. If the problem persists, contact the Cisco TAC.
+
+732002
+
+Error Message
+
+%ASA-6-732002: Group groupname, User username, IP ipaddr, NAC-SETTINGS
+settingsid from AAA ignored, existing NAC-SETTINGS settingsid_inuse used
+instead.
+
+Explanation
+
+The NAC settings ID cannot be applied because there is a different one for the
+session.
+- groupname - The group name
+- username - The username
+- ipaddr - The IP address of this session
+- settingsid - The settings ID, which should be a NAC policy name
+- settingsid_inuse - The NAC settings ID that is currently in use
+
+Recommended Action
+
+If the new NAC settings ID must be applied, then all the active sessions that
+use it must be torn down first. Otherwise, no action is required.
+
+732003
+
+Error Message
+
+%ASA-6-732003: Group groupname, User username, IP ipaddr, NAC-SETTINGS
+nac-settings-id from AAA is invalid, terminating connection.
+
+Explanation
+
+The NAC settings received from AAA are invalid.
+- groupname - The group name
+- username - The username
+- ipaddr - The IP address of this session
+- nac-settings-id - The ID that is used for the NAC filter
+
+Recommended Action
+
+Verify that the NAC settings configurations on the AAA server and ASA are both
+correct.
+
+733100
+
+Error Message
+
+%ASA-4-733100: Object drop rate rate_ID exceeded. Current burst rate is rate_val
+per second, max configured rate is rate_val ; Current average rate is rate_val
+per second, max configured rate is rate_val ; Cumulative total count is
+total_cnt
+
+Explanation
+
+The specified object in the message has exceeded the specified burst threshold
+rate or average threshold rate. The object can be a drop activity of a host,
+TCP/UDP port, IP protocol, or various drops caused by potential attacks. The
+Secure Firewall ASA may be under attack.
+- Object - The general or particular source of a drop rate count, which might
+include the following:
+  - Firewall
+  - Bad pkts
+  - Rate limit
+  - DoS attck
+  - ACL drop
+  - Conn limit
+  - ICMP attk
+  - Scanning
+  - SYN attck
+  - Inspect
+  - Interface
+(A citation of a particular interface object might take a number of forms. For
+example, you might see 80/HTTP, which would signify port 80, with the well-known
+protocol HTTP.)
+- rate_ID - The configured rate that is being exceeded. Most objects can be
+configured with up to three different rates for different intervals.
+- rate_val - A particular rate value.
+- total_cnt - The total count since the object was created or cleared.
+The following three examples show how these variables occur:
+- For an interface drop caused by a CPU or bus limitation:
+%ASA-4-733100: [Interface] drop rate 1 exceeded. Current burst rate is 1 per
+second, max configured rate is 8000; Current average rate is 2030 per second,
+max configured rate is 2000; Cumulative total count is 3930654.”
+- For a scanning drop caused by potential attacks:
+%ASA-4-733100: [Scanning] drop rate-1 exceeded. Current burst rate is 10 per
+second_max configured rate is 10; Current average rate is 245 per second_max
+configured rate is 5; Cumulative total count is 147409 (35 instances received)
+- For bad packets caused by potential attacks:
+%ASA-4-733100: [Bad pkts] drop rate 1 exceeded. Current burst rate is 0 per
+second, max configured rate is 400; Current average rate is 760 per second, max
+configured rate is 100; Cumulative total count is 1938933
+- Because of the scanning rate configured and the threat-detection rate
+scanning-rate 3600 average-rate 15 command:
+%ASA-4-733100: [144.60.88.2] drop rate-2 exceeded. Current burst rate is 0 per
+second, max configured rate is 8; Current average rate is 5 per second, max
+configured rate is 4; Cumulative total count is 38086
+Perform the following steps according to the specified object type that appears
+in the message:
+1. If the object in the message is one of the following:
+- Firewall
+- Bad pkts
+- Rate limit
+- DoS attck
+- ACL drop
+- Conn limit
+- ICMP attck
+- Scanning
+- SYN attck
+- Inspect
+- Interface
+
+Recommended Action
+
+Check whether the drop rate is acceptable for the running environment.
+1. Adjust the threshold rate of the particular drop to an appropriate value by
+using the threat-detection rate xxx command, where xxx is one of the following:
+- acl-drop
+- bad-packet-drop
+- conn-limit-drop
+- dos-drop
+- fw-drop
+- icmp-drop
+- inspect-drop
+- interface-drop
+- scanning-threat
+- syn-attack
+2. If the object in the message is a TCP or UDP port, an IP address, or a host
+drop, check whether or not the drop rate is acceptable for the running
+environment.
+3. Adjust the threshold rate of the particular drop to an appropriate value by
+using the threat-detection rate bad-packet-drop command.
+Note: If you do not want the drop rate exceed warning to appear, you can disable
+it by using the no threat-detection basic-threat command.
+
+733101
+
+Error Message
+
+%ASA-4-733101: Object objectIP (is targeted|is attacking). Current burst rate is
+rate_val per second, max configured rate is rate_val ; Current average rate is
+rate_val per second, max configured rate is rate_val ; Cumulative total count is
+total_cnt.
+
+Explanation
+
+The Secure Firewall ASA detected that a specific host (or several hosts in the
+same 1024-node subnet) is either scanning the network (attacking), or is being
+scanned (targeted).
+- object - Attacker or target (a specific host or several hosts in the same
+1024-node subnet)
+- objectIP - The IP address of the scanning attacker or scanned target
+- rate_val - A particular rate value
+- total_cnt - The total count
+The following two examples show how these variables occur:
+%ASA-4-733101: Subnet 100.0.0.0 is targeted. Current burst rate is 200 per
+second, max configured rate is 0; Current average rate is 0 per second, max
+configured rate is 0; Cumulative total count is 2028.
+%ASA-4-733101: Host 175.0.0.1 is attacking. Current burst rate is 200 per
+second, max configured rate is 0; Current average rate is 0 per second, max
+configured rate is 0; Cumulative total count is 2024
+
+Recommended Action
+
+For the specific host or subnet, use the show threat-detection statistics host
+ip-address ip-mask command to check the overall situation and then adjust the
+threshold rate of the scanning threat to the appropriate value. After the
+appropriate value is determined, an optional action can be taken to shun those
+host attackers (not subnet attacker) by configuring the threat-detection
+scanning-threat shun-host command. You may specify certain hosts or object
+groups in the shun-host except list. For more information, see the CLI
+configuration guide. If scanning detection is not desirable, you can disable
+this feature by using the no threat-detection scanning command.
+
+733102
+
+Error Message
+
+%ASA-4-733102:Threat-detection adds host %I to shun list
+
+Explanation
+
+A host has been shunned by the threat detection engine. When the
+threat-detection scanning-threat shun command is configured, the attacking hosts
+will be shunned by the threat detection engine.
+- %I - A particular hostname
+The following message shows how this command was implemented:
+%ASA-4-733102: Threat-detection add host 11.1.1.40 to shun list
+
+Recommended Action
+
+To investigate whether the shunned host is an actual attacker, use the
+threat-detection statistics host ip-address command. If the shunned host is not
+an attacker, you can remove the shunned host from the threat detection engine by
+using the clear threat-detection shun ip address command. To remove all shunned
+hosts from the threat detection engine, use the clear shun command. If you
+receive this message because an inappropriate threshold rate has been set to
+trigger the threat detection engine, then adjust the threshold rate by using the
+threat-detection rate scanning-threat rate-interval x average-rate y burst-rate
+z command.
+
+733103
+
+Error Message
+
+%ASA-4-733103: Threat-detection removes host %I from shun list
+
+Explanation
+
+A host has been shunned by the threat detection engine. When you use the
+clear-threat-detection shun command, the specified host will be removed from the
+shunned list.
+- %I - A particular hostname
+The following message shows how this command is implemented:
+%ASA-4-733103: Threat-detection removes host 11.1.1.40 from shun list
+
+Recommended Action
+
+None required.
+
+733104
+
+Error Message
+
+%ASA-4-733104: TD_SYSLOG_TCP_INTERCEPT_AVERAGE_RATE_EXCEED
+
+Explanation
+
+The Secure Firewall ASA is under Syn flood attack and protected by the TCP
+intercept mechanism, if the average rate for intercepted attacks exceeds the
+configured threshold. The message is showing which server is under attack and
+where the attacks are coming from.
+
+Recommended Action
+
+Write an ACL to filter out the attacks.
+
+733105
+
+Error Message
+
+%ASA-4-733105: TD_SYSLOG_TCP_INTERCEPT_BURST_RATE_EXCEED
+
+Explanation
+
+The Secure Firewall ASA is under Syn flood attack and protected by the TCP
+intercept mechanism, if the burst rate for intercepted attacks exceeds the
+configured threshold. The message is showing which server is under attack and
+where the attacks are coming from.
+
+Recommended Action
+
+Write an ACL to filter out the attacks.
+
+734001
+
+Error Message
+
+%ASA-6-734001: DAP: User user, Addr ipaddr , Connection connection : The
+following DAP records were selected for this connection: DAP record names
+
+Explanation
+
+The DAP records that were selected for the connection are listed.
+- user - The authenticated username
+- ipaddr - The IP address of the remote client
+- connection - The type of client connection, which can be one of the following:
+  - IPsec
+  - AnyConnect
+  - Clientless (web browser)
+  - Cut-Through-Proxy
+  - L2TP
+  - DAP record names - The comma-separated list of the DAP record names
+
+Recommended Action
+
+None required.
+
+734002
+
+Error Message
+
+%ASA-5-734002: DAP: User user, Addr ipaddr : Connection terrminated by the
+following DAP records: DAP record names
+
+Explanation
+
+The DAP records that terminated the connection are listed.
+- user - The authenticated username
+- ipaddr - The IP address of the remote client
+- DAP record names - The comma-separated list of the DAP record names
+
+Recommended Action
+
+None required.
+
+734003
+
+Error Message
+
+%ASA-7-734003: DAP: User name , Addr ipaddr : Session Attribute: attr name/value
+
+Explanation
+
+The AAA and endpoint session attributes that are associated with the connection
+are listed.
+- user - The authenticated username
+- ipaddr - The IP address of the remote client
+- attr/value - The AAA or endpoint attribute name and value
+
+Recommended Action
+
+None required.
+
+734004
+
+Error Message
+
+%ASA-3-734004: DAP: Processing error: internal error code
+
+Explanation
+
+A DAP processing error occurred.
+- internal error code - The internal error string
+
+Recommended Action
+
+Enable the debug dap errors command and re-run DAP processing for further
+debugging information. If this does not resolve the issue, contact the Cisco TAC
+and provide the internal error code and any information about the conditions
+that generated the error.
+
+735001
+
+Error Message
+
+%ASA-1-735001 IPMI: Cooling Fan var1 : OK
+
+Explanation
+
+A cooling fan has been restored to normal operation.
+- var1 - The device number markings
+
+Recommended Action
+
+None required.
+
+735002
+
+Error Message
+
+%ASA-1-735002 IPMI: Cooling Fan var1 : Failure Detected
+
+Explanation
+
+A cooling fan has failed.
+- var1 - The device number markings
+
+Recommended Action
+
+Perform the following steps:
+1. Check for obstructions that would prevent the fan from rotating.
+2. Replace the cooling fan.
+3. If the problem persists, record the message as it appears and contact the
+Cisco TAC.
+
+735003
+
+Error Message
+
+%ASA-1-735003 IPMI: Power Supply var1 : OK
+
+Explanation
+
+A power supply has been restored to normal operation.
+- var1 - The device number markings
+
+Recommended Action
+
+None required.
+
+735004
+
+Error Message
+
+%ASA-1-735004 IPMI: Power Supply var1 : Failure Detected
+
+Explanation
+
+AC power has been lost, or the power supply has failed.
+- var1 - The device number markings
+
+Recommended Action
+
+Perform the following steps:
+1. Check for AC power failure.
+2. Replace the power supply.
+3. If the problem persists, record the message as it appears and contact the
+Cisco TAC.
+
+735005
+
+Error Message
+
+%ASA-1-735005 IPMI: Power Supply Unit Redundancy OK
+
+Explanation
+
+Power supply unit redundancy has been restored.
+
+Recommended Action
+
+None required.
+
+735006
+
+Error Message
+
+%ASA-1-735006 IPMI: Power Supply Unit Redundancy Lost
+
+Explanation
+
+A power supply failure occurred. Power supply unit redundancy has been lost, but
+the Secure Firewall ASA is functioning normally with minimum resources. Any
+further failures will result in an Secure Firewall ASA shutdown.
+
+Recommended Action
+
+To regain full redundancy, perform the following steps:
+1. Check for AC power failure.
+2. Replace the power supply.
+3. If the problem persists, record the message as it appears and contact the
+Cisco TAC.
+
+735007
+
+Error Message
+
+%ASA-1-735007 IPMI: CPU var1 : Temp: var2 var3 , Critical
+
+Explanation
+
+The CPU has reached a critical temperature.
+- var1 - The device number markings
+- var2 - The temperature value
+- var3 - Temperature value units (C, F)
+
+Recommended Action
+
+Record the message as it appears and contact the Cisco TAC.
+
+735008
+
+Error Message
+
+%ASA-1-735008 IPMI: Chassis Ambient var1 : Temp: var2 var3 , Critical
+
+Explanation
+
+A chassis ambient temperature sensor has reached a critical level.
+- var1 - The device number markings
+- var2 - The temperature value
+- var3 - Temperature value units (C, F)
+
+Recommended Action
+
+Record the message as it appears and contact the Cisco TAC.
+
+735009
+
+Error Message
+
+%ASA-2-735009: IPMI: Environment Monitoring has failed initialization and
+configuration. Environment Monitoring is not running.
+
+Explanation
+
+Environment monitoring has experienced a fatal error during initialization and
+was unable to continue.
+
+Recommended Action
+
+Collect the output of the show environment and debug ipmi commands. Record the
+message as it appears and contact the Cisco TAC.
+
+735010
+
+Error Message
+
+%ASA-3-735010: IPMI: Environment Monitoring has failed to update one or more of
+its records.
+
+Explanation
+
+Environment monitoring has experienced an error that temporarily prevented it
+from updating one or more of its records.
+
+Recommended Action
+
+If this message appears repeatedly, collect the output from the show environment
+driver and debug ipmi commands. Record the message as it appears and contact the
+Cisco TAC.
+
+735011
+
+Error Message
+
+%ASA-1-735011: Power Supply var1 : Fan OK
+
+Explanation
+
+The power supply fan has returned to a working operating state.
+- var1 - Fan number
+
+Recommended Action
+
+None required.
+
+735012
+
+Error Message
+
+%ASA-1-735012: Power Supply var1 : Fan Failure Detected
+
+Explanation
+
+The power supply fan has failed.
+- var1 - Fan number
+
+Recommended Action
+
+Contact Cisco TAC to troubleshoot the failure. Power down the unit until this
+failure is resolved.
+
+735013
+
+Error Message
+
+%ASA-1-735013: Voltage Channel var1 : Voltage OK
+
+Explanation
+
+A voltage channel has returned to a normal operating level.
+- var1 - Voltage channel number
+
+Recommended Action
+
+None required.
+
+735014
+
+Error Message
+
+%ASA-1-735014: Voltage Channel var1: Voltage Critical
+
+Explanation
+
+A voltage channel has changed to a critical level.
+- var1 - Voltage channel number
+
+Recommended Action
+
+Contact Cisco TAC to troubleshoot the failure. Power down the unit until this
+failure is resolved.
+
+735015
+
+Error Message
+
+%ASA-4-735015: CPU var1 : Temp: var2 var3 , Warm
+
+Explanation
+
+The CPU temperature is warmer than the normal operating range.
+- var1 - CPU Number
+- var2 - Temperature Value
+- var3 - Units
+
+Recommended Action
+
+Continue to monitor this component to ensure that it does not reach a critical
+temperature.
+
+735016
+
+Error Message
+
+%ASA-4-735016: Chassis Ambient var1 : Temp: var2 var3 , Warm
+
+Explanation
+
+The chassis temperature is warmer than the normal operating range.
+- var1 - Chassis Sensor Number
+- var2 - Temperature Value
+- var3 - Units
+
+Recommended Action
+
+Continue to monitor this component to ensure that it does not reach a critical
+temperature.
+
+735017
+
+Error Message
+
+%ASA-1-735017: Power Supply var1 : Temp: var2 var3 , OK
+
+Explanation
+
+The power supply temperature has returned to a normal operating temperature.
+- var1 - Power Supply Number
+- var2 - Temperature Value
+- var3 - Units
+
+Recommended Action
+
+None required.
+
+735018
+
+Error Message
+
+%ASA-4-735018: Power Supply var1 : Temp: var2 var3 , Critical
+
+Explanation
+
+The power supply has reached a critical operating temperature.
+- var1 - Power Supply Number
+- var2 - Temperature Value
+- var3 - Units
+
+Recommended Action
+
+Contact Cisco TAC to troubleshoot the failure. Power down the unit until this
+failure is resolved.
+
+735019
+
+Error Message
+
+%ASA-4-735019: Power Supply var1 : Temp: var2 var3 , Warm
+
+Explanation
+
+The power supply temperature is warmer than the normal operating range.
+- var1 - Power Supply Number
+- var2 - Temperature Value
+- var3 - Units
+
+Recommended Action
+
+Continue to monitor this component to ensure that it does not reach a critical
+temperature.
+
+735020
+
+Error Message
+
+%ASA-1-735020: CPU var1: Temp: var2 var3 OK
+
+Explanation
+
+The CPU temperature has returned to the normal operating temperature.
+- var1 - CPU Number
+- var2 - Temperature Value
+- var3 - Units
+
+Recommended Action
+
+None required.
+
+735021
+
+Error Message
+
+%ASA-1-735021: Chassis var1: Temp: var2 var3 OK
+
+Explanation
+
+The chassis temperature has returned to the normal operating temperature.
+- var1 - Chassis Sensor Number
+- var2 - Temperature Value
+- var3 - Units
+
+Recommended Action
+
+None required.
+
+735022
+
+Error Message
+
+%ASA-1-735022: CPU# is running beyond the max thermal operating temperature and
+the device will be shutting down immediately to prevent permanent damage to the
+CPU.
+
+Explanation
+
+The Secure Firewall ASA has detected a CPU running beyond the maximum thermal
+operating temperature, and will shut down immediately after detection.
+
+Recommended Action
+
+The chassis and CPU need to be inspected immediately for ventilation issues.
+
+735023
+
+Error Message
+
+%ASA-2-735023: ASA was previously shutdown due to the CPU complex running beyond
+the maximum thermal operating temperature. The chassis needs to be inspected
+immediately for ventilation issues.
+
+Explanation
+
+At boot time, the Secure Firewall ASA detected a shutdown that occurred because
+a CPU was running beyond the maximum safe operating temperature. Using the show
+environment command will indicate that this event has occurred.
+
+Recommended Action
+
+The chassis need to be inspected immediately for ventilation issues.
+
+735024
+
+Error Message
+
+%ASA-1-735024: IO Hub var1 : Temp: var2 var3 , OK
+
+Explanation
+
+The IO hub temperature has returned to the normal operating temperature.
+- ar1 - IO hub number
+- var2 - Temperature value
+- var3 – Units
+
+Recommended Action
+
+None required.
+
+735025
+
+Error Message
+
+%ASA-1-735025: IO Hub var1 : Temp: var2 var3 , Critical
+
+Explanation
+
+The IO hub temperature has a critical temperature.
+- ar1 - IO hub number
+- var2 - Temperature value
+- var3 – Units
+
+Recommended Action
+
+Record the message as it appears and contact the Cisco TAC.
+
+735026
+
+Error Message
+
+%ASA-4-735026: IO Hub var1 : Temp: var2 var3 , Warm
+
+Explanation
+
+The IO hub temperature is warmer than the normal operating range.
+- ar1 - IO hub number
+- var2 - Temperature value
+- var3 – Units
+
+Recommended Action
+
+Continue to monitor this component to ensure that it does not reach a critical
+temperature.
+
+735027
+
+Error Message
+
+%ASA-1-735027: CPU cpu_num Voltage Regulator is running beyond the max thermal
+operating temperature and the device will be shutting down immediately. The
+chassis and CPU need to be inspected immediately for ventilation issues.
+
+Explanation
+
+The Secure Firewall ASA has detected a CPU voltage regulator running beyond the
+maximum thermal operating temperature, and shuts down immediately after
+detection.
+- cpu_num - The number to identify which CPU voltage regulator experienced the
+thermal event
+
+Recommended Action
+
+The chassis and CPU need to be inspected immediately for ventilation issues.
+
+735028
+
+Error Message
+
+%ASA-2-735028: ASA was previously shutdown due to a CPU Voltage Regulator
+running beyond the max thermal operating temperature. The chassis and CPU need
+to be inspected immediately for ventilation issues.
+
+Explanation
+
+At boot time, the Secure Firewall ASA detected a shutdown that occurred because
+of a CPU voltage regulator running beyond the maximum safe operating
+temperature. Enter the show environment command to indicate that this event has
+occurred.
+
+Recommended Action
+
+The chassis and CPU need to be inspected immediately for ventilation issues.
+
+735029
+
+Error Message
+
+%ASA-1-735029: IO Hub is running beyond the max thermal operating temperature
+and the device will be shutting down immediately to prevent permanent damage to
+the circuit.
+
+Explanation
+
+The Secure Firewall ASA has detected that the IO hub is running beyond the
+maximum thermal operating temperature, and will shut down immediately after
+detection.
+
+Recommended Action
+
+The chassis and IO hub need to be inspected immediately for ventilation issues.
+
+736001
+
+Error Message
+
+%ASA-2-736001: Unable to allocate enough memory at boot for jumbo-frame
+reservation. Jumbo-frame support has been disabled.
+
+Explanation
+
+Insufficient memory has been detected when jumbo frame support was being
+configured. As a result, jumbo-frame support was disabled.
+
+Recommended Action
+
+Try reenabling jumbo frame support using the jumbo-frame reservation command.
+Save the running configuration and reboot the Secure Firewall ASA. If the
+problem persists, contact the Cisco TAC.
+
+737001
+
+Error Message
+
+%ASA-7-737001: IPAA: Session= session, Received message message-type
+
+Explanation
+
+The IP address assignment process received a message.
+- session - The session is the VPN session ID in hexadecimal.
+- message-type - The message received by the IP address assignment process
+
+Recommended Action
+
+None required.
+
+737002
+
+Error Message
+
+%ASA-3-737002: IPAA: Session= session,Received unknown message num variables
+
+Explanation
+
+The IP address assignment process received a message.
+- session - The session is the VPN session ID in hexadecimal.
+- num - The identifier of the message received by the IP address assignment
+process
+
+Recommended Action
+
+None required.
+
+737003
+
+Error Message
+
+%ASA-5-737003: IPAA: Session= session, DHCP configured, no viable servers found
+for tunnel-group tunnel-group
+
+Explanation
+
+The DHCP server configuration for the given tunnel group is not valid.
+- session - The session is the VPN session ID in hexadecimal.
+- tunnel-group - The tunnel group that IP address assignment is using for
+configuration
+
+Recommended Action
+
+Validate the DHCP configuration for the tunnel group. Make sure that the DHCP
+server is online.
+
+737004
+
+Error Message
+
+%ASA-5-737004: IPAA: Session= session, DHCP configured, request failed for
+tunnel-group 'tunnel-group'
+
+Explanation
+
+The DHCP server configuration for the given tunnel group is not valid.
+- session - The session is the VPN session ID in hexadecimal.
+- tunnel-group - The tunnel group that IP address assignment is using for
+configuration
+
+Recommended Action
+
+Validate the DHCP configuration for the tunnel group. Make sure that the DHCP
+server is online.
+
+737005
+
+Error Message
+
+%ASA-6-737005: IPAA: Session= session, DHCP configured, request succeeded for
+tunnel-group tunnel-group
+
+Explanation
+
+The DHCP server request has succeeded.
+- session - The session is the VPN session ID in hexadecimal.
+- tunnel-group - The tunnel group that IP address assignment is using for
+configuration
+
+Recommended Action
+
+None required.
+
+737006
+
+Error Message
+
+%ASA-6-737006: IPAA: Session= session, Local pool request succeeded for
+tunnel-group tunnel-group
+
+Explanation
+
+The local pool request has succeeded.
+- session - The session is the VPN session ID in hexadecimal.
+- tunnel-group - The tunnel group that IP address assignment is using for
+configuration
+
+Recommended Action
+
+None required.
+
+737007
+
+Error Message
+
+%ASA-5-737007: IPAA: Session= session, Local pool request failed for
+tunnel-group tunnel-group
+
+Explanation
+
+The local pool request has failed. The pool assigned to the tunnel group may be
+exhausted.
+- session - The session is the VPN session ID in hexadecimal.
+- tunnel-group - The tunnel group that IP address assignment is using for
+configuration
+
+Recommended Action
+
+Validate the IP local pool configuration by using the show ip local pool
+command.
+
+737008
+
+Error Message
+
+%ASA-5-737008: IPAA: Session= session, 'tunnel-group' not found
+
+Explanation
+
+The tunnel group was not found when trying to acquire an IP address for
+configuration. A software defect may cause this message to be generated.
+- session - The session is the VPN session ID in hexadecimal.
+- tunnel-group - The tunnel group that IP address assignment is using for
+configuration
+
+Recommended Action
+
+Check the tunnel group configuration. Contact the Cisco TAC and report the
+issue.
+
+737009
+
+Error Message
+
+%ASA-6-737009: IPAA: Session= session, AAA assigned address ip-address , request
+failed
+
+Explanation
+
+The remote access client software requested the use of a particular address. The
+request to the AAA server to use this address failed. The address may be in use.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IPv4 or IPv6 address that the client requested
+
+Recommended Action
+
+Check the AAA server status and the status of IP local pools.
+
+737010
+
+Error Message
+
+%ASA-6-737010: IPAA: Session= session, AAA assigned address ip-address , request
+succeeded
+
+Explanation
+
+The remote access client software requested the use of a particular address and
+successfully received this address.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IPv4 or IPv6 address that the client requested
+
+Recommended Action
+
+None required.
+
+737011
+
+Error Message
+
+%ASA-5-737011: IPAA: Session= session, AAA assigned ip-address , not permitted,
+retrying
+
+Explanation
+
+The remote access client software requested the use of a particular address. The
+vpn-addr-assign aaa command is not configured. An alternatively configured
+address assignment method will be used.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IPv4 or IPv6 address that the client requested
+
+Recommended Action
+
+If you want to permit clients to specify their own address, enable the
+vpn-addr-assign aaa command.
+
+737012
+
+Error Message
+
+%ASA-4-737012: IPAA: Session= session, Address assignment failed
+
+Explanation
+
+The remote access client software request of a particular address failed.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IP address that the client requested
+
+Recommended Action
+
+If using IP local pools, validate the local pool configuration. If using AAA,
+validate the configuration and status of the AAA server. If using DHCP, validate
+the configuration and status of the DHCP server. Increase the logging level (use
+notification or informational) to obtain additional messages to identify the
+reason for the failure.
+
+737013
+
+Error Message
+
+%ASA-4-737013: IPAA: Session= session, Error freeing address ip-address , not
+found
+
+Explanation
+
+The Secure Firewall ASA tried to free an address, but it was not on the
+allocated list because of a recent configuration change.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IPv4 or IPv6 address to be released
+
+Recommended Action
+
+Validate your address assignment configuration. If this message recurs, it might
+be due to a software defect. Contact the Cisco TAC and report the issue.
+
+737014
+
+Error Message
+
+%ASA-6-737014: IPAA: Session= session, Freeing AAA address ip-address
+
+Explanation
+
+The Secure Firewall ASA successfully released the IP address assigned through
+AAA.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IPv4 or IPv6 address to be released
+
+Recommended Action
+
+None required.
+
+737015
+
+Error Message
+
+%ASA-6-737015: IPAA: Session= session, Freeing DHCP address ip-address
+
+Explanation
+
+The Secure Firewall ASA successfully released the IP address assigned through
+DHCP.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IP address to be released
+
+Recommended Action
+
+None required.
+
+737016
+
+Error Message
+
+%ASA-6-737016: IPAA: Session= session, Freeing local pool pool-name address
+ip-address
+
+Explanation
+
+The Secure Firewall ASA successfully released the IP address assigned through
+local pools.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IPv4 or IPv6 address to be released
+- pool-name - The pool to which the address is being returned to
+
+Recommended Action
+
+None required.
+
+737017
+
+Error Message
+
+%ASA-6-737017: IPAA: Session= session, DHCP request attempt num succeeded
+
+Explanation
+
+The Secure Firewall ASA successfully sent a request to a DHCP server.
+- session - The session is the VPN session ID in hexadecimal.
+- num - The attempt number
+
+Recommended Action
+
+None required.
+
+737018
+
+Error Message
+
+%ASA-5-737018: IPAA: Session= session, DHCP request attempt num failed
+
+Explanation
+
+The Secure Firewall ASA failed to send a request to a DHCP server.
+- session - The session is the VPN session ID in hexadecimal.
+- num - The attempt number
+
+Recommended Action
+
+Validate the DHCP configuration and connectivity to the DHCP server.
+
+737019
+
+Error Message
+
+%ASA-4-737019: IPAA: Session= session, Unable to get address from group-policy
+or tunnel-group local pools
+
+Explanation
+
+The Secure Firewall ASA failed to acquire an address from the local pools
+configured on the group policy or tunnel group. The local pools may be
+exhausted.
+- session - The session is the VPN session ID in hexadecimal.
+
+
+Recommended Action
+
+Validate the local pool configuration and status. Validate the group policy and
+tunnel group configuration of local pools.
+
+737023
+
+Error Message
+
+%ASA-5-737023: IPAA: Session= session, Unable to allocate memory to store local
+pool address ip-address
+
+Explanation
+
+The Secure Firewall ASA is low on memory.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IP address that was acquired
+
+Recommended Action
+
+The Secure Firewall ASA may be overloaded and need more memory, or there may be
+a memory leak caused by a software defect. Contact the Cisco TAC and report the
+issue.
+
+737024
+
+Error Message
+
+%ASA-5-737024: IPAA: Session= session, Client requested address ip-address ,
+already in use, retrying
+
+Explanation
+
+The client requested an IP address that is already in use. The request will be
+tried using a new IP address.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IP address that the client requested
+
+Recommended Action
+
+None required.
+
+737025
+
+Error Message
+
+%ASA-5-737025: IPAA:Session= session, Duplicate local pool address found,
+ip-address in quarantine
+
+Explanation
+
+The IP address that was to be given to the client is already in use. The IP
+address has been removed from the pool and will not be reused.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IP address that was acquired
+
+Recommended Action
+
+Validate the local pool configuration; there may be an overlap caused by a
+software defect. Contact the Cisco TAC and report the issue.
+
+737026
+
+Error Message
+
+%ASA-6-737026: IPAA:Session= session, Client assigned ip-address from local pool
+pool-name
+
+Explanation
+
+The client has assigned the given address from a local pool.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IP address that was assigned to the client
+- pool-name - The pool from which the address was allocated
+
+
+Recommended Action
+
+None required.
+
+737027
+
+Error Message
+
+%ASA-3-737027: IPAA:Session= session, No data for address request
+
+Explanation
+
+A software defect has been found.
+- session - The session is the VPN session ID in hexadecimal.
+
+Recommended Action
+
+Contact the Cisco TAC and report the issue.
+
+737028
+
+Error Message
+
+%ASA-4-737028: IPAA:Session= session, Unable to send ip-address to standby:
+communication failure
+
+Explanation
+
+The active Secure Firewall ASA was unable to communicate with the standby Secure
+Firewall ASA. The failover pair may be out-of-sync.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IP address that was assigned to the client
+
+Recommended Action
+
+Validate the failover configuration and status.
+
+737029
+
+Error Message
+
+%ASA-6-737029: IPAA:Session= session, Added ip-address to standby
+
+Explanation
+
+The standby Secure Firewall ASA accepted the IP address assignment.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IP address that was assigned to the client
+
+Recommended Action
+
+None required.
+
+737030
+
+Error Message
+
+%ASA-4-737030: IPAA:Session= session, Unable to send ip-address to standby:
+address in use
+
+Explanation
+
+The standby Secure Firewall ASA has the given address already in use when the
+active Secure Firewall ASA attempted to acquire it. The failover pair may be
+out-of-sync.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IP address that was assigned to the client
+
+Recommended Action
+
+Validate the failover configuration and status.
+
+737031
+
+Error Message
+
+%ASA-6-737031: IPAA:Session= session, Removed ip-address from standby
+
+Explanation
+
+The standby Secure Firewall ASA cleared the IP address assignment.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IP address that was assigned to the client
+
+Recommended Action
+
+None required.
+
+737032
+
+Error Message
+
+%ASA-4-737032: IPAA:Session= session, Unable to remove ip-address from standby:
+address not found
+
+Explanation
+
+The standby Secure Firewall ASA did not have an IP address in use when the
+active Secure Firewall ASA attempted to release it. The failover pair may be
+out-of-sync.
+- session - The session is the VPN session ID in hexadecimal.
+- ip-address - The IP address that was assigned to the client
+
+Recommended Action
+
+Validate the failover configuration and status.
+
+737033
+
+Error Message
+
+%ASA-4-737033: IPAA:Session= session, Unable to assign addr_allocator provided
+IP address ip_addr to client. This IP address has already been assigned by
+previous_addr_allocator
+
+Explanation
+
+The address assigned by the AAA/DHCP/local pool is already in use.
+- session - The session is the VPN session ID in hexadecimal.
+- addr_allocator - The DHCP/AAA/local pool
+- ip_addr - The IP address allocated by the DHCP/AAA/local pool
+- previous_ addr_allocator - The address allocater that already assigned the IP
+address (local pool, AAA, or DHCP)
+
+Recommended Action
+
+Validate the AAA/DHCP/local pool address configurations. Overlap may occur.
+
+737034
+
+Error Message
+
+%ASA-5-737034: IPAA: Session= session, <IP version> address: <explanation>
+
+Explanation
+
+The IP address assignment process is unable to provide an address. The
+<explanation> text will describe the reason.
+- session - The session is the VPN session ID in hexadecimal.
+
+Recommended Action
+
+Action will be based on explanation.
+
+737035
+
+Error Message
+
+%ASA-7-737035: IPAA: Session= session, '<message type>' message queued
+
+Explanation
+
+A message is queued to the IP address assignment. This corresponds with syslog
+737001. This message is not rate limited.
+- session - The session is the VPN session ID in hexadecimal.
+
+Recommended Action
+
+No action required.
+
+737036
+
+Error Message
+
+%ASA-6-737035:IPAA: Session= session, Client assigned <address> from DHCP
+
+Explanation
+
+IP address assignment process has provided a DHCP provisioned address back to
+the VPN client. This message is not rate limited.
+- session - The session is the VPN session ID in hexadecimal.
+
+Recommended Action
+
+No action required.
+
+737038
+
+Error Message
+
+%ASA7-737038: IPAA: Session=session, specified address ip-address was in-use,
+trying to get another.
+
+Explanation
+
+This log occurs when the AAA server (internal or external) has specified an
+address to assign to the user; but this address already in-use. The request is
+being re-queued without a specified address to fall back to DHCP or local pools.
+- session - The VPN session ID of the requesting session.
+- ip-address - The IPv4 or IPv6 address specified by AAA
+
+Recommended Action
+
+None required
+
+737200
+
+Error Message
+
+%ASA-7-737200: VPNFIP: Pool=pool, Allocated ip-address from pool
+
+Explanation
+
+This log occurs an address is allocated from a local pool.
+- pool - The local pool name.
+- ip-address - The IPv4 or IPv6 address specified by AAA
+
+Recommended Action
+
+None required
+
+737201
+
+Error Message
+
+%ASA-7-737201: VPNFIP: Pool=pool, Returned ip-address to pool (recycle=recycle)
+
+Explanation
+
+This log occurs when an address returned to a local pool. The recycle flag
+indicates whether this address should be re-used for the next request. For rare
+situation, the recycle flag will be FALSE. For example, when there is an address
+collision , the address has been assigned to a VPN session by other means such
+as by AAA or DHCP. In this case, we will not immediately try to reuse that
+address for the next request.
+- pool - The local pool name.
+- ip-address - The IPv4 or IPv6 address specified by AAA
+
+Recommended Action
+
+None required
+
+737202
+
+Error Message
+
+%ASA-3-737202: VPNFIP: Pool=pool, ERROR: message
+
+Explanation
+
+This log is generated when an error event is detected related to the VPN FIP
+database.
+- pool - The local pool name.
+- message - The details for the event.
+
+Recommended Action
+
+If error is persistent, contact Cisco TAC.
+
+737203
+
+Error Message
+
+%ASA-4-737203: VPNFIP: Pool=pool, WARN: message
+
+Explanation
+
+This log is generated to warn of an event related to the VPN FIP database.
+- pool - The local pool name.
+- message - The details for the event.
+
+Recommended Action
+
+If warning is persistent, contact Cisco TAC.
+
+737204
+
+Error Message
+
+%ASA-5-737204: VPNFIP: Pool=pool, NOTIFY: message
+
+Explanation
+
+This log is generated to notify of an event related to the VPN FIP database.
+- pool - The local pool name.
+- message - The details for the event.
+
+Recommended Action
+
+None required
+
+737205
+
+Error Message
+
+%ASA-6-737205: VPNFIP: Pool=pool, INFO: message
+
+Explanation
+
+This log is generated to inform of an event related to the VPN FIP database.
+- pool - The local pool name.
+- message - The details for the event.
+
+Recommended Action
+
+None required
+
+737206
+
+Error Message
+
+%ASA-7-737206: VPNFIP: Pool=pool, DEBUG: message
+
+Explanation
+
+This log is generated to debug an event related to the VPN FIP database.
+- pool - The local pool name.
+- message - The details for the event.
+
+Recommended Action
+
+None required
+
+737400
+
+Error Message
+
+%ASA-7-737400: POOLIP: Pool=pool, Allocated ip-address from pool
+
+Explanation
+
+This log occurs an address is allocated from a local pool.
+- pool - The local pool name
+- ip-address - The IPv4 or IPv6 address specified by AAA
+
+Recommended Action
+
+None required
+
+737401
+
+Error Message
+
+%ASA-7-737401: POOLIP: Pool=pool, Returned ip-address to pool (recycle=recycle).
+
+Explanation
+
+This log occurs an address returned to a local pool. The recycle flag indicates
+whether this address should be re-used for the next request. For rare situation,
+the recycle flag will be FALSE. For example, when there is an address collision
+- the address has been assigned to a VPN session by other means such as by AAA
+or DHCP. In this case, we will not immediately try to reuse that address for the
+next request.
+- pool - The local pool name
+- ip-address - The IPv4 or IPv6 address specified by AAA
+
+Recommended Action
+
+None required
+
+737402
+
+Error Message
+
+%ASA-4-737402: POOLIP: Pool=pool, Failed to return ip-address to pool
+(recycle=recycle). Reason: message
+
+Explanation
+
+This log occurs unable to return an address to an address pool.
+- pool - The local pool name
+- ip-address - The IPv4 or IPv6 address specified by AAA
+- message - The details of the failure. (For example, address not in pool range)
+
+Recommended Action
+
+None required
+
+737403
+
+Error Message
+
+%ASA-3-737403: POOLIP: Pool=pool, ERROR: message
+
+Explanation
+
+This log is generated when an error event is detected related to an IP local
+pool database.
+- pool - The local pool name
+- message - The details for the event.
+
+Recommended Action
+
+If error is persistent, contact Cisco TAC.
+
+737404
+
+Error Message
+
+%ASA-4-737404: POOLIP: Pool=pool, WARN: message
+
+Explanation
+
+This log is generated to warn of an event related to an IP local pool database.
+- pool - The local pool name
+- message - The details for the event.
+
+Recommended Action
+
+If warning is persistent, contact Cisco TAC.
+
+737405
+
+Error Message
+
+%ASA-5-737405: POOLIP: Pool=pool, NOTIFY: message
+
+Explanation
+
+This log is generated to notify of an event related to an IP local pool
+database.
+- pool - The local pool name
+- message - The details for the event.
+
+Recommended Action
+
+None required
+
+737406
+
+Error Message
+
+%ASA-6-737406: POOLIP: Pool=pool, INFO: message
+
+Explanation
+
+This log is generated to inform of an event related to an IP local pool
+database.
+- pool - The local pool name
+- message - The details for the event.
+
+Recommended Action
+
+None required
+
+737407
+
+Error Message
+
+%ASA-7-737407: POOLIP: Pool=pool, DEBUG: message
+
+Explanation
+
+This log is generated to debug an event related to an IP local pool database.
+- pool - The local pool name
+- message - The details for the event.
+
+Recommended Action
+
+None required
+

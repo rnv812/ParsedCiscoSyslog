@@ -1,0 +1,1353 @@
+770001
+
+Error Message
+
+%ASA-4-770001: Resource resource allocation is more than the permitted list of
+limit for this platform. If this condition persists, the ASA will be rebooted.
+
+Explanation
+
+The CPU or memory resource allocation for the Secure Firewall ASA virtual
+machine has exceeded the allowed limit for this platform. This condition does
+not occur unless the setting for the Secure Firewall ASA virtual machine has
+been changed from that specified in the software downloaded from Cisco.com.
+
+Recommended Action
+
+To continue Secure Firewall ASA operation, change the CPU or memory resource
+allocation of the virtual machine to what was specified with the software
+downloaded from Cisco.com.or to the resource limits specified in the Cisco ASA
+1000V CLI Configuration Guide for this platform.
+
+770002
+
+Error Message
+
+%ASA-1-770002: Resource resource allocation is more than the permitted limit for
+this platform. ASA will be rebooted.
+
+Explanation
+
+The CPU or memory resource allocation for the Secure Firewall ASA virtual
+machine has exceeded the allowed limit for this platform. This condition does
+not occur unless the setting for the Secure Firewall ASA virtual machine has
+been changed from that specified in the software downloaded from Cisco.com. The
+Secure Firewall ASA will continue to reboot if the resource allocation is not
+changed.
+
+Recommended Action
+
+Change the CPU or memory reosurce allocation to the virtual machine to what was
+specified with the software downloaded from Cisco.com.or to the resource limits
+specified in the Cisco ASA 1000V CLI Configuration Guide for this platform.
+
+770003
+
+Error Message
+
+%ASA-4-770003: Resource resource allocation is less than the minimum requirement
+of value for this platform. If this condition persists, performance will be
+lower than normal.
+
+Explanation
+
+The CPU or memory resource allocation to the Secure Firewall ASA virtual machine
+is less than the minimum requirement for this platform. If this condition
+persists, performance will be lower than normal.
+
+Recommended Action
+
+To continue Secure Firewall ASA operation, change the CPU or memory reosurce
+allocation of the virtual machine to what was specified with the software
+downloaded from Cisco.
+
+771001
+
+Error Message
+
+%ASA-5-771001: CLOCK: System clock set, source: src , before: time , after: time
+
+Explanation
+
+The system clock was set from a local source.
+- src - The time protocol, which can be any of the following: NTP, SNTP, VINES,
+or the RFC-868 time protocol
+- ip - The IP address of the time server
+- time - The time string in the form, “Sun Apr 1 12:34:56.789 EDT 2012”
+
+Recommended Action
+
+None required.
+
+771002
+
+Error Message
+
+%ASA-5-771002: CLOCK: System clock set, source: src , IP ip , before: time ,
+after: time
+
+Explanation
+
+The system clock was set from a remote source.
+- src - The time source, which can be either manual or hardware calendar
+- ip - The IP address of the time server
+- time - The time string in the form, “Sun Apr 1 12:34:56.789 EDT 2012”
+
+Recommended Action
+
+None required.
+
+772002
+
+Error Message
+
+%ASA-3-772002: PASSWORD: console login warning, user username , cause: password
+expired
+
+Explanation
+
+A user logged into the system console with an expired password, which is
+permitted to avoid system lockout.
+- username - The name of the user
+
+Recommended Action
+
+The user should change the login password.
+
+772003
+
+Error Message
+
+%ASA-2-772003: PASSWORD: session login failed, user username , IP ip , cause:
+password expired
+
+Explanation
+
+A user logged tried to log into the system with an expired password and was
+denied access.
+- session - The session type, which can be SSH or Telnet
+- username - The name of the user
+- ip - The IP address of the user
+
+Recommended Action
+
+If the user has authorized access, an administrator must change the password for
+the user. Unauthorized access attempts should trigger an appropriate response,
+for example. traffic from that IP address can be blocked.
+
+772004
+
+Error Message
+
+%ASA-3-772004: PASSWORD: session login failed, user username , IP ip , cause:
+password expired
+
+Explanation
+
+A user logged tried to log into the system with an expired password and was
+denied access.
+- session - The session type, which is ASDM
+- username - The name of the user
+- ip - The IP address of the user
+
+Recommended Action
+
+If the user has authorized access, an administrator must change the password for
+the user. Unauthorized access attempts should trigger an appropriate response,
+for example. traffic from that IP address can be blocked.
+
+772005
+
+Error Message
+
+%ASA-6-772005: REAUTH: user username passed authentication
+
+Explanation
+
+The user authenticated successfully after changing the password.
+- username - The name of the user
+
+Recommended Action
+
+None required.
+
+772006
+
+Error Message
+
+%ASA-2-772006: REAUTH: user username failed authentication
+
+Explanation
+
+The user entered the wrong password while trying to change it. As a result, the
+password was not changed.
+- username - The name of the user
+
+Recommended Action
+
+The user should retry changing the password using the change-password command.
+
+774001
+
+Error Message
+
+%ASA-2-774001: POST: unspecified error
+
+Explanation
+
+The crypto service provider failed the power on self-test.
+
+Recommended Action
+
+Contact the Cisco TAC.
+
+774002
+
+Error Message
+
+%ASA-2-774002: POST: error err, func func , engine eng , algorithm alg , mode
+mode , dir dir , key len len
+
+Explanation
+
+The crypto service provider failed the power on self-test.
+- err - The failure cause
+- func - The function
+- eng - The engine, which can be NPX, Nlite, or software
+- alg - The algorithm, which can be any of the following: RSA, DSA, DES, 3DES,
+AES, RC4, MD5, SHA1, SHA256, SHA386, SHA512, HMAC-MD5, HMAC-SHA1, HMAC-SHA2, or
+AES-XCBC
+- mode - The mode, which can be any of the following: none, CBC, CTR, CFB, ECB,
+stateful-RC4, or stateless-RC4
+- dir - Either encryption or decryption
+- len - The key length in bits
+
+Recommended Action
+
+Contact the Cisco TAC.
+
+775001
+
+Error Message
+
+%ASA-6-775001: Scansafe: protocol connection conn_id from interface_name
+:real_address /real_port [(idfw_user )] to interface_name :real_address
+/real_port redirected to server_interface_name :server_ip_address
+
+Explanation
+
+A ScanSafe server is configured, and traffic matches a policy that has been
+configured to redirect the connection to the ScanSafe server for content
+scanning and other malware protection services.
+
+Recommended Action
+
+None required.
+
+775002
+
+Error Message
+
+%ASA-4-775002: Reason - protocol connection conn_id from
+interface_name:real_address/real_port [(idfw_user )] to
+interface_name:real_address/real_port is action locally
+
+Explanation
+
+If the source IP address and port of the new ScanSafe redirected connection
+matches the existing connection, then the ASA drops the new connection and this
+syslog message is generated.
+- Reason - Duplicate connection with same source address and port port
+
+Recommended Action
+
+Make sure of all of the following:
+- The ScanSafe license key is configured.
+- The public key is configured.
+- The ScanSafe server is reachable by the ASA.
+- The maximum number of connections has not been reached.
+
+
+Note Configuring PAT and ScanSafe on a single connection are not recommended.
+
+775003
+
+Error Message
+
+%ASA-6-775003: Scansafe:protocol connection conn_id from interface_name
+:real_address /real_port [(idfw_user )] to interface_name :real_address
+/real_port is whitelisted.
+
+Explanation
+
+The traffic has been matched and does not need to be redirected to the ScanSafe
+server for content scanning, but can be sent directly to the intended web
+server.
+
+Recommended Action
+
+None required.
+
+775004
+
+Error Message
+
+%ASA-4-775004: Scansafe: Primary server ip_address is not reachable
+
+Explanation
+
+The primary ScanSafe server is not reachable on either of the configured HTTP or
+HTTPS ports.
+
+Recommended Action
+
+None required.
+
+775005
+
+Error Message
+
+%ASA-6-775005: Scansafe: Primary server ip_address is reachable now
+
+Explanation
+
+The primary ScanSafe server is reachable on both of the configured HTTP and
+HTTPS ports.
+
+Recommended Action
+
+None required.
+
+775006
+
+Error Message
+
+%ASA-6-775006: Primary server interface :ip_address is not reachable and backup
+server interface :ip_address is now active
+
+Explanation
+
+If the primary ScanSafe server becomes unreachable, the ASA checks the
+connectivity to the configured backup ScanSafe server; if the backup server is
+reachable, it becomes the active server.
+
+Recommended Action
+
+None required.
+
+775007
+
+Error Message
+
+%ASA-2-775007: Scansafe: Primary server_interface_name :server_ip_address and
+backup server_interface_name :server_ip_address servers are not reachable.
+
+Explanation
+
+Neither the primary nor backup ScanSafe server is reachable. Based on the
+configured default action( fail_close or fail_open), traffic is getting dropped
+or sent to the web server without being redirected.
+
+Recommended Action
+
+If both the ScanSafe servers are not reachable, you can change the ScanSafe
+configuration to fail_open to send traffic to the web server without having it
+redirected to the ScanSafe server. This configuration changes the default action
+to permit.
+
+776001
+
+Error Message
+
+%ASA-3-776001: CTS SXP: Configured source IP source ip error
+
+Explanation
+
+An error occurred while using this configured source IP address to set up an SXP
+connection.
+- source ip - IPv4 or IPv6 source address
+- error - Detailed message regarding what type of error occurs while using the
+configured address to set up the SXP connection, which can be one of the
+following:
+  - Does not belong to this device.
+  - Does not match outbound interface IP address.
+
+Recommended Action
+
+Reconfigure the SXP connection to have a valid source IP address. Alternatively,
+unconfigure the source IP address and let the device select the correct source
+IP address based on a route lookup.
+
+776002
+
+Error Message
+
+%ASA-3-776002: CTS SXP: Invalid message from peer peer IP : error
+
+Explanation
+
+An error occurred while parsing an SXP message.
+- peer IP - IPv4 or IPv6 peer address
+- error - Description of message parsing problem
+
+Recommended Action
+
+Contact the Cisco TAC for assistance.
+
+776003
+
+Error Message
+
+%ASA-3-776003: CTS SXP: Connection with peer peer IP failed: error
+
+Explanation
+
+An SXP configuration error occurred. The connection cannot be set up correctly.
+- peer IP - IPv4 or IPv6 peer address
+- error - Description of SXP configuration problem. The error can be one of the
+following values:
+  - Mode mismatch with received one.
+  - Does not exist.
+  - With the same peer, but different source IP address exists.
+  - Version mismatch with received one.
+  - Received binding update while in speaker mode.
+
+Recommended Action
+
+Make sure that the connection configurations on both ends have the correct mode
+and IP addresses.
+
+776004
+
+Error Message
+
+%ASA-3-776004: CTS SXP: Fail to start listening socket after TCP process
+restart.
+
+Explanation
+
+The SXP on this device cannot accept SXP connection setup requests from remote
+devices, because it cannot update the binding manager.
+
+Recommended Action
+
+Disable and reenable the SXP feature to see if the listening socket can be
+restarted.
+
+776005
+
+Error Message
+
+%ASA-3-776005: CTS SXP: Binding Binding IP - SGname (SGT ) from peer IP instance
+connection instance num error .
+
+Explanation
+
+An SXP binding update error has occurred.
+- Binding IP - IPv4 or IPv6 binding address
+- SGname (SGT ) - Binding SGT information. Has the following format if SGname is
+available: SGname (SGT ) and the following format if SGname is unavailable: SGT.
+- peer IP - IPv4 or IPv6 peer address that sent the binding
+- connection instance num - Instance number of the SXP connection from which the
+binding came
+- error - Detailed message about the binding error
+
+Recommended Action
+
+Contact the Cisco TAC for assistance.
+
+776006
+
+Error Message
+
+%ASA-3-776006: CTS SXP: Internal error: error
+
+Explanation
+
+The CTS SXP system encountered an internal failure.
+- error - Detailed message about the SXP internal error, which can be one of the
+following:
+  - Source IP address of existing SXP connection cannot change.
+  - Password type of existing connection cannot change.
+  - Connection mode is the same as the existing configuration.
+  - IP address does not exist.
+
+Recommended Action
+
+Contact the Cisco TAC for assistance.
+
+776007
+
+Error Message
+
+%ASA-3-776007: CTS SXP: Connection with peer peer IP (instance connection
+instance num ) state changed from original state to Off.
+
+Explanation
+
+The CTS SXP system encountered an internal failure, because the SXP connection
+with the specified instance number changed its state to off.
+- peer IP - IPv4 or IPv6 peer address
+- connection instance num - SXP connection instance number
+- original state - Original connection state
+
+Recommended Action
+
+None required.
+
+776008
+
+Error Message
+
+%ASA-6-776008: CTS SXP: Connection with peer IP (instance connection instance
+num ) state changed from original state to final state .
+
+Explanation
+
+The SXP connection with the specified instance number changed state.
+- peer IP - IPv4 or IPv6 peer address
+- source IP - IPv4 or IPv6 source address
+- connection instance num - SXP connection instance number
+- original state - Original connection state
+- final state - Final connection state, which can be any state except the Off
+state.
+
+Recommended Action
+
+None required.
+
+776009
+
+Error Message
+
+%ASA-5-776009: CTS SXP: password changed.
+
+Explanation
+
+The SXP system password has been changed.
+
+Recommended Action
+
+None required.
+
+776010
+
+Error Message
+
+%ASA-5-776010: CTS SXP: SXP default source IP is changed original source IP
+final source IP .
+
+Explanation
+
+The SXP default source IP address has been changed on this device.
+- original source IP - IPv4 or IPv6 original default source IP address
+- final source IP - IPv4 or IPv6 final default source IP address
+
+Recommended Action
+
+None required.
+
+776011
+
+Error Message
+
+%ASA-5-776011: CTS SXP: operational state .
+
+Explanation
+
+The SXP feature has changed operational state and works only when the feature is
+enabled.
+- operational state - Flags the state whether CTS SXP is enabled or disabled.
+
+Recommended Action
+
+None required.
+
+776012
+
+Error Message
+
+%ASA-7-776012: CTS SXP: timer name timer started for connection with peer peer
+IP .
+
+Explanation
+
+The specified SXP timer started.
+- peer IP - IPv4 or IPv6 peer address. For timers that are not triggered by
+connection-based events, that is, the retry open timer, a default IP address of
+0.0.0.0 is used.
+- timer name - Timer name
+
+Recommended Action
+
+None required.
+
+776013
+
+Error Message
+
+%ASA-7-776013: CTS SXP: timer name timer stopped for connection with peer peer
+IP .
+
+Explanation
+
+The specified SXP timer stopped.
+- peer IP - IPv4 or IPv6 peer address. For timers that are not triggered by
+connection-based events, that is, the retry open timer, a default IP address of
+0.0.0.0 is used.
+- timer name - Timer name
+
+Recommended Action
+
+None required.
+
+776014
+
+Error Message
+
+%ASA-7-776014: CTS SXP: SXP received binding forwarding request (action )
+binding binding IP - SGname (SGT ).
+
+Explanation
+
+The SXP received a binding forwarding request. The request comes from the
+binding manager when it wants SXP to broadcast the latest net binding changes
+within the binding manager.
+- action - Add or delete operation
+- binding IP - IPv4 or IPv6 binding address
+- SGname (SGT ) - Binding SGT information. Has the following format if SGname is
+available: SGname (SGT ) and the following format if SGname is unavailable: SGT.
+
+Recommended Action
+
+None required.
+
+776015
+
+Error Message
+
+%ASA-7-776015: CTS SXP: Binding binding IP - SGname (SGT ) is forwarded to peer
+peer IP (instance connection instance num ).
+
+Explanation
+
+The SXP forwarded binding to the peer.
+- binding IP - IPv4 or IPv6 binding address
+- SGname (SGT ) - Binding SGT information. Has the following format if SGname is
+available: SGname (SGT ) and the following format if SGname is unavailable: SGT.
+- peer IP - IPv4 or IPv6 peer address
+- connection instance num - SXP connection instance number
+
+Recommended Action
+
+None required.
+
+776016
+
+Error Message
+
+%ASA-7-776016: CTS SXP: Binding binding IP - SGName (SGT ) from peer peer IP
+(instance binding's connection instance num ) changed from old instance: old
+instance num , old sgt: old SGName (SGT ).
+
+Explanation
+
+Binding changed in the SXP database.
+- binding IP - IPv4 or IPv6 binding address
+- SGname (SGT ) - Binding SGT information. Has the following format if SGname is
+available: SGname (SGT ) and the following format if SGname is unavailable: SGT.
+- peer IP - Binding source IPv4 or IPv6 address
+- binding’s connection instance num - SXP connection instance number
+- old instance num - Old connection instance number on which the binding was
+learned
+- old SGName (SGT ) - Binding old SGT information. Has the following format if
+SGname is available: SGname (SGT ) and the following format if SGname is
+unavailable: SGT.
+
+Recommended Action
+
+None required.
+
+776017
+
+Error Message
+
+%ASA-7-776017: CTS SXP: Binding binding IP - SGname (SGT) from peer peer IP
+(instance connection instance num ) deleted in SXP database.
+
+Explanation
+
+Binding was deleted in the SXP database.
+- binding IP - IPv4 or IPv6 binding address
+- SGname (SGT ) - Binding SGT information. Has the following format if SGname is
+available: SGname
+(SGT ) and the following format if SGname is unavailable: SGT.
+- peer IP - Binding source IPv4 or IPv6 peer address
+- connection instance num - SXP connection instance number
+
+Recommended Action
+
+None required.
+
+776018
+
+Error Message
+
+%ASA-7-776018: CTS SXP: Binding binding IP - SGname (SGT) from peer peer IP
+(instance connection instance num ) added in SXP database.
+
+Explanation
+
+Binding was aded in the SXP database.
+- binding IP - IPv4 or IPv6 binding address
+- SGname (SGT ) - Binding SGT information. Has the following format if SGname is
+available: SGname (SGT ) and the following format if SGname is unavailable: SGT.
+- peer IP - Binding source IPv4 or IPv6 peer address
+- connection instance num - SXP connection instance number
+
+Recommended Action
+
+None required.
+
+776019
+
+Error Message
+
+%ASA-7-776019: CTS SXP: Binding binding IP - SGname (SGT ) action taken . Update
+binding manager.
+
+Explanation
+
+The SXP updated the binding manager with the binding change.
+- binding IP - IPv4 or IPv6 binding address
+- SGname (SGT ) - Binding SGT information. Has the following format if SGname is
+available: SGname (SGT ) and the following format if SGname is unavailable: SGT.
+- action taken - Action taken, which can be one of the following: added,
+deleted, or changed.
+
+Recommended Action
+
+None required.
+
+776020
+
+Error Message
+
+%ASA-3-776020: CTS SXP: Unable to locate egress interface to peer peer IP .
+
+Explanation
+
+The ASA cannot locate the egress interface to the SXP peer. - binding IP - IPv4
+or IPv6 address
+
+Recommended Action
+
+Make sure that the SXP peer is routable from the device.
+
+776201
+
+Error Message
+
+%ASA-4-776201: CTS PAC: CTS PAC for Server IP_address , A-ID PAC issuer name
+will expire in number days
+
+Explanation
+
+A CTS PAC is nearing its expiration date.
+
+Recommended Action
+
+Obtain a new PAC and import it.
+
+776202
+
+Error Message
+
+%ASA-3-776202: CTS PAC for Server IP_address , A-ID PAC issuer name has expired
+
+Explanation
+
+A CTS PAC has expired.
+
+Recommended Action
+
+Obtain a new PAC and import it.
+
+776203
+
+Error Message
+
+%ASA-3-776203: Unable to retrieve CTS Environment data due to: reason
+
+Explanation
+
+The ASA was unable to retrieve the CTS environment data and SGT name table for
+one of the following reasons:
+- PAC has expired
+- PAC data not available
+- Error response from ISE
+- Unable to retrieve server secret from the PAC
+- Database error
+- Invalid SG info value received
+- Unable to add SG tag to database
+- Error closing database
+- Database update aborted
+
+Recommended Action
+
+If this message persists, contact the Cisco TAC for assistance.
+
+776204
+
+Error Message
+
+%ASA-3-776204: CTS Environment data has expired
+
+Explanation
+
+The CTS environment data and SGT name table have expired, which is likely to
+occur after unresolved environment data retrieval failures have occurred.
+
+Recommended Action
+
+If this message persists, contact the Cisco TAC for assistance.
+
+776251
+
+Error Message
+
+%ASA-6-776251: CTS SGT-MAP: Binding binding IP - SGname (SGT ) from source name
+added to binding manager.
+
+Explanation
+
+Binding from the specified source was added to the binding manager.
+- binding IP - IPv4 or IPv6 binding address.
+- SGname (SGT ) - Binding SGT information. Has the following format if SGname is
+available: SGname (SGT ) and the following format if SGname is unavailable: SGT.
+- source name - Name of the contributing source.
+
+Recommended Action
+
+None required.
+
+776252
+
+Error Message
+
+%ASA-5-776252: CTS SGT-MAP: CTS SGT-MAP: Binding binding IP - SGname (SGT ) from
+source name deleted from binding manager.
+
+Explanation
+
+Binding from the specified source was deleted from the binding manager. Binding
+from the specified source was added to the binding manager.
+- binding IP - IPv4 or IPv6 binding address.
+- SGname (SGT ) - Binding SGT information. Has the following format if SGname is
+available: SGname (SGT ) and the following format if SGname is unavailable: SGT.
+- source name - Name of the contributing source.
+
+Recommended Action
+
+None required.
+
+776253
+
+Error Message
+
+%ASA-6-776253: CTS SGT-MAP: Binding binding IP - new SGname (SGT ) from new
+source name changed from old sgt: old SGname (SGT ) from old source old source
+name .
+
+Explanation
+
+A particular IP to SGT binding has changed in the binding manager.
+- binding IP - IPv4 or IPv6 binding address.
+- new SGname (SGT ) - New binding SGT information. Has the following format if
+SGname is available: SGname (SGT ) and the following format if SGname is
+unavailable: SGT.
+- new source name - Name of the new contributing source.
+- old SGname (SGT ) - Old binding SGT information. Has the following format if
+SGname is available: SGname (SGT ) and the following format if SGname is
+unavailable: SGT.
+- old source name - Name of the old contributing source.
+
+Recommended Action
+
+None required.
+
+776254
+
+Error Message
+
+%ASA-3-776254: CTS SGT-MAP: Binding manager unable to action binding binding IP
+- SGname (SGT ) from source name.
+
+Explanation
+
+The binding manager cannot insert, delete, or update the binding
+- action - Binding manager operation. Either insert, delete or update.
+- binding IP - IPv4 or IPv6 binding address.
+- SGname (SGT ) - Binding SGT information. Has the following format if SGname is
+available: SGname (SGT ) and the following format if SGname is unavailable: SGT.
+- source name - Name of the contributing source.
+
+Recommended Action
+
+Contact the Cisco TAC for assistance.
+
+776301
+
+Error Message
+
+%ASA-7-776301: CTS Policy: Security-group tag sgt is mapped to security-group
+name "sgname "
+
+Explanation
+
+The security group tag referenced in the policy is known and the lookup in the
+security group table is successful. As a result, the tag name mapping is
+derived.
+- sgt - Security group tag referenced in the policy
+- sgname - Security group name mapping derived from the table
+
+Recommended Action
+
+None required.
+
+776302
+
+Error Message
+
+%ASA-7-776302: CTS Policy: Unknown security-group tag sgt referenced in policies
+
+Explanation
+
+The security group tag referenced in the policy was unknown and the lookup in
+the security group table failed. However, the policy referencing the tag can
+still be enforced.
+- sgt - Security group tag referenced in the policy
+
+Recommended Action
+
+Check to see if the security group tag exists in the ISE. If the tag exists, it
+will become known after the next refresh. If the tag does not exist in the ISE,
+consider removing all associated policies on the ASA.
+
+776303
+
+Error Message
+
+%ASA-6-776303: CTS Policy: Security-group name "sgname " is resolved to
+security-group tag sgt
+
+Explanation
+
+The securitygroup name referenced in the policy was resolved and the lookup in
+the security group table was successful. As a result, the tag derived from the
+table is used for policy enforcement.
+- sgname - Security group name referenced in the policy
+- sgt - Security group tag mapping derived from the table
+
+Recommended Action
+
+None required.
+
+776304
+
+Error Message
+
+%ASA-4-776304: CTS Policy: Unresolved security-group name "sgname " referenced,
+policies based on this name will be inactive
+
+Explanation
+
+The securitygroup name referenced in the policy cannot be resolved to a tag and
+the lookup in the security group table failed. AS a result, the policy
+referencing the name is inactive, but remains in the configuration.
+- sgname - Security group name referenced in the policy
+
+Recommended Action
+
+Check to see if the security group name exists in the ISE. If the name exists,
+the table can be refreshed so the name gets resolved and policies can be
+enforced. If the name does not exist in the ISE, consider removing all
+associated policies on the ASA.
+
+776305
+
+Error Message
+
+%ASA-4-776305: CTS Policy: Security-group table cleared, all polices referencing
+security-group names will be deactivated
+
+Explanation
+
+The security group table downloaded from the ISE is cleared on the ASA and
+policies based on security group tags continue to be enforced. However, policies
+based on names become inactive, but remain in the configuration.
+
+Recommended Action
+
+Refresh the security group table on the ASA so all policies based on security
+group names can be enforced.
+
+776307
+
+Error Message
+
+%ASA-7-776307: CTS Policy: Security-group name for security-group tag sgt
+renamed from old_sgname " to "new_sgname "
+
+Explanation
+
+In the newly downloaded security group table on the ASA, a change in the
+security group name for a security group tag was detected; however, there was no
+change in policy status.
+- sgt - Security group tag referenced in the policy
+- old_sgname - Old security group name
+- new_sgname - New security group name
+
+Recommended Action
+
+None required.
+
+776308
+
+Error Message
+
+%ASA-7-776308: CTS Policy: Previously unknown security-group tag sgt is now
+mapped to security-group name "sgname "
+
+Explanation
+
+In the newly downloaded security group table on the ASA, a previously unknown
+security group tag was found in the table; however, there was no change in
+policy status.
+- sgt - Security group tag referenced in the policy
+- sgname - Security group name derived from the new security group table
+
+Recommended Action
+
+None required.
+
+776309
+
+Error Message
+
+%ASA-5-776309: CTS Policy: Previously known security-group tag sgt is now
+unknown
+
+Explanation
+
+In the newly downloaded security group table on the ASA, a previously known
+security group tag no longer exists. There is no change in policy status, and
+the policy can still be enforced.
+- sgt - Security group tag referenced in the policy
+
+Recommended Action
+
+If the security group tag does not exist in the new table, the security group
+has been removed in the ISE. Consider removing all policies that reference the
+tag.
+
+776310
+
+Error Message
+
+%ASA-5-776310: CTS Policy: Security-group name "sgname " remapped from
+security-group tag old_sgt to new_sgt
+
+Explanation
+
+In the newly downloaded security group table on the ASA, a change in the
+security group tag for a security group name was detected. All policies
+referencing the name are updated to reflect the new tag, and policies are
+enforced based on the new tag.
+- sgname - Security group name referenced in the policy
+- old_sgt - Old security group tag
+- new_sgt - New security group tag
+
+Recommended Action
+
+Because of the change in tag value, make sure that the configured policies are
+still accurate.
+
+776311
+
+Error Message
+
+%ASA-6-776311: CTS Policy: Previously unresolved security-group name "sgname "
+is now resolved to security-group tag sgt
+
+Explanation
+
+In the newly downloaded security group table on the ASA, a previously unresolved
+security group name was resolved to a tag, and the new tag can be used to
+enforce policies.
+- sgname - Security group name referenced in the policy
+- sgt - Security group tag derived from the new security group table
+
+Recommended Action
+
+None required.
+
+776312
+
+Error Message
+
+%ASA-4-776312: CTS Policy: Previously resolved security-group name "sgname " is
+now unresolved, policies based on this name will be deactivated
+
+Explanation
+
+In the newly downloaded security group table on the ASA, a previously resolved
+security group name no longer exists. As a result, all policies based on this
+security group name become inactive, but remain in the configuration.
+- sgname - Security group name referenced in the policy
+
+Recommended Action
+
+If the security group name does not exist in the new table, the security group
+has been removed in the ISE. Check the policy configuration on the ASA, consider
+removing policies referencing the name.
+
+776313
+
+Error Message
+
+%ASA-3-776313: CTS Policy: Failure to update policies for security-group
+"sgname"-sgt
+
+Explanation
+
+An error was encountered in updating the policies. Policy enforcement will
+continue based on old tag values and is no longer accurate.
+- sgname - Security group name that has a change in tag value
+- sgt - New security group tag value
+
+Recommended Action
+
+To reflect the correct tag value, remove all policies referencing the security
+group name and reapply them. If the error persists, contact the Cisco TAC for
+assistance.
+
+778001
+
+Error Message
+
+%ASA-6-778001: VXLAN: Invalid VXLAN segment-id segment-id for protocol from
+ifc-name :(IP-address/port) to ifc-name :(IP-address/port).
+
+Explanation
+
+The Secure Firewall ASA tries to create an inner connection for a VXLAN packet,
+but the VXLAN packet has an invalid segment ID.
+
+Recommended Action
+
+None required.
+
+778002
+
+Error Message
+
+%ASA-6-778002: VXLAN: There is no VNI interface for segment-id segment-id .
+
+Explanation
+
+A decapsulated ingress VXLAN packet is discarded, because the segment ID in the
+VXLAN header does not match the segment ID of any VNI interface configured on
+the Secure Firewall ASA.
+
+Recommended Action
+
+None required.
+
+778003
+
+Error Message
+
+%ASA-6-778003: VXLAN: Invalid VXLAN segment-id segment-id for protocol from
+ifc-name :(IP-address/port) to ifc-name :(IP-address/port) in FP.
+
+Explanation
+
+The Secure Firewall ASA Fast Path sees a VXLAN packet with an invalid segment
+ID.
+
+Recommended Action
+
+Check the VNI interface segment ID configurations to see if the dropped packet
+has the VXLAN segment ID that does not match any VNI segment ID configuration.
+
+778004
+
+Error Message
+
+%ASA-6-778004: VXLAN: Invalid VXLAN header for protocol from ifc-name
+:(IP-address/port) to ifc-name :(IP-address/port) in FP.
+
+Explanation
+
+The Secure Firewall ASA VTEP sees a VXLAN packet with an invalid VXLAN header.
+
+Recommended Action
+
+None required.
+
+778005
+
+Error Message
+
+%ASA-6-778005: VXLAN: Packet with VXLAN segment-id segment-id from ifc-name is
+denied by FP L2 check.
+
+Explanation
+
+A VXLAN packet is denied by a Fast Path L2 check.
+
+Recommended Action
+
+Check the VNI interface segment ID configurations to see if the dropped packet
+has the VXLAN segment ID that does not match any VNI segment ID configuration.
+Check to see if the STS table has an entry that matches the dropped packet’s
+segment ID.
+
+778006
+
+Error Message
+
+%ASA-6-778006: VXLAN: Invalid VXLAN UDP checksum from ifc-name
+:(IP-address/port) to ifc-name :(IP-address/port) in FP.
+
+Explanation
+
+The Secure Firewall ASA VTEP received a VXLAN packet with an invalid UDP
+checksum value.
+
+Recommended Action
+
+None required.
+
+778007
+
+Error Message
+
+%ASA-6-778007: VXLAN: Packet from ifc-name :IP-address/port to IP-address/port
+was discarded due to invalid NVE peer.
+
+Explanation
+
+The Secure Firewall ASA VTEP received a VXLAN packet from an IP address that is
+different from the configured NVE peer.
+
+Recommended Action
+
+None required.
+
+779001
+
+Error Message
+
+%ASA-6-779001: STS: Out-tag lookup failed for in-tag segment-id of protocol from
+ifc-name :IP-address /port to IP-address /port .
+
+Explanation
+
+The Secure Firewall ASA tries to create a connection for a VXLAN packet, but
+failed to use the STS lookup table to locate the out-tag for the in-tag (segment
+ID) in the VXLAN packet.
+
+Recommended Action
+
+None required.
+
+779002
+
+Error Message
+
+%ASA-6-779002: STS: STS and NAT locate different egress interface for segment-id
+segment-id , protocol from ifc-name :IP-address /port to IP-address /port
+
+Explanation
+
+The Secure Firewall ASA tries to create a connection for a VXLAN packet, but the
+STS lookup table and NAT policy locate a different egress interface.
+
+Recommended Action
+
+None required.
+
+779003
+
+Error Message
+
+%ASA-3-779003: STS: Failed to read tag-switching table - reason
+
+Explanation
+
+The Secure Firewall ASA tried to read the tag-switching table, but failed.
+
+Recommended Action
+
+None required.
+
+779004
+
+Error Message
+
+%ASA-3-779004: STS: Failed to write tag-switching table - reason
+
+Explanation
+
+The Secure Firewall ASA tried to write to the tag-switching table, but failed.
+
+Recommended Action
+
+None required.
+
+779005
+
+Error Message
+
+%ASA-3-779005: STS: Failed to parse tag-switching request from http - reason
+
+Explanation
+
+The Secure Firewall ASA tried to parse the HTTP request to see what to do on the
+tag-switching table, but failed.
+
+Recommended Action
+
+None required.
+
+779006
+
+Error Message
+
+%ASA-3-779006: STS: Failed to save tag-switching table to flash - reason
+
+Explanation
+
+The Secure Firewall ASA tried to save the tag-switching table to flash memory, but failed.
+
+Recommended Action
+
+None required.
+
+779007
+
+Error Message
+
+%ASA-3-779007: STS: Failed to replicate tag-switching table to peer - reason
+
+Explanation
+
+The Secure Firewall ASA attempts to replicate the tag-switching table to the
+failover standby unit or clustering data units, but failed to do so.
+
+Recommended Action
+
+None required.
+

@@ -1,0 +1,523 @@
+%ASA-6-106012: Deny IP from IP_address to IP_address, IP options hex.
+%ASA-6-106015: Deny TCP (no connection) from IP_address/port to IP_address/port flags tcp_flagson interface interface_name.
+%ASA-6-106025: Failed to determine the security context for the packet:sourceVlan:source_addressdest_address source_port dest_port protocol
+%ASA-6-106026: Failed to determine the security context for the packet:sourceVlan:source_addressdest_address source_port dest_port protocol
+%ASA-6-106100: access-list acl_ID {permitted | denied | est-allowed} protocolinterface_name/source_address(source_port)(idfw_user, sg_info) interface_name/dest_address(dest_port)(idfw_user, sg_info) hit-cnt number ({first hit | number-second interval})
+%ASA-6-106102: access-list acl_ID {permitted | denied} protocol for user usernameinterface_name/source_address source_port interface_name/dest_address dest_port hit-cnt number {firsthit | number-second interval} hash codes
+%ASA-6-108005: action_class: Received ESMTP req_resp from src_ifc:sip|sport todest_ifc:dip|dport;further_info
+%ASA-6-108007: TLS started on ESMTP session between client client-side interface-name: clientIPaddress/client port and server server-side interface-name: server IP address/server port
+%ASA-6-109001: Auth start for user user from inside_address/inside_port to outside_address/outside_port
+%ASA-6-109002: Auth from inside_address/inside_port to outside_address/outside_port failed (serverIP_address failed) on interface interface_name.
+%ASA-6-109003: Auth from inside_address to outside_address/outside_port failed (all servers failed)on interface interface_name, so marking all servers ACTIVE again.
+%ASA-6-109005: Authentication succeeded for user user from inside_address/inside_port tooutside_address/outside_port on interface interface_name.
+%ASA-6-109006: Authentication failed for user user from inside_address/inside_port tooutside_address/outside_port on interface interface_name.
+%ASA-6-109007: Authorization permitted for user user from inside_address/inside_port tooutside_address/outside_port on interface interface_name.
+%ASA-6-109008: Authorization denied for user user from outside_address/outside_port to inside_address/inside_port on interface interface_name.
+%ASA-6-109024: Authorization denied from source_address/source_port to dest_address/dest_port (notauthenticated) on interface interface_name using protocol
+%ASA-6-109025: Authorization denied (acl=acl_ID) for user 'user' from source_address/source_port todest_address/dest_port on interface interface_name using protocol
+%ASA-6-109036: Exceeded 1000 attribute values for the attribute name attribute for user username.
+%ASA-6-109100: Received CoA update from coa-source-ip for user username , with session ID:audit-session-id , changing authorization attributes
+%ASA-6-109101: Received CoA disconnect request from coa-source-ip for user username , withaudit-session-id: audit-session-id
+%ASA-6-109202: UAUTH Session session, User username, Assigned IP IP Address, Succeededincrementing entry use.
+%ASA-6-109211: UAUTH Session session, User username, Assigned IP IP Address, Successfullyremoved the rules for user during tunnel torn down.
+%ASA-6-110002: Failed to locate egress interface for protocol from src interface:src IP/src port to destIP/dest port
+%ASA-6-110003: Routing failed to locate next-hop for protocol from src interface:src IP/src port to destinterface:dest IP/dest port
+%ASA-6-110004: Egress interface changed from old_active_ifc to new_active_ifc on ip_protocolconnection conn_id for outside_zone/parent_outside_ifc:outside_addr/outside_port(mapped_addr/mapped_port) to inside_zone/parent_inside_ifc:inside_addr/inside_port(mapped_addr/mapped_port)
+%ASA-6-113003: AAA group policy for user user is being set to policy_name.
+%ASA-6-113004: AAA user aaa_type Successful: server = server_IP_address, User = user
+%ASA-6-113005: AAA user authentication Rejected: reason = string: server = server_IP_address, User= user: user IP = user_ip
+%ASA-6-113006: User user locked out on exceeding number successive failed authentication attempts
+%ASA-6-113007: User user unlocked by administrator
+%ASA-6-113008: AAA transaction status ACCEPT: user = user
+%ASA-6-113009: AAA retrieved default group policy policy for user user
+%ASA-6-113010: AAA challenge received for user user from server server_IP_address
+%ASA-6-113011: AAA retrieved user specific group policy policy for user user
+%ASA-6-113012: AAA user authentication Successful: local database: user = user
+%ASA-6-113013: AAA unable to complete the request Error: reason = reason: user = user
+%ASA-6-113014: AAA authentication server not accessible: server = server_IP_address: user = user
+%ASA-6-113015: AAA user authentication Rejected: reason = reason: local database: user = user: userIP =xxx.xxx.xxx.xxx
+%ASA-6-113016: AAA credentials rejected: reason = reason: server = server_IP_address: user = user:user IP = xxx.xxx.xxx.xxx
+%ASA-6-113017: AAA credentials rejected: reason = reason: local database: user = user: user IP =user_ip=xxx.xxx.xxx.xxx
+%ASA-6-113033: Group group User user IP ipaddr AnyConnect session not allowed. ACL parse error.
+%ASA-6-113037: Reboot pending, new sessions disabled. Denied user login.
+%ASA-6-113039: Group group User user IP ipaddr AnyConnect parent session started.
+%ASA-6-113045: AAA SDI server IP_address in aaa-server group group_name: status changed fromprevious-state to current-state
+%ASA-6-114004: 4GE SSM I/O Initialization start.
+%ASA-6-114005: 4GE SSM I/O Initialization end.
+%ASA-6-120003: Process event group title
+%ASA-6-120007: Message group to destination delivered.
+%ASA-6-121003: msgId id. Telemetry request from the chassis received. SSE connector status: connectorstatus. Telemetry config on the blade: blade status. Telemetry data data status.
+%ASA-6-199002: startup completed. Beginning operation.
+%ASA-6-199003: Reducing link MTU dec.
+%ASA-6-199005: Startup begin
+%ASA-6-199018: syslog
+%ASA-6-201010: Embryonic connection limit exceeded econns/limit for dir packet fromsource_address/source_port to dest_address/dest_port on interface interface_name
+%ASA-6-201012: Per-client embryonic connection limit exceeded curr num/limit for [input|output]packet from IP_address/ port to ip/port on interface interface_name
+%ASA-6-210022: LU missed number updates
+%ASA-6-302003: Built H245 connection for foreign_address outside_address/outside_port local_addressinside_address/inside_port
+%ASA-6-302004: Pre-allocate H323 UDP backconnection for foreign_addressoutside_address/outside_port to local_address inside_address/inside_port
+%ASA-6-302010: connections in use, connections most used
+%ASA-6-302012: Pre-allocate H225 Call Signalling Connection for faddr IP_address/port to laddrIP_address
+%ASA-6-302013: Built {inbound|outbound} TCP connection_id for interface:real-address/real-port(mapped-address/mapped-port) [(idfw_user)] to interface:real-address/real-port(mapped-address/mapped-port) [(idfw_user)] [(user)]
+%ASA-6-302014: Teardown TCP connection id for interface :real-address /real-port [(idfw_user )]to interface :real-address /real-port [(idfw_user )] duration hh:mm:ss bytes bytes [reason [fromteardown-initiator]] [(user )]
+%ASA-6-302015: Built {inbound|outbound} UDP connection number forinterface_name:real_address/real_port (mapped_address/mapped_port) [(idfw_user)] tointerface_name:real_address/real_port (mapped_address/mapped_port) [(idfw_user)] [(user)]
+%ASA-6-302016: Teardown UDP connection number for interface:real-address/real-port [(idfw_user)]to interface:real-address/real-port [(idfw_user)] duration hh:mm:ss bytes bytes [(user)]
+%ASA-6-302017: Built {inbound|outbound} GRE connection id from interface:real_address(translated_address) [(idfw_user)] to interface:real_address/real_cid (translated_address/translated_cid)[(idfw_user)] [(user)
+%ASA-6-302018: Teardown GRE connection id from interface:real_address (translated_address)[(idfw_user)] to interface:real_address/real_cid (translated_address/translated_cid) [(idfw_user)] durationhh:mm:ss bytes bytes [(user)]
+%ASA-6-302020: Built ICMP connection connection_id from interface:real-address/real-port(mapped-address/mapped-port) [(idfw_user)] to interface:real-address/real-port(mapped-address/mapped-port) [(idfw_user)] [(user)]
+%ASA-6-302021: Teardown ICMP connection connection_id from interface:real-address/real-port(mapped-address/mapped-port) [(idfw_user)] to interface:real-address/real-port(mapped-address/mapped-port) [(idfw_user)] [(user)]
+%ASA-6-302022: Built role stub TCP connection for interface:real-address/real-port(mapped-address/mapped-port) to interface:real-address/real-port (mapped-address/mapped-port)
+%ASA-6-302023: Teardown stub TCP connection for interface:real-address/real-port tointerface:real-address/real-port duration hh:mm:ss forwarded bytes bytes reason
+%ASA-6-302024: Built role stub UDP connection for interface:real-address/real-port(mapped-address/mapped-port) to interface:real-address/real-port (mapped-address/mapped-port)
+%ASA-6-302025: Teardown stub UDP connection for interface:real-address/real-port tointerface:real-address/real-port duration hh:mm:ss forwarded bytes bytes reason
+%ASA-6-302026: Built role stub ICMP connection for interface:real-address/real-port (mapped-address)to interface:real-address/real-port (mapped-address)
+%ASA-6-302027: Teardown stub ICMP connection for interface:real-address/real-port tointerface:real-address/real-port duration hh:mm:ss forwarded bytes bytes reason
+%ASA-6-302033: Pre-allocated H323 GUP Connection for faddr interface:foreign address/foreign-portto laddr interface:local-address/local-port
+%ASA-6-302035: Built {inbound|outbound} SCTP connection conn_id foroutside_interface:outside_ip/outside_port(mapped_outside_ip/mapped_outside_port)[([outside_idfw_user],[outside_sg_info])] toinside_interface:inside_ip/inside_port(mapped_inside_ip/mapped_inside_port)[([inside_idfw_user],[inside_sg_info])] [(user)]
+%ASA-6-302036: Teardown SCTP connection conn_id foroutside_interface:outside_ip/outside_port[([outside_idfw_user],[outside_sg_info])] toinside_interface:inside_ip/inside_port[([inside_idfw_user],[inside_sg_info])] duration time bytes bytesreason [(user)]
+%ASA-6-302303: Built TCP state-bypass connection conn_id frominitiator_interface:real_ip/real_port(mapped_ip/mapped_port) to responder_interface:real_ip/real_port(mapped_ip/mapped_port)
+%ASA-6-302304: Teardown TCP state-bypass connection conn_id from initiator_interface:ip/port toresponder_interface:ip/port duration, bytes, teardown reason.
+%ASA-6-302305: Built SCTP state-bypass connection conn_id foroutside_interface:outside_ip/outside_port(mapped_outside_ip/mapped_outside_port)[([outside_idfw_user],[outside_sg_info])] toinside_interface:inside_ip/inside_port(mapped_inside_ip/mapped_inside_port)[([inside_idfw_user],[inside_sg_info])]
+%ASA-6-302306: Teardown SCTP state-bypass connection conn_id foroutside_interface:outside_ip/outside_port[([outside_idfw_user],[outside_sg_info])] toinside_interface:inside_ip/inside_port[([inside_idfw_user],[inside_sg_info])] duration time bytes bytesreason
+%ASA-6-303002: FTP connection from src_ifc:src_ip/src_port to dst_ifc:dst_ip/dst_port, user usernameaction file filename
+%ASA-6-304004: URL Server IP_address request failed URL url HTTP/1.0
+%ASA-6-305007: addrpool_free(): Orphan IP IP_address on interface interface_number
+%ASA-6-305009: Built {dynamic|static} translation from interface_name [(acl-name)]:real_address[(idfw_user)] to interface_name:mapped_address
+%ASA-6-305010: Teardown {dynamic|static} translation from interface_name:real_address [(idfw_user)]to interface_name:mapped_address duration time
+%ASA-6-305011: Built {dynamic|static} {TCP|UDP|ICMP} translation frominterface_name:real_address/real_port [(idfw_user)] to interface_name:mapped_address/mapped_port
+%ASA-6-305012: Teardown {dynamic|static} {TCP|UDP|ICMP} translation from interface_name[(acl-name)]:real_address/{real_port|real_ICMP_ID} [(idfw_user)] tointerface_name:mapped_address/{mapped_port|mapped_ICMP_ID} duration time
+%ASA-6-305014: Allocated block of ports for translation from real_interface : real_host_ip/real_source_port to real_dest_interface :real_dest_ip /real_dest_port.
+%ASA-6-305015: Released block of ports for translation from real_interface : real_host_ip/real_source_port to real_dest_interface :real_dest_ip /real_dest_port.
+%ASA-6-305018: MAP translation from <src_ifc>:<src_ip>/<src_port>-<dst_ifc>:<dst_ip>/<dst_port>to <src_ifc>:<translated_src_ip>/<src_port>-<dst_ifc>:<translated_dst_ip>/<dst_port>
+%ASA-6-308001: console enable password incorrect for number tries (from IP_address)
+%ASA-6-311001: LU loading standby start
+%ASA-6-311002: LU loading standby end
+%ASA-6-311003: LU recv thread up
+%ASA-6-311004: LU xmit thread up
+%ASA-6-312001: RIP hdr failed from IP_address: cmd=string, version=number domain=string oninterface interface_name
+%ASA-6-314001: Pre-allocated RTSP UDP backconnection for src_intf:src_IP to dst_intf:dst_IP/dst_port.
+%ASA-6-314002: RTSP failed to allocate UDP media connection from src_intf:src_IP todst_intf:dst_IP/dst_port: reason_string.
+%ASA-6-314003: Dropped RTSP traffic from src_intf:src_ip due to: reason.
+%ASA-6-314004: RTSP client src_intf:src_IP accessed RTSP URL RTSP URL
+%ASA-6-314005: RTSP client src_intf:src_IP denied access to URL RTSP_URL.
+%ASA-6-314006: RTSP client src_intf:src_IP exceeds configured rate limit of rate for request_methodmessages.
+%ASA-6-315011: SSH session from IP_address on interface interface_name for user user disconnectedby SSH server, reason: reason
+%ASA-6-315013: SSH session from SSH client address on interface interface_name for user user_namerekeyed successfully.
+%ASA-6-317007: Added route_type route dest_address netmask via gateway_address [distance/metric]on interface_name route_type
+%ASA-6-317008: Deleted route_type route dest_address netmask via gateway_address [distance/metric]on interface_name route_type
+%ASA-6-321003: Resource var1 log level of var2 reached.
+%ASA-6-321004: Resource var1 rate log level of var2 reached
+%ASA-6-322004: No management IP address configured for transparent firewall. Dropping protocolprotocol packet from interface_in:source_address/source_port to interface_out:dest_address/dest_port
+%ASA-6-333001: EAP association initiated - context:EAP-context
+%ASA-6-333003: EAP association terminated - context:EAP-context
+%ASA-6-333009: EAP-SQ response MAC TLV is invalid - context:EAP-context
+%ASA-6-334001: EAPoUDP association initiated - host-address
+%ASA-6-334004: Authentication request for NAC Clientless host - host-address
+%ASA-6-334007: EAPoUDP association terminated - host-address
+%ASA-6-334008: NAC EAP association initiated - host-address, EAP context:EAP-context
+%ASA-6-334009: Audit request for NAC Clientless host - Assigned_IP.
+%ASA-6-335001: NAC session initialized - host-address
+%ASA-6-335004: NAC is disabled for host - host-address
+%ASA-6-335006: NAC Applying ACL:ACL-name - host-address
+%ASA-6-335009: NAC 'Revalidate' request by administrative action - host-address
+%ASA-6-335010: NAC 'Revalidate All' request by administrative action - num sessions
+%ASA-6-335011: NAC 'Revalidate Group' request by administrative action for group-name group - numsessions
+%ASA-6-335012: NAC 'Initialize' request by administrative action - host-address
+%ASA-6-335013: NAC 'Initialize All' request by administrative action - num sessions
+%ASA-6-335014: NAC 'Initialize Group' request by administrative action for group-name group - numsessions
+%ASA-6-336011: event event
+%ASA-6-337000: Created BFD session with local discriminator id on real_interface with neighborreal_host_ip.
+%ASA-6-337001: Terminated BFD session with local discriminator id on real_interface with neighborreal_host_ip due to failure_reason.•
+%ASA-6-338304: Successfully downloaded dynamic filter data file from updater server url
+%ASA-6-340002: Loopback-proxy info: error_string context id context_id, context type =version/request_type/address_type client socket (internal)= client_address_internal/client_port_internalserver socket (internal)= server_address_internal/server_port_internal server socket (external)=server_address_external/server_port_external remote socket (external)=remote_address_external/remote_port_external
+%ASA-6-341001: Policy Agent started successfully for VNMC vnmc_ip_addr
+%ASA-6-341002: Policy Agent stopped successfully for VNMC vnmc_ip_add
+%ASA-6-341010: Storage device with serial number ser_no [inserted into | removed from] bay bay_no
+%ASA-6-402129: CRYPTO: An attempt to release a DMA memory block failed, location: address
+%ASA-6-402130: CRYPTO: Received an ESP packet (SPI = xxxxxxxxxx, sequence number=xxxx)from 172.16.0.1 (user=user) to 192.168.0.2 with incorrect IPsec padding.
+%ASA-6-403500: PPPoE - Service name 'any' not received in PADO. Intf:interface_name AC:ac_name.
+%ASA-6-410004: action_class: action DNS query_response from src_ifc:sip/sport to dest_ifc:dip/dport;further_info
+%ASA-6-414004: TCP Syslog Server intf: IP_Address/port - Connection restored
+%ASA-6-414007: TCP Syslog Server connection restored. New connections are allowed.
+%ASA-6-414008: New connections are now allowed due to change of logging permit-hostdown policy.
+%ASA-6-415001: HTTP - matched matched_string in policy-map map_name, header field count exceededconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-6-415002: HTTP - matched matched_string in policy-map map_name, header field length exceededconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-6-415003: HTTP - matched matched_string in policy-map map_name, body length exceededconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-6-415017: HTTP - matched_string in policy-map map_name, arguments matchedconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-6-419004: TCP connection <ID> from <src_ifc>:<src_ip>/<src_port> to<dst_ifc>:<dst_ip>/<dst_port> is probed by DCD
+%ASA-6-419005: TCP connection <ID> from <src_ifc>:<src_ip>/<src_port> to<dst_ifc>:<dst_ip>/<dst_port> duration <hh:mm:ss> data <bytes>, is kept open by DCD as validconnection
+%ASA-6-419006: Teardown TCP connection <ID> from <src_ifc>:<src_ip>/<src_port> to<dst_ifc>:<dst_ip>/<dst_port> duration<hh:mm:ss> data <bytes>, DCD probe was not responded from<client/server> interface <ifc_name>
+%ASA-6-420004: Virtual Sensor sensor_name was added on the AIP SSM
+%ASA-6-420005: Virtual Sensor sensor_name was deleted from the AIP SSM
+%ASA-6-421002: TCP|UDP flow from interface_name:IP_address/port to interface_nam:IP_address/portbypassed application checking because the protocol is not supported.
+%ASA-6-421005: interface_name:IP_address is counted as a user of application
+%ASA-6-421006: There are number users of application accounted during the past 24 hours.
+%ASA-6-425001: Redundant interface redundant_interface_name created.
+%ASA-6-425002: Redundant interface redundant_interface_name removed.
+%ASA-6-425003: Interface interface_name added into redundant interface redundant_interface_name.
+%ASA-6-425004: Interface interface_name removed from redundant interface redundant_interface_name.
+%ASA-6-426001: PORT-CHANNEL:Interface ifc_name bundled into EtherChannel interface Port-channelnum
+%ASA-6-426002: PORT-CHANNEL:Interface ifc_name unbundled from EtherChannel interfacePort-channel num
+%ASA-6-426003: PORT-CHANNEL:Interface ifc_name1 has become standby in EtherChannel interfacePort-channel num
+%ASA-6-426101: PORT-CHANNEL:Interface ifc_name is allowed to bundle into EtherChannel interfaceport-channel id by CLACP
+%ASA-6-426102: PORT-CHANNEL:Interface ifc_name is moved to standby in EtherChannel interfaceport-channel id by CLACP
+%ASA-6-426103: PORT-CHANNEL:Interface ifc_name is selected to move from standby to bundle inEtherChannel interface port-channel id by CLACP
+%ASA-6-426104: PORT-CHANNEL:Interface ifc_name is unselected in EtherChannel interfaceport-channel id by CLACP
+%ASA-6-428001: WAAS confirmed from in_interface:src_ip_addr/src_port toout_interface:dest_ip_addr/dest_port, inspection services bypassed on this connection
+%ASA-6-429005: Set up authentication-proxy protocol_type rule for the CXSC action on interfaceinterface_name for traffic destined to ip_address/port for policy_type service-policy.
+%ASA-6-429006: Cleaned up authentication-proxy rule for the CXSC action on interface interface_namefor traffic destined to ip_address for policy_type service-policy.
+%ASA-6-444103: Shared licensetype license usage is over 90% capacity
+%ASA-6-444104: Shared licensetype license availability: value.
+%ASA-6-444107: Shared license service status on interface ifname
+%ASA-6-444108: Shared license state client id id
+%ASA-6-444306: %SMART_LIC-6-AGENT_READY: Smart Agent for Licensing is initialized.
+%ASA-6-444306: %SMART_LIC-6-AGENT_ENABLED: Smart Agent for Licensing is enabled.
+%ASA-6-444306: %SMART_LIC-6-AGENT_REG_SUCCESS: Smart Agent for Licensing Registrationwith Cisco licensing cloud successful.
+%ASA-6-444306: %SMART_LIC-6-AGENT_DEREG_SUCCESS: Smart Agent for LicensingDe-registration with Cisco licensing cloud successful.
+%ASA-6-444306: %SMART_LIC-6-DISABLED: Smart Agent for Licensing disabled.
+%ASA-6-444306: %SMART_LIC-6-ID_CERT_RENEW_SUCCESS: Identity certificate renewalsuccessful.
+%ASA-6-444306: %SMART_LIC-6-ENTITLEMENT_RENEW_SUCCESS: Entitlement authorizationrenewal with Cisco licensing cloud successful.
+%ASA-6-444306: %SMART_LIC-6-AUTH_RENEW_SUCCESS: Authorization renewal with Ciscolicensing cloud successful.
+%ASA-6-444306: %SMART_LIC-6-HA_ROLE_CHANGED: Smart Agent HA role changed to role.
+%ASA-6-444306: %SMART_LIC-6-HA_CHASSIS_ROLE_CHANGED: Smart Agent HA chassis rolechanged to role.
+%ASA-6-444306: %SMART_LIC-6-AGENT_ALREADY_REGISTER: Smart Agent is already registeredwith the Cisco licensing cloud.
+%ASA-6-444306: %SMART_LIC-6-AGENT_ALREADY_DEREGISTER: Smart Agent is alreadyDeregistered with the CSSM.
+%ASA-6-444306: %SMART_LIC-6-EXPORT_CONTROLLED: Usage of export controlled featuresis status.
+%ASA-6-602101: PMTU-D packet number bytes greater than effective mtu numberdest_addr=dest_address, src_addr=source_address, prot=protocol
+%ASA-6-602103: IPSEC: Received an ICMP Destination Unreachable from src_addr with suggestedPMTU of rcvd_mtu; PMTU updated for SA with peer peer_addr, SPI spi, tunnel name username, oldPMTU old_mtu, new PMTU new_mtu.
+%ASA-6-602104: IPSEC: Received an ICMP Destination Unreachable from src_addr, PMTU is unchangedbecause suggested PMTU of rcvd_mtu is equal to or greater than the current PMTU of curr_mtu, for SAwith peer peer_addr, SPI spi, tunnel name username.
+%ASA-6-602303: IPSEC: An direction tunnel_type SA (SPI=spi) between local_IP and remote_IP(username) has been created.
+%ASA-6-602304: IPSEC: An direction tunnel_type SA (SPI=spi) between local_IP and remote_IP(username) has been deleted.
+%ASA-6-603101: PPTP received out of seq or duplicate pkt, tnl_id=number, sess_id=number,seq=number.
+%ASA-6-603102: PPP virtual interface interface_name - user: user aaa authentication started.
+%ASA-6-603103: PPP virtual interface interface_name - user: user aaa authentication status
+%ASA-6-603104: PPTP Tunnel created, tunnel_id is number, remote_peer_ip is remote_address,ppp_virtual_interface_id is number, client_dynamic_ip is IP_address, username is user,MPPE_key_strength is string
+%ASA-6-603105: PPTP Tunnel deleted, tunnel_id = number, remote_peer_ip= remote_address
+%ASA-6-603106: L2TP Tunnel created, tunnel_id is number, remote_peer_ip is remote_address,ppp_virtual_interface_id is number, client_dynamic_ip is IP_address, username is user
+%ASA-6-603107: L2TP Tunnel deleted, tunnel_id = number, remote_peer_ip = remote_address
+%ASA-6-603108: Built PPTP Tunnel at interface_name, tunnel-id = number, remote-peer = IP_address,virtual-interface = number, client-dynamic-ip = IP_address, username = user, MPPE-key-strength =number
+%ASA-6-603109: Teardown PPPOE Tunnel at interface_name, tunnel-id = number, remote-peer =IP_address
+%ASA-6-604101: DHCP client interface interface_name: Allocated ip = IP_address, mask = netmask,gw = gateway_address
+%ASA-6-604102: DHCP client interface interface_name: address released
+%ASA-6-604103: DHCP daemon interface interface_name: address granted MAC_address (IP_address)
+%ASA-6-604104: DHCP daemon interface interface_name: address released build_name (IP_address)
+%ASA-6-604201: DHCPv6 PD client on interface <pd-client-iface> received delegated prefix <prefix>from DHCPv6 PD server <server-address> with preferred lifetime <in-seconds> seconds and validlifetime <in-seconds> seconds
+%ASA-6-604202: DHCPv6 PD client on interface <pd-client-iface> releasing delegated prefix <prefix>received from DHCPv6 PD server <server-address>
+%ASA-6-604203: DHCPv6 PD client on interface <pd-client-iface> renewed delegated prefix <prefix>from DHCPv6 PD server <server-address> with preferred lifetime <in-seconds> seconds and validlifetime <in-seconds> seconds
+%ASA-6-604204: DHCPv6 delegated prefix <delegated prefix> got expired on interface <pd-client-iface>,received from DHCPv6 PD server <server-address>
+%ASA-6-604205: DHCPv6 client on interface <client-iface> allocated address <ipv6-address> fromDHCPv6 server <server-address> with preferred lifetime <in-seconds> seconds and valid lifetime<in-seconds> seconds
+%ASA-6-604206: DHCPv6 client on interface <client-iface> releasing address <ipv6-address> receivedfrom DHCPv6 server <server-address>
+%ASA-6-604207: DHCPv6 client on interface <client-iface> renewed address <ipv6-address> fromDHCPv6 server <server-address> with preferred lifetime <in-seconds> seconds and valid lifetime<in-seconds> seconds
+%ASA-6-604208: DHCPv6 client address <ipv6-address > got expired on interface <client-iface>,received from DHCPv6 server <server-address>
+%ASA-6-605004: Login denied from source-address/source-port to interface:destination/service for user“username”
+%ASA-6-605005: Login permitted from source-address/source-port to interface:destination/service foruser “username”
+%ASA-6-606001: ASDM session number number from IP_address started
+%ASA-6-606002: ASDM session number number from IP_address ended
+%ASA-6-606003: ASDM logging session number id from IP_address started id session ID assigned
+%ASA-6-606004: ASDM logging session number id from IP_address ended
+%ASA-6-607001: Pre-allocate SIP connection_type secondary channel for interface_name:IP_address/portto interface_name:IP_address from string message
+%ASA-6-607003: action_class: Received SIP req_resp req_resp_info from src_ifc:sip/sport todest_ifc:dip/dport; further_info
+%ASA-6-608001: Pre-allocate Skinny connection_type secondary channel for interface_name:IP_addressto interface_name:IP_address from string message
+%ASA-6-610101: Authorization failed: Cmd: command Cmdtype: command_modifier
+%ASA-6-611101: User authentication succeeded: IP, IP address: Uname: user
+%ASA-6-611102: User authentication failed: IP = IP address, Uname: user
+%ASA-6-611301: VPN Client: NAT configured for Client Mode with no split tunneling: NAT address:mapped_address
+%ASA-6-611302: VPN Client: NAT exemption configured for Network Extension Mode with no splittunneling
+%ASA-6-611303: VPN Client: NAT configured for Client Mode with split tunneling: NAT address:mapped_address Split Tunnel Networks: IP_address/netmask IP_address/netmask
+%ASA-6-611304: VPN Client: NAT exemption configured for Network Extension Mode with splittunneling: Split Tunnel Networks: IP_address/netmask IP_address/netmask
+%ASA-6-611305: VPN Client: DHCP Policy installed: Primary DNS: IP_address Secondary DNS:IP_address Primary WINS: IP_address Secondary WINS: IP_address
+%ASA-6-611306: VPN Client: Perfect Forward Secrecy Policy installed
+%ASA-6-611307: VPN Client: Head end: IP_address
+%ASA-6-611308: VPN Client: Split DNS Policy installed: List of domains: string string
+%ASA-6-611309: VPN Client: Disconnecting from head end and uninstalling previously downloadedpolicy: Head End: IP_address
+%ASA-6-611310: VNP Client: XAUTH Succeeded: Peer: IP_address
+%ASA-6-611311: VNP Client: XAUTH Failed: Peer: IP_address
+%ASA-6-611312: VPN Client: Backup Server List: reason
+%ASA-6-611314: VPN Client: Load Balancing Cluster with Virtual IP: IP_address has redirected theto server IP_address
+%ASA-6-611315: VPN Client: Disconnecting from Load Balancing Cluster member IP_address
+%ASA-6-611316: VPN Client: Secure Unit Authentication Enabled
+%ASA-6-611317: VPN Client: Secure Unit Authentication Disabled
+%ASA-6-611318: VPN Client: User Authentication Enabled: Auth Server IP: IP_address Auth ServerPort: port Idle Timeout: time
+%ASA-6-611319: VPN Client: User Authentication Disabled
+%ASA-6-611320: VPN Client: Device Pass Thru Enabled
+%ASA-6-611321: VPN Client: Device Pass Thru Disabled
+%ASA-6-611322: VPN Client: Extended XAUTH conversation initiated when SUA disabled
+%ASA-6-611323: VPN Client: Duplicate split nw entry
+%ASA-6-613001: Checksum Failure in database in area string Link State Id IP_address Old Checksumnumber New Checksum number
+%ASA-6-613002: interface interface_name has zero bandwidth
+%ASA-6-613003: IP_address netmask changed from area string to area string
+%ASA-6-613014: Base topology enabled on interface string attached to MTR compatible mode areastring
+%ASA-6-613027: OSPF process number removed from interface interface_name
+%ASA-6-613028: Unrecognized virtual interface intetface_name. Treat it as loopback stub route
+%ASA-6-613041: OSPF-100 Areav string: LSA ID IP_address, Type number, Adv-rtr IP_address, LSAcounter DoNotAge
+%ASA-6-613043:
+%ASA-6-613101: Checksum Failure in database in area %s Link State Id %i Old Checksum %#x NewChecksum %#x
+%ASA-6-613102: interface %s has zero bandwidth
+%ASA-6-613103: %i%m changed from area %AREA_ID_STR to area %AREA_ID_STR
+%ASA-6-613104: Unrecognized virtual interface %IF_NAME.
+%ASA-6-614001: Split DNS: request patched from server: IP_address to server: IP_address
+%ASA-6-614002: Split DNS: reply from server: IP_address reverse patched back to original server:IP_address
+%ASA-6-615001: vlan number not available for firewall interface
+%ASA-6-615002: vlan number available for firewall interface
+%ASA-6-616001: Pre-allocate MGCP data_channel connection for inside_interface:inside_address tooutside_interface:outside_address/port from message_type message
+%ASA-6-617001: GTPv version msg_type from source_interface:source_address/source_port not acceptedby source_interface:dest_address/dest_port
+%ASA-6-617002: Removing v1 PDP Context with TID tid from GGSN IP_address and SGSN IP_address,Reason: reason or Removing v1 primary|secondary PDP Context with TID tid from GGSN IP_addressand SGSN IP_address, Reason: reason
+%ASA-6-617003: GTP Tunnel created from source_interface:source_address/source_port tosource_interface:dest_address/dest_port
+%ASA-6-617004: GTP connection created for response from source_interface:source_address/0 tosource_interface:dest_address/dest_port
+%ASA-6-617100: Teardown num_conns connection(s) for user user_ip
+%ASA-6-618001: Denied STUN packet <msg_type> from <ingress_ifc>:<source_addr>/<source_port>to <egress_ifc>:<destination_addr>/<destination_port> for connection <conn_id>, <drop_reason>
+%ASA-6-620001: Pre-allocate CTIQBE {RTP | RTCP} secondary channel forinterface_name:outside_address[/outside_port] to interface_name:inside_address[/inside_port] fromCTIQBE_message_name message
+%ASA-6-621001: Interface interface_name does not support multicast, not enabled
+%ASA-6-621002: Interface interface_name does not support multicast, not enabled
+%ASA-6-621003: The event queue size has exceeded number
+%ASA-6-621006: Mrib disconnected, (IP_address, IP_address) event cancelled
+%ASA-6-621007: Bad register from interface_name:IP_address to IP_address for (IP_address, IP_address)
+%ASA-6-622001: string tracked route network mask address, distance number, table string, on interfaceinterface-name
+%ASA-6-622101: Starting regex table compilation for match_command; table entries = regex_numentries
+%ASA-6-622102: Completed regex table compilation for match_command; table size = num bytes
+%ASA-6-634001: DAP: User user, Addr ipaddr, Connection connection; The following DAP recordswere selected for this connection: DAP Record names
+%ASA-6-709009: (unit-role) Configuration on Active and Standby is matching. No config sync. Timeelapsed <time-elapsed> ms
+%ASA-6-709010: Configuration between units doesn't match. Going for config sync (%d). Time elapsed<time-elapsed> ms.
+%ASA-6-709011: Total time to sync the config time ms.
+%ASA-6-709012: Skip configuration replication from mate as configuration on Active and Standby ismatching.
+%ASA-6-713128: Connection attempt to VCPIP redirected to VCA peer IP_address via load balancing
+%ASA-6-713145: Detected Hardware Client in network extension mode, adding static route for address:IP_address, mask: netmask
+%ASA-6-713147: Terminating tunnel to Hardware Client in network extension mode, deleting staticroute for address: IP_address, mask: netmask
+%ASA-6-713172: Automatic NAT Detection Status: Remote end is|is not behind a NAT device Thisend is|is_not behind a NAT device
+%ASA-6-713177: Received remote Proxy Host FQDN in ID Payload: Host Name: host_name AddressIP_address, Protocol protocol, Port port
+%ASA-6-713184: Client Type: Client_type Client Application Version: Application_version_string
+%ASA-6-713202: Duplicate IP_addr packet detected.
+%ASA-6-713211: Adding static route for L2L peer coming in on a dynamic map. address: IP_address,mask: netmask
+%ASA-6-713213: Deleting static route for L2L peer that came in on a dynamic map. address: IP_address,mask: netmask
+%ASA-6-713215: No match against Client Type and Version rules. Client: type version is/is not allowedby default
+%ASA-6-713219: Queuing KEY-ACQUIRE messages to be processed when P1 SA is complete.
+%ASA-6-713220: De-queuing KEY-ACQUIRE messages that were left pending.
+%ASA-6-713228: Assigned private IP address assigned_private_IP
+%ASA-6-713235: Attempt to send an IKE packet from standby unit. Dropping the packet!
+%ASA-6-713256: IP = peer-IP, Sending spoofed ISAKMP Aggressive Mode message 2 due to receiptof unknown tunnel group. Aborting connection.
+%ASA-6-713265: Adding static route for L2L peer coming in on a dynamic map. address: IP_address,mask: /prefix_len
+%ASA-6-713267: Deleting static route for L2L peer that came in on a dynamic map. address: IP_address,mask: /prefix_len
+%ASA-6-713269: Detected Hardware Client in network extension mode, adding static route for address:IP_address, mask: /prefix_len
+%ASA-6-713271: Terminating tunnel to Hardware Client in network extension mode, deleting staticroute for address: IP_address, mask: /prefix_len
+%ASA-6-713905: Descriptive_event_string.
+%ASA-6-716001: Group group User user WebVPN session started.
+%ASA-6-716002: Group group User user WebVPN session terminated: reason.
+%ASA-6-716003: Group group User user WebVPN access GRANTED: url
+%ASA-6-716004: Group group User user WebVPN access DENIED to specified location: url
+%ASA-6-716005: Group group User user WebVPN ACL Parse Error: reason
+%ASA-6-716006: Group name User user WebVPN session terminated. Idle timeout.
+%ASA-6-716009: Group group User user WebVPN session not allowed. WebVPN ACL parse error.
+%ASA-6-716038: Authentication: successful, group = name user = user, Session Type: WebVPN
+%ASA-6-716039: Authentication: rejected, group = name user = user, Session Type: %s
+%ASA-6-716040: Reboot pending, new sessions disabled. Denied user login.
+%ASA-6-716041: access-list acl_ID action url url hit_cnt count
+%ASA-6-716042: access-list acl_ID action tcp source_interface/source_address (source_port) -dest_interface/dest_address(dest_port) hit-cnt count
+%ASA-6-716043: Group group-name, User user-name, IP IP_address: WebVPN Port Forwarding Javaapplet started. Created new hosts file mappings
+%ASA-6-716049: Group group-name User user-name IP IP_address Empty SVC ACL.
+%ASA-6-716050: Error adding to ACL: ace_command_line
+%ASA-6-716051: Group group-name User user-name IP IP_address Error adding dynamic ACL foruser.
+%ASA-6-716055: Group group-name User user-name IP IP_address Authentication to SSO server name:name type type succeeded
+%ASA-6-716058: Group group User user IP ip AnyConnect session lost connection. Waiting to resume.
+%ASA-6-716059: Group group User user IP ip AnyConnect session resumed. Connection from ip2
+%ASA-6-716060: Group group User user IP ip Terminated AnyConnect session in inactive state toaccept a new connection. License limit reached.
+%ASA-6-717003: Certificate received from Certificate Authority for trustpoint trustpoint_name.
+%ASA-6-717004: PKCS #12 export failed for trustpoint trustpoint_name.
+%ASA-6-717005: PKCS #12 export succeeded for trustpoint trustpoint_name.
+%ASA-6-717006: PKCS #12 import failed for trustpoint trustpoint_name.
+%ASA-6-717007: PKCS #12 import succeeded for trustpoint trustpoint_name.
+%ASA-6-717016: Removing expired CRL from the CRL cache. Issuer: issuer
+%ASA-6-717022: Certificate was successfully validated. certificate_identifiers
+%ASA-6-717028: Certificate chain was successfully validated additional info.
+%ASA-6-717033: OCSP response status - Successful.
+%ASA-6-717043: Local CA Server certificate enrollment related info for user: user. Info: info.
+%ASA-6-717047: Revoked certificate issued to user: username, with serial number serial number.
+%ASA-6-717048: Unrevoked certificate issued to user: username, with serial number serial number.
+%ASA-6-717056: Attempting type revocation check from Src Interface:Src IP/Src Port to Dst IP/DstPort using protocol
+%ASA-6-717058: Automatic import of trustpool certificate bundle is successful: <No change in trustpoolbundle> | <Trustpool updated in flash>
+%ASA-6-717059: Peer certificate with serial number: <serial>, subject: <subject_name>, issuer:<issuer_name> matched the configured certificate map <map_name>
+%ASA-6-718003: Got unknown peer message message_number from IP_address, local versionversion_number, remote version version_number
+%ASA-6-718004: Got unknown internal message message_number
+%ASA-6-718013: Peer IP_address is not answering HELLO
+%ASA-6-718027: Received unexpected KEEPALIVE request from IP_address
+%ASA-6-718030: Received planned OOS from IP_address
+%ASA-6-718037: Master processed number_of_timeouts timeouts
+%ASA-6-718038: Slave processed number_of_timeouts timeouts
+%ASA-6-718039: Process dead peer IP_address
+%ASA-6-718040: Timed-out exchange ID exchange_ID not found
+%ASA-6-718051: Deleted secure tunnel to peer IP_address
+%ASA-6-719001: Email Proxy session could not be established: session limit of maximum_sessions hasbeen reached.
+%ASA-6-719003: Email Proxy session pointer resources have been freed for source_address.
+%ASA-6-719004: Email Proxy session pointer has been successfully established for source_address.
+%ASA-6-719010: protocol Email Proxy feature is disabled on interface interface_name.
+%ASA-6-719011: Protocol Email Proxy feature is enabled on interface interface_name.
+%ASA-6-719012: Email Proxy server listening on port port for mail protocol protocol.
+%ASA-6-719013: Email Proxy server closing port port for mail protocol protocol.
+%ASA-6-719017: WebVPN user: vpnuser invalid dynamic ACL.
+%ASA-6-719018: WebVPN user: vpnuser ACL ID acl_ID not found
+%ASA-6-719019: WebVPN user: vpnuser authorization failed.
+%ASA-6-719020: WebVPN user vpnuser authorization completed successfully.
+%ASA-6-719021: WebVPN user: vpnuser is not checked against ACL.
+%ASA-6-719022: WebVPN user vpnuser has been authenticated.
+%ASA-6-719023: WebVPN user vpnuser has not been successfully authenticated. Access denied.
+%ASA-6-719024: Email Proxy piggyback auth fail: session = pointer user=vpnuser addr=source_address
+%ASA-6-719025: Email Proxy DNS name resolution failed for hostname.
+%ASA-6-719026: Email Proxy DNS name hostname resolved to IP_address.
+%ASA-6-720002: (VPN-unit) Starting VPN Stateful Failover Subsystem...
+%ASA-6-720003: (VPN-unit) Initialization of VPN Stateful Failover Component completed successfully
+%ASA-6-720004: (VPN-unit) VPN failover main thread started.
+%ASA-6-720005: (VPN-unit) VPN failover timer thread started.
+%ASA-6-720006: (VPN-unit) VPN failover sync thread started.
+%ASA-6-720010: (VPN-unit) VPN failover client is being disabled
+%ASA-6-720012: (VPN-unit) Failed to update IPSec failover runtime data on the standby unit.
+%ASA-6-720014: (VPN-unit) Phase 2 connection entry (msg_id=message_number, my cookie=mine,his cookie=his) contains no SA list.
+%ASA-6-720015: (VPN-unit) Cannot found Phase 1 SA for Phase 2 connection entry(msg_id=message_number, my cookie=mine, his cookie=his).
+%ASA-6-720023: (VPN-unit) HA status callback: Peer is not present.
+%ASA-6-720024: (VPN-unit) HA status callback: Control channel is status.
+%ASA-6-720025: (VPN-unit) HA status callback: Data channel is status.
+%ASA-6-720026: (VPN-unit) HA status callback: Current progression is being aborted.
+%ASA-6-720027: (VPN-unit) HA status callback: My state state.
+%ASA-6-720028: (VPN-unit) HA status callback: Peer state state.
+%ASA-6-720029: (VPN-unit) HA status callback: Start VPN bulk sync state.
+%ASA-6-720030: (VPN-unit) HA status callback: Stop bulk sync state.
+%ASA-6-720032: (VPN-unit) HA status callback: id=ID, seq=sequence_#, grp=group, event=event,op=operand, my=my_state, peer=peer_state.
+%ASA-6-720037: (VPN-unit) HA progression callback:id=id,seq=sequence_number,grp=group,event=event,op=operand, my=my_state,peer=peer_state.
+%ASA-6-720039: (VPN-unit) VPN failover client is transitioning to active state
+%ASA-6-720040: (VPN-unit) VPN failover client is transitioning to standby state.
+%ASA-6-720045: (VPN-unit) Start bulk syncing of state information on standby unit.
+%ASA-6-720046: (VPN-unit) End bulk syncing of state information on standby unit
+%ASA-6-720056: (VPN-unit) VPN Stateful failover Message Thread is being disabled.
+%ASA-6-720057: (VPN-unit) VPN Stateful failover Message Thread is enabled.
+%ASA-6-720058: (VPN-unit) VPN Stateful failover Timer Thread is disabled.
+%ASA-6-720059: (VPN-unit) VPN Stateful failover Timer Thread is enabled.
+%ASA-6-720060: (VPN-unit) VPN Stateful failover Sync Thread is disabled.
+%ASA-6-720061: (VPN-unit) VPN Stateful failover Sync Thread is enabled.
+%ASA-6-720062: (VPN-unit) Active unit started bulk sync of state information to standby unit.
+%ASA-6-720063: (VPN-unit) Active unit completed bulk sync of state information to standby.
+%ASA-6-721001: (device) WebVPN Failover SubSystem started successfully.(device) eitherWebVPN-primary or WebVPN-secondary.
+%ASA-6-721002: (device) HA status change: event event, my state my_state, peer state peer.
+%ASA-6-721003: (device) HA progression change: event event, my state my_state, peer state peer.
+%ASA-6-721004: (device) Create access list list_name on standby unit.
+%ASA-6-721005: (device) Fail to create access list list_name on standby unit.
+%ASA-6-721006: (device) Update access list list_name on standby unit.
+%ASA-6-721008: (device) Delete access list list_name on standby unit.
+%ASA-6-721009: (device) Fail to delete access list list_name on standby unit.
+%ASA-6-721010: (device) Add access list rule list_name, line line_no on standby unit.
+%ASA-6-721012: (device) Enable APCF XML file file_name on the standby unit.
+%ASA-6-721014: (device) Disable APCF XML file file_name on the standby unit.
+%ASA-6-721016: (device) WebVPN session for client user user_name, IP ip_address has been created.
+%ASA-6-721018: (device) WebVPN session for client user user_name, IP ip_address has been deleted.
+%ASA-6-722013: Group group User user-name IP IP_address SVC Message: type-num/INFO: message
+%ASA-6-722014: Group group User user-name IP IP_address SVC Message: type-num/INFO: message
+%ASA-6-722022: Group group-name User user-name IP addr (TCP | UDP) connection established (with| without) compression
+%ASA-6-722023: Group group User user-name IP IP_address SVC connection terminated {with|without}compression
+%ASA-6-722024: SVC Global Compression Enabled
+%ASA-6-722025: SVC Global Compression Disabled
+%ASA-6-722026: Group group User user-name IP IP_address SVC compression history reset
+%ASA-6-722027: Group group User user-name IP IP_address SVC decompression history reset
+%ASA-6-722036: Group group User user-name IP IP_address Transmitting large packet length (thresholdnum).
+%ASA-6-722051: Group group-policy User username IP public-ip Address assigned-ip assigned tosession
+%ASA-6-722053: Group g User u IP ip Unknown client user-agent connection.
+%ASA-6-722055: Group group-policy User username IP public-ip Client Type: user-agent
+%ASA-6-723001: Group group-name, User user-name, IP IP_address: WebVPN Citrix ICA connectionconnection is up.
+%ASA-6-723002: Group group-name, User user-name, IP IP_address: WebVPN Citrix ICA connectionconnection is down.
+%ASA-6-725001: Starting SSL handshake with peer-type interface:src-ip/src-port to dst-ip/dst-port forprotocol session.
+%ASA-6-725002: Device completed SSL handshake with peer-type interface:src-ip/src-port todst-ip/dst-port for protocol-version session
+%ASA-6-725003: SSL peer-type interface:src-ip/src-port to dst-ip/dst-port request to resume previoussession.
+%ASA-6-725004: Device requesting certificate from SSL peer-type interface:src-ip/src-port todst-ip/dst-port for authentication.
+%ASA-6-725005: SSL peer-type interface:src-ip/src-port to dst-ip/dst-port requesting our device certificatefor authentication.
+%ASA-6-725006: Device failed SSL handshake with peer-type interface:src-ip/src-port to dst-ip/dst-port
+%ASA-6-725007: SSL session with peer-type interface:src-ip/src-port to dst-ip/dst-port terminated.
+%ASA-6-726001: Inspected im_protocol im_service Session between Client im_client_1 and im_client_2Packet flow from src_ifc:/sip/sport to dest_ifc:/dip/dport Action: action Matched Class class_map_idclass_map_name
+%ASA-6-730004: Group groupname User username IP ipaddr VLAN ID vlanid from AAA ignored.
+%ASA-6-730005: Group groupname User username IP ipaddr VLAN ID vlanid from AAA is invalid.
+%ASA-6-730008: Group groupname, User username, IP ipaddr, VLAN MAPPING timeout waitingNACApp.
+%ASA-6-725016: Device selects trust-point <trustpoint> for peer-type interface:src-ip/src-port todst-ip/dst-port
+%ASA-6-731001: NAC policy added: name: policyname Type: policytype.
+%ASA-6-731002: NAC policy deleted: name: policyname Type: policytype.
+%ASA-6-731003: nac-policy unused: name: policyname Type: policytype.
+%ASA-6-732001: Group groupname, User username, IP ipaddr, Fail to parse NAC-SETTINGSnac-settings-id, terminating connection.
+%ASA-6-732002: Group groupname, User username, IP ipaddr, NAC-SETTINGS settingsid from AAAignored, existing NAC-SETTINGS settingsid_inuse used instead.
+%ASA-6-732003: Group groupname, User username, IP ipaddr, NAC-SETTINGS nac-settings-id fromAAA is invalid, terminating connection.
+%ASA-6-734001: DAP: User user, Addr ipaddr, Connection connection: The following DAP recordswere selected for this connection: DAP record names
+%ASA-6-737005: IPAA: DHCP configured, request succeeded for tunnel-group 'tunnel-group'
+%ASA-6-737006: IPAA: Local pool request succeeded for tunnel-group 'tunnel-group'
+%ASA-6-737009: IPAA: AAA assigned address ip-address, request failed
+%ASA-6-737010: IPAA: AAA assigned address ip-address, request succeeded
+%ASA-6-737014: IPAA: Freeing AAA address ip-address
+%ASA-6-737015: IPAA: Freeing DHCP address ip-address
+%ASA-6-737016: IPAA: Freeing local pool address ip-address
+%ASA-6-737017: IPAA: DHCP request attempt num succeeded
+%ASA-6-737026: IPAA: Client assigned ip-address from local pool
+%ASA-6-737029: IPAA: Adding ip-address to standby: succeeded
+%ASA-6-737031: IPAA: Removing %m from standby: succeeded
+%ASA-6-737036: IPAA: Session=<session>, Client assigned <address> from DHCP
+%ASA-6-737205: VPNFIP: Pool=pool, INFO: message
+%ASA-6-737406: POOLIP: Pool=pool, INFO: message
+%ASA-6-741000: Coredump filesystem image created on variable 1 -size variable 2 MB
+%ASA-6-741001: Coredump filesystem image on variable 1 - resized from variable 2 MB to variable 3MB
+%ASA-6-741002: Coredump log and filesystem contents cleared on variable 1
+%ASA-6-741003: Coredump filesystem and its contents removed on variable 1
+%ASA-6-741004: Coredump configuration reset to default values
+%ASA-6-746001: user-identity: activated import user groups | activated host names | user-to-IP addressdatabases download started
+%ASA-6-746002: user-identity: activated import user groups | activated host names | user-to-IP addressdatabases download complete
+%ASA-6-746008: user-identity: NetBIOS Probe Process started
+%ASA-6-746009: user-identity: NetBIOS Probe Process stopped
+%ASA-6-746017: user-identity: Update import-user domain_name\\group_name
+%ASA-6-746018: user-identity: Update import-user domain_name\\group_name done
+%ASA-6-747004: Clustering: state machine changed from state state-name to state-name.
+%ASA-6-747044: Clustering: Configuration Hash string verification <result>.
+%ASA-6-748008: [CPU load percentage | memory load percentage ] of module slot_number in chassischassis_number (member-name ) exceeds overflow protection threshold [CPU percentage | memorypercentage ]. System may be oversubscribed on member failure.
+%ASA-6-748009: [CPU load percentage | memory load percentage] of chassis chassis_number exceedsoverflow protection threshold [CPU percentage | memory percentage}. System may be oversubscribedon chassis failure.
+%ASA-6-803001: Flow offloaded: connection conn_id outside_ifc:outside_addr/outside_port(mapped_addr/mapped_port) inside_ifc:inside_addr/inside_port (mapped_addr/mapped_port) Protocol
+%ASA-6-803002: Flow is no longer offloaded: connection conn_id outside_ifc:outside_addr/outside_port(mapped_addr/mapped_port) inside_ifc:inside_addr/inside_port (mapped_addr/mapped_port) Protocol
+%ASA-6-751023: Local a:p Remote: a:p Username:n Unknown client connection
+%ASA-6-751026: Local: localIP:port Remote: remoteIP:port Username: username/group IKEv2 ClientOS: client-os Client: client-name client-version
+%ASA-6-767001: Inspect-name: Dropping an unsupported IPv6/IP46/IP64 packet from interface:IPAddr to interface:IP Addr (fail-close)
+%ASA-6-769007: UPDATE: Image version is version_number
+%ASA-6-776008: CTS SXP: Connection with peer IP (instance connection instance num) state changedfrom original state to final state.
+%ASA-6-776251: CTS SGT-MAP: Binding binding IP - SGname(SGT) from source name added tobinding manager.
+%ASA-6-776253: CTS SGT-MAP: Binding binding IP - new SGname(SGT) from new source namechanged from old sgt: old SGname(SGT) from old source old source name.
+%ASA-6-776303: CTS Policy: Security-group name "sgname" is resolved to security-group tag sgt
+%ASA-6-776311: CTS Policy: Previously unresolved security-group name "sgname" is now resolvedto security-group tag sgt
+%ASA-6-775001: Scansafe: protocol connection conn_id from interface_name:real_address/real_port[(idfw_user)] to interface_name:real_address/real_port redirected toserver_interface_name:server_ip_address
+%ASA-6-775003: Scansafe:protocol connection conn_id from interface_name:real_address/real_port[(idfw_user)] to interface_name:real_address/real_port is whitelisted.
+%ASA-6-775006: Primary server interface:ip_address is not reachable and backup serverinterface:ip_address is now active
+%ASA-6-772005: REAUTH: user username passed authentication
+%ASA-6-775005: Scansafe: Primary server ip_address is reachable now
+%ASA-6-778001: VXLAN: Invalid VXLAN segment-id segment-id for protocol fromifc-name:(IP-address/port) to ifc-name:(IP-address/port).
+%ASA-6-778002: VXLAN: There is no VNI interface for segment-id segment-id.
+%ASA-6-778003: VXLAN: Invalid VXLAN segment-id segment-id for protocol fromifc-name:(IP-address/port) to ifc-name:(IP-address/port) in FP.
+%ASA-6-778004: VXLAN: Invalid VXLAN header for protocol from ifc-name:(IP-address/port) toifc-name:(IP-address/port) in FP.
+%ASA-6-778005: VXLAN: Packet with VXLAN segment-id segment-id from ifc-name is denied byFP L2 check.
+%ASA-6-778006: VXLAN: Invalid VXLAN UDP checksum from ifc-name:(IP-address/port) toifc-name:(IP-address/port) in FP.
+%ASA-6-778007: VXLAN: Packet from ifc-name:IP-address/port to IP-address/port was discarded dueto invalid NVE peer.
+%ASA-6-779001: STS: Out-tag lookup failed for in-tag segment-id of protocol fromifc-name:IP-address/port to IP-address/port.
+%ASA-6-779002: STS: STS and NAT locate different egress interface for segment-id segment-id,protocol from ifc-name:IP-address/port to IP-address/port
+%ASA-6-780001: RULE ENGINE: Started compilation for access-group transaction - description of thetransaction.
+%ASA-6-780002: RULE ENGINE: Finished compilation for access-group transaction - description ofthe transaction.
+%ASA-6-780003: RULE ENGINE: Started compilation for nat transaction - description of the transaction.
+%ASA-6-780004: RULE ENGINE: Finished compilation for nat transaction - description of thetransaction.
+%ASA-6-802005: IP ip_address Received MDM request details.
+%ASA-6-803001: Bypass is continuing after power up, no protection will be provided by the system fortraffic over GigabitEthernet 1/1-1/2
+%ASA-6-803002: No protection will be provided by the system for traffic over GigabitEthernet 1/1-1/2
+%ASA-6-803003: User disabled bypass manually on GigabitEthernet 1/1-1/2
+%ASA-6-804001: Interface GigabitEthernet1/3 1000BaseSX SFP has been inserted
+%ASA-6-804002: Interface GigabitEthernet1/3 SFP has been removed
+%ASA-6-805001: Flow offloaded: connection conn_id outside_ifc:outside_addr/outside_port(mapped_addr/mapped_port) inside_ifc:inside_addr/inside_port (mapped_addr/mapped_port) Protocol
+%ASA-6-805002: Flow is no longer offloaded: connection conn_id outside_ifc:outside_addr/outside_port(mapped_addr/mapped_port) inside_ifc:inside_addr/inside_port (mapped_addr/mapped_port) Protocol
+%ASA-6-805003: Flow could not be offloaded: connection <conn_id><outside_ifc>:<outside_addr>/<outside_port> (<mapped_addr>/<mapped_port>) <inside_ifc>:<inside_addr>/<inside_port> (<mapped_addr>/<mapped_port>) <Protocol>
+%ASA-6-806001: Primary alarm CPU temperature is High temperature
+%ASA-6-806002: Primary alarm for CPU high temperature is cleared
+%ASA-6-806003: Primary alarm CPU temperature is Low temperature
+%ASA-6-806004: Primary alarm for CPU Low temperature is cleared
+%ASA-6-806005: Secondary alarm CPU temperature is High temperature
+%ASA-6-806006: Secondary alarm for CPU high temperature is cleared
+%ASA-6-806007: Secondary alarm CPU temperature is Low temperature
+%ASA-6-806008: Secondary alarm for CPU Low temperature is cleared
+%ASA-6-806009: Alarm asserted for ALARM_IN_1 description
+%ASA-6-806010: Alarm cleared for ALARM_IN_1 alarm_1_description
+%ASA-6-806011: Alarm asserted for ALARM_IN_2 description
+%ASA-6-806012: Alarm cleared for ALARM_IN_2 alarm_2_description
+%ASA-6-8300001: VPN session redistribution <variable 1>
+%ASA-6-8300002: Moved <variable 1> sessions to <variable 2>
+%ASA-6-8300004: <variable 1> request to move <variable 2> sessions from <variable 3> to <variable4>

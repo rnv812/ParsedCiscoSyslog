@@ -1,0 +1,20 @@
+Error Message
+
+%ASA-4-4000nn: IPS:number string from IP_address to IP_address on interface
+interface_name
+
+Explanation
+
+Messages 400000 through 400051 are Cisco Intrusion Prevention Service signature messages.
+
+Recommended Action
+
+See the Cisco Intrusion Prevention Service User Guide on Cisco.com. Not all
+signature messages are supported by the ASA in this release. IPS messages all
+start with 4-4000nn and have the following format:
+- number - The signature number. For more information, see the Cisco Intrusion
+Prevention Service User Guide on Cisco.com.
+- string - The signature message—approximately the same as the NetRanger
+signature message.
+- IP_address - The local to remote address to which the signature applies.
+- interface_name - The name of the interface on which the signature originated.

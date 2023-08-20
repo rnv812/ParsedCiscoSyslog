@@ -1,0 +1,86 @@
+780001
+
+Error Message
+
+%ASA-6-780001: RULE ENGINE: Started compilation for access-group transaction -
+description of the transaction .
+
+Explanation
+
+The rule engine has started compilation for an access group transaction. The
+description of the transaction is the command line input of the access group
+itself.
+
+Recommended Action
+
+None required.
+
+780002
+
+Error Message
+
+%ASA-6-780002: RULE ENGINE: Finished compilation for access-group transaction -
+description of the transaction .
+
+Explanation
+
+The rule engine has finished compilation for a transaction. Taking access group
+as an example, the description of the transaction is the command line input of
+the access group itself.
+
+Recommended Action
+
+None required.
+
+780003
+
+Error Message
+
+%ASA-6-780003: RULE ENGINE: Started compilation for nat transaction -
+description of the transaction .
+
+Explanation
+
+The rule engine has started compilation for a NAT transaction. The description
+of the transaction is the command line input of the nat command itself.
+
+Recommended Action
+
+None required.
+
+780004
+
+Error Message
+
+%ASA-6-780004: RULE ENGINE: Finished compilation for nat transaction -
+description of the transaction .
+
+Explanation
+
+The rule engine has finished compilation for a NAT transaction. The description
+of the transaction is the command line input of the nat command itself.
+
+Recommended Action
+
+None required.
+
+785001
+
+Error Message
+
+%ASA-7-785001: Clustering: Ownership for existing flow from
+<in_interface>:<src_ip_addr>/<src_port> to
+<out_interface>:<dest_ip_addr>/<dest_port> moved from unit <old-owner-unit-id>
+at site <old-site-id> to <new-owner-unit-id> at site <old-site-id> due to
+<reason>.
+
+Explanation
+
+This syslog is generated when clustering moved the flow from one unit in one
+site to another unit in another site in inter-DC environment. Reason must be
+whatever triggered the move, such as LISP notification.
+
+Recommended Action
+
+Verify the flow status in the new unit at new site.
+

@@ -1,0 +1,104 @@
+%ASA-2-105506: (Primary|Secondary) Unable to create socket on port port for (failover connection | load balancer probes), error: error_string
+%ASA-2-105507: (Primary|Secondary) Unable to bind socket on port port for (failover connection | load balancer probes), error: error_string
+%ASA-2-105508: (Primary|Secondary) Error creating failover connection socket on port port
+%ASA-2-105525: (Primary|Secondary) Incomplete configuration to initiate access token change request
+%ASA-2-105526: (Primary|Secondary) Unexpected status in response to access token request: status_string
+%ASA-2-105527: (Primary|Secondary) Failure reading response to access token request
+%ASA-2-105528: (Primary|Secondary) No access token in response to access token request
+%ASA-2-105529: (Primary|Secondary) Error creating authentication header from access token
+%ASA-2-105530: (Primary|Secondary) No response to access token request url
+%ASA-2-105531: (Primary|Secondary) Failed to obtain route-table information needed for change request for route-table route_table_name
+%ASA-2-105532: (Primary|Secondary) Unexpected status in response to route-table change request for route-table route_table_name: status_string
+%ASA-2-105533: (Primary|Secondary) Failure reading response to route-table change request for route-table route_table_name
+%ASA-2-105534: (Primary|Secondary) No provisioning state in response to route-table change request route-table route_table_name
+%ASA-2-105535: (Primary|Secondary) No response to route-table change request for route-table route_table_name from url
+%ASA-2-105536: (Primary|Secondary) Failed to obtain Azure authentication header for route status request for route route_name
+%ASA-2-105537: (Primary|Secondary) Unexpected status in response to route state request for route route_name: status_string
+%ASA-2-105538: (Primary|Secondary) Failure reading response to route state request for route route_name
+%ASA-2-105539: (Primary|Secondary) No response to route state request for route route_name from url
+%ASA-2-105540: (Primary|Secondary) No route-tables configured
+%ASA-2-105541: (Primary|Secondary) Failed to update route-table route_table_name, provisioning state: state_string
+%ASA-2-105544: (Primary|Secondary) Error creating load balancer probe socket on port port
+%ASA-2-106001: Inbound TCP connection denied from IP_address/port to IP_address/port flags tcp_flags on interface interface_name
+%ASA-2-106002: protocol Connection denied by outbound list acl_ID src inside_address dest outside_address
+%ASA-2-106006: Deny inbound UDP from outside_address/outside_port to inside_address/inside_port on interface interface_name.
+%ASA-2-106007: Deny inbound UDP from outside_address/outside_port to inside_address/inside_port due to DNS {Response|Query}.
+%ASA-2-106013: Dropping echo request from IP_address to PAT address IP_address
+%ASA-2-106016: Deny IP spoof from (IP_address) to IP_address on interface interface_name.
+%ASA-2-106017: Deny IP due to Land Attack from IP_address to IP_address
+%ASA-2-106018: ICMP packet type ICMP_type denied by outbound list acl_ID src inside_address dest outside_address
+%ASA-2-106020: Deny IP teardrop fragment (size = number, offset = number) from IP_address to IP_address
+%ASA-2-106024: Access rules memory exhausted
+%ASA-2-108002: SMTP replaced string: out source_address in inside_address data: string
+%ASA-2-108003: Terminating ESMTP/SMTP connection; malicious pattern detected in the mail address from source_interface:source_address/source_port to dest_interface:dest_address/dset_port. Data:string
+%ASA-2-109011: Authen Session Start: user 'user', sid number
+%ASA-2-112001: (string:dec) Clear complete.
+%ASA-2-113022: AAA Marking RADIUS server servername in aaa-server group AAA-Using-DNS as FAILED
+%ASA-2-113023: AAA Marking protocol server ip-addr in server group tag as ACTIVE
+%ASA-2-113027: Username could not be found in certificate
+%ASA-2-115000: Critical assertion in process: process name fiber: fiber name, component: component name, subcomponent: subcomponent name, file: filename, line: line number, cond: condition
+%ASA-2-199011: Close on bad channel in process/fiber process/fiber, channel ID p, channel state s process/fiber name of the process/fiber that caused the bad channel close operation.
+%ASA-2-199014: syslog
+%ASA-2-199020: System memory utilization has reached X%. System will reload if memory usage reaches the configured trigger level of Y%.
+%ASA-2-201003: Embryonic limit exceeded nconns/elimit for outside_address/outside_port (global_address) inside_address/inside_port on interface interface_name
+%ASA-2-214001: Terminating manager session from IP_address on interface interface_name. Reason: incoming encrypted data (number bytes) longer than number bytes
+%ASA-2-215001: Bad route_compress() call, sdb= number
+%ASA-2-217001: No memory for string in string
+%ASA-2-218001: Failed Identification Test in slot# [fail#/res].
+%ASA-2-218002: Module (slot#) is a registered proto-type for Cisco Lab use only, and not certified for live network operation.
+%ASA-2-218003: Module Version in slot# is obsolete. The module in slot = slot# is obsolete and must be returned via RMA to Cisco Manufacturing. If it is a lab unit, it must be returned to Proto Services for upgrade.
+%ASA-2-218004: Failed Identification Test in slot# [fail#/res]
+%ASA-2-218005: Inconsistency detected in the system information programmed in non-volatile memory
+%ASA-2-304007: URL Server IP_address not responding, ENTERING ALLOW mode.
+%ASA-2-304008: LEAVING ALLOW mode, URL Server is up.
+%ASA-2-321005: System CPU utilization reached utilization %
+%ASA-2-321006: System memory usage reached utilization %
+%ASA-2-410002: Dropped num DNS responses with mis-matched id in the past sec second(s): from src_ifc:sip/sport to dest_ifc:dip/dport
+%ASA-2-444004: Temporary license key key has expired. Applying permanent license key permkey
+%ASA-2-444007: Timebased activation key activation-key has expired. Reverting to [permanent | timebased] license key. The following features will be affected: feature, feature
+%ASA-2-444009: %s license has expired 30 days ago. The system will now reload.
+%ASA-2-444102: Shared license service inactive. License server is not responding
+%ASA-2-444105: Released value shared licensetype license(s). License server has been unreachable for 24 hours
+%ASA-2-444111: Shared license backup service has been terminated due to the primary license server address being unavailable for more than days days. The license server needs to be brought back online to continue using shared licensing.
+%ASA-2-444302: %SMART_LIC-2-PLATFORM_ERROR: Platform error.
+%ASA-2-709007: Configuration replication failed for command command
+%ASA-2-713078: Temp buffer for building mode config attributes exceeded: bufsize available_size, used value
+%ASA-2-713176: Device_type memory resources are critical, IKE key acquire message on interface interface_number, for Peer IP_address ignored
+%ASA-2-713901: Descriptive_text_string.
+%ASA-2-716500: internal error in: function: Fiber library cannot locate AK47 instance
+%ASA-2-716501: internal error in: function: Fiber library cannot attach AK47 instance
+%ASA-2-716502: internal error in: function: Fiber library cannot allocate default arena
+%ASA-2-716503: internal error in: function: Fiber library cannot allocate fiber descriptors pool
+%ASA-2-716504: internal error in: function: Fiber library cannot allocate fiber stacks pool
+%ASA-2-716505: internal error in: function: Fiber has joined fiber in unfinished state
+%ASA-2-716506: UNICORN_SYSLOGID_JOINED_UNEXPECTED_FIBER
+%ASA-2-716512: internal error in: function: Fiber has joined fiber waited upon by someone else
+%ASA-2-716513: internal error in: function: Fiber in callback blocked on other channel
+%ASA-2-716515: internal error in: function: OCCAM failed to allocate memory for AK47 instance
+%ASA-2-716517: internal error in: function: OCCAM cached block has no associated arena
+%ASA-2-716518: internal error in: function: OCCAM pool has no associated arena
+%ASA-2-716520: internal error in: function: OCCAM pool has no block list
+%ASA-2-716521: internal error in: function: OCCAM no realloc allowed in named pool
+%ASA-2-716522: internal error in: function: OCCAM corrupted standalone block
+%ASA-2-716525: UNICORN_SYSLOGID_SAL_CLOSE_PRIVDATA_CHANGED
+%ASA-2-716526: UNICORN_SYSLOGID_PERM_STORAGE_SERVER_LOAD_FAIL
+%ASA-2-716527: UNICORN_SYSLOGID_PERM_STORAGE_SERVER_STORE_FAI
+%ASA-2-717008: Insufficient memory to process_requiring_memory.
+%ASA-2-717011: Unexpected event event event_ID
+%ASA-2-717040: Local CA Server has failed and is being disabled. Reason: reason.
+%ASA-2-735009: IPMI: Environment Monitoring has failed initialization and configuration. Environment Monitoring is not running.
+%ASA-2-735023: ASA was previously shutdown due to the CPU complex running beyond the maximum thermal operating temperature. The chassis needs to be inspected immediately for ventilation issues.
+%ASA-2-735028: ASA was previously shutdown due to a CPU Voltage Regulator running beyond the max thermal operating temperature. The chassis and CPU need to be inspected immediately for ventilation issues.
+%ASA-2-736001: Unable to allocate enough memory at boot for jumbo-frame reservation. Jumbo-frame support has been disabled.
+%ASA-2-747009: Clustering: Fatal error due to failure to create RPC server for module module name.
+%ASA-2-747011: Clustering: Memory allocation error.
+%ASA-2-752001: Tunnel Manager received invalid parameter to remove record.
+%ASA-2-748007: Failed to de-bundle the ports for module slot_number in chassis chassis_number; traffic may be black holed
+%ASA-2-752001: Tunnel Manager received invalid parameter to remove record.
+%ASA-2-752005: Tunnel Manager failed to dispatch a KEY_ACQUIRE message. Memory may be low. Map Tag = mapTag. Map Sequence Number = mapSeq.
+%ASA-2-772003: PASSWORD: session login failed, user username, IP ip, cause: password expired
+%ASA-2-772006: REAUTH: user username failed authentication
+%ASA-2-774001: POST: unspecified error
+%ASA-2-774002: POST: error err, func func, engine eng, algorithm alg, mode mode, dir dir, key len len
+%ASA-2-775007: Scansafe: Primary server_interface_name:server_ip_address and backup server_interface_name:server_ip_address servers are not reachable.
+%ASA-2-815002: Denied packet, hard limit, 10000, for object-group search exceeded for UDP from <source IP address/port> to <destination IP address/port>

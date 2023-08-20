@@ -1,0 +1,1752 @@
+741000
+
+Error Message
+
+%ASA-6-741000: Coredump filesystem image created on variable 1 -size variable 2
+MB
+
+Explanation
+
+A core dump file system was successfully created. The file system is used to
+manage core dumps by capping the amount of disk space that core dumps may use.
+- variable 1 - The file system on which the core dumps are placed (for example,
+disk0:, disk1:, and flash:)
+- variable 2 - The size of the created core dump file system in MB
+
+Recommended Action
+
+Make sure that you save your configuration after creating the core dump file
+system.
+
+741001
+
+Error Message
+
+%ASA-6-741001: Coredump filesystem image on variable 1 - resized from variable 2
+MB to variable 3 MB
+
+Explanation
+
+The core dump file system has been successfully resized.
+- variable 1 - The file system on which the core dumps are placed
+- variable 2 - The size of the previous core dump file system in MB
+- variable 3 - The size of the current, newly resized core dump file system in
+MB
+
+Recommended Action
+
+Make sure that you save your configuration after resizing the core dump file
+system. Resizing the core dump file system deletes the contents of the existing
+core dump file system. As a result, make sure that you archive any information
+before you resize the core dump file system.
+
+741002
+
+Error Message
+
+%ASA-6-741002: Coredump log and filesystem contents cleared on variable 1
+
+Explanation
+
+All core dumps have been deleted from the core dump file system, and the core
+dump log has been cleared. The core dump file system and coredump log are always
+synchronized with each other.
+- variable 1 - The file system on which the core dumps are placed (for example,
+disk0:, disk1:,and flash:)
+
+Recommended Action
+
+None required. You can clear the core dump file system to reset it to a known
+state using the clear coredump command.
+
+741003
+
+Error Message
+
+%ASA-6-741003: Coredump filesystem and its contents removed on variable 1
+
+Explanation
+
+The core dump file system and its contents have been removed, and the core dump
+feature has been disabled.
+- variable 1 - The file system on which the core dumps are placed (for example,
+disk0:, disk1:,and flash:)
+
+Recommended Action
+
+Make sure that you save your configuration after the core dump feature has been
+disabled.
+
+741004
+
+Error Message
+
+%ASA-6-741004: Coredump configuration reset to default values
+
+Explanation
+
+The core dump configuration has been reset to its default value, which is
+disabled.
+
+Recommended Action
+
+Make sure that you save your configuration after the core dump feature has been
+disabled.
+
+741005
+
+Error Message
+
+%ASA-4-741005: Coredump operation variable 1 failed with error variable 2
+variable 3
+
+Explanation
+
+An error occurred during the performance of a core dump-related operation.
+- variable 1 - This variable may have the following values:
+  - CREATE_FSYS - An error occurred when creating the core dump file system.
+  - CLEAR_LOG - An error occurred when clearing the core dump log.
+  - DELETE_FSYS - An error occurred when deleting the core dump file system.
+  - CLEAR_FSYS - An error occurred when removing the contents of the core dump
+  file system.
+  - MOUNT_FSYS - An error occurred when mounting the core dump file system.
+- variable 2 - The decimal number that provides additional information about the
+cause of the error specified in variable 1 .
+- variable 3 - The descriptive ASCII string associated with variable 2. The
+ASCII string can have the following values:
+  - coredump files already exist
+  - unable to create coredump filesystem
+  - unable to create loopback device
+  - filesystem type not supported
+  - unable to delete the coredump filesystem
+  - unable to delete loopback device
+  - unable to unmount coredump filesystem
+  - unable to mount coredump filesystem
+  - unable to mount loopback device
+  - unable to clear coredump filesystem
+  - coredump filesystem not found
+  - requested coredump filesystem too big
+  - coredump operation aborted by administrator
+  - coredump command execution failed
+  - coredump IFS error encountered
+  - coredump, unidentified error encountered
+
+Recommended Action
+
+Make sure that the core dump feature is disabled in the configuration, and send
+the message to the Cisco TAC for further analysis.
+
+741006
+
+Error Message
+
+%ASA-4-741006: Unable to write Coredump Helper configuration, reason variable 1
+
+Explanation
+
+An error occurred when writing to the coredump helper configuration file. This
+error occurs only if disk0: is full. The configuration file is located in
+disk0:.coredumpinfo/coredump.cfg. - variable 1 - This variable includes a basic
+file system-related string that indicates why the writing of the core dump
+helper configuration file failed.
+
+Recommended Action
+
+Disable the core dump feature, remove unneeded items from disk0:, and then
+reenable core dumps, if desired.
+
+742001
+
+Error Message
+
+%ASA-3-742001: failed to read master key for password encryption from persistent
+store
+
+Explanation
+
+An attempt to read the primary password encryption key from the nonvolatile
+memory after bootup failed. Encrypted passwords in the configuration are not
+decrypted unless the primary key is set to the correct value using the key
+config-key password encryption command.
+
+Recommended Action
+
+If there are encrypted passwords in the configuration that must be used, set the
+primary key to the previous value used to encrypt the password using the key
+config-key password encryption command. If there are no encrypted passwords or
+they can be discarded, set a new primary key. If password encryption is not
+used, no action is required.
+
+742002
+
+Error Message
+
+%ASA-3-742002: failed to set master key for password encryption
+
+Explanation
+
+An attempt to read the key config-key password encryption command failed. The
+error may be caused by the following reasons:
+- Configuration from a nonsecure terminal (for example, over a Telnet
+connection) was made.
+- Failover is enabled, but it does not use an encrypted link.
+- Another user is setting the key at the same time.
+- When trying to change the key, the old key is incorrect.
+- The key is too small to be secure.
+Other reasons for the error may be valid. In these cases, the actual error is
+printed in response to the command.
+
+Recommended Action
+
+Correct the problem indicated in the command response.
+
+742003
+
+Error Message
+
+%ASA-3-742003: failed to save master key for password encryption, reason
+reason_text
+
+Explanation
+
+An attempt to save the primary key to nonvolatile memory failed. The actual
+reason is specified by the reason_text parameter. The reason can be an
+out-of-memory condition, or the nonvolatile store can be inconsistent.
+
+Recommended Action
+
+If the problem persists, reformat the nonvolatile store that is used to save the
+key by using the write erase command. Before performing this step, make sure
+that you back up the out-of-the-box configuration. Then reenter the write erase
+command.
+
+742004
+
+Error Message
+
+%ASA-3-742004: failed to sync master key for password encryption, reason
+reason_text
+
+Explanation
+
+An attempt to synchronize the primary key to the peer failed. The actual reason
+is specified by the reason_text parameter.
+
+Recommended Action
+
+Try to correct the problem specified in the reason_text parameter.
+
+742005
+
+Error Message
+
+%ASA-3-742005: cipher text enc_pass is not compatible with the configured master
+key or the cipher text has been tampered with
+
+Explanation
+
+An attempt to decrypt a password failed. The password may have been encrypted
+using a primary key that is different from the current primary key, or the
+encrypted password has been changed from its original form.
+
+Recommended Action
+
+If the correct primary key is not being used, correct the problem. If the
+encrypted password has been modified, reapply the configuration in question with
+a new password.
+
+742006
+
+Error Message
+
+%ASA-3-742006: password decryption failed due to unavailable memory
+
+Explanation
+
+An attempt to decrypt a password failed because no memory was available.
+Features using this password will not work as desired.
+
+Recommended Action
+
+Correct the memory problem.
+
+742007
+
+Error Message
+
+%ASA-3-742007: password encryption failed due to unavailable memory
+
+Explanation
+
+An attempt to encrypt a password failed because no memory was available.
+Passwords may be left in clear text form in the configuration.
+
+Recommended Action
+
+Correct the memory problem, and reapply the configuration that failed password
+encryption.
+
+742008
+
+Error Message
+
+%ASA-3-742008: password enc_pass decryption failed due to decoding error
+
+Explanation
+
+Password decryption failed because of decoding errors, which may occur if the
+encrypted password has been modified after being encrypted.
+
+Recommended Action
+
+Reapply the configuration in question with a clear text password.
+
+742009
+
+Error Message
+
+%ASA-3-742009: password encryption failed due to decoding error
+
+Explanation
+
+Password encryption failed because of decoding errors, which may be an internal
+software error.
+
+Recommended Action
+
+Reapply the configuration in question with a clear text password. If the problem
+persists, contact the Cisco TAC.
+
+742010
+
+Error Message
+
+%ASA-3-742010: encrypted password enc_pass is not well formed
+
+Explanation
+
+The encrypted password provided in the command is not well formed. The password
+may not be a valid, encrypted password, or it may have been modified since it
+was encrypted.
+- reason_text - A string that represents the actual cause of the failure
+- enc_pass - The encrypted password that is related to the issue
+
+Recommended Action
+
+Reapply the configuration in question with a clear text password.
+
+743000
+
+Error Message
+
+%ASA-1-743000: The PCI device with vendor ID: vendor_id device ID: device_id
+located at bus:device.function bus_num:dev_num, func_num has a link
+link_attr_name of actual_link_attr_val when it should have a link link_attr_name
+of expected_link_attr_val .
+
+Explanation
+
+A PCI device in the system is not configured correctly, which may result in the
+system not performing at its optimum level.
+
+Recommended Action
+
+Collect the output of the show controller pci detail command, and contact the
+Cisco TAC.
+
+743001
+
+Error Message
+
+%ASA-1-743001: Backplane health monitoring detected link failure
+
+Explanation
+
+A hardware failure has probably occurred and has been detected on one of the
+links between the Secure Firewall ASA Services Module and the switch chassis.
+
+Recommended Action
+
+Contact the Cisco TAC.
+
+743002
+
+Error Message
+
+%ASA-1-743002: Backplane health monitoring detected link OK
+
+Explanation
+
+A link has been restored between the Secure Firewall ASA Services Module and the
+switch chassis. However, the failure and subsequent recovery probably indicates
+a hardware failure.
+
+Recommended Action
+
+Contact the Cisco TAC.
+
+743004
+
+Error Message
+
+%ASA-1-743004: System is not fully operational - PCI device with vendor ID
+vendor_id (vendor_name ), device ID device_id (device_name ) not found
+
+Explanation
+
+A PCI device in the system that is needed for it to be fully operational was not
+found.
+- vendor_id - Hexadecimal value that identifies the device vendor
+- vendor_name - Text string that identifies the vendor name
+- device_id - Hexadecimal value that identifies the vendor device
+- device_name - Text string that identifies the device name
+
+Recommended Action
+
+Collect the output of the show controller pci detail command and contact the
+Cisco TAC.
+
+743010
+
+Error Message
+
+%ASA-3-743010: EOBC RPC server failed to start for client module client name .
+
+Explanation
+
+The service failed to start for a particular client of the EOBC RPC service on
+the server.
+
+Recommended Action
+
+Call the Cisco TAC.
+
+743011
+
+Error Message
+
+%ASA-3-743011: EOBC RPC call failed, return code code string.
+
+Explanation
+
+The EOBC RPC client failed to make an RPC to the intended server.
+
+Recommended Action
+
+Call the Cisco TAC.
+
+746001
+
+Error Message
+
+%ASA-6-746001: user-identity: activated import user groups | activated host
+names | user-to-IP address databases download started
+
+Explanation
+
+A database (user groups, hostnames, or IP addresses) download has started.
+
+Recommended Action
+
+None required.
+
+746002
+
+Error Message
+
+%ASA-6-746002: user-identity: activated import user groups | activated host
+names | user-to-IP address databases download complete
+
+Explanation
+
+A database (user groups, hostnames, or IP addresses) download has completed.
+
+Recommended Action
+
+None required.
+
+746003
+
+Error Message
+
+%ASA-3-746003: user-identity: activated import user groups | activated host
+names | user-to-IP address databases download failed - reason
+
+Explanation
+
+A database (user groups, hostnames, or IP addresses) download has failed because
+of a timeout.
+
+Recommended Action
+
+Check the off-box AD agent status. If the AD agent is down, resolve that issue
+first. If the AD agent is up and running, try to download the database again. If
+the problem persists, contact the Cisco TAC.
+
+746004
+
+Error Message
+
+%ASA-4-746004: user identity: Total number of activated user groups exceeds the
+max_groups groups for this platform.
+
+Explanation
+
+The total number of activated user groups exceeds the maximum number of 256 user
+groups for this platform.
+
+Recommended Action
+
+Too many user groups have been configured and activated. Reduce the number of
+configured user groups. Run the clear user-identity user no-policy-activated
+command to release user records that have not been activated in any policy. Run
+the show user-identity user all command to check the total number of users in
+the database.
+
+746005
+
+Error Message
+
+%ASA-3-746005: user-identity: The AD Agent AD agent IP address cannot be reached
+- reason [action ]
+
+Explanation
+
+The ASA cannot reach the AD agent. There has been no response from the AD agent,
+or the RADIUS registration failed because the buffer was too small.
+
+Recommended Action
+
+Check the network connection between the AD agent and the ASA. Try to reach
+another AD agent, if one is configured and available. If the problem persists,
+contact the Cisco TAC.
+
+746006
+
+Error Message
+
+%ASA-4-746006: user-identity: Out of sync with AD Agent, start bulk download
+
+Explanation
+
+The AD agent cannot update the IP-user mapping events on the ASA and the AD
+agent event log overflows, which causes inconsistency between the AD agent and
+the ASA IP-user database.
+
+Recommended Action
+
+None required. If this message persists, check the connection between the AD
+agent and the ASA.
+
+746007
+
+Error Message
+
+%ASA-5-746007: user-identity: NetBIOS response failed from User user_name at
+user_ip
+
+Explanation
+
+No NetBIOS response was received for the number of retries made.
+
+Recommended Action
+
+None required.
+
+746008
+
+Error Message
+
+%ASA-6-746008: user-identity: NetBIOS Probe Process started
+
+Explanation
+
+The NetBIOS process has started.
+
+Recommended Action
+
+None required.
+
+746009
+
+Error Message
+
+%ASA-6-746009: user-identity: NetBIOS Probe Process stopped
+
+Explanation
+
+The NetBIOS process has stopped.
+
+Recommended Action
+
+None required.
+
+746010
+
+Error Message
+
+%ASA-3-746010: user-identity: update import-user domain_name \\group_name -
+Import Failed [reason ]
+
+Explanation
+
+Entering the user-identity update import-user username command failed to update
+a user element. Reasons for failure include the following: timeout, partial
+update, import aborted, group does not exist, or no reason given.
+
+Recommended Action
+
+If the reason for failure does not exist, verify that the group name is correct
+in the policy. Otherwise, check the connectivity between the ASA and the AD
+server.
+
+746011
+
+Error Message
+
+%ASA-4-746011: Total number of users created exceeds the maximum number of
+max_users for this platform.
+
+Explanation
+
+The AD group has more than the hard-coded maximum number (64000) of levels. Too
+many users have been configured in the activated policy.
+
+Recommended Action
+
+Change your policies so that the number of configured users and users under
+configured groups does not exceed the limit.
+
+746012
+
+Error Message
+
+%ASA-5-746012: user-identity: Add IP-User mapping IP Address - domain_name
+\user_name result - reason
+
+Explanation
+
+A new user-IP mapping has been added to the user-to-IP address mapping database.
+The status of the operation (success or failure) is indicated. The success
+reason is VPN user. The failure reasons include the following: Maximum user
+limit reached and Duplicated address.
+
+Recommended Action
+
+None required.
+
+746013
+
+Error Message
+
+%ASA-5-746013: user-identity: Delete IP-User mapping IP Address - domain_name
+\user_name result - reason
+
+Explanation
+
+A change has been made to the user-to-IP address mapping database. The status of
+the operation (success or failure) is indicated. The success reasons include the
+following: Inactive timeout, NetBIOS probing failed, PIP notification, VPN user
+logout, Cut-through-proxy user logout, and MAC address mismatch. The failure
+reason is PIP notification.
+
+Recommended Action
+
+None required.
+
+746014
+
+Error Message
+
+%ASA-5-746014: user-identity: [FQDN] fqdn address IP Address obsolete.
+
+Explanation
+
+A fully qualified domain name has become obsolete.
+
+Recommended Action
+
+None required.
+
+746015
+
+Error Message
+
+%ASA-5-746015: user-identity: FQDN] fqdn resolved IP address .
+
+Explanation
+
+A fully qualified domain name lookup has succeeded.
+
+Recommended Action
+
+None required.
+
+746016
+
+Error Message
+
+%ASA-3-746016: user-identity: DNS lookup failed, reason: reason
+
+Explanation
+
+A DNS lookup has failed. Failure reasons include timeout, unresolvable, and no
+memory.
+
+Recommended Action
+
+Verify that the FQDN is valid, and that the DNS server is reachable from the
+ASA. If the problem persists, contact the Cisco TAC.
+
+746017
+
+Error Message
+
+%ASA-6-746017: user-identity: Update import-user domain_name \\group_name
+
+Explanation
+
+The user-identity update import-user command has been issued.
+
+Recommended Action
+
+None required.
+
+746018
+
+Error Message
+
+%ASA-6-746018: user-identity: Update import-user domain_name \\group_name done
+
+Explanation
+
+The user-identity update import-user command has been issued, and the import has
+been completed successfully.
+
+Recommended Action
+
+None requried.
+
+746019
+
+Error Message
+
+%ASA-3-746019: user-identity: Update |Remove AD Agent AD agent IP Address
+IP-user mapping user_IP - domain_name \user_name failed
+
+Explanation
+
+The ASA failed to update or remove an IP-user mapping on the AD agent.
+
+Recommended Action
+
+Check the status of the AD agent and the connectivity between the ASA and the AD
+agent. If the problem persists, contact the Cisco TAC.
+
+747001
+
+Error Message
+
+%ASA-3-747001: Clustering: Recovered from state machine event queue depleted.
+Event (event-id , ptr-in-hex , ptr-in-hex ) dropped. Current state state-name ,
+stack ptr-in-hex , ptr-in-hex , ptr-in-hex , ptr-in-hex , ptr-in-hex ,
+ptr-in-hex
+
+Explanation
+
+The cluster FSM event queue is full, and a new event has been dropped.
+
+Recommended Action
+
+None.
+
+747002
+
+Error Message
+
+%ASA-5-747002: Clustering: Recovered from state machine dropped event (event-id
+, ptr-in-hex , ptr-in-hex ). Intended state: state-name . Current state:
+state-name .
+
+Explanation
+
+The cluster FSM received an event that is incompatible with the current state.
+
+Recommended Action
+
+None.
+
+747003
+
+Error Message
+
+%ASA-5-747003: Clustering: Recovered from state machine failure to process event
+(event-id , ptr-in-hex , ptr-in-hex ) at state state-name .
+
+Explanation
+
+The cluster FSM failed to process an event for all reasons given.
+
+Recommended Action
+
+None.
+
+747004
+
+Error Message
+
+%ASA-6-747004: Clustering: state machine changed from state state-name to
+state-name .
+
+Explanation
+
+The cluster FSM has progressed to a new state.
+
+Recommended Action
+
+None.
+
+747005
+
+Error Message
+
+%ASA-7-747005: Clustering: State machine notify event event-name (event-id ,
+ptr-in-hex , ptr-in-hex )
+
+Explanation
+
+The cluster FSM has notified clients about an event.
+
+Recommended Action
+
+None.
+
+747006
+
+Error Message
+
+%ASA-7-747006: Clustering: State machine is at state state-name
+
+Explanation
+
+The cluster FSM moved to a stable state; that is, Disabled, Slave, or Master.
+
+Recommended Action
+
+None.
+
+747007
+
+Error Message
+
+%ASA-5-747007: Clustering: Recovered from finding stray config sync thread,
+stack ptr-in-hex , ptr-in-hex , ptr-in-hex , ptr-in-hex , ptr-in-hex ,
+ptr-in-hex .
+
+Explanation
+
+Astray configuration sync thread has been detected.
+
+Recommended Action
+
+None.
+
+747008
+
+Error Message
+
+%ASA-4-747008: Clustering: New cluster member name with serial number
+serial-number-A rejected due to name conflict with existing unit with serial
+number serial-number-B .
+
+Explanation
+
+The same unit name has been configured on multiple units.
+
+Recommended Action
+
+None.
+
+747009
+
+Error Message
+
+%ASA-2-747009: Clustering: Fatal error due to failure to create RPC server for
+module module name .
+
+Explanation
+
+The Secure Firewall ASA failed to create an RPC server.
+
+Recommended Action
+
+Disable clustering on this unit and try to re-enable it. Contact the Cisco TAC
+if the problem persists.
+
+747010
+
+Error Message
+
+%ASA-3-747010: Clustering: RPC call failed, message message-name , return code
+code-value .
+
+Explanation
+
+An RPC call failure has occurred. The system tries to recover from the failure.
+
+Recommended Action
+
+None.
+
+747011
+
+Error Message
+
+%ASA-2-747011: Clustering: Memory allocation error.
+
+Explanation
+
+A memory allocation failure occurred in clustering.
+
+Recommended Action
+
+Disable clustering on this unit and try to re-enable it. If the problem
+persists, check the memory usage on the Secure Firewall ASA.
+
+747012
+
+Error Message
+
+%ASA-3-747012: Clustering: Failed to replicate global object id hex-id-value in
+domain domain-name to peer unit-name , continuing operation.
+
+Explanation
+
+A global object ID replication failure has occurred.
+
+Recommended Action
+
+None.
+
+747013
+
+Error Message
+
+%ASA-3-747013: Clustering: Failed to remove global object id hex-id-value in
+domain domain-name from peer unit-name , continuing operation.
+
+Explanation
+
+A global object ID removal failure has occurred.
+
+Recommended Action
+
+None.
+
+747014
+
+Error Message
+
+%ASA-3-747014: Clustering: Failed to install global object id hex-id-value in
+domain domain-name , continuing operation.
+
+Explanation
+
+A global object ID installation failure has occurred.
+
+Recommended Action
+
+None.
+
+747015
+
+Error Message
+
+%ASA-4-747015: Clustering: Forcing stray member unit-name to leave the cluster.
+
+Explanation
+
+A stray cluster member has been found.
+
+Recommended Action
+
+None.
+
+747016
+
+Error Message
+
+%ASA-4-747016: Clustering: Found a split cluster with both unit-name-A and
+unit-name-B as master units. Master role retained by unit-name-A , unit-name-B
+will leave, then join as a slave.
+
+Explanation
+
+A split cluster has been found.
+
+Recommended Action
+
+None.
+
+747017
+
+Error Message
+
+%ASA-4-747017: Clustering: Failed to enroll unit unit-name due to maximum member
+limit limit-value reached.
+
+Explanation
+
+The Secure Firewall ASA failed to enroll a new unit because the maximum member
+limit has been reached.
+
+Recommended Action
+
+None.
+
+747018
+
+Error Message
+
+%ASA-3-747018: Clustering: State progression failed due to timeout in module
+module-name .
+
+Explanation
+
+The cluster FSM progression has timed out.
+
+Recommended Action
+
+None.
+
+747019
+
+Error Message
+
+%ASA-4-747019: Clustering: New cluster member name rejected due to Cluster
+Control Link IP subnet mismatch (ip-address /ip-mask on new unit, ip-address
+/ip-mask on local unit).
+
+Explanation
+
+The control unit found that a new joining unit has an incompatible cluster
+interface IP address.
+
+Recommended Action
+
+None.
+
+747020
+
+Error Message
+
+%ASA-4-747020: Clustering: New cluster member unit-name rejected due to
+encryption license mismatch.
+
+Explanation
+
+The control unit found that a new joining unit has an incompatible encryption
+license.
+
+Recommended Action
+
+None.
+
+747021
+
+Error Message
+
+%ASA-3-747021: Clustering: Master unit unit-name is quitting due to interface
+health check failure on interface-name .
+
+Explanation
+
+The control unit has disabled clustering because of an interface health check
+failure.
+
+Recommended Action
+
+None.
+
+747022
+
+Error Message
+
+%ASA-3-747022: Clustering: Asking slave unit unit-name to quit because it failed
+interface health check x times, rejoin will be attempted after y min. Failed
+interface: interface-name .
+
+Explanation
+
+This syslog message occurs when the maximum number of rejoin attempts has not
+been exceeded. A data unit has disabled clustering because of an interface
+health check failure for the specified amount of time. This unit will re-enable
+itself automatically after the specified amount of time (ms).
+
+Recommended Action
+
+None.
+
+747023
+
+Error Message
+
+%ASA-3-747023: Master unit %s[unit name] is quitting due to Security Service
+Module health check failure, and master's Security Service Module state is
+%s[SSM state, which can be UP/DOWN/INIT]. Rejoin will be attempted after
+%d[rejoin delay time] minutes.
+
+Explanation
+
+SSM health check failure on data unit; control unit asks data unit to quit with
+rejoin.
+
+Recommended Action
+
+None.
+
+747024
+
+Error Message
+
+%ASA-3-747024: Asking slave unit %s[unit name] to quit due to its Security
+Service Module health check failure, and its Security Service Module state is
+%s[SSM state]. The slave will decide whether to rejoin based on the
+configurations.
+
+Explanation
+
+SSM health check failure on data unit; control unit asks data unit to quit. The
+data unit would decide whether to rejoin or not.
+
+Recommended Action
+
+None.
+
+747025
+
+Error Message
+
+%ASA-4-747025: Clustering: New cluster member unit-name rejected due to firewall
+mode mismatch.
+
+Explanation
+
+A control unit found a joining unit that has an incompatible firewall mode.
+
+Recommended Action
+
+None.
+
+747026
+
+Error Message
+
+%ASA-4-747026: Clustering: New cluster member unit-name rejected due to cluster
+interface name mismatch (ifc-name on new unit, ifc-name on local unit).
+
+Explanation
+
+A control unit found a joining unit that has an incompatible cluster control
+link interface name.
+
+Recommended Action
+
+None.
+
+747027
+
+Error Message
+
+%ASA-4-747027: Clustering: Failed to enroll unit unit-name due to insufficient
+size of cluster pool pool-name in context-name .
+
+Explanation
+
+A control unit could not enroll a joining unit because of the size limit of the
+minimal cluster pool configured.
+
+Recommended Action
+
+None.
+
+747028
+
+Error Message
+
+%ASA-4-747028: Clustering: New cluster member unit-name rejected due to
+interface mode mismatch (mode-name on new unit, mode-name on local unit).
+
+Explanation
+
+A control unit found a joining unit that has an incompatible interface-mode,
+either spanned or individual.
+
+Recommended Action
+
+None.
+
+747029
+
+Error Message
+
+%ASA-4-747029: Clustering: Unit unit-name is quitting due to Cluster Control
+Link down.
+
+Explanation
+
+A unit disabled clustering because of a cluster interface failure.
+
+Recommended Action
+
+None.
+
+747030
+
+Error Message
+
+%ASA-3-747030: Clustering: Asking slave unit unit-name to quit because it failed
+interface health check x times (last failure on interface-name ), Clustering
+must be manually enabled on the unit to re-join.
+
+Explanation
+
+An interface health check has failed and the maximum number of rejoin attempts
+has been exceeded. A data unit has disabled clustering because of an interface
+health check failure.
+
+Recommended Action
+
+None.
+
+747031
+
+Error Message
+
+%ASA-3-747031: Clustering: Platform mismatch between cluster master
+(platform-type ) and joining unit unit-name (platform-type ). unit-name aborting
+cluster join.
+
+Explanation
+
+The joining unit's platform type does not match with that of the cluster control
+unit.
+- unit-name - Name of the unit in the cluster bootstrap
+- platform-type - Type of Secure Firewall ASA platform
+
+Recommended Action
+
+Make sure that the joining unit has the same platform type as that of the
+cluster control unit.
+
+747032
+
+Error Message
+
+%ASA-3-747032: Clustering: Service module mismatch between cluster master
+(module-name ) and joining unit unit-name (module-name )in slot slot-number .
+unit-name aborting cluster join.
+
+Explanation
+
+The joining unit's external modules are not consistent (module type and order in
+which they are installed) with those on the cluster control unit.
+- module-name - Name of the external module
+- unit-name - Name of the unit in the cluster bootstrap
+- slot-number - The number of the slot in which the mismatch occurred
+
+Recommended Action
+
+Make sure that the modules installed on the joining unit are of the same type
+and are in the same order as they are in the cluster control unit.
+
+747033
+
+Error Message
+
+%ASA-3-747033: Clustering: Interface mismatch between cluster master and joining
+unit unit-name . unit-name aborting cluster join.
+
+Explanation
+
+The joining unit's interfaces are not the same as those on the cluster control
+unit.
+- unit-name - Name of the unit in the cluster bootstrap
+
+Recommended Action
+
+Make sure that the interfaces available on the joining unit are the same as
+those on the cluster control unit.
+
+747034
+
+Error Message
+
+%ASA-4-747034: Unit %s is quitting due to Cluster Control Link down (%d times
+after last rejoin). Rejoin will be attempted after %d minutes.
+
+Explanation
+
+Cluster Control Link down and the unit is kicked out with rejoin.
+
+Recommended Action
+
+Wait for the unit to rejoin.
+
+747035
+
+Error Message
+
+%ASA-4-747035: Unit %s is quitting due to Cluster Control Link down. Clustering
+must be manually enabled on the unit to rejoin.
+
+Explanation
+
+Cluster Control Link down and the unit is kicked out without rejoin.
+
+Recommended Action
+
+Rejoin the unit manually.
+
+747036
+
+Error Message
+
+%ASA-3-747036: Application software mismatch between cluster master %s[Master
+unit name] (%s[Master application software name]) and joining unit (%s[Joining
+unit application software name]). %s[Joining member name] aborting cluster join.
+
+Explanation
+
+The applications on control unit and the joining data unit are not the same.
+Data unit will be kicked out.
+
+Recommended Action Make sure that the data unit run the same
+applications/services, and manually rejoin the unit.
+
+747037
+
+Error Message
+
+%ASA-3-747037: Asking slave unit %s to quit due to its Security Service Module
+health check failure %d times, and its Security Service Module state is %s.
+Rejoin will be attempted after %d minutes.
+
+Explanation
+
+SSM health check failure on data unit; control unit asks data unit to quit with
+rejoin.
+
+Recommended Action
+
+None.
+
+747038
+
+Error Message
+
+%ASA-3-747038: Asking slave unit %s to quit due to Security Service Module
+health check failure %d times, and its Security Service Card Module is %s.
+Clustering must be manually enabled on this unit to rejoin.
+
+Explanation
+
+SSM health check failure on data; control unit asks data unit to quit with
+rejoin.
+
+Recommended Action
+
+Manually rejoin the unit.
+
+747039
+
+Error Message
+
+%ASA-3-747039: Unit %s is quitting due to system failure for %d time(s) (last
+failure is %s[cluster system failure reason]). Rejoin will be attempted after %d
+minutes.
+
+Explanation
+
+Clustering system failure, and the unit kicks itself out with rejoin
+
+Recommended Action
+
+None required.
+
+747040
+
+Error Message
+
+%ASA-3-747040: Unit %s is quitting due to system failure for %d time(s) (last
+failure is %s[cluster system failure reason]). Clustering must be manually
+enabled on the unit to rejoin.
+
+Explanation
+
+Clustering system failure and the unit kicks itself out without rejoin
+
+Recommended Action
+
+Manually rejoin the unit.
+
+747041
+
+Error Message
+
+%ASA-3-747041: Master unit %s is quitting due to interface health check failure
+on %s[interface name], %d times. Clustering must be manually enabled on the unit
+to rejoin.
+
+Explanation
+
+Interface health check failure on control unit; control unit kicks itself out
+with rejoin.
+
+Recommended Action
+
+Manually rejoin the unit.
+
+747042
+
+Error Message
+
+%ASA-3-747042: Clustering: Master received the config hash string request
+message from an unknown member with id cluster-member-id
+
+Explanation
+
+Control unit received the config hash string request event.
+
+Recommended Action
+
+Verify requestor member is still in OnCall state.
+
+747043
+
+Error Message
+
+%ASA-3-747043: Clustering: Get config hash string from master error: ret_code
+ret_code, string_len string_len
+
+Explanation
+
+Failed to get config hash string from control unit.
+- ret_code The error return code; 0 indicates OK, and 1 indicates Failed
+- string_len The hash_str length
+
+Recommended Action
+
+Contact technical support to troubleshoot the issue on control unit. Ensure to
+turn on 'debug cluster ccp’ to identify the root cause.
+
+747044
+
+Error Message
+
+%ASA-6-747044: Configuration Hash string verification result
+
+Explanation
+
+The result of configuration hash string comparison..
+- result - This result can be PASSED or FAILED
+
+Recommended Action
+
+None required.
+
+748001
+
+Error Message
+
+%ASA-5-748001: Module slot_number in chassis chassis_number is leaving the
+cluster due to a chassis configuration change
+
+Explanation
+
+A cluster control link has changed in the MIO, a cluster group has been removed
+in the MIO, or a blade module has been removed in the MIO configuration.
+- slot_number - The blade slot ID within the chassis
+- chassis_number - The chassis ID, which is unique for each chassis
+
+Recommended Action
+
+None required.
+
+748002
+
+Error Message
+
+%ASA-4-748002: Clustering configuration on the chassis is missing or incomplete;
+clustering is disabled
+
+Explanation
+
+Configurations are missing or incomplete in the MIO (for example, a cluster
+group is not configured, or a cluster control link is not configured).
+- slot_number - The blade slot ID within the chassis
+- chassis_number - The chassis ID, which is unique for each chassis
+
+Recommended Action
+
+Go to the MIO console and configure the cluster service type, add the module to
+the service type, and define the cluster control link accordingly.
+
+748003
+
+Error Message
+
+%ASA-4-748003: Module slot_number in chassis chassis_number is leaving the
+cluster due to a chassis health check failure
+
+Explanation
+
+The blade cannot talk to the MIO, so it relies on the MIO to detect this
+communication problem and de-bundle the data ports. If data ports are
+de-bundled, the Secure Firewall ASA will be kicked out by an interface health
+check.
+- slot_number - The blade slot ID within the chassis
+- chassis_number - The chassis ID, which is unique for each chassis
+
+Recommended Action
+
+Check if the MIO card is up or if the communication between the MIO and the
+blade is still up.
+
+748004
+
+Error Message
+
+%ASA-5-748004: Module slot_number in chassis chassis_number is re-joining the
+cluster due to a chassis health check recovery
+
+Explanation
+
+The MIO blade health check has recovered, and the Secure Firewall ASA tries to
+rejoin the cluster.
+- slot_number - The blade slot ID within the chassis
+- chassis_number - The chassis ID, which is unique for each chassis
+
+Recommended Action
+
+Check if the MIO card is up or if the communication between the MIO and the
+blade is still up
+
+748005
+
+Error Message
+
+%ASA-3-748005: Failed to bundle the ports for module slot_number in chassis
+chassis_number ; clustering is disabled
+
+Explanation
+
+The MIO failed to bundle the ports for itself.
+- slot_number - The blade slot ID within the chassis
+- chassis_number - The chassis ID, which is unique for each chassis
+
+Recommended Action
+
+Check if the MIO is operating correctly.
+
+748006
+
+Error Message
+
+%ASA-3-748006: Asking module slot_number in chassis chassis_number to leave the
+cluster due to a port bundling failure
+
+Explanation
+
+The MIO failed to bundle ports for a blade, so the blade has been kicked out.
+- slot_number - The blade slot ID within the chassis
+- chassis_number - The chassis ID, which is unique for each chassis
+
+Recommended Action
+
+Check if the MIO is operating correctly.
+
+748007
+
+Error Message
+
+%ASA-2-748007: Failed to de-bundle the ports for module slot_number in chassis
+chassis_number ; traffic may be black holed
+
+Explanation
+
+The MIO failed to de-bundle the ports.
+- slot_number - The blade slot ID within the chassis
+- chassis_number - The chassis ID, which is unique for each chassis
+
+Recommended Action
+
+Check if the MIO is operating correctly.
+
+748008
+
+Error Message
+
+%ASA-6-748008: [CPU load percentage | memory load percentage ] of module
+slot_number in chassis chassis_number (member-name ) exceeds overflow protection
+threshold [CPU percentage | memory percentage ]. System may be oversubscribed on
+member failure.
+
+Explanation
+
+The CPU load has exceeded (N-1)/N, where N is the total number of active cluster
+members, or the memory load has exceeded (100 – x) * (N – 1) / N + x, where N is
+the number of cluster members, and x is the baseline memory usage of the last
+joining member.
+- percentage - The CPU load or memory load percentile data
+- slot_number - The blade slot ID within the chassis
+- chassis_number - The chassis ID, which is unique for each chassis
+
+Recommended Action
+
+Re-plan the network and clustering deployment. Either reduce the amount of
+traffic or add more blades/chassis.
+
+748009
+
+Error Message
+
+%ASA-6-748009: [CPU load percentage | memory load percentage ] of chassis
+chassis_number exceeds overflow protection threshold [CPU percentage | memory
+percentage }. System may be oversubscribed on chassis failure.
+
+Explanation
+
+The chassis traffic load exceeded a certain threshold.
+- percentage - The CPU load or memory load percentile data
+- chassis_number - The chassis ID, which is unique for each chassis
+
+Recommended Action
+
+Re-plan the network and clustering deployment. Either reduce the amount of
+traffic or add more blades/chassis.
+
+748100
+
+Error Message
+
+%ASA-3-748100: <application_name> application status is changed from <status> to
+<status>.
+
+Explanation
+
+Detect the application status change from one state to another. Application
+status change will trigger application health check mechanism.
+- application name - snort or disk_full
+- status - init, up, down
+
+Recommended Action
+
+Verify the status of the application.
+
+748101
+
+Error Message
+
+%ASA-3-748101: Peer unit <unit_id> reported its <application_name> application
+status is <status>.
+
+Explanation
+
+Peer unit reported application status change that will trigger application
+health check mechanism.
+- unit id - the unit id
+- application name - snort or disk_full
+- status - init, up, down
+
+Recommended Action
+
+Verify the status of the application.
+
+748102
+
+Error Message
+
+%ASA-3-748102: Master unit <unit_id> is quitting due to <application_name>
+Application health check failure, and master's application state is <status>.
+
+Explanation
+
+Application health check detects that the control unit is not healthy. The
+control unit will leave the cluster group.
+- unit id - the unit id
+- application name - snort or disk_full
+- status - init, up, down
+
+Recommended Action
+
+Verify the status of the application. When the application (snort) is up again,
+the unit will rejoin automatically.
+
+748103
+
+Error Message
+
+%ASA-3-748103: Asking slave unit <unit_id> to quit due to <application_name>
+Application health check failure, and slave's application state is <status>.
+
+Explanation
+
+Application health check detects that the data unit is not healthy. Control unit
+will evict the data node.
+- unit id - the unit id
+- application name - snort or disk_full
+- status - init, up, down
+
+Recommended Action
+
+Verify the status of the application. When the application (snort) is up again,
+the unit will rejoin automatically.
+
+748201
+
+Error Message
+
+%ASA-4-748201: <Application name> application on module <module id> in chassis
+<chassis id> is <status>.
+
+Explanation
+
+Status of the application in the service chain gets changed.
+- status - up, down
+
+Recommended Action
+
+Verify the status of the application in the service chain.
+
+748202
+
+Error Message
+
+%ASA-3-748202: Module <module_id> in chassis <chassis id> is leaving the cluster
+due to <application name> application failure.
+
+Explanation
+
+Unit will be kicked out of cluster if the application such as vDP, fails.
+
+Recommended Action
+
+Verify the status of the application in the service chain.
+
+748203
+
+Error Message
+
+%ASA-5-748203: Module <module_id> in chassis <chassis id> is re-joining the
+cluster due to a service chain application recovery\n.
+
+Explanation
+
+Unit automatically rejoins the cluster if the service chain application such as
+vDP, recovers.
+
+Recommended Action
+
+Verify the status of the application in the service chain.
+

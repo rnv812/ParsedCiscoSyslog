@@ -1,0 +1,228 @@
+767001
+
+Error Message
+
+%ASA-6-767001: Inspect-name : Dropping an unsupported IPv6/IP46/IP64 packet from
+interface :IP Addr to interface :IP Addr (fail-close)
+
+Explanation
+
+A fail-close option was set for a service policy, and a particular inspect
+received an IPv6, IP64, or IP46 packet. Based on the fail-close option setting,
+this syslog message is generated and the packet is dropped.
+
+Recommended Action
+
+None required.
+
+768001
+
+Error Message
+
+%ASA-3-768001: QUOTA: resource utilization is high: requested req , current curr
+, warning level level
+
+Explanation
+
+A system resource allocation level has reached its warning threshold. In the
+case of a management session, the resource is simultaneous administrative
+sessions.
+- resource - The name of the system resource; in this case, it is a management
+session.
+- req - The number requested; for a management session, it is always 1.
+- curr - The current number allocated; equals level for a management session
+- level - The warning threshold, which is 90 percent of the configured limit
+
+Recommended Action
+
+None required.
+
+768002
+
+Error Message
+
+%ASA-3-768002: QUOTA: resource quota exceeded: requested req , current curr ,
+limit limit
+
+Explanation
+
+A request for a system resource would have exceeded its configured limit and was
+denied. In the case of a management session, the maximum number of simultaneous
+administrative sessions on the system has been reached.
+- resource - The name of the system resource; in this case, it is a management
+session.
+- req - The number requested; for a management session, it is always 1.
+- curr - The current number allocated; equals level for a management session
+- limit - The configured resource limit
+
+Recommended Action
+
+None required.
+
+768003
+
+Error Message
+
+%ASA-3-768003: QUOTA: management session quota exceeded for user user name:
+current 3, user limit 3
+
+Explanation
+
+The current management session exceeded the configured limits for the user.
+- current - The current number allocated for management session for the user
+- limit - The configured management session limit. The default value being 15.
+
+Recommended Action
+
+None required.
+
+768004
+
+Error Message
+
+%ASA-3-768004: QUOTA: management session quota exceeded for ssh/telnet/http
+protocol: current 2, protocol limit 2
+
+Explanation
+
+The maximum number of management sessions for the protocol - ssh, telnet, or
+http exceeded the configured limit.
+- current - The current number allocated for a management session
+- limit - The configured resource limit per protocol. The default values being 5.
+
+Recommended Action
+
+None required.
+
+769001
+
+Error Message
+
+%ASA-5-769001: UPDATE: ASA image src was added to system boot list
+
+Explanation
+
+The system image has been updated. The name of a file previously downloaded onto
+the system has been added to the system boot list.
+- src - The name or URL of the source image file
+
+Recommended Action
+
+None required.
+
+769002
+
+Error Message
+
+%ASA-5-769002: UPDATE: ASA image src was copied to dest
+
+Explanation
+
+The system image has been updated. An image file has been copied onto the
+system.
+- src - The name or URL of the source image file
+- dest - The name of the destination image file
+
+Recommended Action
+
+None required.
+
+769003
+
+Error Message
+
+%ASA-5-769003: UPDATE: ASA image src was renamed to dest
+
+Explanation
+
+The system image has been updated. An existing image file has been renamed to an
+image file name in the system boot list.
+- src - The name or URL of the source image file
+- dest - The name of the destination image file
+
+Recommended Action
+
+None required.
+
+769004
+
+Error Message
+
+%ASA-2-769004: UPDATE: ASA image src_file failed verification, reason:
+failure_reason
+
+Explanation
+
+The image failed verification from either the copy command or verify command.
+- src_file - The file name or URL of the source image file
+- failure_reason - The file name of the destination image file
+
+Recommended Action
+
+Possible failure reasons are: insufficient system memory, no image found in
+file, checksum failed, signature not found in file, signature invalid, signature
+algorithm not supported, signature processing issue
+
+769005
+
+Error Message
+
+%ASA-5-769005: UPDATE: ASA image image_name passed image verification.
+
+Explanation
+
+This is a notification message indicating that the image passed verification.
+- image_name - The file name of the Secure Firewall ASA image file
+
+Recommended Action
+
+None Required.
+
+769006
+
+Error Message
+
+%ASA-3-769006: UPDATE: ASA boot system image image_name was not found on disk.
+
+Explanation
+
+This is an error message indicating that the file configured in the boot system
+list could not be located on disk.
+- image_name - The file name of the Secure Firewall ASA image file
+
+Recommended Action
+
+If the device fails to boot, change the boot system command to point to a valid
+file or install the missing file to the disk before rebooting the device.
+
+769007
+
+Error Message
+
+%ASA-6-769007: UPDATE: Image version is version_number
+
+Explanation
+
+This message appears when the device is upgraded.
+- version_number - The version number of the Secure Firewall ASA image file
+
+Recommended Action
+
+None required.
+
+769009
+
+Error Message
+
+%ASA-4-769009: UPDATE: Image booted image_name is different from boot images.
+
+Explanation
+
+This is an error message appears after upgrading the device indicating that the
+file configured is different from the existing list of boot images.
+- image_name - The file name of the Secure Firewall ASA image file
+
+Recommended Action
+
+None required.
+

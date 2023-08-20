@@ -1,0 +1,281 @@
+%ASA-7-108006: Detected ESMTP size violation from src_ifc:sip|sport to dest_ifc:dip|dport;declaredsize is: decl_size, actual size is act_size.
+%ASA-7-109014: A non-Telnet connection was denied to the configured virtual Telnet IP address.
+%ASA-7-109021: Uauth null proxy error
+%ASA-7-111009: User user executed cmd:string
+%ASA-7-113028: Extraction of username from VPN client certificate has string. [Request num]
+%ASA-7-199019: syslog
+%ASA-7-304005: URL Server IP_address request pending URL url
+%ASA-7-304009: Ran out of buffer blocks specified by url-block command
+%ASA-7-333004: EAP-SQ response invalid - context:EAP-context
+%ASA-7-333005: EAP-SQ response contains invalid TLV(s) - context:EAP-context
+%ASA-7-333006: EAP-SQ response with missing TLV(s) - context:EAP-context
+%ASA-7-333007: EAP-SQ response TLV has invalid length - context:EAP-context
+%ASA-7-333008: EAP-SQ response has invalid nonce TLV - context:EAP-context
+%ASA-7-335007: NAC Default ACL not configured - host-address
+%ASA-7-342001: REST API Agent started successfully.
+%ASA-7-342005: REST API image has been installed successfully.
+%ASA-7-342007: REST API image has been uninstalled successfully.
+%ASA-7-419003: Cleared TCP urgent flag
+%ASA-7-421004: Failed to inject {TCP|UDP} packet from IP_address/port to IP_address/port
+%ASA-7-444307: %SMART_LIC-7-DAILY_JOB_TIMER_RESET: Daily job timer reset.
+%ASA-7-609001: Built local-host zone_name/*: ip_address
+%ASA-7-609002: Teardown local-host zone_name/*: ip_address duration time
+%ASA-7-701001: alloc_user() out of Tcp_user objects
+%ASA-7-701002: alloc_user() out of Tcp_proxy objects
+%ASA-7-702307: IPSEC: An direction tunnel_type SA (SPI=spi) between local_IP and remote_IP(username) is rekeying due to data rollover.
+%ASA-7-703001: H.225 message received from interface_name:IP_address/port tointerface_name:IP_address/port is using an unsupported version number
+%ASA-7-703002: Received H.225 Release Complete with newConnectionNeeded forinterface_name:IP_address to interface_name:IP_address/port
+%ASA-7-703008: Allowing early-message: %s before SETUP from %s:%Q/%d to %s:%Q/%d
+%ASA-7-709001: FO replication failed: cmd=command returned=code
+%ASA-7-709002: FO unreplicable: cmd=command
+%ASA-7-710001: TCP access requested from source_address/source_port tointerface_name:dest_address/service
+%ASA-7-710002: {TCP|UDP} access permitted from source_address/source_port tointerface_name:dest_address/service
+%ASA-7-710004: TCP connection limit exceeded from Src_ip/Src_port to In_name:Dest_ip/Dest_port(current connections/connection limit = Curr_conn/Conn_lmt)
+%ASA-7-710005: {TCP|UDP} request discarded from source_address/source_port tointerface_name:dest_address/service
+%ASA-7-710006: protocol request discarded from source_address to interface_name:dest_address
+%ASA-7-710007: NAT-T keepalive received from 86.1.161.1/1028 to outside:86:1.129.1/4500
+%ASA-7-711001: debug_trace_msg
+%ASA-7-711003: Unknown/Invalid interface identifier(vpifnum) detected.
+%ASA-7-711006: CPU profiling has started for n-samples samples. Reason: reason-string.
+%ASA-7-713024: Group group IP ip Received local Proxy Host data in ID Payload: Address IP_address,Protocol protocol, Port port
+%ASA-7-713025: Received remote Proxy Host data in ID Payload: Address IP_address, Protocol protocol,Port port
+%ASA-7-713028: Received local Proxy Range data in ID Payload: Addresses IP_address - IP_address,Protocol protocol, Port port
+%ASA-7-713029: Received remote Proxy Range data in ID Payload: Addresses IP_address - IP_address,Protocol protocol, Port port
+%ASA-7-713034: Received local IP Proxy Subnet data in ID Payload: Address IP_address, Mask netmask,Protocol protocol, Port port
+%ASA-7-713035: Group group IP ip Received remote IP Proxy Subnet data in ID Payload: AddressIP_address, Mask netmask, Protocol protocol, Port port
+%ASA-7-713039: Send failure: Bytes (number), Peer: IP_address
+%ASA-7-713040: Could not find connection entry and can not encrypt: msgid message_number
+%ASA-7-713052: User (user) authenticated.
+%ASA-7-713066: IKE Remote Peer configured for SA: SA_name
+%ASA-7-713094: Cert validation failure: handle invalid for Main/Aggressive Mode Initiator/Responder!
+%ASA-7-713099: Tunnel Rejected: Received NONCE length number is out of range!
+%ASA-7-713103: Invalid (NULL) secret key detected while computing hash
+%ASA-7-713104: Attempt to get Phase 1 ID data failed while hash computation
+%ASA-7-713113: Deleting IKE SA with associated IPSec connection entries. IKE peer: IP_address, SAaddress: internal_SA_address, tunnel count: count
+%ASA-7-713114: Connection entry (conn entry internal address) points to IKE SA (SA_internal_address)for peer IP_address, but cookies don't match
+%ASA-7-713117: Received Invalid SPI notify (SPI SPI_Value)!
+%ASA-7-713121: Keep-alive type for this connection: keepalive_type
+%ASA-7-713143: Processing firewall record. Vendor: vendor(id), Product: product(id), Caps:capability_value, Version Number: version_number, Version String: version_text
+%ASA-7-713160: Remote user (session Id - id) has been granted access by the Firewall Server
+%ASA-7-713164: The Firewall Server has requested a list of active user sessions
+%ASA-7-713169: IKE Received delete for rekeyed SA IKE peer: IP_address, SA address:internal_SA_address, tunnelCnt: tunnel_count
+%ASA-7-713170: Group group IP ip IKE Received delete for rekeyed centry IKE peer: IP_address,centry address: internal_address, msgid: id
+%ASA-7-713171: NAT-Traversal sending NAT-Original-Address payload
+%ASA-7-713187: Tunnel Rejected: IKE peer does not match remote peer as defined in L2L policy IKEpeer address: IP_address, Remote peer address: IP_address
+%ASA-7-713190: Got bad refCnt (ref_count_value) assigning IP_address (IP_address)
+%ASA-7-713204: Adding static route for client address: IP_address
+%ASA-7-713221: Static Crypto Map check, checking map = crypto_map_tag, seq = seq_number...
+%ASA-7-713222: Group group Username username IP ip Static Crypto Map check, map =crypto_map_tag, seq = seq_number, ACL does not match proxy IDs src:source_address dst:dest_address
+%ASA-7-713223: Static Crypto Map check, map = crypto_map_tag, seq = seq_number, no ACLconfigured
+%ASA-7-713224: Static Crypto Map Check by-passed: Crypto map entry incomplete!
+%ASA-7-713225: [IKEv1], Static Crypto Map check, map map_name, seq = sequence_number is asuccessful match
+%ASA-7-713233: (VPN-unit) Remote network (remote network) validated for network extension mode.
+%ASA-7-713234: (VPN-unit) Remote network (remote network) from network extension mode clientmismatches AAA configuration (aaa network).
+%ASA-7-713236: IKE_DECODE tx/rx Message (msgid=msgid) with payloads:payload1 (payload1_len)+ payload2 (payload2_len)...total length: tlen
+%ASA-7-713263: Received local IP Proxy Subnet data in ID Payload: Address IP_address, Mask/prefix_len, Protocol protocol, Port port
+%ASA-7-713264: Received local IP Proxy Subnet data in ID Payload: Address IP_address, Mask/prefix_len, Protocol protocol, Port port {“Received remote IP Proxy Subnet data in ID Payload: Address%a, Mask/%d, Protocol %u, Port %u”}
+%ASA-7-713273: Deleting static route for client address: IP_Address IP_Address address of client whoseroute is being removed
+%ASA-7-713906: Descriptive_event_string.
+%ASA-7-714001: description_of_event_or_packet
+%ASA-7-714002: IKE Initiator starting QM: msg id = message_number
+%ASA-7-714003: IKE Responder starting QM: msg id = message_number
+%ASA-7-714004: IKE Initiator sending 1st QM pkt: msg id = message_number
+%ASA-7-714005: IKE Responder sending 2nd QM pkt: msg id = message_number
+%ASA-7-714006: IKE Initiator sending 3rd QM pkt: msg id = message_number
+%ASA-7-714007: IKE Initiator sending Initial Contact
+%ASA-7-714011: Description of received ID values
+%ASA-7-715001: Descriptive statement
+%ASA-7-715004: subroutine name() Q Send failure: RetCode (return_code)
+%ASA-7-715005: subroutine name() Bad message code: Code (message_code)
+%ASA-7-715006: IKE got SPI from key engine: SPI = SPI_value
+%ASA-7-715007: IKE got a KEY_ADD msg for SA: SPI = SPI_value
+%ASA-7-715008: Could not delete SA SA_address, refCnt = number, caller = calling_subroutine_address
+%ASA-7-715009: IKE Deleting SA: Remote Proxy IP_address, Local Proxy IP_address
+%ASA-7-715013: Tunnel negotiation in progress for destination IP_address, discarding data
+%ASA-7-715018: IP Range type id was loaded: Direction %s, From: %a, Through: %a
+%ASA-7-715019: Group group Username username IP ip IKEGetUserAttributes: Attribute name = name
+%ASA-7-715020: construct_cfg_set: Attribute name = name
+%ASA-7-715021: Delay Quick Mode processing, Cert/Trans Exch/RM DSID in progress
+%ASA-7-715022: Resume Quick Mode processing, Cert/Trans Exch/RM DSID completed
+%ASA-7-715027: IPSec SA Proposal # chosen_proposal, Transform # chosen_transform acceptableMatches global IPSec SA entry # crypto_map_index
+%ASA-7-715028: IKE SA Proposal # 1, Transform # chosen_transform acceptable Matches global IKEentry # crypto_map_index
+%ASA-7-715031: Obtained IP addr (%s) prior to initiating Mode Cfg (XAuth %s)
+%ASA-7-715032: Sending subnet mask (%s) to remote client
+%ASA-7-715033: Processing CONNECTED notify (MsgId message_number)
+%ASA-7-715034: action IOS keep alive payload: proposal=time 1/time 2 sec.
+%ASA-7-715035: Starting IOS keepalive monitor: seconds sec.
+%ASA-7-715036: Sending keep-alive of type notify_type (seq number number)
+%ASA-7-715037: Unknown IOS Vendor ID version: major.minor.variance
+%ASA-7-715038: action Spoofing_information Vendor ID payload (version: major.minor.variance,capabilities: value)
+%ASA-7-715039: Unexpected cleanup of tunnel table entry during SA delete.
+%ASA-7-715040: Deleting active auth handle during SA deletion: handle = internal_authentication_handle
+%ASA-7-715041: Received keep-alive of type keepalive_type, not the negotiated type
+%ASA-7-715042: IKE received response of type failure_type to a request from the IP_address utility
+%ASA-7-715044: Ignoring Keepalive payload from vendor not support KeepAlive capability
+%ASA-7-715045: ERROR: malformed Keepalive payload
+%ASA-7-715046: Group = groupname, Username = username, IP = IP_address, constructingpayload_description payload
+%ASA-7-715047: processing payload_description payload
+%ASA-7-715048: Send VID_type VID
+%ASA-7-715049: Received VID_type VID
+%ASA-7-715050: Claims to be IOS but failed authentication
+%ASA-7-715051: Received unexpected TLV type TLV_type while processing FWTYPE ModeCfgReply
+%ASA-7-715052: Old P1 SA is being deleted but new SA is DEAD, cannot transition centries
+%ASA-7-715053: MODE_CFG: Received request for attribute_info!
+%ASA-7-715054: MODE_CFG: Received attribute_name reply: value
+%ASA-7-715055: Send attribute_name
+%ASA-7-715056: Client is configured for TCP_transparency
+%ASA-7-715057: Auto-detected a NAT device with NAT-Traversal. Ignoring IPSec-over-UDPconfiguration.
+%ASA-7-715058: NAT-Discovery payloads missing. Aborting NAT-Traversal.
+%ASA-7-715059: Proposing/Selecting only UDP-Encapsulated-Tunnel and UDP-Encapsulated-Transportmodes defined by NAT-Traversal
+%ASA-7-715060: Dropped received IKE fragment. Reason: reason
+%ASA-7-715061: Rcv'd fragment from a new fragmentation set. Deleting any old fragments.
+%ASA-7-715062: Error assembling fragments! Fragment numbers are non-continuous.
+%ASA-7-715063: Successfully assembled an encrypted pkt from rcv'd fragments!
+%ASA-7-715064: IKE Peer included IKE fragmentation capability flags: Main Mode: true/falseAggressive Mode: true/false
+%ASA-7-715065: IKE state_machine subtype FSM error history (struct data_structure_address) state,event: state/event pairs
+%ASA-7-715066: Can't load an IPSec SA! The corresponding IKE SA contains an invalid logical ID.
+%ASA-7-715067: QM IsRekeyed: existing sa from different peer, rejecting new sa
+%ASA-7-715068: QM IsRekeyed: duplicate sa found by address, deleting old sa
+%ASA-7-715069: Invalid ESP SPI size of SPI_size
+%ASA-7-715070: Invalid IPComp SPI size of SPI_size
+%ASA-7-715071: AH proposal not supported
+%ASA-7-715072: Received proposal with unknown protocol ID protocol_ID
+%ASA-7-715074: Could not retrieve authentication attributes for peer IP_address
+%ASA-7-715075: Group = group_name, IP = IP_address Received keep-alive of type message_type(seq number number)
+%ASA-7-715076: Computing hash for ISAKMP
+%ASA-7-715077: Pitcher: msg string, spi spi
+%ASA-7-715078: Received %s LAM attribute
+%ASA-7-715079: INTERNAL_ADDRESS: Received request for %s
+%ASA-7-715080: VPN: Starting P2 rekey timer: 28800 seconds.
+%ASA-7-716008: WebVPN ACL: action
+%ASA-7-716010: Group group User user Browse network.
+%ASA-7-716011: Group group User user Browse domain domain.
+%ASA-7-716012: Group group User user Browse directory directory.
+%ASA-7-716013: Group group User user Close file filename.
+%ASA-7-716014: Group group User user View file filename.
+%ASA-7-716015: Group group User user Remove file filename.
+%ASA-7-716016: Group group User user Rename file old_filename to new_filename.
+%ASA-7-716017: Group group User user Modify file filename.
+%ASA-7-716018: Group group User user Create file filename.
+%ASA-7-716019: Group group User user Create directory directory.
+%ASA-7-716020: Group group User user Remove directory directory.
+%ASA-7-716021: File access DENIED, filename.
+%ASA-7-716024: Group name User user Unable to browse the network.Error: description
+%ASA-7-716025: Group name User user Unable to browse domain domain. Error: description
+%ASA-7-716026: Group name User user Unable to browse directory directory. Error: description
+%ASA-7-716027: Group name User user Unable to view file filename. Error: description
+%ASA-7-716028: Group name User user Unable to remove file filename. Error: description
+%ASA-7-716029: Group name User user Unable to rename file filename. Error: description
+%ASA-7-716030: Group name User user Unable to modify file filename. Error: description
+%ASA-7-716031: Group name User user Unable to create file filename. Error: description
+%ASA-7-716032: Group name User user Unable to create folder folder. Error: description
+%ASA-7-716033: Group name User user Unable to remove folder folder. Error: description
+%ASA-7-716034: Group name User user Unable to write to file filename.
+%ASA-7-716035: Group name User user Unable to read file filename.
+%ASA-7-716036: Group name User user File Access: User user logged into the server server.
+%ASA-7-716037: Group name User user File Access: User user failed to login into the server server.
+%ASA-7-716603: Received size-recv KB Hostscan data from IP src-ip.
+%ASA-7-717024: Checking CRL from trustpoint: trustpoint name for purpose
+%ASA-7-717025: Validating certificate chain containing number of certs certificate(s).
+%ASA-7-717029: Identified client certificate within certificate chain. serial number: serial_number,subject name: subject_name.
+%ASA-7-717030: Found a suitable trustpoint trustpoint name to validate certificate.
+%ASA-7-717034: No-check extension found in certificate. OCSP check bypassed.
+%ASA-7-717036: Looking for a tunnel group match based on certificate maps for peer certificate withcertificate_identifier.
+%ASA-7-717038: Tunnel group match found. Tunnel Group: tunnel_group_name, Peer certificate:certificate_identifier.
+%ASA-7-717041: Local CA Server event: event info.
+%ASA-7-717045: Local CA Server CRL info: info
+%ASA-7-718001: Internal interprocess communication queue send failure: code error_code
+%ASA-7-718017: Got timeout for unknown peer IP_address msg type message_type
+%ASA-7-718018: Send KEEPALIVE request failure to IP_address
+%ASA-7-718019: Sent KEEPALIVE request to IP_address
+%ASA-7-718020: Send KEEPALIVE response failure to IP_address
+%ASA-7-718021: Sent KEEPALIVE response to IP_address
+%ASA-7-718022: Received KEEPALIVE request from IP_address
+%ASA-7-718023: Received KEEPALIVE response from IP_address
+%ASA-7-718025: Sent CFG UPDATE to IP_address
+%ASA-7-718026: Received CFG UPDATE from IP_address
+%ASA-7-718029: Sent OOS indicator to IP_address
+%ASA-7-718034: Sent TOPOLOGY indicator to IP_address
+%ASA-7-718035: Received TOPOLOGY indicator from IP_address
+%ASA-7-718036: Process timeout for req-type type_value, exid exchange_ID, peer IP_address
+%ASA-7-718041: Timeout [msgType=type] processed with no callback
+%ASA-7-718046: Create group policy policy_name
+%ASA-7-718047: Fail to create group policy policy_name
+%ASA-7-718049: Created secure tunnel to peer IP_address
+%ASA-7-718056: Deleted Master peer, IP IP_address
+%ASA-7-718058: State machine return code: action_routine, return_code
+%ASA-7-718059: State machine function trace: state=state_name, event=event_name, func=action_routine
+%ASA-7-718088: Possible VPN LB misconfiguration. Offending device MAC MAC_address.
+%ASA-7-719005: FSM NAME has been created using protocol for session pointer from source_address.
+%ASA-7-719006: Email Proxy session pointer has timed out for source_address because of networkcongestion.
+%ASA-7-719007: Email Proxy session pointer cannot be found for source_address.
+%ASA-7-719009: Email Proxy service is starting.
+%ASA-7-719015: Parsed emailproxy session pointer from source_address username: mailuser = mail_user,vpnuser = VPN_user, mailserver = server
+%ASA-7-719016: Parsed emailproxy session pointer from source_address password: mailpass = ******,vpnpass= ******
+%ASA-7-720031: (VPN-unit) HA status callback: Invalid event received. event=event_ID.
+%ASA-7-720034: (VPN-unit) Invalid type (type) for message handler.
+%ASA-7-720041: (VPN-unit) Sending type message id to standby unit
+%ASA-7-720042: (VPN-unit) Receiving type message id from active unit
+%ASA-7-720048: (VPN-unit) FSM action trace begin: state=state, last event=event, func=function.
+%ASA-7-720049: (VPN-unit) FSM action trace end: state=state, last event=event, return=return,func=function.
+%ASA-7-720050: (VPN-unit) Failed to remove timer. ID = id.
+%ASA-7-722029: Group group User user-name IP IP_address SVC Session Termination: Conns:connections, DPD Conns: DPD_conns, Comp resets: compression_resets, Dcmp resets:decompression_resets
+%ASA-7-722030: Group group User user-name IP IP_address SVC Session Termination: In: data_bytes(+ctrl_bytes) bytes, data_pkts (+ctrl_pkts) packets, drop_pkts drops
+%ASA-7-722031: Group group User user-name IP IP_address SVC Session Termination: Out: data_bytes(+ctrl_bytes) bytes, data_pkts (+ctrl_pkts) packets, drop_pkts drops.
+%ASA-7-723003: No memory for WebVPN Citrix ICA connection connection.
+%ASA-7-723004: WebVPN Citrix encountered bad flow control flow.
+%ASA-7-723005: No channel to set up WebVPN Citrix ICA connection.
+%ASA-7-723006: WebVPN Citrix SOCKS errors.
+%ASA-7-723007: WebVPN Citrix ICA connection connection list is broken.
+%ASA-7-723008: WebVPN Citrix ICA SOCKS Server server is invalid.
+%ASA-7-723009: Group group-name, User user-name, IP IP_address: WebVPN Citrix received dataon invalid connection connection.
+%ASA-7-723010: Group group-name, User user-name, IP IP_address: WebVPN Citrix received closingchannel channel for invalid connection connection.
+%ASA-7-723011: Group group-name, User user-name, IP IP_address: WebVPN Citrix receives badSOCKS socks message length msg-length. Expected length is exp-msg-length.
+%ASA-7-723012: Group group-name, User user-name, IP IP_address: WebVPN Citrix received badSOCKS socks message format.
+%ASA-7-723013: WebVPN Citrix encountered invalid connection connection during periodic timeout.
+%ASA-7-723014: Group group-name, User user-name, IP IP_address: WebVPN Citrix TCP connectionconnection to server server on channel channel initiated.
+%ASA-7-725008: SSL peer-type interface:src-ip/src-port to dst-ip/dst-port proposes the following ncipher(s).
+%ASA-7-725009: Device proposes the following n cipher(s) peer-type interface:src-ip/src-port todst-ip/dst-port.
+%ASA-7-725010: Device supports the following n cipher(s).
+%ASA-7-725011: Cipher[order]: cipher_name
+%ASA-7-725012: Device chooses cipher cipher for the SSL session with peer-type interface:src-ip/src-portto dst-ip/dst-port.
+%ASA-7-725013: SSL peer-type interface:src-ip/src-port to dst-ip/dst-port chooses cipher cipher
+%ASA-7-725014: SSL lib error. Function: function Reason: reason
+%ASA-7-725017: No certificates received during the handshake with %s %s:%B/%d to %B/%d for %ssession
+%ASA-7-725021: Device preferring cipher-suite cipher(s). Connection info: interface :src-ip /src-portto dst-ip /dst-port
+%ASA-7-725022: Device skipping cipher : cipher - reason. Connection info: interface :src-ip /src-portto dst-ip /dst-port
+%ASA-7-730001: Group groupname, User username, IP ipaddr: VLAN MAPPING to VLAN vlanid
+%ASA-7-730002: Group groupname, User username, IP ipaddr: VLAN MAPPING to VLAN vlanidfailed
+%ASA-7-730003: NACApp sets IP ipaddr VLAN to vlanid
+%ASA-7-730006: Group groupname, User username, IP ipaddr: is on NACApp AUTH VLAN vlanid.
+%ASA-7-730007: Group groupname, User username, IP ipaddr: changed VLAN to <%s> ID vlanid
+%ASA-7-730010: Group groupname, User username, IP ipaddr, VLAN Mapping is enabled on VLANvlanid.
+%ASA-7-734003: DAP: User name, Addr ipaddr: Session Attribute: attr name/value
+%ASA-7-737001: IPAA: Received message ‘message-type’
+%ASA-7-737035: IPAA: Session=<session>, '<message type>' message queued
+%ASA-7-747005: Clustering: State machine notify event event-name (event-id, ptr-in-hex, ptr-in-hex)
+%ASA-7-747006: Clustering: State machine is at state state-name
+%ASA-7-737200: VPNFIP: Pool=pool, Allocated ip-address from pool
+%ASA-7-737201: VPNFIP: Pool=pool, Returned ip-address to pool (recycle=recycle)
+%ASA-7-737206: VPNFIP: Pool=pool, DEBUG: message
+%ASA-7-737400: POOLIP: Pool=pool, Allocated ip-address from pool
+%ASA-7-737401: POOLIP: Pool=pool, Returned ip-address to pool (recycle=recycle)
+%ASA-7-737407: POOLIP: Pool=pool, DEBUG: message
+%ASA-7-750016: Local: localIP:port Remote:remoteIP:port Username: username IKEv2 Need to senda DPD message to peer
+%ASA-7-751003: Local: localIP:port Remote:remoteIP:port Username: username/group Need to senda DPD message to peer
+%ASA-7-752002: Tunnel Manager Removed entry. Map Tag = mapTag. Map Sequence Number =mapSeq.
+%ASA-7-752008: Duplicate entry already in Tunnel Manager.
+%ASA-7-776012: CTS SXP: timer name timer started for connection with peer peer IP.
+%ASA-7-776013: CTS SXP: timer name timer stopped for connection with peer peer IP.
+%ASA-7-776014: CTS SXP: SXP received binding forwarding request (action) binding binding IP -SGname(SGT).
+%ASA-7-776015: CTS SXP: Binding binding IP - SGname(SGT) is forwarded to peer peer IP (instanceconnection instance num).
+%ASA-7-776016: CTS SXP: Binding binding IP - SGName(SGT) from peer peer IP (instance binding'sconnection instance num) changed from old instance: old instance num, old sgt: old SGName(SGT).
+%ASA-7-776017: CTS SXP: Binding binding IP - SGname(SGT) from peer peer IP (instance connectioninstance num) deleted in SXP database.
+%ASA-7-776018: CTS SXP: Binding binding IP - SGname(SGT) from peer peer IP (instance connectioninstance num) added in SXP database.
+%ASA-7-776019: CTS SXP: Binding binding IP - SGname(SGT) action taken. Update binding manager.
+%ASA-7-776301: CTS Policy: Security-group tag sgt is mapped to security-group name "sgname"
+%ASA-7-776302: CTS Policy: Unknown security-group tag sgt referenced in policies
+%ASA-7-776307: CTS Policy: Security-group name for security-group tag sgt renamed from old_sgname"to "new_sgname"
+%ASA-7-776308: CTS Policy: Previously unknown security-group tag sgt is now mapped tosecurity-group name "sgname"
+%ASA-7-785001: Clustering: Ownership for existing flow from <in_interface>:<src_ip_addr>/<src_port>to <out_interface>:<dest_ip_addr>/<dest_port> moved from unit <old-owner-unit-id> at site <old-site-id>to <new-owner-unit-id> at site <old-site-id> due to <reason>.
+%ASA-7-815004: OGS: Packet <protocol> from <source IP address/port> to <destination IP address/port>matched <number of source network objects> source network objects and <number of source networkobjects> destination network objects total search entries <total number of entries>. Resultant key-set has<number of entries> entries

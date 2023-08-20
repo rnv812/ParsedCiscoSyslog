@@ -1,0 +1,3556 @@
+720001
+
+Error Message
+
+%ASA-4-720001: (VPN-unit ) Failed to initialize with Chunk Manager.
+
+Explanation
+
+The VPN failover subsystem fails to initialize with the memory buffer management
+subsystem. A system-wide problem has occurred, and the VPN failover subsystem
+cannot be started.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+Examine the messages for any sign of system-level initialization problems.
+
+720002
+
+Error Message
+
+%ASA-6-720002: (VPN-unit ) Starting VPN Stateful Failover Subsystem...
+
+Explanation
+
+The VPN failover subsystem is starting and booting up.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720003
+
+Error Message
+
+%ASA-6-720003: (VPN-unit ) Initialization of VPN Stateful Failover Component
+completed successfully
+
+Explanation
+
+The VPN failover subsystem initialization is completed at boot time.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720004
+
+Error Message
+
+%ASA-6-720004: (VPN-unit ) VPN failover main thread started.
+
+Explanation
+
+The VPN failover main processing thread is started at boot time.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720005
+
+Error Message
+
+%ASA-6-720005: (VPN-unit ) VPN failover timer thread started.
+
+Explanation
+
+The VPN failover timer processing thread is started at boot time.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720006
+
+Error Message
+
+%ASA-6-720006: (VPN-unit ) VPN failover sync thread started.
+
+Explanation
+
+The VPN failover bulk synchronization processing thread is started at boot time.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720007
+
+Error Message
+
+%ASA-4-720007: (VPN-unit ) Failed to allocate chunk from Chunk Manager.
+
+Explanation
+
+The set of preallocated memory buffers is running out. The Secure Firewall ASA
+has a resource issue. The Secure Firewall ASA may be under heavy load when too
+many messages are being processed.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+This condition may be improved later when the VPN failover subsystem processes
+outstanding messages and frees up previously allocated memory.
+
+720008
+
+Error Message
+
+%ASA-4-720008: (VPN-unit ) Failed to register to High Availability Framework.
+
+Explanation
+
+The VPN failover subsystem failed to register to the core failover subsystem.
+The VPN failover subsystem cannot be started, which may be caused by
+initialization problems of other subsystems.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+Search the message for any sign of system-wide initialization problems.
+
+720009
+
+Error Message
+
+%ASA-4-720009: (VPN-unit ) Failed to create version control block.
+
+Explanation
+
+The VPN failover subsystem failed to create a version control block. This step
+is required for the VPN failover subsystem to find out the backward compatible
+firmware versions for the current release. The VPN failover subsystem cannot be
+started, which may be caused by initialization problems of other subsystems.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+Search the message for any sign of system-wide initialization problems.
+
+720010
+
+Error Message
+
+%ASA-6-720010: (VPN-unit ) VPN failover client is being disabled
+
+Explanation
+
+An operator enabled failover without defining a failover key. In order to use a
+VPN failover, a failover key must be defined.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+Use the failover key command to define a shared secret key between the active
+and standby units.
+
+720011
+
+Error Message
+
+%ASA-4-720011: (VPN-unit ) Failed to allocate memory
+
+Explanation
+
+The VPN failover subsystem cannot allocate a memory buffer, which indicates a
+system-wide resource problem. The Secure Firewall ASA may be under heavy load.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+This condition may be improved later when you reduce the load on the Secure
+Firewall ASA by reducing incoming traffic. By reducing incoming traffic, memory
+allocated for processing the existing work load will be available, and the
+Secure Firewall ASA may return to normal operation.
+
+720012
+
+Error Message
+
+%ASA-6-720012: (VPN-unit ) Failed to update IPsec failover runtime data on the
+standby unit.
+
+Explanation
+
+The VPN failover subsystem cannot update IPsec-related runtime data because the
+corresponding IPsec tunnel has been deleted on the standby unit.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720013
+
+Error Message
+
+%ASA-4-720013: (VPN-unit ) Failed to insert certificate in trustpoint
+trustpoint_name
+
+Explanation
+
+The VPN failover subsystem tried to insert a certificate in the trustpoint.
+- unit - Either Primary or Secondary
+- trustpoint_name - The name of the trustpoint
+
+Recommended Action
+
+Check the certificate content to determine if it is invalid.
+
+720014
+
+Error Message
+
+%ASA-6-720014: (VPN-unit ) Phase 2 connection entry (msg_id=message_number , my
+cookie=mine , his cookie=his ) contains no SA list.
+
+Explanation
+
+No security association is linked to the Phase 2 connection entry.
+- unit - Either Primary or Secondary
+- message_number - The message ID of the Phase 2 connection entry
+- mine - The My Phase 1 cookie
+- his - The peer Phase 1 cookie
+
+Recommended Action
+
+None required.
+
+720015
+
+Error Message
+
+%ASA-6-720015: (VPN-unit ) Cannot found Phase 1 SA for Phase 2 connection entry
+(msg_id=message_number ,my cookie=mine , his cookie=his ).
+
+Explanation
+
+The corresponding Phase 1 security association for the given Phase 2 connection
+entry cannot be found.
+- unit - Either Primary or Secondary
+- message_number - The message ID of the Phase 2 connection entry
+- mine - The My Phase 1 cookie
+- his - The peer Phase 1 cookie
+
+Recommended Action
+
+None required.
+
+720016
+
+Error Message
+
+%ASA-5-720016: (VPN-unit) Failed to initialize default timer #index .
+
+Explanation
+
+The VPN failover subsystem failed to initialize the given timer event. The VPN
+failover subsystem cannot be started at boot time.
+- unit - Either Primary or Secondary
+- index - The internal index of the timer event
+
+Recommended Action
+
+Search the message for any sign of system-wide initialization problems.
+
+720017
+
+Error Message
+
+%ASA-5-720017: (VPN-unit ) Failed to update LB runtime data
+
+Explanation
+
+The VPN failover subsystem failed to update the VPN load balancing runtime data.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720018
+
+Error Message
+
+%ASA-5-720018: (VPN-unit ) Failed to get a buffer from the underlying core high
+availability subsystem. Error code code.
+
+Explanation
+
+The Secure Firewall ASA may be under heavy load. The VPN failover subsystem
+failed to obtain a failover buffer.
+- unit - Either Primary or Secondary
+- code - The error code returned by the high-availability subsystem
+
+Recommended Action
+
+Decrease the amount of incoming traffic to improve the current load condition.
+With decreased incoming traffic, the Secure Firewall ASA will free up memory
+allocated for processing the incoming load.
+
+720019
+
+Error Message
+
+%ASA-5-720019: (VPN-unit ) Failed to update cTCP statistics.
+
+Explanation
+
+The VPN failover subsystem failed to update the IPsec/cTCP-related statistics.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required. Updates are sent periodically, so the standby unit IPsec/cTCP
+statistics should be updated with the next update message.
+
+720020
+
+Error Message
+
+%ASA-5-720020: (VPN-unit ) Failed to send type timer message.
+
+Explanation
+
+The VPN failover subsystem failed to send a periodic timer message to the
+standby unit.
+- unit - Either Primary or Secondary
+- type - The type of timer message
+
+Recommended Action
+
+None required. The periodic timer message will be resent during the next
+timeout.
+
+720021
+
+Error Message
+
+%ASA-5-720021: (VPN-unit ) HA non-block send failed for peer msg message_number
+. HA error code .
+
+Explanation
+
+The VPN failover subsystem failed to send a nonblock message. This is a
+temporary condition caused by the Secure Firewall ASA being under load or out of
+resources.
+- unit - Either Primary or Secondary
+- message_number - The ID number of the peer message
+- code - The error return code
+
+Recommended Action
+
+The condition will improve as more resources become available to the Secure
+Firewall ASA.
+
+720022
+
+Error Message
+
+%ASA-4-720022: (VPN-unit ) Cannot find trustpoint trustpoint
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to look up a trustpoint
+by name.
+- unit - Either Primary or Secondary
+- trustpoint - The name of the trustpoint.
+
+Recommended Action
+
+The trustpoint may be deleted by an operator.
+
+720023
+
+Error Message
+
+%ASA-6-720023: (VPN-unit ) HA status callback: Peer is not present.
+
+Explanation
+
+The VPN failover subsystem is notified by the core failover subsystem when the
+local Secure Firewall ASA detected that a peer is available or becomes
+unavailable.
+- unit - Either Primary or Secondary
+- not - Either “not” or left blank
+
+Recommended Action
+
+None required.
+
+720024
+
+Error Message
+
+%ASA-6-720024: (VPN-unit ) HA status callback: Control channel is status .
+
+Explanation
+
+The failover control channel is either up or down. The failover control channel
+is defined by the failover link and show failover commands, which indicate
+whether the failover link channel is up or down.
+- unit - Either Primary or Secondary
+- status - Up or Down
+
+Recommended Action
+
+None required.
+
+720025
+
+Error Message
+
+%ASA-6-720025: (VPN-unit ) HA status callback: Data channel is status .
+
+Explanation
+
+The failover data channel is up or down.
+- unit - Either Primary or Secondary
+- status - Up or Down
+
+Recommended Action
+
+None required.
+
+720026
+
+Error Message
+
+%ASA-6-720026: (VPN-unit ) HA status callback: Current progression is being
+aborted.
+
+Explanation
+
+An operator or other external condition has occurred and has caused the current
+failover progression to abort before the failover peer agrees on the role
+(either active or standby). For example, when the failover active command is
+entered on the standby unit during the negotiation, or when the active unit is
+being rebooted.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720027
+
+Error Message
+
+%ASA-6-720027: (VPN-unit ) HA status callback: My state state .
+
+Explanation
+
+The state of the local failover device is changed.
+- unit - Either Primary or Secondary
+- state - Current state of the local failover device
+
+Recommended Action
+
+None required.
+
+720028
+
+Error Message
+
+%ASA-6-720028: (VPN-unit ) HA status callback: Peer state state .
+
+Explanation
+
+The current state of the failover peer is reported.
+- unit - Either Primary or Secondary
+- state - Current state of the failover peer
+
+Recommended Action
+
+None required.
+
+720029
+
+Error Message
+
+%ASA-6-720029: (VPN-unit ) HA status callback: Start VPN bulk sync state.
+
+Explanation
+
+The active unit is ready to send all the state information to the standby unit.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720030
+
+Error Message
+
+%ASA-6-720030: (VPN-unit ) HA status callback: Stop bulk sync state.
+
+Explanation
+
+The active unit finished sending all the state information to the standby unit.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720031
+
+Error Message
+
+%ASA-7-720031: (VPN-unit ) HA status callback: Invalid event received.
+event=event_ID .
+
+Explanation
+
+The VPN failover subsystem received an invalid callback event from the
+underlying failover subsystem.
+- unit - Either Primary or Secondary
+- event_ID - The invalid event ID received
+
+Recommended Action
+
+None required.
+
+720032
+
+Error Message
+
+%ASA-6-720032: (VPN-unit) HA status callback: id=ID , seq=sequence_# , grp=group
+, event=event , op=operand , my=my_state , peer=peer_state .
+
+Explanation
+
+The VPN failover subsystem indicated that a status update was notified by the
+underlying failover subsystem.
+- unit - Either Primary or Secondary
+- ID - Client ID number
+- sequence_# - Sequence number
+- group - Group ID
+- event - Current event
+- operand - Current operand
+- my_state - The system current state
+- peer_state - The current state of the peer
+
+Recommended Action
+
+None required.
+
+720033
+
+Error Message
+
+%ASA-4-720033: (VPN-unit ) Failed to queue add to message queue.
+
+Explanation
+
+System resources may be running low. An error occurred when the VPN failover
+subsystem tried to queue an internal message. This may be a temporary condition
+indicating that the Secure Firewall ASA is under heavy load, and the VPN
+failover subsystem cannot allocate resource to handle incoming traffic.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+This error condition may disappear if the current load of the Secure Firewall
+ASA is reduced, and additional system resources become available for processing
+new messages again.
+
+720034
+
+Error Message
+
+%ASA-7-720034: (VPN-unit ) Invalid type (type ) for message handler.
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to process an invalid
+message type.
+- unit - Either Primary or Secondary
+- type - Message type
+
+Recommended Action
+
+None required.
+
+720035
+
+Error Message
+
+%ASA-5-720035: (VPN-unit ) Fail to look up CTCP flow handle
+
+Explanation
+
+The cTCP flow may be deleted on the standby unit before the VPN failover
+subsystem tries to do a lookup.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+Look for any sign of cTCP flow deletion in the message to determine the reason
+(for example, idle timeout) why the flow was deleted.
+
+720036
+
+Error Message
+
+%ASA-5-720036: (VPN-unit ) Failed to process state update message from the
+active peer.
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to process a state
+update message received by the standby unit.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required. This may be a temporary condition because of the current load or
+low system resources.
+
+720037
+
+Error Message
+
+%ASA-6-720037: (VPN-unit ) HA progression callback: id=id ,seq=sequence_number
+,grp=group ,event=event ,op=operand , my=my_state ,peer=peer_state .
+
+Explanation
+
+The status of the current failover progression is reported.
+- unit - Either Primary or Secondary
+- id - Client ID
+- sequence_number - Sequence number
+- group - Group ID
+- event - Current event
+- operand - Current operand
+- my_state - Current state of the Secure Firewall ASA
+- peer_state - Current state of the peer
+
+Recommended Action
+
+None required.
+
+720038
+
+Error Message
+
+%ASA-4-720038: (VPN-unit ) Corrupted message from active unit.
+
+Explanation
+
+The standby unit received a corrupted message from the active unit. Messages
+from the active unit are corrupted, which may be caused by incompatible firmware
+running between the active and standby units. The local unit has become the
+active unit of the failover pair.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720039
+
+Error Message
+
+%ASA-6-720039: (VPN-unit ) VPN failover client is transitioning to active state
+
+Explanation
+
+The local unit has become the active unit of the failover pair.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720040
+
+Error Message
+
+%ASA-6-720040: (VPN-unit ) VPN failover client is transitioning to standby
+state.
+
+Explanation
+
+The local unit has become the standby unit of the failover pair.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720041
+
+Error Message
+
+%ASA-7-720041: (VPN-unit ) Sending type message id to standby unit
+
+Explanation
+
+A message has been sent from the active unit to the standby unit.
+- unit - Either Primary or Secondary
+- type - Message type
+- id - Identifier for the message
+
+Recommended Action
+
+None required.
+
+720042
+
+Error Message
+
+%ASA-7-720042: (VPN-unit ) Receiving type message id from active unit
+
+Explanation
+
+A message has been received from the active unit by the standby unit.
+- unit - Either Primary or Secondary
+- type - Message type
+- id - Identifier for the message
+
+Recommended Action
+
+None required.
+
+720043
+
+Error Message
+
+%ASA-4-720043: (VPN-unit ) Failed to send type message id to standby unit
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to send a message from
+the active unit to the standby unit. The error may be caused by message 720018,
+in which the core failover subsystem runs out of failover buffer or the failover
+LAN link is down.
+- unit - Either Primary or Secondary
+- type - Message type
+- id - Identifier for the message
+
+Recommended Action
+
+Use the show failover command to see if the failover pair is running correctly
+and the failover LAN link is up.
+
+720044
+
+Error Message
+
+%ASA-4-720044: (VPN-unit ) Failed to receive message from active unit
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to receive a message on
+the standby unit. The error may be caused by a corrupted message or an
+inadequate amount of memory allocated for storing the incoming message.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+Use the show failover command and look for receive errors to determine if this
+is a VPN failover-specific problem or a general failover issue. Corrupted
+messages may be caused by incompatible firmware versions running on the active
+and standby units. Use the show memory command to determine if a low memory
+condition exists.
+
+720045
+
+Error Message
+
+%ASA-6-720045: (VPN-unit ) Start bulk syncing of state information on standby
+unit.
+
+Explanation
+
+The standby unit has been notified to start receiving bulk synchronization
+information from the active unit.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720046
+
+Error Message
+
+%ASA-6-720046: (VPN-unit ) End bulk syncing of state information on standby unit
+
+Explanation
+
+The standby unit has been notified that bulk synchronization from the active
+unit is completed.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720047
+
+Error Message
+
+%ASA-4-720047: (VPN-unit ) Failed to sync SDI node secret file for server
+IP_address on the standby unit.
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to synchronize a node
+secret file for the SDI server on the standby unit. The SDI node secret file is
+stored in flash. The error may indicate that the flash file system is full or
+corrupted.
+- unit - Either Primary or Secondary
+- IP_address - IP address of the server
+
+Recommended Action
+
+Use the dir command to display the flash contents. The node secret file has the
+filename, ip .sdi.
+
+720048
+
+Error Message
+
+%ASA-7-720048: (VPN-unit ) FSM action trace begin: state=state , last
+event=event , func=function .
+
+Explanation
+
+A VPN failover subsystem finite state machine function has started.
+- unit - Either Primary or Secondary
+- state - Current state
+- event - Last event
+- function - Current executing function
+
+Recommended Action
+
+None required.
+
+720049
+
+Error Message
+
+%ASA-7-720049: (VPN-unit ) FSM action trace end: state=state , last event=event
+, return=return , func=function .
+
+Explanation
+
+A VPN failover subsystem finite state machine function has finished.
+- unit - Either Primary or Secondary
+- state - Current state
+- event - Last event
+- return - Return code
+- function - Current executing function
+
+Recommended Action
+
+None required.
+
+720050
+
+Error Message
+
+%ASA-7-720050: (VPN-unit ) Failed to remove timer. ID = id .
+
+Explanation
+
+A timer cannot be removed from the timer processing thread.
+- unit - Either Primary or Secondary
+- id - Timer ID
+
+Recommended Action
+
+None required.
+
+720051
+
+Error Message
+
+%ASA-4-720051: (VPN-unit ) Failed to add new SDI node secret file for server id
+on the standby unit.
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to add a node secret
+file for the SDI server on the standby unit. The SDI node secret file is stored
+in flash. The error may indicate that the flash file system is full or
+corrupted.
+- unit - Either Primary or Secondary
+- id - IP address of the SDI server
+
+Recommended Action
+
+Use the dir command to display the flash contents. The node secret file has the
+filename, ip.sdi.
+
+720052
+
+Error Message
+
+%ASA-4-720052: (VPN-unit ) Failed to delete SDI node secret file for server id
+on the standby unit.
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to delete a node secret
+file on the active unit. The node secret file being deleted may not exist in the
+flash file system, or there was problem reading the flash file system.
+- unit - Either Primary or Secondary
+- IP_address - IP address of the SDI server
+
+Recommended Action
+
+Use the dir command to display the flash contents. The node secret file has the
+filename, ip.sdi.
+
+720053
+
+Error Message
+
+%ASA-4-720053: (VPN-unit ) Failed to add cTCP IKE rule during bulk sync,
+peer=IP_address , port=port
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to load a cTCP IKE rule
+on the standby unit during bulk synchronization. The standby unit may be under
+heavy load, and the new IKE rule request may time out before completion.
+- unit - Either Primary or Secondary
+- IP_address - Peer IP address
+- port - Peer port number
+
+Recommended Action
+
+None required.
+
+720054
+
+Error Message
+
+%ASA-4-720054: (VPN-unit ) Failed to add new cTCP record, peer=IP_address ,
+port=port .
+
+Explanation
+
+A cTCP record is replicated to the standby unit and cannot be updated. The
+corresponding IPsec over cTCP tunnel may not be functioning after failover. The
+cTCP database may be full, or a record with the same peer IP address and port
+number exists already.
+- unit - Either Primary or Secondary
+- IP_address - Peer IP address
+- port - Peer port number
+
+Recommended Action
+
+This may be a temporary condition and may improve when the existing cTCP tunnel
+is restored.
+
+720055
+
+Error Message
+
+%ASA-4-720055: (VPN-unit ) VPN Stateful failover can only be run in
+single/non-transparent mode.
+
+Explanation
+
+The VPN subsystem does not start unless it is running in single (nontransparent)
+mode.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+Configure the Secure Firewall ASA for the appropriate mode to support VPN
+failover and restart the Secure Firewall ASA.
+
+720056
+
+Error Message
+
+%ASA-6-720056: (VPN-unit ) VPN Stateful failover Message Thread is being
+disabled.
+
+Explanation
+
+The VPN failover subsystem main message processing thread is disabled when you
+have tried to enable failover, but a failover key is not defined. A failover key
+is required for VPN failover.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720057
+
+Error Message
+
+%ASA-6-720057: (VPN-unit ) VPN Stateful failover Message Thread is enabled.
+
+Explanation
+
+The VPN failover subsystem main message processing thread is enabled when
+failover is enabled and a failover key is defined.
+- unit - Either Primary or Secondary
+
+
+
+Recommended Action
+
+None required.
+
+720058
+
+Error Message
+
+%ASA-6-720058: (VPN-unit ) VPN Stateful failover Timer Thread is disabled.
+
+Explanation
+
+The VPN failover subsystem main timer processing thread is disabled when the
+failover key is not defined and failover is enabled.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720059
+
+Error Message
+
+%ASA-6-720059: (VPN-unit ) VPN Stateful failover Timer Thread is enabled.
+
+Explanation
+
+The VPN failover subsystem main timer processing thread is enabled when the
+failover key is defined and failover is enabled.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720060
+
+Error Message
+
+%ASA-6-720060: (VPN-unit ) VPN Stateful failover Sync Thread is disabled.
+
+Explanation
+
+The VPN failover subsystem main bulk synchronization processing thread is
+disabled when failover is enabled, but the failover key is not defined.
+- unit - Either Primary or Secondary.
+
+Recommended Action
+
+None required.
+
+720061
+
+Error Message
+
+%ASA-6-720061: (VPN-unit ) VPN Stateful failover Sync Thread is enabled.
+
+Explanation
+
+The VPN failover subsystem main bulk synchronization processing thread is
+enabled when failover is enabled and the failover key is defined.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720062
+
+Error Message
+
+%ASA-6-720062: (VPN-unit ) Active unit started bulk sync of state information to
+standby unit.
+
+Explanation
+
+The VPN failover subsystem active unit has started bulk synchronization of state
+information to the standby unit.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720063
+
+Error Message
+
+%ASA-6-720063: (VPN-unit ) Active unit completed bulk sync of state information
+to standby.
+
+Explanation
+
+The VPN failover subsystem active unit has completed bulk synchronization of
+state information to the standby unit.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+None required.
+
+720064
+
+Error Message
+
+%ASA-4-720064: (VPN-unit ) Failed to update cTCP database record for
+peer=IP_address , port=port during bulk sync.
+
+Explanation
+
+An error occurred while the VPN failover subsystem attempted to update an
+existing cTCP record during bulk synchronization. The cTCP record may have been
+deleted from the cTCP database on the standby unit and cannot be found.
+- unit - Either Primary or Secondary
+- IP_address - Peer IP address
+- port - Peer port number
+
+Recommended Action
+
+Search in the message.
+
+720065
+
+Error Message
+
+%ASA-4-720065: (VPN-unit ) Failed to add new cTCP IKE rule, peer=peer ,
+port=port .
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to add a new IKE rule
+for the cTCP database entry on the standby unit. The Secure Firewall ASA may be
+under heavy load, and the request for adding a cTCP IKE rule timed out and was
+never completed.
+- unit - Either Primary or Secondary
+- IP_address - Peer IP address
+- port - Peer port number
+
+Recommended Action
+
+This may be a temporary condition.
+
+720066
+
+Error Message
+
+%ASA-4-720066: (VPN-unit ) Failed to activate IKE database.
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to activate the IKE
+security association database while the standby unit was transitioning to the
+active state. There may be resource-related issues on the standby unit that
+prevent the IKE security association database from activating.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+Use the show failover command to see if the failover pair is still working
+correctly and/or look for other IKE-related errors in the message.
+
+720067
+
+Error Message
+
+%ASA-4-720067: (VPN-unit ) Failed to deactivate IKE database.
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to deactivate the IKE
+security association database while the active unit was transitioning to the
+standby state. There may be resource-related issues on the active unit that
+prevent the IKE security association database from deactivating.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+Use the show failover command to see if the failover pair is still working
+correctly and/or look for IKE-related errors in the message.
+
+720068
+
+Error Message
+
+%ASA-4-720068: (VPN-unit ) Failed to parse peer message.
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to parse a peer message
+received on the standby unit. The peer message received on the standby unit
+cannot be parsed.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+Make sure that both active and standby units are running the same version of
+firmware. Also, use the show failover command to ensure that the failover pair
+is still working correctly.
+
+720069
+
+Error Message
+
+%ASA-4-720069: (VPN-unit ) Failed to activate cTCP database.
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to activate the cTCP
+database while the standby unit was transitioning to the active state. There may
+be resource-related issues on the standby unit that prevent the cTCP database
+from activating.
+- unit - Either Primary or Secondary
+
+Recommended Action
+
+Use the show failover command to see if the failover pair is still working
+correctly and/or look for other cTCP related errors in the message.
+
+720070
+
+Error Message
+
+%ASA-4-720070: (VPN-unit ) Failed to deactivate cTCP database.
+
+Explanation
+
+An error occurred when the VPN failover subsystem tried to deactivate the cTCP
+database while the active unit was transitioning to the standby state. There may
+be resource-related issues on the active unit that prevent the cTCP database
+from deactivating.
+- unit - Either Primary or Secondary.
+
+Recommended Action
+
+Use the show failover command to see if the failover pair is still working
+correctly and/or look for cTCP related errors in the message.
+
+720071
+
+Error Message
+
+%ASA-5-720071: (VPN-unit ) Failed to update cTCP dynamic data.
+
+Explanation
+
+An error occurred while the VPN failover subsystem tried to update cTCP dynamic
+data.
+- unit - Either Primary or Secondary.
+
+Recommended Action
+
+This may be a temporary condition. Because this is a periodic update, wait to
+see if the same error recurs. Also, look for other failover-related messages in
+the message.
+
+720072
+
+Error Message
+
+%ASA-5-720072: Timeout waiting for Integrity Firewall Server [interface ,ip ] to
+become available.
+
+Explanation
+
+The Zonelab Integrity Server cannot reestablish a connection before timeout. In
+an active/standby failover setup, the SSL connection between a Zonelab Integrity
+Server and the Secure Firewall ASA needs to be reestablished after a failover.
+- interface - The interface to which the Zonelab Integrity Server is connected
+- ip - The IP address of the Zonelab Integrity Server
+
+Recommended Action
+
+Check that the configuration on the Secure Firewall ASA and the Zonelab
+Integrity Server match, and verify communication between the Secure Firewall ASA
+and the Zonelab Integrity Server.
+
+720073
+
+Error Message
+
+%ASA-4-720073: VPN Session failed to replicate - ACL acl_name not found
+
+Explanation
+
+When replicating VPN sessions to the standby unit, the standby unit failed to
+find the associated filter ACL.
+- acl_name - The name of the ACL that was not found
+
+Recommended Action
+
+Verify that the configuration on the standby unit has not been modified while in
+standby state. Resynchronize the standby unit by issuing the write standby
+command on the active unit.
+
+721001
+
+Error Message
+
+%ASA-6-721001: (device ) WebVPN Failover SubSystem started successfully.(device
+) either WebVPN-primary or WebVPN-secondary.
+
+Explanation
+
+The WebVPN failover subsystem in the current failover unit, either primary or
+secondary, has been started successfully.
+- (device) - Either the WebVPN primary or the WebVPN secondary device
+
+Recommended Action
+
+None required.
+
+721002
+
+Error Message
+
+%ASA-6-721002: (device ) HA status change: event event , my state my_state ,
+peer state peer .
+
+Explanation
+
+The WebVPN failover subsystem receives status notification from the core HA
+component periodically. The incoming event, the new state of the local Secure
+Firewall ASA, and the new state of the failover peer are reported.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall
+ASA
+- event - New HA event
+- my_state - The new state of the local Secure Firewall ASA
+- peer - The new state of the peer
+
+Recommended Action
+
+None required.
+
+721003
+
+Error Message
+
+%ASA-6-721003: (device ) HA progression change: event event , my state my_state
+, peer state peer .
+
+Explanation
+
+The WebVPN failover subsystem transitions from one state to another state based
+on the event notified by the core HA component. The incoming event, the new
+state of the local Secure Firewall ASA, and the new state of the failover peer
+are being reported.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall
+ASA
+- event - New HA event
+- my_state - The new state of the local Secure Firewall ASA
+- peer - The new state of the peer
+
+Recommended Action
+
+None required.
+
+721004
+
+Error Message
+
+%ASA-6-721004: (device ) Create access list list_name on standby unit.
+
+Explanation
+
+A WebVPN-specific access list is replicated from the active unit to the standby
+unit. A successful installation of the WebVPN access list on the standby unit
+has occurred.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall ASA
+- list_name - The access list name
+
+Recommended Action
+
+None required.
+
+721005
+
+Error Message
+
+%ASA-6-721005: (device ) Fail to create access list list_name on standby unit.
+
+Explanation
+
+When a WebVPN-specific access list is installed on the active unit, a copy is
+installed on the standby unit. The access list failed to be installed on the
+standby unit. The access list may have existed on the standby unit already.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall
+ASA
+- list_name - Name of the access list that failed to install on the standby unit
+
+Recommended Action
+
+Use the show access-list command on both the active and standby units. Compare
+the content of the output and determine whether there is any discrepancy.
+Resynchronize the standby unit, if needed, by using the write standby command on
+the active unit.
+
+721006
+
+Error Message
+
+%ASA-6-721006: (device ) Update access list list_name on standby unit.
+
+Explanation
+
+The content of the access list has been updated on the standby unit.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall
+ASA
+- list_name - Name of the access list that was updated
+
+Recommended Action
+
+None required.
+
+721007
+
+Error Message
+
+%ASA-4-721007: (device ) Fail to update access list list_name on standby unit.
+
+Explanation
+
+An error occurred while the standby unit tried to update a WebVPN-specific
+access list. The access list cannot be located on the standby unit.
+- (device) - Either the WebVPN primary or the WebVPN-= secondary Secure Firewall
+ASA
+- list_name - Name of the access list that was not updated
+
+Recommended Action
+
+Use a show access-list command on both the active and standby units. Compare the
+content of the output and determine whether or not there is any discrepancy.
+Resynchronize the standby unit, if needed, by using the write standby command on
+the active unit.
+
+721008
+
+Error Message
+
+%ASA-6-721008: (device ) Delete access list list_name on standby unit.
+
+Explanation
+
+When a WebVPN-specific access list is removed from the active unit, a message is
+sent to the standby unit requesting that the same access list be removed. As a
+result, a WebVPN-specific access list has been removed from the standby unit.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall
+ASA
+- list_name - Name of the access list that was removed
+
+Recommended Action
+
+None required.
+
+721009
+
+Error Message
+
+%ASA-6-721009: (device ) Fail to delete access list list_name on standby unit.
+
+Explanation
+
+When a WebVPN-specific access list is removed on the active unit, a message is
+sent to the standby unit requesting the same access list be removed. An error
+condition occurred when an attempt was made to remove the corresponding access
+list on the standby unit. The access list did not exist on the standby unit.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall
+ASA
+- list_name - Name of the access list that was deleted
+
+Recommended Action
+
+Use a show access-list command on both the active and standby units. Compare the
+content of the output and determine whether there is any discrepancy.
+Resynchronize the standby unit, if needed, by using the write standby command on
+the active unit.
+
+721010
+
+Error Message
+
+%ASA-6-721010: (device ) Add access list rule list_name , line line_no on
+standby unit.
+
+Explanation
+
+When an access list rule is added to the active unit, the same rule is added on
+the standby unit. A new access list rule was added successfully on the standby
+unit.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall
+ASA
+- list_name - Name of the access list that was deleted
+- line_no - Line number of the rule added to the access list
+
+Recommended Action
+
+None required.
+
+721011
+
+Error Message
+
+%ASA-4-721011: (device ) Fail to add access list rule list_name , line line_no
+on standby unit.
+
+Explanation
+
+When an access list rule is added to the active unit, an attempt is made to add
+the same access list rule to the standby unit. An error occurred when an attempt
+is made to add a new access list rule to the standby unit. The same access list
+rule may exist on the standby unit.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall
+ASA
+- list_name - Name of the access list that was deleted
+- line_no - Line number of the rule added to the access list
+
+Recommended Action
+
+Use a show access-list command on both the active and standby units. Compare the
+content of the output and determine if there is any discrepancy. Resynchronize
+the standby unit, if needed, by using the write standby command on the active
+unit.
+
+721012
+
+Error Message
+
+%ASA-6-721012: (device ) Enable APCF XML file file_name on the standby unit.
+
+Explanation
+
+When an APCF XML file is installed on the active unit, an attempt is made to
+install the same file on the standby unit. An APCF XML file was installed
+successfully on the standby unit. Use the dir command on the standby unit to
+show that the XML file exists in the flash file system.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall ASA
+- file_name - Name of the XML file on the flash file system
+
+Recommended Action
+
+None required.
+
+721013
+
+Error Message
+
+%ASA-4-721013: (device ) Fail to enable APCF XML file file_name on the standby
+unit.
+
+Explanation
+
+When an APCF XML file is installed on the active unit, an attempt is made to
+install the same file on the standby unit. An APCF XML file failed to install on
+the standby unit.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall ASA
+- file_name - Name of the XML file on the flash file system
+
+Recommended Action
+
+Use a dir command on both the active and standby unit. Compare the directory
+listing and determine if there is any discrepancy. Resynchronize the standby
+unit, if needed, by using the write standby command on the active unit.
+
+721014
+
+Error Message
+
+%ASA-6-721014: (device ) Disable APCF XML file file_name on the standby unit.
+
+Explanation
+
+When an APCF XML file is removed on the active unit, an attempt is made to
+remove the same file on the standby unit. An APCF XML file was removed from the
+standby unit successfully.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall
+ASA
+- file_name - Name of the XML file on the flash file system
+
+Recommended Action
+
+None required.
+
+721015
+
+Error Message
+
+%ASA-4-721015: (device ) Fail to disable APCF XML file file_name on the standby
+unit.
+
+Explanation
+
+When an APCF XML file is removed on the active unit, an attempt is made to
+remove the same file on the standby unit. An error occurred when an attempt was
+made to remove an APCF XML file from the standby unit. The file may not be
+installed on the standby unit.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall ASA
+- file_name - Name of the XML file on the flash file system
+
+Recommended Action
+
+Use a show running-config webvpn command to make sure the APCF XML file of
+interest is not enabled. As long as it is not enabled, you may ignore this
+message. Otherwise, try to disable the file by using the no apcf file_name
+command in the webvpn configuration submode.
+
+721016
+
+Error Message
+
+%ASA-6-721016: (device ) WebVPN session for client user user_name , IP
+ip_address has been created.
+
+Explanation
+
+A remote WebVPN user has logged in successfully and the login information has
+been installed on the standby unit.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall
+ASA
+- user_name - Name of the user
+- ip_address - IP address of the remote user
+
+Recommended Action
+
+None required.
+
+721017
+
+Error Message
+
+%ASA-4-721017: (device ) Fail to create WebVPN session for user user_name , IP
+ip_address .
+
+Explanation
+
+When a WebVPN user logs in to the active unit, the login information is
+replicated to the standby unit. An error occurred while replicating the login
+information to the standby unit.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall
+ASA
+- user_name - Name of the user
+- ip_address - IP address of the remote user
+
+Recommended Action
+
+Use the show vpn-sessiondb detail webvpn command for a regular WebVPN user, or
+the show vpn-sessiondb detail svc command for a WebVPN SVC user on both the
+active and standby units. Compare the entries and determine whether the same
+user session record appears on both Secure Firewall ASAs. Resynchronize the
+standby unit, if needed, by using the write standby command on the active unit.
+
+721018
+
+Error Message
+
+%ASA-6-721018: (device ) WebVPN session for client user user_name , IP
+ip_address has been deleted.
+
+Explanation
+
+When a WebVPN user logs out on the active unit, a logout message is sent to the
+standby unit to remove the user session from the standby unit. A WebVPN user
+record was removed from the standby unit successfully.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall
+ASA
+- user_name - Name of the user
+- ip_address - IP address of the remote user
+
+Recommended Action
+
+None required.
+
+721019
+
+Error Message
+
+%ASA-4-721019: (device ) Fail to delete WebVPN session for client user user_name
+, IP ip_address .
+
+Explanation
+
+When a WebVPN user logs out on the active unit, a logout message is sent to the
+standby unit to remove the user session from the standby unit. An error occurred
+when an attempt was made to remove a WebVPN user record from the standby unit.
+- (device) - Either the WebVPN primary or the WebVPN secondary Secure Firewall ASA
+- user_name - Name of the user
+- ip_address - IP address of the remote user
+
+Recommended Action
+
+Use the show vpn-sessiondb detail webvpn command for a regular WebVPN user, or
+the show vpn-sessiondb detail svc command for a WebVPN SVC user on both the
+active and standby units. Check whether there is any discrepancy. Resynchronize
+the standby unit, if needed, by using the write standby command on the active
+unit.
+
+722001
+
+Error Message
+
+%ASA-4-722001: IP IP_address Error parsing SVC connect request.
+
+Explanation
+
+The request from the SVC was invalid.
+
+Recommended Action
+
+Research as necessary to determine if this error was caused by a defect in the
+SVC, an incompatible SVC version, or an attack against the device.
+
+722002
+
+Error Message
+
+%ASA-4-722002: IP IP_address Error consolidating SVC connect request.
+
+Explanation
+
+There is not enough memory to perform the action.
+
+Recommended Action
+
+Purchase more memory, upgrade the device, or reduce the load on the device.
+
+722003
+
+Error Message
+
+%ASA-4-722003: IP IP_address Error authenticating SVC connect request.
+
+Explanation
+
+The user took too long to download and connect.
+
+Recommended Action
+
+Increase the timeouts for session idle and maximum connect time.
+
+722004
+
+Error Message
+
+%ASA-4-722004: Group group User user-name IP IP_address Error responding to SVC
+connect request.
+
+Explanation
+
+There is not enough memory to perform the action.
+
+Recommended Action
+
+Purchase more memory, upgrade the device, or reduce the load on the device.
+
+722005
+
+Error Message
+
+%ASA-5-722005: Group group User user-name IP IP_address Unable to update session
+information for SVC connection.
+
+Explanation
+
+There is not enough memory to perform the action.
+
+Recommended Action
+
+Purchase more memory, upgrade the device, or reduce the load on the device.
+
+722006
+
+Error Message
+
+%ASA-5-722006: Group group User user-name IP IP_address Invalid address
+IP_address assigned to SVC connection.
+
+Explanation
+
+An invalid address was assigned to the user.
+
+Recommended Action
+
+Verify and correct the address assignment, if possible. Otherwise, notify your
+network administrator or escalate this issue according to your security policy.
+For additional assistance, contact the Cisco TAC.
+
+722007
+
+Error Message
+
+%ASA-3-722007: Group group User user-name IP IP_address SVC Message: type-num
+/ERROR: message
+
+Explanation
+
+The SVC issued a message.
+- type-num - A number from 0 to 31 indicating a message type. Message types are
+as follows:
+  - 0 - Normal
+  - 16 - Logout
+  - 17 - Closed due to error
+  - 18 - Closed due to rekey
+  - 1-15, 19-31 - Reserved and unused
+- message - A text message from the SVC
+
+Recommended Action
+
+None required.
+
+722008
+
+Error Message
+
+%ASA-3-722008: Group group User user-name IP IP_address SVC Message: type-num
+/ERROR: message
+
+Explanation
+
+The SVC issued a message.
+- type-num - A number from 0 to 31 indicating a message type. Message types are
+as follows:
+  - 0 - Normal
+  - 16 - Logout
+  - 17 - Closed due to error
+  - 18 - Closed due to rekey
+  - 1-15, 19-31 - Reserved and unused
+- message - A text message from the SVC
+
+Recommended Action
+
+None required.
+
+722009
+
+Error Message
+
+%ASA-3-722009: Group group User user-name IP IP_address SVC Message: type-num
+/ERROR: message
+
+Explanation
+
+The SVC issued a message.
+- type-num - A number from 0 to 31 indicating a message type. Message types are
+as follows:
+  - 0 - Normal
+  - 16 - Logout
+  - 17 - Closed due to error
+  - 18 - Closed due to rekey
+  - 1-15, 19-31 - Reserved and unused
+- message - A text message from the SVC
+
+Recommended Action
+
+None required.
+
+722010
+
+Error Message
+
+%ASA-5-722010: Group group User user-name IP IP_address SVC Message: type-num
+/NOTICE: message
+
+Explanation
+
+The SVC issued a message.
+- type-num - A number from 0 to 31 indicating a message type. Message types are
+as follows:
+  - 0 - Normal
+  - 16 - Logout
+  - 17 - Closed due to error
+  - 18 - Closed due to rekey
+  - 1-15, 19-31 - Reserved and unused
+- message - A text message from the SVC
+
+Recommended Action
+
+None required.
+
+722011
+
+Error Message
+
+%ASA-5-722011: Group group User user-name IP IP_address SVC Message: type-num
+/NOTICE: message
+
+Explanation
+
+The SVC issued a message.
+- type-num - A number from 0 to 31 indicating a message type. Message types are
+as follows:
+  - 0 - Normal
+  - 16 - Logout
+  - 17 - Closed due to error
+  - 18 - Closed due to rekey
+  - 1-15, 19-31 - Reserved and unused
+- message - A text message from the SVC
+
+Recommended Action
+
+None required.
+
+722012
+
+Error Message
+
+%ASA-5-722012: Group group User user-name IP IP_address SVC Message: type-num
+/INFO: message
+
+Explanation
+
+The SVC issued a message.
+- type-num - A number from 0 to 31 indicating a message type. Message types are
+as follows:
+  - 0 - Normal
+  - 16 - Logout
+  - 17 - Closed due to error
+  - 18 - Closed due to rekey
+  - 1-15, 19-31 - Reserved and unused
+- message - A text message from the SVC
+
+Recommended Action
+
+None required.
+
+722013
+
+Error Message
+
+%ASA-6-722013: Group group User user-name IP IP_address SVC Message: type-num
+/INFO: message
+
+Explanation
+
+The SVC issued a message.
+- type-num - A number from 0 to 31 indicating a message type. Message types are
+as follows:
+  - 0 - Normal
+  - 16 - Logout
+  - 17 - Closed due to error
+  - 18 - Closed due to rekey
+  - 1-15, 19-31 - Reserved and unused
+- message - A text message from the SVC
+
+Recommended Action
+
+None required.
+
+722014
+
+Error Message
+
+%ASA-6-722014: Group group User user-name IP IP_address SVC Message: type-num
+/INFO: message
+
+Explanation
+
+The SVC issued a message.
+- type-num - A number from 0 to 31 indicating a message type. Message types are
+as follows:
+  - 0 - Normal.
+  - 16 - Logout
+  - 17 - Closed due to error
+  - 18 - Closed due to rekey
+  - 1-15, 19-31 - Reserved and unused
+- message - A text message from the SVC
+
+Recommended Action
+
+None required.
+
+722015
+
+Error Message
+
+%ASA-4-722015: Group group User user-name IP IP_address Unknown SVC frame type:
+type-num
+
+Explanation
+
+The SVC sent an invalid frame type to the device, which might be caused by an
+SVC version incompatibility.
+- type-num - The number identifier of the frame type
+
+Recommended Action
+
+Verify the SVC version.
+
+722016
+
+Error Message
+
+%ASA-4-722016: Group group User user-name IP IP_address Bad SVC frame length:
+length expected: expected-length
+
+Explanation
+
+The expected amount of data was not available from the SVC, which might be
+caused by an SVC version incompatibility.
+
+Recommended Action
+
+Verify the SVC version.
+
+722017
+
+Error Message
+
+%ASA-4-722017: Group group User user-name IP IP_address Bad SVC framing: 525446,
+reserved: 0
+
+Explanation
+
+The SVC sent a badly framed datagram, which might be caused by an SVC version
+incompatibility.
+
+Recommended Action
+
+Verify the SVC version.
+
+722018
+
+Error Message
+
+%ASA-4-722018: Group group User user-name IP IP_address Bad SVC protocol
+version: version , expected: expected-version
+
+Explanation
+
+The SVC sent a version unknown to the device, which might be caused by an SVC
+version incompatibility.
+
+Recommended Action
+
+Verify the SVC version.
+
+722019
+
+Error Message
+
+%ASA-4-722019: Group group User user-name IP IP_address Not enough data for an
+SVC header: length
+
+Explanation
+
+The expected amount of data was not available from the SVC, which might be
+caused by an SVC version incompatibility.
+
+Recommended Action
+
+Verify the SVC version.
+
+722020
+
+Error Message
+
+%ASA-3-722020: TunnelGroup tunnel_group GroupPolicy group_policy User user-name
+IP IP_address No address available for SVC connection
+
+Explanation
+
+Address assignment failed for the AnyConnect session. No IP addresses are
+available.
+- tunnel_group - The name of the tunnel group that the user was assigned to or
+used to log in
+- group_policy - The name of the group policy that the user was assigned to
+- user-name - The name of the user with which this message is associated
+- IP_address - The public IP (Internet) address of the client machine
+
+Recommended Action
+
+Check the configuration listed in the ip local ip command to see if enough
+addresses exist in the pools that have been assigned to the tunnel group and the
+group policy. Check the DHCP configuration and status. Check the address
+assignment configuration. Enable IPAA syslog messages to determine why the
+AnyConnect client cannot obtain an IP address.
+
+722021
+
+Error Message
+
+%ASA-3-722021: Group group User user-name IP IP_address Unable to start
+compression due to lack of memory resources
+
+Explanation
+
+There is not enough memory to perform the action.
+
+Recommended Action
+
+Purchase more memory, upgrade the device, or reduce the load on the device.
+
+722022
+
+Error Message
+
+%ASA-6-722022: Group group-name User user-name IP addr (TCP | UDP) connection
+established (with | without) compression
+
+Explanation
+
+The TCP or UDP connection was established with or without compression.
+
+Recommended Action
+
+None required.
+
+722023
+
+Error Message
+
+%ASA-6-722023: Group group User user-name IP IP_address SVC connection
+terminated {with|without} compression
+
+Explanation
+
+The SVC terminated either with or without compression.
+
+Recommended Action
+
+None required.
+
+722024
+
+Error Message
+
+%ASA-6-722024: SVC Global Compression Enabled
+
+Explanation
+
+Subsequent SVC connections will be allowed to perform tunnel compression if SVC
+compression is enabled in the corresponding user or group configuration.
+
+Recommended Action
+
+None required.
+
+722025
+
+Error Message
+
+%ASA-6-722025: SVC Global Compression Disabled
+
+Explanation
+
+Subsequent SVC connections will not be allowed to perform tunnel compression.
+
+Recommended Action
+
+None required.
+
+722026
+
+Error Message
+
+%ASA-6-722026: Group group User user-name IP IP_address SVC compression history
+reset
+
+Explanation
+
+A compression error occurred. The SVC and the ASA corrected it.
+
+Recommended Action
+
+None required.
+
+722027
+
+Error Message
+
+%ASA-6-722027: Group group User user-name IP IP_address SVC decompression
+history reset
+
+Explanation
+
+A decompression error occurred. The SVC and the ASA corrected it.
+
+Recommended Action
+
+None required.
+
+722028
+
+Error Message
+
+%ASA-5-722028: Group group User user-name IP IP_address Stale SVC connection
+closed.
+
+Explanation
+
+An unused SVC connection was closed.
+
+Recommended Action
+
+None required. However, the client may be having trouble connecting if multiple
+connections are established. The SVC log should be examined.
+
+722029
+
+Error Message
+
+%ASA-7-722029: Group group User user-name IP IP_address SVC Session Termination:
+Conns: connections , DPD Conns: DPD_conns , Comp resets: compression_resets ,
+Dcmp resets: decompression_resets
+
+Explanation
+
+The number of connections, reconnections, and resets that have occurred are
+reported. If connections is greater than 1 or the number of DPD_conns,
+compression_resets, or decompression_resets is greater than 0, it may indicate
+network reliability problems, which may be beyond the control of the Secure
+Firewall ASA administrator. If there are many connections or DPD connections,
+the user may be having problems connecting and may experience poor performance.
+- connections - The total number of connections during this session (one is
+normal)
+- DPD_conns - The number of reconnections due to DPD
+- compression_resets - The number of compression history resets
+- decompression_resets - The number of decompression history resets
+
+Recommended Action
+
+The SVC log should be examined. You may want to research and take appropriate
+action to resolve possible network reliability problems.
+
+722030
+
+Error Message
+
+%ASA-7-722030: Group group User user-name IP IP_address SVC Session Termination:
+In: data_bytes (+ctrl_bytes ) bytes, data_pkts (+ctrl_pkts ) packets, drop_pkts
+drops
+
+Explanation
+
+End-of-session statistics are being recorded.
+- data_bytes - The number of inbound (from SVC) data bytes
+- ctrl_bytes - The number of inbound control bytes
+- data_pkts - The number of inbound data packets
+- ctrl_pkts - The number of inbound control packets
+- drop_pkts - The number of inbound packets that were dropped
+
+Recommended Action
+
+None required.
+
+722031
+
+Error Message
+
+%ASA-7-722031: Group group User user-name IP IP_address SVC Session Termination:
+Out: data_bytes (+ctrl_bytes ) bytes, data_pkts (+ctrl_pkts ) packets, drop_pkts
+drops.
+
+Explanation
+
+End-of-session statistics are being recorded. The statistics include data bytes,
+control packet bytes, data packets, control packets, and dropped packets.
+- data_bytes - The number of outbound (to SVC) data bytes
+- ctrl_bytes - The number of outbound control bytes
+- data_pkts - The number of outbound data packets
+- ctrl_pkts - The number of outbound control packets
+- drop_pkts - The number of outbound packets that were dropped
+In some cases, the dropped packets count is more than the overall data and
+control packets because this syslog does not provide the break-down of the
+dropped packets. Few examples of such instances:
+2020-09-30T09:06:09.254798+00:00 local4.err pg122d-vpn116 %ASA-3-722031: Group
+<GP_1> User <xxxxxxxxxxxx.xxxxxxxxxx@intel.com> IP <x.x.x.x> SVC Session
+Termination: Out: 800808 (+32) bytes, 1957 (+4) packets, 3358 drops.
+2020-09-30T08:53:11.359833+00:00 local4.err srr10c-vpn103 %ASA-3-722031: Group
+<GP_2> User <xxxxxxxxxxxx.xxxxxxxxxx@intel.com> IP <x.x.x.x> SVC Session
+Termination: Out: 413194 (+32) bytes, 1540 (+4) packets, 2059 drops.
+2020-09-30T08:37:59.287415+00:00 local4.err srr10c-vpn115 %ASA-3-722031: Group
+<GP_3> User <xxxxxxxxxxxx.xxxxxxxxxx@intel.com> IP <x.x.x.x> SVC Session
+Termination: Out: 571473 (+48) bytes, 1283 (+6) packets, 1323 drops.
+2020-09-30T08:31:48.105943+00:00 local4.err srr10c-vpn114 %ASA-3-722031: Group
+<GP_4> User <xxxxxxxxxxxx.xxxxxxxxxx@intel.com> IP <x.x.x.x> SVC Session
+Termination: Out: 131566 (+0) bytes, 283 (+0) packets, 320 drops.
+2020-09-30T08:28:38.053003+00:00 local4.err pg122d-vpn117 %ASA-3-722031: Group
+<GP_5> User <xxxxxxxxxxxx.xxxxxxxxxx@intel.com> IP <x.x.x.x> SVC Session
+Termination: Out: 497446 (+23) bytes, 1048 (+1) packets, 1128 drops.
+2020-09-30T07:45:43.044373+00:00 local4.err srr10c-vpn114 %ASA-3-722031: Group
+<GP_6> User <xxxxxxxxxxxx.xxxxxxxxxx@intel.com> IP <x.x.x.x> SVC Session
+Termination: Out: 153165 (+16) bytes, 398 (+2) packets, 1045 drops. Recommended
+Action None required.
+
+722032
+
+Error Message
+
+%ASA-5-722032: Group group User user-name IP IP_address New SVC connection
+replacing old connection.
+
+Explanation
+
+A new SVC connection is replacing an existing one. You may be having trouble
+connecting.
+
+Recommended Action
+
+Examine the SVC log.
+
+722033
+
+Error Message
+
+%ASA-5-722033: Group group User user-name IP IP_address First SVC connection
+established for SVC session.
+
+Explanation
+
+The first SVC connection was established for the SVC session.
+
+Recommended Action
+
+None required.
+
+722034
+
+Error Message
+
+%ASA-5-722034: Group group User user-name IP IP_address New SVC connection, no
+existing connection.
+
+Explanation
+
+A reconnection attempt has occurred. An SVC connection is replacing a previously
+closed connection. There is no existing connection for this session because the
+connection was already dropped by the SVC or the Secure Firewall ASA. You may be
+having trouble connecting.
+
+Recommended Action
+
+Examine the Secure Firewall ASA log and SVC log.
+
+722035
+
+Error Message
+
+%ASA-3-722035: Group group User user-name IP IP_address Received large packet
+length (threshold num ).
+
+Explanation
+
+A large packet was received from the client.
+- length - The length of the large packet
+- num - The threshold
+
+Recommended Action
+
+Enter the anyconnect ssl df-bit-ignore enable command under the group policy to
+allow the Secure Firewall ASA to fragment the packets arriving with the DF bit
+set.
+
+722036
+
+Error Message
+
+%ASA-6-722036: Group group User user-name IP IP_address Transmitting large
+packet length (threshold num ).
+
+Explanation
+
+A large packet was sent to the client. The source of the packet may not be aware
+of the MTU of the client. This could also be due to compression of
+non-compressible data.
+- length - The length of the large packet
+- num - The threshold
+
+Recommended Action
+
+Turn off SVC compression, otherwise, none required.
+
+722037
+
+Error Message
+
+%ASA-5-722037: Group group User user-name IP IP_address SVC closing connection:
+reason .
+
+Explanation
+
+An SVC connection was terminated for the given reason. This behavior may be
+normal, or you may be having trouble connecting.
+- reason - The reason that the SVC connection was terminated
+
+Recommended Action
+
+Examine the SVC log.
+
+722038
+
+Error Message
+
+%ASA-5-722038: Group group-name User user-name IP IP_address SVC terminating
+session: reason .
+
+Explanation
+
+An SVC session was terminated for the given reason. This behavior may be normal,
+or you may be having trouble connecting.
+- reason - The reason that the SVC session was terminated
+
+Recommended Action
+
+Examine the SVC log if the reason for termination was unexpected.
+
+722039
+
+Error Message
+
+%ASA-4-722039: Group group, User user, IP ip, SVC vpn-filter acl is an IPv6 ACL;
+ACL not applied.
+
+Explanation
+
+The type of ACL to be applied is incorrect. An IPv6 ACL has been configured as
+an IPv4 ACL through the vpn-filter command.
+- group - The group policy name of the user
+- user - The username
+- ip - The public (not assigned) IP address of the user
+- acl - The name of the invalid ACL
+
+Recommended Action
+
+Validate the VPN filter and IPv6 VPN filter configurations on the ASA, and the
+filter parameters on the AAA (RADIUS) server. Make sure that the correct type of
+ACL is specified.
+
+722040
+
+Error Message
+
+%ASA-4-722040: Group group, User user, IP ip, SVC 'ipv6-vpn-filter acl' is an
+IPv4 ACL; ACL not applied
+
+Explanation
+
+The type of ACL to be applied is incorrect. An IPv4 ACL has been configured as
+an IPv6 ACL through the ipv6-vpn-filter command.
+- group - The group policy name of the user
+- user - The username
+- ip - The public (not assigned) IP address of the user
+- acl - The name of the invalid ACL
+
+Recommended Action
+
+Validate the VPN filter and IPv6 VPN filter configurations on the ASA and the
+filter parameters on the AAA (RADIUS) server. Make sure that the correct type of
+ACL is specified.
+
+722041
+
+Error Message
+
+%ASA-4-722041: TunnelGroup tunnel_group GroupPolicy group_policy User username
+IP peer_address No IPv6 address available for SVC connection.
+
+Explanation
+
+An IPv6 address was not available for assignment to the remote SVC client.
+- n - The SVC connection identifier
+
+Recommended Action
+
+Augment or create an IPv6 address pool, if desired.
+
+722042
+
+Error Message
+
+%ASA-4-722042: Group group User user IP ip Invalid Cisco SSL Tunneling Protocol
+version.
+
+Explanation
+
+An invalid SVC or AnyConnect client is trying to connect.
+- group - The name of the group policy with which the user is trying to connect
+- user - The name of the user who is trying to connect
+- ip - The IP address of the user who is trying to connect
+
+Recommended Action
+
+Validate that the SVC or AnyConnect client is compatible with the Secure
+Firewall ASA.
+
+722043
+
+Error Message
+
+%ASA-5-722043: Group group User user IP ip DTLS disabled: unable to negotiate
+cipher.
+
+Explanation
+
+The DTLS (UDP transport) cannot be established. The SSL encryption configuration
+was probably changed.
+- group - The name of the group policy with which the user is trying to connect
+- user - The name of the user who is trying to connect
+- ip - The IP address of the user who is trying to connect
+
+Recommended Action
+
+Revert the SSL encryption configuration. Make sure there is at least one block
+cipher (AES, DES, or 3DES) in the SSL encryption configuration.
+
+722044
+
+Error Message
+
+%ASA-5-722044: Group group User user IP ip Unable to request ver address for SSL
+tunnel.
+
+Explanation
+
+An IP address cannot be requested because of low memory on the Secure Firewall
+ASA.
+- group - The name of the group policy with which the user is trying to connect
+- user - The name of the user who is trying to connect
+- ip - The IP address of the user who is trying to connect
+- ver - Either IPv4 or IPv6, based on the IP address version being requested
+
+Recommended Action
+
+Reduce the load on the Secure Firewall ASA or add more memory.
+
+722045
+
+Error Message
+
+%ASA-3-722045: Connection terminated: no SSL tunnel initialization data.
+
+Explanation
+
+Data to establish a connection is missing. This is a defect in the Secure
+Firewall ASA software.
+
+Recommended Action
+
+Contact the Cisco TAC for assistance.
+
+722046
+
+Error Message
+
+%ASA-3-722046: Group group User user IP ip Session terminated: unable to
+establish tunnel.
+
+Explanation
+
+The Secure Firewall ASA cannot set up connection parameters. This is a defect in
+the Secure Firewall ASA software.
+- group - The name of the group policy with which the user is trying to connect
+- user - The name of the user who is trying to connect
+- ip - The IP address of the user who is trying to connect
+
+Recommended Action
+
+Contact the Cisco TAC for assistance.
+
+722047
+
+Error Message
+
+%ASA-4-722047: Group group User user IP ip Tunnel terminated: SVC not enabled or
+invalid SVC image on the ASA.
+
+Explanation
+
+The user logged in via the web browser and tried to start the SVC or AnyConnect
+client. The SVC service is not enabled globally, or the SVC image is invalid or
+corrupted. The tunnel connection has been terminated, but the clientless
+connection remains.
+- group - The name of the group policy with which the user is trying to connect
+- user - The name of the user who is trying to connect
+- ip - The IP address of the user who is trying to connect
+
+Recommended Action
+
+Enable the SVC globally using the svc enable command. Validate the integrity of
+versions of the SVC images by reloading new images using the svc image command.
+
+722048
+
+Error Message
+
+%ASA-4-722048: Group group User user IP ip Tunnel terminated: SVC not enabled
+for the user.
+
+Explanation
+
+The user logged in via the web browser, and tried to start the SVC or AnyConnect
+client. The SVC service is not enabled for this user. The tunnel connection has
+been terminated, but the clientless connection remains.
+- group - The name of the group policy with which the user is trying to connect
+- user - The name of the user who is trying to connect
+- ip - The IP address of the user who is trying to connect
+
+Recommended Action
+
+Enable the service for this user using the group-policy and username commands.
+
+722049
+
+Error Message
+
+%ASA-4-722049: Group group User user IP ip Session terminated: SVC not enabled
+or invalid image on the ASA.
+
+Explanation
+
+The user logged in via the AnyConnect client. The SVC service is not enabled
+globally, or the SVC image is invalid or corrupted. The session connection has
+been terminated.
+- group - The name of the group policy with which the user is trying to connect
+- user - The name of the user who is trying to connect
+- ip - The IP address of the user who is trying to connect
+
+Recommended Action
+
+Enable the SVC globally using the svc-enable command. Validate the integrity and
+versions of the SVC images by reloading new images using the svc image command.
+
+722050
+
+Error Message
+
+%ASA-4-722050: Group group User user IP ip Session terminated: SVC not enabled
+for the user.
+
+Explanation
+
+The user logged in through the AnyConnect client. The SVC service is not enabled
+for this user. The session connection has been terminated.
+- group - The name of the group policy with which the user is trying to connect
+- user - The name of the user who is trying to connect
+- ip - The IP address of the user who is trying to connect
+
+Recommended Action
+
+Enable the service for this user using the group-policy and username commands.
+
+722051
+
+Error Message
+
+%ASA-6-722051: Group group-policy User username IP public-ip IPv4 Address
+assigned-ip IPv6 Address assigned-ip assigned to session
+
+Explanation
+
+The specified address has been assigned to the given user.
+- group-policy - The group policy that allowed the user to gain access
+- username - The name of the user
+- public-ip - The public IP address of the connected client
+- assigned-ip - The IPv4 or IPv6 address that is assigned to the client
+
+Recommended Action
+
+None required.
+
+722053
+
+Error Message
+
+%ASA-6-722053: Group g User u IP ip Unknown client user-agent connection.
+
+Explanation
+
+An unknown or unsupported SSL VPN client has connected to the Secure Firewall
+ASA. Older clients include the Cisco SVC and the Cisco AnyConnect client earlier
+than Version 2.3.1.
+- g - The group policy under which the user logged in
+- u - The name of the user
+- ip - The IP address of the client
+- user-agent - The user agent (usually includes the version) received from the client
+
+Recommended Action
+
+Upgrade to a supported Cisco SSL VPN client.
+
+722054
+
+Error Message
+
+%ASA-4-722054: Group group policy User user name IP remote IP SVC terminating
+connection: Failed to install Redirect URL: redirect URL Redirect ACL: non_exist
+for assigned IP
+
+Explanation
+
+An error occurred for an AnyConnect VPN connection when a redirect URL was
+installed, and the ACL was received from the ISE, but the redirect ACL does not
+exist on the Secure Firewall ASA.
+- group policy - The group policy that allowed the user to gain access
+- user name - Username of the requester for the remote access
+- remote IP - Remote IP address that the connection request is coming from
+- redirect URL - The URL for the HTTP traffic redirection
+- assigned IP - The IP address that is assigned to the user
+
+Recommended Action
+
+Configure the redirect ACL on the Secure Firewall ASA.
+
+722055
+
+Error Message
+
+%ASA-6-722055: Group group-policy User username IP public-ip Client Type:
+user-agent
+
+Explanation
+
+The indicated user is attempting to connect with the given user-agent.
+- group-policy - The group policy that allowed the user to gain access
+- username - The name of the user
+- public-ip - The public IP address of the connected client
+- user-agent - The user-agent string provided by the connecting client. Usually
+includes the AnyConnect version and host operating system for AnyConnect
+clients.
+
+Recommended Action
+
+None required.
+
+722056
+
+Error Message
+
+%ASA-4-722055: Unsupported AnyConnect client connection rejected from ip
+address. Client info: user-agent string. Reason: reason
+
+Explanation
+
+This syslog indicates that an AnyConnect client connection is rejected. The
+reason for this is provided in the syslog along with the client information.
+- ip address - IP address from which a connection with the old client is
+attempted,
+- user- agent string - User-Agent header in the client request. Usually includes
+the AnyConnect version and host operating system for AnyConnect clients
+- reason - Reason for rejection
+
+Recommended Action
+
+Use the client information and reason provided in the syslog to resolve the
+issue.
+
+723001
+
+Error Message
+
+%ASA-6-723001: Group group-name , User user-name , IP IP_address : WebVPN Citrix
+ICA connection connection is up.
+
+Explanation
+
+The Citrix connection is up.
+- group-name - The name of the Citrix group
+- user-name - The name of the Citrix user
+- IP_address - The IP address of the Citrix user
+- connection - The Citrix connection identifier
+
+Recommended Action
+
+None required.
+
+723002
+
+Error Message
+
+%ASA-6-723002: Group group-name , User user-name , IP IP_address : WebVPN Citrix
+ICA connection connection is down.
+
+Explanation
+
+The Citrix connection is down.
+- group-name - The name of the Citrix group
+- user-name - The name of the Citrix user
+- IP_address - The IP address of the Citrix user
+- connection - The Citrix connection identifier
+
+Recommended Action
+
+No action is required when the Citrix ICA connection is terminated intentionally
+by the client, the server, or the Secure Firewall ASA administrator. However, if
+this is not the case, verify that the WebVPN session in which the Citrix ICA
+connection is set up is still active. If it is inactive, then receiving this
+message is normal. If the WebVPN session is still active, verify that the ICA
+client and Citrix server both work correctly and that there is no error
+displayed. If not, bring either or both up or respond to any error. If this
+message is still received, contact the Cisco TAC and provide the following
+information:
+- Network topology
+- Delay and packet loss
+- Citrix server configuration
+- Citrix ICA client information
+- Steps to reproduce the problem
+- Complete text of all associated messages
+
+723003
+
+Error Message
+
+%ASA-7-723003: No memory for WebVPN Citrix ICA connection connection .
+
+Explanation
+
+The Secure Firewall ASA is running out of memory. The Citrix connection was
+rejected.
+- connection - The Citrix connection identifier
+
+Recommended Action
+
+Verify that the Secure Firewall ASA is working correctly. Pay special attention
+to memory and buffer usage. If the Secure Firewall ASA is under heavy load, buy
+more memory and upgrade the Secure Firewall ASA or reduce the load on the Secure
+Firewall ASA. If the problem persists, contact the Cisco TAC.
+
+723004
+
+Error Message
+
+%ASA-7-723004: WebVPN Citrix encountered bad flow control flow .
+
+Explanation
+
+The Secure Firewall ASA encountered an internal flow control mismatch, which can
+be caused by massive data flow, such as might occur during stress testing or
+with a high volume of ICA connections.
+
+Recommended Action
+
+Reduce ICA connectivity to the Secure Firewall ASA. If the problem persists,
+contact the Cisco TAC.
+
+723005
+
+Error Message
+
+%ASA-7-723005: No channel to set up WebVPN Citrix ICA connection.
+
+Explanation
+
+The Secure Firewall ASA was unable to create a new channel for Citrix.
+
+Recommended Action
+
+Verify that the Citrix ICA client and the Citrix server are still alive. If not,
+bring them back up and retest. Check the Secure Firewall ASA load, paying
+special attention to memory and buffer usage. If the Secure Firewall ASA is
+under heavy load, upgrade the Secure Firewall ASA, add memory, or reduce the
+load. If the problem persists, contact the Cisco TAC.
+
+723006
+
+Error Message
+
+%ASA-7-723006: WebVPN Citrix SOCKS errors.
+
+Explanation
+
+An internal Citrix SOCKS error has occurred on the Secure Firewall ASA.
+
+Recommended Action
+
+Verify that the Citrix ICA client is working correctly. In addition, check the
+network connection status between the Citrix ICA client and the Secure Firewall
+ASA, paying attention to packet loss. Resolve any abnormal network conditions.
+If the problem persists, contact the Cisco TAC.
+
+723007
+
+Error Message
+
+%ASA-7-723007: WebVPN Citrix ICA connection connection list is broken.
+
+Explanation
+
+The Secure Firewall ASA internal Citrix connection list is broken.
+- connection - The Citrix connection identifier
+
+Recommended Action
+
+Verify that the Secure Firewall ASA is working correctly, paying special
+attention to memory and buffer usage. If the Secure Firewall ASA is under heavy
+load, upgrade the Secure Firewall ASA, add memory, or reduce the load. If the
+problem persists, contact the Cisco TAC.
+
+723008
+
+Error Message
+
+%ASA-7-723008: WebVPN Citrix ICA SOCKS Server server is invalid.
+
+Explanation
+
+An attempt was made to access a Citrix Socks server that does not exist.
+- server - The Citrix server identifier
+
+Recommended Action
+
+Verify that the Secure Firewall ASA is working correctly. Note whether or not
+there is any memory or buffer leakage. If this issue occurs frequently, capture
+information about memory usage, network topology, and the conditions during
+which this message is received. Send this information to the Cisco TAC for
+review. Make sure that the WebVPN session is still up while this message is
+being received. If not, determine the reason that the WebVPN session is down. If
+the Secure Firewall ASA is under heavy load, upgrade the Secure Firewall ASA,
+add memory, or reduce the load. If the problem persists, contact the Cisco TAC.
+
+723009
+
+Error Message
+
+%ASA-7-723009: Group group-name , User user-name , IP IP_address : WebVPN Citrix
+received data on invalid connection connection .
+
+Explanation
+
+Data was received on a Citrix connection that does not exist.
+- group-name - The name of the Citrix group
+- user-name - The name of the Citrix user
+- IP_address - The IP address of the Citrix user
+- connection - The Citrix connection identifier
+
+Recommended Action
+
+The original published Citrix application connection was probably terminated,
+and the remaining active published applications lost connectivity. Restart all
+published applications to generate a new Citrix ICA tunnel. If the Secure
+Firewall ASA is under heavy load, upgrade the Secure Firewall ASA, add memory,
+or reduce the load. If the problem persists, contact the Cisco TAC.
+
+723010
+
+Error Message
+
+%ASA-7-723010: Group group-name , User user-name , IP IP_address : WebVPN Citrix
+received closing channel channel for invalid connection connection .
+
+Explanation
+
+An abort was received on a nonexistent Citrix connection, which can be caused by
+massive data flow (such as stress testing) or a high volume of ICA connections,
+especially during network delay or packet loss.
+- group-name - The name of the Citrix group
+- user-name - The name of the Citrix user
+- IP_address - The IP address of the Citrix user
+- channel - The Citrix channel identifier
+- connection - The Citrix connection identifier
+
+Recommended Action
+
+Reduce the number of ICA connections to the Secure Firewall ASA, obtain more
+memory for the Secure Firewall ASA, or resolve the network problems.
+
+723011
+
+Error Message
+
+%ASA-7-723011: Group group-name , User user-name , IP IP_address : WebVPN Citrix
+receives bad SOCKS socks message length msg-length. Expected length is
+exp-msg-length .
+
+Explanation
+
+The Citrix SOCKS message length is incorrect.
+- group-name - The name of the Citrix group
+- user-name - The name of the Citrix user
+- IP_address - The IP address of the Citrix user
+
+Recommended Action
+
+Verify that the Citrix ICA client is working correctly. In addition, check the
+network connection status between the ICA client and the Secure Firewall ASA,
+paying attention to packet loss. After resolving any abnormal network
+conditions, if the problem still exists, contact the Cisco TAC.
+
+723012
+
+Error Message
+
+%ASA-7-723012: Group group-name , User user-name , IP IP_address : WebVPN Citrix
+received bad SOCKS socks message format.
+
+Explanation
+
+The Citrix SOCKS message format is incorrect.
+- group-name - The name of the Citrix group
+- user-name - The name of the Citrix user
+- IP_address - The IP address of the Citrix user
+
+Recommended Action
+
+Verify that the Citrix ICA client is working correctly. In addition, check the
+network connection status between the ICA client and the Secure Firewall ASA,
+paying attention to packet loss. After resolving any abnormal network
+conditions, if the problem still exists, contact the Cisco TAC.
+
+723013
+
+Error Message
+
+%ASA-7-723013: WebVPN Citrix encountered invalid connection connection during
+periodic timeout.
+
+Explanation
+
+The Secure Firewall ASA internal Citrix timer has expired, and the Citrix
+connection is invalid.
+- connection - The Citrix connection identifier
+
+Recommended Action
+
+Check the network connection between the Citrix ICA client and the Secure
+Firewall ASA, and between the Secure Firewall ASA and the Citrix server. Resolve
+any abnormal network conditions, especially delay and packet loss. Verify that
+the Secure Firewall ASA works correctly, paying special attention to memory or
+buffer problems. If the Secure Firewall ASA is under heavy load, obtain more
+memory, upgrade the Secure Firewall ASA, or reduce the load. If the problem
+persists, contact the Cisco TAC.
+
+723014
+
+Error Message
+
+%ASA-7-723014: Group group-name , User user-name , IP IP_address : WebVPN Citrix
+TCP connection connection to server server on channel channel initiated.
+
+Explanation
+
+The Secure Firewall ASA internal Citrix Secure Gateway is connected to the
+Citrix server.
+- group-name - The name of the Citrix group
+- user-name - The name of the Citrix user
+- IP_address - The IP address of the Citrix user
+- connection - The connection name
+- server - The Citrix server identifier
+- channel - The Citrix channel identifier (hexadecimal)
+
+Recommended Action
+
+None required.
+
+724001
+
+Error Message
+
+%ASA-4-724001: Group group-name User user-name IP IP_address WebVPN session not
+allowed. Unable to determine if Cisco Secure Desktop was running on the client's
+workstation.
+
+Explanation
+
+The session was not allowed because an error occurred during processing of the
+CSD Host Integrity Check results on the Secure Firewall ASA.
+- group-name - The name of the group
+- user-name - The name of the user
+- IP_address - The IP address
+
+Recommended Action
+
+Determine whether the client firewall is truncating long URLs. Uninstall CSD
+from the client and reconnect to the Secure Firewall ASA.
+
+724002
+
+Error Message
+
+%ASA-4-724002: Group group-name User user-name IP IP_address WebVPN session not
+terminated. Cisco Secure Desktop was not running on the client's workstation.
+
+Explanation
+
+CSD is not running on the client machine.
+- group-name - The name of the group
+- user-name - The name of the user
+- IP_address - The IP address
+
+Recommended Action
+
+Verify that the end user can install and run CSD on the client machine.
+
+725001
+
+Error Message
+
+%ASA-6-725001: Starting SSL handshake with peer-type interface :src-ip /src-port
+to dst-ip /dst-port for protocol session.
+
+Explanation
+
+The SSL handshake has started with the remote device, which can be a client or
+server.
+- peer-type - Either the server or the client, depending on the device that
+initiated the connection
+- interface - The interface name that the SSL session is using
+- source-ip - The source IPv4 or IPv6 address
+- src-port - The source port number
+- dst-ip - The destination IP address
+- dst-port - The destination port number
+- protocol - The SSL version used for the SSL handshake
+
+Recommended Action
+
+None required.
+
+725002
+
+Error Message
+
+%ASA-6-725002: Device completed SSL handshake with peer-type interface :src-ip
+/src-port to dst-ip /dst-port for protocol-version session
+
+Explanation
+
+The SSL handshake has completed successfully with the remote device.
+- peer-type - Either the server or the client, depending on the device that
+initiated the connection
+- interface - The interface name that the SSL session is using
+- source-ip - The source IPv4 or IPv6 address
+- src-port - The source port number
+- dst-ip - The destination IP address
+- dst-port - The destination port number
+- protocol-version - The version of the SSL protocol being used: SSLv3, TLSv1,
+DTLSv1, DTLSv1.2, TLSv1.1 or TLSv1.2
+
+Recommended Action
+
+None required.
+
+725003
+
+Error Message
+
+%ASA-6-725003: SSL peer-type interface :src-ip /src-port to dst-ip /dst-port
+request to resume previous session.
+
+Explanation
+
+The remote device is trying to resume a previous SSL session.
+- peer-type - Either the server or the client, depending on the device that
+initiated the connection
+- interface - The interface name that the SSL session is using
+- source-ip - The source IPv4 or IPv6 address
+- src-port - The source port number
+- dst-ip - The destination IP address
+- dst-port - The destination port number
+
+Recommended Action
+
+None required.
+
+725004
+
+Error Message
+
+%ASA-6-725004: Device requesting certificate from SSL peer-type interface
+:src-ip /src-port to dst-ip /dst-port for authentication.
+
+Explanation
+
+The Secure Firewall ASA has requested a client certificate for authentication.
+- peer-type - Either the server or the client, depending on the device that
+initiated the connection
+- interface - The interface name that the SSL session is using
+- source-ip - The source IPv4 or IPv6 address
+- src-port - The source port number
+- dst-ip - The destination IP address
+- dst-port - The destination port number
+
+Recommended Action
+
+None required.
+
+725005
+
+Error Message
+
+%ASA-6-725005: SSL peer-type interface :src-ip /src-port to dst-ip /dst-port
+requesting our device certificate for authentication.
+
+Explanation
+
+The server has requested the certificate of the Secure Firewall ASA for
+authentication.
+- peer-type - Either the server or the client, depending on the device that
+initiated the connection
+- interface - The interface name that the SSL session is using
+- source-ip - The source IPv4 or IPv6 address
+- src-port - The source port number
+- dst-ip - The destination IP address
+- dst-port - The destination port number
+
+Recommended Action
+
+None required.
+
+725006
+
+Error Message
+
+%ASA-6-725006: Device failed SSL handshake with peer-type interface :src-ip
+/src-port to dst-ip /dst-port
+
+Explanation
+
+The SSL handshake with the remote device has failed.
+- peer-type - Either the server or the client, depending on the device that
+initiated the connection
+- interface - The interface name that the SSL session is using
+- source-ip - The source IPv4 or IPv6 address
+- src-port - The source port number
+- dst-ip - The destination IP address
+- dst-port - The destination port number
+
+Recommended Action
+
+Look for syslog message 725014, which indicates the reason for the failure.
+
+725007
+
+Error Message
+
+%ASA-6-725007: SSL session with peer-type interface :src-ip /src-port to dst-ip
+/dst-port terminated.
+
+Explanation
+
+The SSL session has terminated.
+- peer-type - Either the server or the client, depending on the device that
+initiated the connection
+- interface - The interface name that the SSL session is using
+- source-ip - The source IPv4 or IPv6 address
+- src-port - The source port number
+- dst-ip - The destination IP address
+- dst-port - The destination port number
+
+Recommended Action
+
+None required.
+
+725008
+
+Error Message
+
+%ASA-7-725008: SSL peer-type interface :src-ip /src-port to dst-ip /dst-port
+proposes the following n cipher(s).
+
+Explanation
+
+The number of ciphers proposed by the remote SSL device are listed.
+- peer-type - Either the server or the client, depending on the device that
+initiated the connection
+- interface - The interface name that the SSL session is using
+- source-ip - The source IPv4 or IPv6 address
+- src-port - The source port number
+- dst-ip - The destination IP address
+- dst-port - The destination port number
+- n - The number of supported ciphers
+
+Recommended Action
+
+None required.
+
+725009
+
+Error Message
+
+%ASA-7-725009 Device proposes the following n cipher(s) peer-type interface
+:src-ip /src-port to dst-ip /dst-port .
+
+Explanation
+
+The number of ciphers proposed to the SSL server are listed.
+- peer-type - Either the server or the client, depending on the device that
+initiated the connection
+- interface - The interface name that the SSL session is using
+- source-ip - The source IPv4 or IPv6 address
+- src-port - The source port number
+- dst-ip - The destination IP address
+- dst-port - The destination port number
+- n - The number of supported ciphers
+
+Recommended Action
+
+None required.
+
+725010
+
+Error Message
+
+%ASA-7-725010: Device supports the following n cipher(s).
+
+Explanation
+
+The number of ciphers supported by the Secure Firewall ASA for an SSL session
+are listed.
+- n - The number of supported ciphers
+
+Recommended Action
+
+None required.
+
+725011
+
+Error Message
+
+%ASA-7-725011 Cipher[order ]: cipher_name
+
+Explanation
+
+Always following messages 725008, 725009, and 725010, this message indicates the
+cipher name and its order of preference.
+- order - The order of the cipher in the cipher list
+- cipher_name - The name of the OpenSSL cipher from the cipher list
+
+Recommended Action
+
+None required.
+
+725012
+
+Error Message
+
+%ASA-7-725012: Device chooses cipher cipher for the SSL session with peer-type
+interface :src-ip /src-port to dst-ip /dst-port.
+
+Explanation
+
+The cipher that was chosen by the Cisco device for the SSL session is listed.
+- cipher - The name of the OpenSSL cipher from the cipher list
+- peer-type - Either the server or the client, depending on the device that
+initiated the connection
+- interface - The interface name that the SSL session is using
+- source-ip - The source IPv4 or IPv6 address
+- src-port - The source port number
+- dst-ip - The destination IP address
+- dst-port - The destination port number
+
+Recommended Action
+
+None required.
+
+725013
+
+Error Message
+
+%ASA-7-725013 SSL peer-type interface :src-ip /src-port to dst-ip /dst-port
+chooses cipher cipher
+
+Explanation
+
+The cipher that was chosen by the server for the SSL session is identified.
+- peer-type - Either the server or the client, depending on the device that
+initiated the connection
+- interface - The interface name that the SSL session is using
+- source-ip - The source IPv4 or IPv6 address
+- src-port - The source port number
+- dst-ip - The destination IP address
+- dst-port - The destination port number
+- cipher - The name of the OpenSSL cipher from the cipher list
+
+Recommended Action
+
+None required.
+
+725014
+
+Error Message
+
+%ASA-7-725014 SSL lib error. Function: function Reason: reason
+
+Explanation
+
+The reason for failure of the SSL handshake is indicated.
+- function - The function name where the failure is reported
+- reason - The description of the failure condition
+
+Recommended Action
+
+Include this message when reporting any SSL-related issue to the Cisco TAC.
+
+725015
+
+Error Message
+
+%ASA-3-725015 Error verifying client certificate. Public key size in client
+certificate exceeds the maximum supported key size.
+
+Explanation
+
+The verification of an SSL client certificate failed because of an unsupported
+(large) key size.
+
+Recommended Action
+
+Use client certificates with key sizes that are less than or equal to 4096 bits.
+
+725016
+
+Error Message
+
+%ASA-6-725016: Device selects trust-point trustpoint for peer-type interface
+:src-ip /src-port to dst-ip /dst-port
+
+Explanation
+
+With server-name indication (SNI), the certificate used for a given connection
+may not be the certificate configured on the interface. There is also no
+indication of which certificate trustpoint has been selected. This syslog gives
+an indication of the trustpoint used by the connection (given by interface
+:src-ip /src-port ).
+- trustpoint - The name of the configured trustpoint that is being used for the
+specified connection
+- interface - The name of the interface on the Secure Firewall ASA
+- src-ip - The IP address of the peer
+- src-port - The port number of the peer
+- dst-ip - The IP address of the destination
+- dst-port - The port number of the destination
+
+Recommended Action
+
+None required.
+
+725017
+
+Error Message
+
+%ASA-7-725017: No certificates received during the handshake with %s %s :%B /%d
+to %B /%d for %s session
+
+Explanation
+
+A remote client has not sent a valid certificate.
+- remote_device - Identifies whether a handshake is performed with the client or server
+- ctm-interface - The interface name on which the handshake is sent
+- ctm-src_ip - The IP address of the SSL server, which will communicate with the client
+- ctm-src_port - The port of the SSL server, which will communicate with the client
+- ctm-dst_ip - The IP address of the client
+- ctm-dst_port - The port of the client through which it responds
+- s-method-version - The protocol version involved in the transaction (SSLv3,
+TLSv1, or DTLSv1)
+
+Recommended Action
+
+None required.
+
+725021
+
+Error Message
+
+%ASA-7-725021: Device preferring cipher-suite cipher(s). Connection info:
+interface :src-ip /src-port to dst-ip /dst-port
+
+Explanation
+
+The cipher suites being preferred when negotiating the handshake is listed in
+this message.
+- cipher-suite - Preferred cipher suite string
+- interface - The interface name that the SSL session is using
+- src-ip - The source IPv4 or IPv6 address
+- src-port - The source port number
+- dst-ip - The destination IPv4 or IPv6 address
+- dst-port - The destination port number
+Following is a list of prefered cipher suite strings that are used when
+negotiating the handshake:
+- server
+- SUITE-B
+- ChaCha20
+- client
+- SHA-256 hash
+
+Recommended Action
+
+None required.
+
+725022
+
+Error Message
+
+%ASA-7-725022: Device skipping cipher : cipher - reason. Connection info:
+interface :src-ip /src-port to dst-ip /dst-port
+
+Explanation
+
+This syslog displays the reason for skipping a particular cipher in a list of
+cipher suites when negotiating the handshake.
+- cipher-suite - Preferred cipher suite string
+- reason - Reason for skipping a cipher.
+- interface - The interface name that the SSL session is using
+- src-ip - The source IPv4 or IPv6 address
+- src-port - The source port number
+- dst-ip - The destination IPv4 or IPv6 address
+- dst-port - The destination port number
+Following list provides few example reason for skipping a particular cipher:
+- Ephemeral EC key is not compatible with trust-point <trust point>
+- Not supported by protocol version
+- PSK server callback is not set
+- Not permitted by security callbacks
+- ECDHE-ECDSA is broken on Safari
+- Cipher suite does not use SHA256
+- Unknown cipher
+- Wrong cipher
+- Message digest changed
+- Ciphersuite from previous session not selected
+
+Recommended Action
+
+None required.
+
+726001
+
+Error Message
+
+%ASA-6-726001: Inspected im_protocol im_service Session between Client
+im_client_1 and im_client_2 Packet flow from src_ifc :/sip /sport to dest_ifc
+:/dip /dport Action: action Matched Class class_map_id class_map_name
+
+Explanation
+
+An IM inspection was performed on an IM message and the specified criteria were
+satisfied. The configured action is taken.
+- im_protocol - MSN IM or Yahoo IM
+- im_service - The IM services, such as chat, conference, file transfer, voice,
+video, games, or unknown
+- im_client_1 , im_client_2 - The client peers that are using the IM service in
+the session: client_login_name or “?”
+- src_ifc - The source interface name
+- sip - The source IP address
+- sport - The source port
+- dest_ifc - The destination interface name
+- dip - The destination IP address
+- dport - The destination port
+- action - The action taken: reset connection, dropped connection, or received
+- class_map_id - The matched class-map ID
+- class_map_name - The matched class-map name
+
+Recommended Action
+
+None required.
+

@@ -1,0 +1,1049 @@
+500001
+
+Error Message
+
+%ASA-5-500001: ActiveX content in java script is modified: src src ip dest dest
+ip on interface interface name
+
+Explanation
+
+Ensure the blocking of Java/ActiveX content present in Java script when the
+policy (filter Java (or) filter ActiveX) is enabled on the Secure Firewall ASA.
+
+Recommended Action
+
+None required.
+
+500002
+
+Error Message
+
+%ASA-5-500002: Java content in java script is modified: src src ip dest dest ip
+on interface interface name
+
+Explanation
+
+Ensure the blocking of Java/ActiveX content present in Java script when the
+policy (filter Java (or) filter ActiveX) is enabled on the Secure Firewall ASA.
+
+Recommended Action
+
+None required.
+
+500003
+
+Error Message
+
+%ASA-5-500003: Bad TCP hdr length (hdrlen=bytes , pktlen=bytes ) from
+source_address /source_port to dest_address /dest_port , flags: tcp_flags , on
+interface interface_name
+
+Explanation
+
+A header length in TCP was incorrect. Some operating systems do not handle TCP
+resets (RSTs) correctly when responding to a connection request to a disabled
+socket. If a client tries to connect to an FTP server outside the Secure
+Firewall ASA and the FTP server is not listening, then it sends an RST. Some
+operating systems send incorrect TCP header lengths, which causes this problem.
+UDP uses ICMP port unreachable messages.
+The TCP header length may indicate that it is larger than the packet length,
+which results in a negative number of bytes being transferred. A negative number
+appears by a message as an unsigned number, which makes it appear much larger
+than it would be normally; for example, it may show 4 GB transferred in one
+second. This message should occur infrequently.
+
+Recommended Action
+
+None required.
+
+500004
+
+Error Message
+
+%ASA-4-500004: Invalid transport field for protocol=protocol , from
+source_address /source_port to dest_address /dest_port
+
+Explanation
+
+An invalid transport number was used, in which the source or destination port
+number for a protocol is zero. The protocol value is 6 for TCP and 17 for UDP.
+
+Recommended Action
+
+If these messages persist, contact the administrator of the peer.
+
+500005
+
+Error Message
+
+%ASA-3-500005: connection terminated for protocol from in_ifc_name :src_adddress
+/src_port to out_ifc_name :dest_address /dest_port due to invalid combination of
+inspections on same flow. Inspect inspect_name is not compatible with filter
+filter_name .
+
+Explanation
+
+A connection matched with single or multiple inspection and/or single or
+multiple filter features that are not allowed to be applied to the same
+connection.
+- protocol - The protocol that the connection was using
+- in_ifc_name - The input interface name
+- src_address - The source IP address of the connection
+- src_port - The source port of the connection
+- out_ifc_name - The output interface name
+- dest_address - The destination IP address of the connection
+- dest_port - The destination port of the packet
+- inspect_name - The inspect or filter feature name
+- filter_name - The filter feature name
+
+Recommended Action
+
+Review the class-map, policy-map, service-policy, and/or filter command
+configurations that are causing the referenced inspection and/or filter features
+that are matched for the connection. The rules for inspection and filter feature
+combinations for a connection are as follows:
+- The inspect http [http-policy-map] and/or filter url and/or filter java and/or
+filter activex commands are valid.
+- The inspect ftp [ftp-policy-map] and/or filter ftp commands are valid.
+- The filter https command with any other inspect command or filter command is
+not valid.
+Besides these listed combinations, any other inspection and/or filter feature
+combinations are not valid.
+
+501101
+
+Error Message
+
+%ASA-5-501101: User transitioning priv level
+
+Explanation
+
+The privilege level of a command was changed.
+
+Recommended Action
+
+None required.
+
+502101
+
+Error Message
+
+%ASA-5-502101: New user added to local dbase: Uname: user Priv: privilege_level
+Encpass: string
+
+Explanation
+
+A new username record was created, which included the username, privilege level,
+and encrypted password.
+
+Recommended Action
+
+None required.
+
+502102
+
+Error Message
+
+%ASA-5-502102: User deleted from local dbase: Uname: user Priv: privilege_level
+Encpass: string
+
+Explanation
+
+A username record was deleted, which included the username, privilege level, and
+encrypted password.
+
+Recommended Action
+
+None required.
+
+502103
+
+Error Message
+
+%ASA-5-502103: User priv level changed: Uname: user From: privilege_level To:
+privilege_level
+
+Explanation
+
+The privilege level of a user changed.
+
+Recommended Action
+
+None required.
+
+502111
+
+Error Message
+
+%ASA-5-502111: New group policy added: name: policy_name Type: policy_type
+
+Explanation
+
+A group policy was configured using the group-policy CLI command.
+- policy_name - The name of the group policy
+- policy_type - Either internal or external
+
+Recommended Action
+
+None required.
+
+502112
+
+Error Message
+
+%ASA-5-502112: Group policy deleted: name: policy_name Type: policy_type
+
+Explanation
+
+A group policy has been removed using the group-policy CLI command.
+- policy_name - The name of the group policy
+- policy_type - Either internal or external
+
+Recommended Action
+
+None required.
+
+503001
+
+Error Message
+
+%ASA-5-503001: Process number, Nbr IP_address on interface_name from string to
+string , reason
+
+Explanation
+
+An OSPFv2 neighbor has changed its state. The message describes the change and
+the reason for it. This message appears only if the log-adjacency-changes
+command is configured for the OSPF process.
+
+Recommended Action
+
+Copy the message exactly as it appears, and report it to the Cisco TAC.
+
+503002
+
+Error Message
+
+%ASA-5-503002: The last key has expired for interface nameif, packets sent using
+last valid key.
+
+Explanation
+
+None of the security associations have a lifetime that include the current
+system time.
+
+Recommended Action
+
+Configure a new security association or alter the lifetime of a current security
+association.
+
+503003
+
+Error Message
+
+%ASA-5-503003: Packet sent | received on interface nameif with expired Key ID
+key-id.
+
+Explanation
+
+The Key ID configured on the interface expired.
+
+Recommended Action
+
+Configure a new key.
+
+503004
+
+Error Message
+
+%ASA-5-503004: Key ID key-id in key chain key-chain-name does not have a key.
+
+Explanation
+
+OSPF has been configured to use cryptographic authentication, however a key or
+password has not been configured.
+
+Recommended Action
+
+Configure a new security association or alter the lifetime of a current security
+association.
+
+503005
+
+Error Message
+
+%ASA-5-503005: Key ID key-id in key chain key-chain-name does not have a
+cryptographic algorithm.
+
+Explanation
+
+OSPF has been configured to use cryptographic authentication, however an
+algorithm has not been configured.
+
+Recommended Action
+
+Configure a cryptographic-algorithm for the security association.
+
+503101
+
+Error Message
+
+%ASA-5-503101: Process d , Nbr i on s from s to s , s
+
+Explanation
+
+An OSPFv3 neighbor has changed its state. The message describes the change and
+the reason for it. This message appears only if the log-adjacency-changes
+command is configured for the OSPF process.
+
+Recommended Action
+
+None required.
+
+504001
+
+Error Message
+
+%ASA-5-504001: Security context context_name was added to the system
+
+Explanation
+
+A security context was successfully added to the Secure Firewall ASA.
+
+Recommended Action
+
+None required.
+
+504002
+
+Error Message
+
+%ASA-5-504002: Security context context_name was removed from the system
+
+Explanation
+
+A security context was successfully removed from the Secure Firewall ASA.
+
+Recommended Action
+
+None required.
+
+505001
+
+Error Message
+
+%ASA-5-505001: Module string one is shutting down. Please wait...
+
+Explanation
+
+A module is being shut down.
+
+Recommended Action
+
+None required.
+
+505002
+
+Error Message
+
+%ASA-5-505002: Module ips is reloading. Please wait...
+
+Explanation
+
+An IPS module is being reloaded.
+
+Recommended Action
+
+None required.
+
+505003
+
+Error Message
+
+%ASA-5-505003: Module string one is resetting. Please wait...
+
+Explanation
+
+A module is being reset.
+
+Recommended Action
+
+None required.
+
+505004
+
+Error Message
+
+%ASA-5-505004: Module string one shutdown is complete.
+
+Explanation
+
+A module has been shut down.
+
+Recommended Action
+
+None required.
+
+505005
+
+Error Message
+
+%ASA-5-505005: Module module_name is initializing control communication. Please
+wait...
+
+Explanation
+
+A module has been detected, and the Secure Firewall ASA is initializing control
+channel communication with it.
+
+Recommended Action
+
+None required.
+
+505006
+
+Error Message
+
+%ASA-5-505006: Module string one is Up.
+
+Explanation
+
+A module has completed control channel initialization and is in the UP state.
+
+Recommended Action
+
+None required.
+
+505007
+
+Error Message
+
+%ASA-5-505007: Module module_id is recovering. Please wait...
+%ASA-5-505007: Module prod_id in slot slot_num is recovering. Please wait...
+
+Explanation
+
+A software module is being recovered with the sw-module module
+service-module-name recover boot command, or a hardware module is being
+recovered with the hw-module module slotnum recover boot command.
+- module_id - The name of the software services module.
+- prod_id - The product ID string.
+- slot_num - The slot in which the hardware services module is installed. Slot 0
+indicates the system main board, and slot 1 indicates the module installed in
+the expansion slot.
+
+Recommended Action
+
+None required.
+
+505008
+
+Error Message
+
+%ASA-5-505008: Module module_id software is being updated to newver (currently
+ver )
+%ASA-5-505008: Module module_id in slot slot_num software is being updated to
+newver (currently ver )
+
+Explanation
+
+The services module software is being upgraded. The update is proceeding
+normally.
+- module_id - The name of the software services module
+- slot_num - The slot number that contains the hardware services module
+- newver - The new version number of software that was not successfully written
+to the module (for example, 1.0(1)0)
+- ver - The current version number of the software on the module (for example,
+1.0(1)0)
+
+Recommended Action
+
+None required.
+
+505009
+
+Error Message
+
+%ASA-5-505009: Module string one software was updated to newver
+
+Explanation
+
+The 4GE SSM module software was successfully upgraded.
+- string one - The text string that specifies the module
+- newver - The new version number of software that was not successfully written
+to the module (for example, 1.0(1)0)
+- ver - The current version number of the software on the module (for example,
+1.0(1)0)
+
+Recommended Action
+
+None required.
+
+505010
+
+Error Message
+
+%ASA-5-505010: Module in slot slot removed.
+
+Explanation
+
+An SSM was removed from the Secure Firewall ASA chassis.
+- slot - The slot from which the SSM was removed
+
+Recommended Action
+
+None required.
+
+505011
+
+Error Message
+
+%ASA-1-505011: Module ips , data channel communication is UP.
+
+Explanation
+
+The data channel communication recovered from a DOWN state.
+
+Recommended Action
+
+None required.
+
+505012
+
+Error Message
+
+%ASA-5-505012: Module module_id , application stopped application , version
+version
+%ASA-5-505012: Module prod_id in slot slot_num , application stopped application
+, version version
+
+Explanation
+
+An application was stopped or removed from a services module. This may occur
+when the services module upgraded an application or when an application on the
+services module was stopped or uninstalled.
+- module_id - The name of the software services module
+- prod_id - The product ID string for the device installed in the hardwre
+services module
+- slot_num - The slot in which the application was stopped
+- application - The name of the application stopped
+- version - The application version stopped
+
+Recommended Action
+
+If an upgrade was not occurring on the 4GE SSM or the application was not
+intentionally stopped or uninstalled, review the logs from the 4GE SSM to
+determine why the application stopped.
+
+505013
+
+Error Message
+
+%ASA-5-505013: Module module_id application changed from: application version
+version to: newapplication version newversion .
+%ASA-5-505013: Module prod_id in slot slot_nunm application changed from:
+application version version to: newapplication version newversion .
+
+Explanation
+
+An application version changed, such as after an upgrade. A software update for
+the application on the services module is complete.
+- module_id - The name of the software services module
+- application - The name of the application that was upgraded
+- version - The application version that was upgraded
+- prod_id - The product ID string for the device installed in the hardware
+services module
+- slot_num - The slot in which the application was upgraded
+- application - The name of the application that was upgraded
+- version - The application version that was upgraded
+- newapplication - The new application name
+- newversion - The new application version
+
+Recommended Action
+
+Verify that the upgrade was expected and that the new version is correct.
+
+505014
+
+Error Message
+
+%ASA-1-505014: Module module_id , application down name , version version reason
+%ASA-1-505014: Module prod_id in slot slot_num , application down name , version
+version reason
+
+Explanation
+
+The application running on the module is disabled.
+- module_id - The name of the software services module
+- prod_id - The product ID string for the device installed in the hardware
+services module
+- slot_num - The slot in which the application was disabled. Slot 0 indicates
+the system main board, and slot 1 indicates the module installed in the
+expansion slot.
+- name - Application name (string)
+- application - The name of the application that was upgraded
+- version - The application version (string)
+- reason - Failure reason (string)
+
+Recommended Action
+
+If the problem persists, contact the Cisco TAC.
+
+505015
+
+Error Message
+
+%ASA-1-505015: Module module_id , application up application , version version
+%ASA-1-505015: Module prod_id in slot slot_num , application up application ,
+version version
+
+Explanation
+
+The application running on the SSM in slot slot_num is up and running.
+- module_id - The name of the software services module
+- prod_id - The product ID string for the device installed in the hardware
+services module
+- slot_num - The slot in which the application is running. Slot 0 indicates the
+system main board, and slot 1 indicates the module installed in the expansion
+slot.
+- application - The application name (string)
+- version - The application version (string)
+
+Recommended Action
+
+None required.
+
+505016
+
+Error Message
+
+%ASA-3-505016: Module module_id application changed from: name version version
+state state to: name version state state .
+%ASA-3-505016: Module prod_id in slot slot_num application changed from: name
+version version state state to: name version state state .
+
+Explanation
+
+The application version or a name change was detected.
+- module_id - The name of the software services module
+- prod_id - The product ID string for the device installed in the hardware
+services module
+- slot_num - The slot in which the application changed. Slot 0 indicates the
+system main board, and slot 1 indicates the module installed in the expansion
+slot.
+- name - Application name (string)
+- version - The application version (string)
+- state - Application state (string)
+- application - The name of the application that changed
+
+Recommended Action
+
+Verify that the change was expected and that the new version is correct.
+
+506001
+
+Error Message
+
+%ASA-5-506001: event_source_string event_string
+
+Explanation
+
+The status of a file system has changed. The event and the source of the event
+that caused a file system to become available or unavailable appear. Examples of
+sources and events that can cause a file system status change are as follows:
+- External CompactFlash removed
+- External CompactFlash inserted
+- External CompactFlash unknown event
+
+Recommended Action
+
+None required.
+
+507001
+
+Error Message
+
+%ASA-5-507001: Terminating TCP-Proxy connection from
+interface_inside:source_address/source_port to interface_outside :dest_address
+/dest_port - reassembly limit of limit bytes exceeded
+
+Explanation
+
+The assembly buffer limit was exceeded during TCP segment reassembly.
+- source_address/source_port - The source IP address and the source port of the
+packet initiating the connection
+- dest_address/dest_port - The destination IP address and the destination port
+of the packet initiating the connection
+- interface_inside - The name of the interface on which the packet which
+initiated the connection arrives
+- interface_outside - The name of the interface on which the packet which
+initiated the connection exits
+- limit - The configured embryonic connection limit for the traffic class
+
+Recommended Action
+
+None required.
+
+507002
+
+Error Message
+
+%ASA-4-507002: Data copy in proxy-mode exceeded the buffer limit
+
+Explanation
+
+An operational error occurred during processing of a fragmented TCP message.
+
+Recommended Action
+
+None required.
+
+507003
+
+Error Message
+
+%ASA-3-507003: The flow of type protocol from the originating interface: src_ip
+/src_port to dest_if :dest_ip /dest_port terminated by inspection engine,
+reason-
+
+Explanation
+
+The TCP proxy or session API terminated a connection for various reasons, which
+are provided in the message.
+- protocol - The protocol for the flow
+- src_ip - The source IP address for the flow
+- src_port - The name of the source port for the flow
+- dest_if - The destination interface for the flow
+- dest_ip - The destination IP address for the flow
+- dest_port - The destination port for the flow
+- reason - The description of why the flow is being terminated by the inspection
+engine. Valid reasons include:
+  - Failed to create flow
+  - Failed to initialize session API
+  - Filter rules installed/matched are incompatible
+  - Failed to consolidate new buffer data with original
+  - Reset unconditionally
+  - Reset based on “service reset inbound” configuration
+  - Disconnected, dropped packet
+  - Packet length changed
+  - Reset reflected back to sender
+  - Proxy inspector reset unconditionally
+  - Proxy inspector drop reset
+  - Proxy inspector received data after FIN
+  - Proxy inspector disconnected, dropped packet
+  - Inspector reset unconditionally
+  - Inspector drop reset
+  - Inspector received data after FIN
+  - Inspector disconnected, dropped packet
+  - Could not buffer unprocessed data
+  - Session API proxy forward failed
+  - Conversion of inspect data to session data failed
+  - SSL channel for TLS proxy is closed
+
+Recommended Action
+
+None required.
+
+508001
+
+Error Message
+
+%ASA-5-508001: DCERPC message_type non-standard version_type version
+version_number from src_if :src_ip /src_port to dest_if :dest_ip /dest_port ,
+terminating connection.
+
+Explanation
+
+During DCERPC inspection, a message header included a nonstandard major or minor
+version.
+- message_type - The DCERPC message type
+- version_type - The version type, which can be major or minor
+- version_number - The nonstandard version in the message header
+
+Recommended Action
+
+If this is a valid version, and the problem persists, contact the Cisco TAC.
+
+508002
+
+Error Message
+
+%ASA-5-508002: DCERPC response has low endpoint port port_number from src_if
+:src_ip /src_port to dest_if :dest_ip /dest_port , terminating connection.
+
+Explanation
+
+During DCERPC inspection, a response message included an endpoint port number
+less than 1024 (in the range of well-known server ports).
+
+Recommended Action
+
+None required.
+
+509001
+
+Error Message
+
+%ASA-5-509001: Connection attempt from src_intf :src_ip /src_port [([idfw_user |
+FQDN_string ], sg_info )] to dst_intf :dst_ip /dst_port [([idfw_user |
+FQDN_string ], sg_info )] was prevented by "no forward" command.
+
+Explanation
+
+The no forward interface command was entered to block traffic from the source
+interface to the destination interface given in the message. This command is
+required on low-end platforms to allow the creation of interfaces beyond the
+licensed limit.
+- src_intf - The name of the source interface to which the no forward interface
+command restriction applies
+- dst_intf - The name of the destination interface to which the no forward
+interface command restriction applies
+- sg_info - The security group name or tag for the specified IP address
+
+Recommended Action
+
+Upgrade the license to remove the requirement of this command on low-end
+platforms, then remove the command from the configuration.
+
+520001
+
+Error Message
+
+%ASA-3-520001: error_string
+
+Explanation
+
+A malloc failure occurred in ID Manager. The errror string can be either of the
+following:
+- Malloc failure - id_reserve
+- Malloc failure - id_get
+
+Recommended Action
+
+Contact the Cisco TAC.
+
+520002
+
+Error Message
+
+%ASA-3-520002: bad new ID table size
+
+Explanation
+
+A bad new table request to the ID Manager occurred.
+
+Recommended Action
+
+Contact the Cisco TAC.
+
+520003
+
+Error Message
+
+%ASA-3-520003: bad id in error_string (id: 0xid_num)
+
+Explanation
+
+An ID Manager error occurred. The error string may be any of the following:
+- id_create_new_table (no more entries allowed)
+- id_destroy_table (bad table ID)
+- id_reserve
+- id_reserve (bad ID)
+- id_reserve: ID out of range
+- id_reserve (unassigned table ID)
+- id_get (bad table ID)
+- id_get (unassigned table ID)
+- id_get (out of IDs!)
+- id_to_ptr
+- id_to_ptr (bad ID)
+- id_to_ptr (bad table ID)
+- id_get_next_id_ptr (bad table ID)
+- id_delete
+- id_delete (bad ID)
+- id_delete (bad table key)
+
+Recommended Action
+
+Contact the Cisco TAC.
+
+520004
+
+Error Message
+
+%ASA-3-520004: error_string
+
+Explanation
+
+An id_get was attempted at the interrupt level.
+
+Recommended Action
+
+Contact the Cisco TAC.
+
+520005
+
+Error Message
+
+%ASA-3-520005: error_string
+
+Explanation
+
+An internal error occurred with the ID Manager.
+
+Recommended Action
+
+Contact the Cisco TAC.
+
+520010
+
+Error Message
+
+%ASA-3-520010: Bad queue elem – qelem_ptr : flink flink_ptr , blink blink_ptr ,
+flink-blink flink_blink_ptr , blink-flink blink_flink_ptr
+
+Explanation
+
+An internal software error occurred, which can be any of the following:
+- qelem_ptr - A pointer to the queue data structure
+- flink_ptr - A pointer to the forward element of the queue data structure
+- blink_ptr - A pointer to the backward element of the queue data structure
+- flink_blink_ptr - A pointer to the forward element’s backward pointer of the
+queue data structure
+- blink_flink_ptr - A pointer to the backward element’s forward pointer of the
+queue data structure
+
+Recommended Action
+
+Contact the Cisco TAC.
+
+520011
+
+Error Message
+
+%ASA-3-520011: Null queue elem
+
+Explanation
+
+An internal software error occurred.
+
+Recommended Action
+
+Contact the Cisco TAC.
+
+520013
+
+Error Message
+
+%ASA-3-520013: Regular expression access check with bad list acl_ID
+
+Explanation
+
+A pointer to an access list is invalid.
+
+Recommended Action
+
+The event that caused this message to be issued should not have occurred. It can
+mean that one or more data structures have been overwritten. If this message
+recurs, and you decide to report it to your TAC representative, you should copy
+the text of the message exactly as it appears and include the associated stack
+trace. Because access list corruption may have occurred, a TAC representative
+should verify that access lists are functioning correctly.
+
+520020
+
+Error Message
+
+%ASA-3-520020: No memory available
+
+Explanation
+
+The system is out of memory.
+
+Recommended Action
+
+Try one of the following actions to correct the problem:
+- Reduce the number of routes accepted by this router.
+- Upgrade hardware.
+- Use a smaller subset image on run-from-RAM platforms.
+
+520021
+
+Error Message
+
+%ASA-3-520021: Error deleting trie entry, error_message
+
+Explanation
+
+A software programming error occurred. The error message can be any of the
+following:
+- Inconsistent annotation
+- Couldn't find our annotation
+- Couldn't find deletion target
+
+Recommended Action
+
+Copy the error message exactly as it appears, and report it to Cisco TAC.
+
+520022
+
+Error Message
+
+%ASA-3-520022: Error adding mask entry, error_message
+
+Explanation
+
+A software or hardware error occurred. The error message can be any of the
+following:
+- Mask already in tree
+- Mask for route not entered
+- Non-unique normal route, mask not entered
+
+Recommended Action
+
+Copy the error message exactly as it appears, and report it to Cisco TAC.
+
+520023
+
+Error Message
+
+%ASA-3-520023: Invalid pointer to head of tree, 0x radix_node_ptr
+
+Explanation
+
+A software programming error occurred.
+
+Recommended Action
+
+Copy the error message exactly as it appears, and report it to Cisco TAC.
+
+520024
+
+Error Message
+
+%ASA-3-520024: Orphaned mask #radix_mask_ptr, refcount= radix_mask_ptr’s ref
+count at #radix_node_address, next= #radix_node_nxt
+
+Explanation
+
+A software programming error occurred.
+
+Recommended Action
+
+Copy the error message exactly as it appears, and report it to Cisco TAC.
+
+520025
+
+Error Message
+
+%ASA-3-520025: No memory for radix initialization: err_msg
+
+Explanation
+
+The system ran out of memory during initialization. This should only occur if an
+image is too large for the existing dynamic memory. The error message can be
+either of the following:Initializing leaf nodesMask housekeeping
+
+Recommended Action
+
+Use a smaller subset image or upgrade hardware.
+

@@ -1,0 +1,471 @@
+%ASA-4-105505: (Primary|Secondary) Failed to connect to peer unit peer-ip:port
+%ASA-4-105524: (Primary|Secondary) Transitioning to Negotiating state due to the presence of anotherActive HA unit
+%ASA-4-105553: (Primary|Secondary) Detected another Active HA unit
+%ASA-4-106023: Deny protocol src [interface_name:source_address/source_port][([idfw_user|FQDN_string], sg_info)] dst interface_name:dest_address/dest_port[([idfw_user|FQDN_string], sg_info)] [type {string}, code {code}] by access_group acl_ID [0x8ed66b60,0xf8852875]
+%ASA-4-106027: Deny src [source address] dst [destination address] by access-group “access-list name”.
+%ASA-4-106103: access-list acl_ID denied protocol for user username interface_name/source_addresssource_port interface_name/dest_address dest_port hit-cnt number first hit hash codes
+%ASA-4-108004: action_class: action ESMTP req_resp from src_ifc:sip|sport todest_ifc:dip|dport;further_info, page 1-23
+%ASA-4-109017: User at IP_address exceeded auth proxy connection limit (max)
+%ASA-4-109022: exceeded HTTPS proxy process limit
+%ASA-4-109027: [aaa protocol] Unable to decipher response message Server = server_IP_address, User= user
+%ASA-4-109028: aaa bypassed for same-security traffic from ingress_interface:source_address/source_port to egress_interface:dest_address/dest_port
+%ASA-4-109030: Autodetect ACL convert wildcard did not convert ACL access_list source | destnetmask netmask.
+%ASA-4-109031: NT Domain Authentication Failed: rejecting guest login for username.
+%ASA-4-109033: Authentication failed for admin user user from src_IP. Interactive challenge processingis not supported for protocol connections
+%ASA-4-109040: User at IP exceeded auth proxy rate limit of 10 connections/sec
+%ASA-4-109034: Authentication failed for network user user from src_IP/port to dst_IP/port. Interactivechallenge processing is not supported for protocol connections
+%ASA-4-109102: Received CoA action-type from coa-source-ip, but cannot find named sessionaudit-session-id
+%ASA-4-113019: Group = group, Username = user, IP = peer_address, Session disconnected. SessionType: type, Duration: duration, Bytes xmt: count, Bytes rcv: count, Reason: reason
+%ASA-4-113026: Error error while executing Lua script for group tunnel group
+%ASA-4-113029: Group group User user IP ipaddr Session could not be established: session limit ofnum reached
+%ASA-4-113030: Group group User user IP ipaddr User ACL acl from AAA doesn't exist on the device,terminating connection.
+%ASA-4-113031: Group group User user IP ipaddr AnyConnect vpn-filter filter is an IPv6 ACL; ACLnot applied.
+%ASA-4-113032: Group group User user IP ipaddr AnyConnect ipv6-vpn-filter filter is an IPv4 ACL;ACL not applied.
+%ASA-4-113034: Group group User user IP ipaddr User ACL acl from AAA ignored, AV-PAIR ACLused instead.
+%ASA-4-113035: Group group User user IP ipaddr Session terminated: AnyConnect not enabled orinvalid AnyConnect image on the ASA.
+%ASA-4-113036: Group group User user IP ipaddr AAA parameter name value invalid.
+%ASA-4-113038: Group group User user IP ipaddr Unable to create AnyConnect p0arent session.
+%ASA-4-113040: Terminating the VPN connection attempt from attempted group. Reason: Thisconnection is group locked to locked group.
+%ASA-4-113041: Redirect ACL configured for assigned IP does not exist on the device.
+%ASA-4-113042: CoA: Non-HTTP connection from src_if:src_ip/src_port to dest_if:dest_ip/dest_portfor user username at client_IP denied by redirect filter; only HTTP connections are supported forredirection.
+%ASA-4-115002: Warning in process: process name fiber: fiber name, component: component name,subcomponent: subcomponent name, file: filename, line: line number, cond: condition
+%ASA-4-120004: Event group title is dropped. Reason reason
+%ASA-4-120005: Message group to destination is dropped. Reason reason
+%ASA-4-120006: Delivering message group to destination failed. Reason reason
+%ASA-4-199016: syslog
+%ASA-4-209003: Fragment database limit of number exceeded: src = source_address, dest = dest_address,proto = protocol, id = number
+%ASA-4-209004: Invalid IP fragment, size = bytes exceeds maximum size = bytes: src = source_address,dest = dest_address, proto = protocol, id = number
+%ASA-4-209005: Discard IP fragment set with more than number elements: src = Too many elementsare in a fragment set.
+%ASA-4-209006: Fragment queue threshold exceeded, dropped TCP fragment from IP address/port toIP address/port on outside interface.
+%ASA-4-213007: L2TP: Failed to install Redirect URL: redirect URL Redirect ACL: non_exist forassigned IP.
+%ASA-4-216004: prevented: error in function at file(line) - stack trace
+%ASA-4-302034: Unable to pre-allocate H323 GUP Connection for faddr interface: foreignaddress/foreign-port to laddr interface:local-address/local-port
+%ASA-4-302311: Failed to create a new protocol[] connection from ingress interface:source IP/sourceport to egress interface:destination IP/destination port due to application cache memory allocation failure.The app-cache memory threshold level is threshold% and threshold check is enabled/disabled.
+%ASA-4-305021: Ports exhausted in pre-allocated PAT pool IP mapped_ip_address for host real_host_ip.Allocating from new PAT pool IP mapped_ip_address.
+%ASA-4-305022: Cluster unit unit_name has been allocated num_of_port_blocks port blocks for PATusage. All units should have at least min_num_of_port_blocks port blocks.
+%ASA-4-308002: static global_address inside_address netmask netmask overlapped with global_addressinside_address
+%ASA-4-308003: WARNING: The enable password is not configured.
+%ASA-4-308004: The enable password has been configured by user admin
+%ASA-4-313004: Denied ICMP type=icmp_type, from source_address on interface interface_name todest_address:no matching session
+%ASA-4-313005: No matching connection for ICMP error message: icmp_msg_info on interface_nameinterface. Original IP payload: embedded_frame_info icmp_msg_info = icmp srcsrc_interface_name:src_address [([idfw_user | FQDN_string], sg_info)] dstdest_interface_name:dest_address [([idfw_user | FQDN_string], sg_info)] (type icmp_type, codeicmp_code) embedded_frame_info = prot src source_address/source_port [([idfw_user | FQDN_string],sg_info)] dst dest_address/dest_port [(idfw_user|FQDN_string), sg_info]
+%ASA-4-313009: Denied invalid ICMP code icmp-code, for src-ifc:src-address/src-port(mapped-src-address/mapped-src-port) to dest-ifc:dest-address/dest-port(mapped-dest-address/mapped-dest-port) [user], ICMP id icmp-id, ICMP type icmp-type
+%ASA-4-315009: SSH: connection timed out: username <username> , IP <ip>
+%ASA-4-325002: Duplicate address ipv6_address/MAC_address on interface
+%ASA-4-325004: IPv6 Extension Header hdr_type action configuration. protocol fromsrc_int:src_ipv6_addr/src_port to dst_interface: dst_ipv6_addr/dst_port.
+%ASA-4-325005: Invalid IPv6 Extension Header Content: string. detail regarding protocol, ingress andegress interface
+%ASA-4-325006: IPv6 Extension Header not in order: Type hdr_type occurs after Type hdr_type. TCPprot from inside src_int: src_ipv6_addr/src_port to dst_interface:dst_ipv6_addr/dst_port
+%ASA-4-335005: NAC Downloaded ACL parse failure - host-address
+%ASA-4-337005: Phone Proxy SRTP: Media session not found for media_term_ip/media_term_portfor packet from in_ifc:src_ip/src_port to out_ifc:dest_ip/dest_port
+%ASA-4-338001: Dynamic filter monitored blacklisted protocol traffic fromin_interface:src_ip_addr/src_port (mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port,(mapped-ip/mapped-port), source malicious address resolved from local or dynamic list: domain name,threat-level: level_value, category: category_name
+%ASA-4-338002: Dynamic filter monitored blacklisted protocol traffic fromin_interface:src_ip_addr/src_port (mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port(mapped-ip/mapped-port), destination malicious address resolved from local or dynamic list: domainname, threat-level: level_value, category: category_name
+%ASA-4-338003: Dynamic filter monitored blacklisted protocol traffic fromin_interface:src_ip_addr/src_port (mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port,(mapped-ip/mapped-port), source malicious address resolved from local or dynamic list: ipaddress/netmask, threat-level: level_value, category: category_name
+%ASA-4-338004: Dynamic filter monitored blacklisted protocol traffic fromin_interface:src_ip_addr/src_port (mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port(mapped-ip/mapped-port), destination malicious address resolved from local or dynamic list: ipaddress/netmask, threat-level: level_value, category: category_name
+%ASA-4-338005: Dynamic filter dropped blacklisted protocol traffic fromin_interface:src_ip_addr/src_port (mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port(mapped-ip/mapped-port), source malicious address resolved from local or dynamic list: domain name,threat-level: level_value, category: category_name
+%ASA-4-338006: Dynamic filter dropped blacklisted protocol traffic fromin_interface:src_ip_addr/src_port (mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port(mapped-ip/mapped-port), destination malicious address resolved from local or dynamic list: domainname, threat-level: level_value, category: category_name
+%ASA-4-338007: Dynamic filter dropped blacklisted protocol traffic fromin_interface:src_ip_addr/src_port (mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port(mapped-ip/mapped-port), source malicious address resolved from local or dynamic list: ipaddress/netmask, threat-level: level_value, category: category_name
+%ASA-4-338008: Dynamic filter dropped blacklisted protocol traffic fromin_interface:src_ip_addr/src_port (mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port(mapped-ip/mapped-port), destination malicious address resolved from local or dynamic list: ipaddress/netmask, threat-level: level_value, category: category_name
+%ASA-4-338101: Dynamic filter action whitelisted protocol traffic from in_interface:src_ip_addr/src_port(mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port, (mapped-ip/mapped-port), sourcemalicious address resolved from local or dynamic list: domain name
+%ASA-4-338102: Dynamic filter action whitelisted protocol traffic from in_interface:src_ip_addr/src_port(mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port (mapped-ip/mapped-port), destinationmalicious address resolved from local or dynamic list: domain name
+%ASA-4-338103: Dynamic filter action whitelisted protocol traffic from in_interface:src_ip_addr/src_port(mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port, (mapped-ip/mapped-port), sourcemalicious address resolved
+%ASA-4-338104: Dynamic filter action whitelisted protocol traffic from in_interface:src_ip_addr/src_port(mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port (mapped-ip/mapped-port), destinationmalicious address resolved from local or dynamic list: ip address/netmask from local or dynamic list: ipaddress/netmask
+%ASA-4-338201: Dynamic filter monitored greylisted protocol traffic fromin_interface:src_ip_addr/src_port (mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port,(mapped-ip/mapped-port), source malicious address resolved from local or dynamic list: domain name,threat-level: level_value, category: category_name
+%ASA-4-338202: Dynamic filter monitored greylisted protocol traffic fromin_interface:src_ip_addr/src_port (mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port(mapped-ip/mapped-port), destination malicious address resolved from local or dynamic list: domainname, threat-level: level_value, category: category_name
+%ASA-4-338203: Dynamic filter dropped greylisted protocol traffic from in_interface:src_ip_addr/src_port(mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port (mapped-ip/mapped-port), sourcemalicious address resolved from local or dynamic list: domain name, threat-level: level_value, category:category_name
+%ASA-4-338204: Dynamic filter dropped greylisted protocol traffic from in_interface:src_ip_addr/src_port(mapped-ip/mapped-port) to out_interface:dest_ip_addr/dest_port (mapped-ip/mapped-port), destinationmalicious address resolved from local or dynamic list: domain name, threat-level: level_value, category:category_name
+%ASA-4-338301: Intercepted DNS reply for domain name from in_interface:src_ip_addr/src_port toout_interface:dest_ip_addr/dest_port, matched list
+%ASA-4-400000: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400001: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400002: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400003: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400004: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400005: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400006: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400007: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400008: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400009: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400010: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400011: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400012: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400013: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400014: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400015: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400016: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400017: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400018: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400019: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400020: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400021: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400022: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400023: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400024: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400025: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400026: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400027: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400028: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400029: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400030: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400031: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400032: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400033: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400034: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400035: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400036: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400037: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400038: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400039: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400040: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400041: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400042: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400043: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400044: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400045: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400046: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400047: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400048: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400049: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-400050: IPS:number string from IP_address to IP_address on interface interface_name
+%ASA-4-401001: Shuns cleared
+%ASA-4-401002: Shun added: IP_address IP_address port port
+%ASA-4-401003: Shun deleted: IP_address
+%ASA-4-401004: Shunned packet: IP_address = IP_address on interface interface_name
+%ASA-4-401005: Shun add failed: unable to allocate resources for IP_address IP_address port port
+%ASA-4-402114: IPSEC: Received an protocol packet (SPI=spi, sequence number= seq_num) fromremote_IP to local_IP with an invalid SPI.
+%ASA-4-402115: IPSEC: Received a packet from remote_IP to local_IP containing act_prot data insteadof exp_prot data.
+%ASA-4-402116: IPSEC: Received an protocol packet (SPI=spi, sequence number= seq_num) fromremote_IP (username) to local_IP. The decapsulated inner packet doesn’t match the negotiated policyin the SA. The packet specifies its destination as pkt_daddr, its source as pkt_saddr, and its protocol aspkt_prot. The SA specifies its local proxy as id_daddr /id_dmask /id_dprot /id_dport and its remote proxyas id_saddr /id_smask /id_sprot /id_sport.
+%ASA-4-402117: IPSEC: Received a non-IPSec (protocol) packet from remote_IP to local_IP.
+%ASA-4-402118: IPSEC: Received an protocol packet (SPI=spi, sequence number seq_num) fromremote_IP (username) to local_IP containing an illegal IP fragment of length frag_len with offsetfrag_offset.
+%ASA-4-402119: IPSEC: Received an protocol packet (SPI=spi, sequence number= seq_num) fromremote_IP (username) to local_IP that failed anti-replay checking.
+%ASA-4-402120: IPSEC: Received an protocol packet (SPI=spi, sequence number= seq_num) fromremote_IP (username) to local_IP that failed authentication.
+%ASA-4-402121: IPSEC: Received an protocol packet (SPI=spi, sequence number= seq_num) frompeer_addr (username) to lcl_addr that was dropped by IPSec (drop_reason).
+%ASA-4-402122: Received a cleartext packet from src_addr to dest_addr that was to be encapsulatedin IPSec that was dropped by IPSec (drop_reason).
+%ASA-4-402123: CRYPTO: The accel_type hardware accelerator encountered an error (code=error_string) while executing crypto command command.
+%ASA-4-402124: CRYPTO: The ASA hardware accelerator encountered an error (Hardware erroraddress, Core, Hardware error code, IstatReg, PciErrReg, CoreErrStat, CoreErrAddr, DoorbellSize,DoorBell Outstanding, SWReset).
+%ASA-4-402125: The ASA hardware accelerator ring timed out (parameters).
+%ASA-4-402126: CRYPTO: The ASA created Crypto Archive File Archive Filename as a Soft Resetwas necessary. Please forward this archived information to Cisco.
+%ASA-4-402127: CRYPTO: The ASA is skipping the writing of latest Crypto Archive File as themaximum # of files, max_number, allowed have been written to archive_directory. Please archive &remove files from Archive Directory if you want more Crypto Archive Files saved.
+%ASA-4-402131: CRYPTO: status changing the accel_instance hardware accelerator's configurationbias from old_config_bias to new_config_bias.
+%ASA-4-403101: PPTP session state not established, but received an XGRE packet, tunnel_id=number,session_id=number
+%ASA-4-403102: PPP virtual interface interface_name rcvd pkt with invalid protocol: protocol, reason:reason.
+%ASA-4-403103: PPP virtual interface max connections reached.
+%ASA-4-403104: PPP virtual interface interface_name requires mschap for MPPE.
+%ASA-4-403106: PPP virtual interface interface_name requires RADIUS for MPPE.
+%ASA-4-403107: PPP virtual interface interface_name missing aaa server group info
+%ASA-4-403108: PPP virtual interface interface_name missing client ip address option
+%ASA-4-403109: Rec'd packet not an PPTP packet. (ip) dest_address= dest_address, src_addr=source_address, data: string.
+%ASA-4-403110: PPP virtual interface interface_name, user: user missing MPPE key from aaa server.
+%ASA-4-403505: PPPoE:PPP - Unable to set default route to IP_address at interface_name
+%ASA-4-403506: PPPoE:failed to assign PPP IP_address netmask netmask at interface_name
+%ASA-4-405001: Received ARP {request | response} collision from IP_address/MAC_address oninterface interface_name to IP_address/MAC_address on interface interface_name
+%ASA-4-405002: Received mac mismatch collision from IP_address/MAC_address for authenticatedhost
+%ASA-4-405003: IP address collision detected between host IP_address at MAC_address and interfaceinterface_name, MAC_address.
+%ASA-4-405101: Unable to Pre-allocate H225 Call Signalling Connection for foreign_addressoutside_address[/outside_port] to local_address inside_address[/inside_port]
+%ASA-4-405102: Unable to Pre-allocate H245 Connection for foreign_addressoutside_address[/outside_port] to local_address inside_address[/inside_port]
+%ASA-4-405103: H225 message from source_address/source_port to dest_address/dest_port containsbad protocol discriminator hex
+%ASA-4-405104: H225 message received from outside_address/outside_port to inside_address/inside_portbefore SETUP
+%ASA-4-405105: H323 RAS message AdmissionConfirm received from source_address/source_portto dest_address/dest_port without an AdmissionRequest
+%ASA-4-405106: H323 num channel is not created from %I/%d to %I/%d %s
+%ASA-4-405107: H245 Tunnel is detected and connection dropped from %I/%d to %I/%d %s
+%ASA-4-405201: ILS ILS_message_type from inside_interface:source_IP_address tooutside_interface:/destination_IP_address has wrong embedded address embedded_IP_address
+%ASA-4-405300: Radius Accounting Request received from from_addr is not allowed
+%ASA-4-405301: Attribute attribute_number does not match for user user_ip
+%ASA-4-406001: FTP port command low port: IP_address/port to IP_address on interface interface_name
+%ASA-4-406002: FTP port command different address: IP_address(IP_address) to IP_address on interfaceinterface_name
+%ASA-4-407001: Deny traffic for local-host interface_name:inside_address, license limit of numberexceeded
+%ASA-4-407002: Embryonic limit nconns/elimit for through connectionsexceeded.outside_address/outside_port to global_address (inside_address)/inside_port on interfaceinterface_name
+%ASA-4-407003: Established limit for RPC services exceeded number
+%ASA-4-408001: IP route counter negative - reason, IP_address Attempt: number
+%ASA-4-408002: ospf process id route type update address1 netmask1 [distance1/metric1] via sourceIP:interface1 address2 netmask2 [distance2/metric2] interface2
+%ASA-4-408003: can't track this type of object hex
+%ASA-4-408101: KEYMAN : Type <encrption_type> encryption unknown. Interpreting keystring asliteral.
+%ASA-4-408102: KEYMAN : Bad encrypted keystring for key id <key id>
+%ASA-4-409001: Database scanner: external LSA IP_address netmask is lost, reinstalls
+%ASA-4-409002: db_free: external LSA IP_address netmask
+%ASA-4-409003: Received invalid packet: reason from IP_address, interface_name
+%ASA-4-409004: Received reason from unknown neighbor IP_address
+%ASA-4-409005: Invalid length number in OSPF packet from IP_address (ID IP_address), interface_name
+%ASA-4-409006: Invalid lsa: reason Type number, LSID IP_address from IP_address, IP_address,interface_name
+%ASA-4-409007: Found LSA with the same host bit set but using different mask LSA ID IP_addressnetmask New: Destination IP_address netmask
+%ASA-4-409008: Found generating default LSA with non-zero mask LSA type : number Mask: netmaskmetric: number area: string
+%ASA-4-409009: OSPF process number cannot start. There must be at least one up IP interface, forOSPF to use as router ID
+%ASA-4-409010: Virtual link information found in non-backbone area: string
+%ASA-4-409011: OSPF detected duplicate router-id IP_address from IP_address on interfaceinterface_name
+%ASA-4-409012: Detected router with duplicate router ID IP_address in area string
+%ASA-4-409013: Detected router with duplicate router ID IP_address in Type-4 LSA advertised byIP_address
+%ASA-4-409014: No valid authentication [send] key is available on interface <nameif>
+%ASA-4-409015: Key ID <key-id> <received> on interface <nameif>
+%ASA-4-409016: Key chain name <key-chain-name> on <nameif> is invalid
+%ASA-4-409017: Key ID <key-id> in key chain <key-chain-name> is invalid.
+%ASA-4-409023: Attempting AAA Fallback method method_name for request_type request for useruser:Auth-server group server_tag unreachable
+%ASA-4-409101: Received invalid packet: %s from %P, %s
+%ASA-4-409102: Received packet with incorrect area from %P, %s, area %AREA_ID_STR, packetarea %AREA_ID_STR
+%ASA-4-409103: Received %s from unknown neighbor %i
+%ASA-4-409104: Invalid length %d in OSPF packet type %d from %P (ID %i), %s
+%ASA-4-409105: Invalid lsa: %s: Type 0x%x, Length 0x%x, LSID %u from %i
+%ASA-4-409106: Found generating default LSA with non-zero mask LSA type: 0x%x Mask: %i metric:%lu area: %AREA_ID_STR
+%ASA-4-409107: OSPFv3 process %d could not pick a router-id, please configure manually
+%ASA-4-409108: Virtual link information found in non-backbone area: %AREA_ID_STR
+%ASA-4-409109: OSPF detected duplicate router-id %i from %P on interface %IF_NAME
+%ASA-4-409110: Detected router with duplicate router ID %i in area %AREA_ID_STR
+%ASA-4-409111: Multiple interfaces (%IF_NAME /%IF_NAME) on a single link detected.
+%ASA-4-409112: Packet not written to the output queue
+%ASA-4-409113: Doubly linked list linkage is NULL
+%ASA-4-409114: Doubly linked list prev linkage is NULL %x
+%ASA-4-409115: Unrecognized timer %d in OSPF %s
+%ASA-4-409116: Error for timer %d in OSPF process %s
+%ASA-4-409117: Can't find LSA database type %x, area %AREA_ID_STR, interface %x
+%ASA-4-409118: Could not allocate DBD packet
+%ASA-4-409119: Invalid build flag %x for LSA %i, type 0x%x
+%ASA-4-409120: Router-ID %i is in use by ospf process %d
+%ASA-4-409121: Router is currently an ASBR while having only one area which is a stub area
+%ASA-4-409122: Could not select a global IPv6 address. Virtual links require at least one global IPv6address.
+%ASA-4-409123: Neighbor command allowed only on NBMA networks
+%ASA-4-409125: Can not use configured neighbor: poll and priority options are allowed only for aNBMA network
+%ASA-4-409128: OSPFv3-%d Area %AREA_ID_STR: Router %i originating invalid type 0x%x LSA,ID %u, Metric %d on Link ID %d Link Type %d
+%ASA-4-410001: UDP DNS request from source_interface:source_address/source_port todest_interface:dest_address/dest_port; (label length | domain-name length) 52 bytes exceeds remainingpacket length of 44 bytes.
+%ASA-4-410003: action_class: action DNS query_response from src_ifc:sip/sport to dest_ifc:dip/dport;further_info
+%ASA-4-411001: Line protocol on interface interface_name changed state to up
+%ASA-4-411002: Line protocol on interface interface_name changed state to down
+%ASA-4-411003: Configuration status on interface interface_name changed state to downup
+%ASA-4-411004: Configuration status on interface interface_name changed state to up
+%ASA-4-411005: Interface variable 1 experienced a hardware transmit hang. The interface has beenreset.
+%ASA-4-412001: MAC MAC_address moved from interface_1 to interface_2
+%ASA-4-412002: Detected bridge table full while inserting MAC MAC_address on interface interface.Number of entries = num
+%ASA-4-413001: Module module_id is not able to shut down. Module Error: errnum message
+%ASA-4-413002: Module module_id is not able to reload. Module Error: errnum message
+%ASA-4-413003: Module module_id is not a recognized type
+%ASA-4-413004: Module module_id failed to write software vnewver (currently vver), reason. Tryingagain.
+%ASA-4-413005: Module module_id, application is not supported app_name version app_vers typeapp_type
+%ASA-4-413006: prod-id Module software version mismatch; slot slot is prod-id version running-vers.Slot slot prod-id requires required-vers.
+%ASA-4-415016: policy-map map_name:Maximum number of unanswered HTTP requests exceededconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-4-416001: Dropped UDP SNMP packet from source_interface:source_IP/source_port todest_interface:dest_address/dest_port; version (prot_version) is not allowed through the firewall
+%ASA-4-417001: Unexpected event received: number
+%ASA-4-417004: Filter violation error: conn number (string:string) in string
+%ASA-4-417006: No memory for string) in string. Handling: string
+%ASA-4-418001: Through-the-device packet to/from management-only network is denied: protocol_stringfrom interface_name IP_address (port) [([idfw_user|FQDN_string], sg_info)] to interface_name IP_address(port) [(idfw_user|FQDN_string), sg_info]
+%ASA-4-419001: Dropping TCP packet from src_ifc:src_IP/src_port to dest_ifc:dest_IP/dest_port,reason: MSS exceeded, MSS size, data size
+%ASA-4-419002: Received duplicate TCP SYN from in_interface:src_address/src_port toout_interface:dest_address/dest_port with different initial sequence number.
+%ASA-4-419003: Cleared TCP urgent flag from out_ifc:src_ip/src_port to in_ifc:dest_ip/dest_port.
+%ASA-4-420002: IPS requested to drop ICMP packets ifc_in:SIP to ifc_out:DIP (typeICMP_TYPE,code ICMP_CODE)
+%ASA-4-420003: IPS requested to reset TCP connection from ifc_in:SIP/SPORT to ifc_out:DIP/DPORT
+%ASA-4-420007: application-string cannot be enabled for the module in slot slot_id. The module’scurrent software version does not support this feature. Please upgrade the software on the module in slotslot_id to support this feature. Received backplane header version version_number, required backplaneheader version version_number or higher.
+%ASA-4-422004: IP SLA Monitor number0: Duplicate event received. Event number number1
+%ASA-4-422005: IP SLA Monitor Probe(s) could not be scheduled because clock is not set.
+%ASA-4-422006: IP SLA Monitor Probe number: string
+%ASA-4-423001: {Allowed | Dropped} invalid NBNS pkt_type_name with error_reason_str fromifc_name:ip_address/port to ifc_name:ip_address/port.
+%ASA-4-423002: {Allowed | Dropped} mismatched NBNS pkt_type_name with error_reason_str fromifc_name:ip_address/port to ifc_name:ip_address/port.
+%ASA-4-423003: {Allowed | Dropped} invalid NBDGM pkt_type_name with error_reason_str fromifc_name:ip_address/port to ifc_name:ip_address/port.
+%ASA-4-423004: {Allowed | Dropped} mismatched NBDGM pkt_type_name with error_reason_strfrom ifc_name:ip_address/port to ifc_name:ip_address/port.
+%ASA-4-423005: {Allowed | Dropped} NBDGM pkt_type_name fragment with error_reason_str fromifc_name:ip_address/port to ifc_name:ip_address/port.
+%ASA-4-424001: Packet denied protocol_string intf_in:src_ip/src_port [([idfw_user | FQDN_string],sg_info)] intf_out:dst_ip/dst_port[([idfw_user | FQDN_string], sg_info)]. [Ingress|Egress] interface isin a backup state.
+%ASA-4-424002: Connection to the backup interface is denied: protocol_string intf:src_ip/src_portintf:dst_ip/dst_port
+%ASA-4-426004: PORT-CHANNEL: Interface ifc_name1 is not compatible with ifc_name and will besuspended (speed of ifc_name1 is X Mbps, Y is 1000 Mbps).
+%ASA-4-429002: CXSC service card requested to drop protocol packet frominterface_name:ip_address/port to interface_name:ip_address/port
+%ASA-4-429003: CXSC service card requested to reset TCP connection from interface_name:ip_addr/portto interface_name:ip_addr/port
+%ASA-4-429007: CXSC redirect will override Scansafe redirect for flow frominterface_name:ip_address/port to interface_name:ip_address/port with username
+%ASA-4-429008: Unable to respond to VPN query from CX for session 0x%x. Reason %s
+%ASA-4-431001: RTP conformance: Dropping RTP packet from in_ifc:src_ip/src_port toout_ifc:dest_ip/dest_port, Drop reason: drop_reason value
+%ASA-4-431002: RTCP conformance: Dropping RTCP packet from in_ifc:src_ip/src_port toout_ifc:dest_ip/dest_port, Drop reason: drop_reason value
+%ASA-4-434001: SFR card not up and fail-close mode used, dropping protocol packet from ingressinterface:source IP address/source port to egress interface:destination IP address/destination port
+%ASA-4-434002: SFR requested to drop protocol packet from ingress interface:source IP address/sourceport to egress interface:destination IP address/destination port
+%ASA-4-434003: SFR requested to reset TCP connection from ingress interface:source IP address/sourceport to egress interface:destination IP address/destination port
+%ASA-4-434007: SFR redirect will override Scansafe redirect for flow from ingress interface:source IPaddress/source port to egress interface:destination IP address/destination port (user)
+%ASA-4-444005: Timebased activation key activation-key will expire in num days.
+%ASA-4-444008: %s license has expired, and the system is scheduled to reload in x days. Apply a newactivation key to enable %s license and prevent the automatic reload.
+%ASA-4-444106: Shared license backup server address is not available
+%ASA-4-444109: Shared license backup server role changed to state
+%ASA-4-444110: Shared license server backup has days remaining as active license server
+%ASA-4-444304: %SMART_LIC-4-IN_OVERAGE: One or more entitlements are in overage.
+%ASA-4-446001: Maximum TLS Proxy session limit of max_sess reached.
+%ASA-4-446003: Denied TLS Proxy session from src_int:src_ip/src_port to dst_int:dst_ip/dst_port,UC-IME license is disabled.
+%ASA-4-447001: ASP DP to CP queue_name was full. Queue length length, limit limit
+%ASA-4-448001: Denied SRTP crypto session setup on flow from src_int:src_ip/src_port todst_int:dst_ip/dst_port, licensed K8 SRTP crypto session of limit exceeded
+%ASA-4-450001: Deny traffic for protocol protocol_id src interface_name:IP_address/port dstinterface_name:IP_address/port, licensed host limit of num exceeded.
+%ASA-4-500004: Invalid transport field for protocol=protocol, from source_address/source_port todest_address/dest_port
+%ASA-4-507002: Data copy in proxy-mode exceeded the buffer limit
+%ASA-4-603110: Failed to establish L2TP session, tunnel_id = tunnel_id, remote_peer_ip = peer_ip,user = username. Multiple sessions per tunnel are not supported
+%ASA-4-604105: DHCPD: Unable to send DHCP reply to client hardware_address on interfaceinterface_name. Reply exceeds options field size (options_field_size) by number_of_octets octets.
+%ASA-4-607002: action_class: action SIP req_resp req_resp_info from src_ifc:sip/sport todest_ifc:dip/dport; further_info
+%ASA-4-607004: Phone Proxy: Dropping SIP message from src_if:src_ip/src_port todest_if:dest_ip/dest_port with source MAC mac_address due to secure phone database mismatch.
+%ASA-4-608002: Dropping Skinny message for in_ifc:src_ip/src_port to out_ifc:dest_ip/dest_port,SCCPPrefix length value too small
+%ASA-4-608003: Dropping Skinny message for in_ifc:src_ip/src_port to out_ifc:dest_ip/dest_port,SCCPPrefix length value too large
+%ASA-4-608004: Dropping Skinny message for in_ifc:src_ip/src_port to out_ifc:dest_ip/dest_port,message id value not allowed
+%ASA-4-608005: Dropping Skinny message for in_ifc:src_ip/src_port to out_ifc:dest_ip/dest_port,message id value registration not complete
+%ASA-4-612002: Auto Update failed:filename, version:number, reason:reason
+%ASA-4-612003: Auto Update failed to contact:url, reason:reason
+%ASA-4-613015: Process 1 flushesLSA ID IP_address type-number adv-rtr IP_address in area mask
+%ASA-4-613017: Bad LSA mask: Type number, LSID IP_address Mask mask from IP_address
+%ASA-4-613018: Maximum number of non self-generated LSA has been exceeded “OSPF number” -number LSAs
+%ASA-4-613019: Threshold for maximum number of non self-generated LSA has been reached "OSPFnumber" - number LSAs
+%ASA-4-613021: Packet not written to the output queue
+%ASA-4-613022: Doubly linked list linkage is NULL
+%ASA-4-613023: Doubly linked list prev linkage is NULL number
+%ASA-4-613024: Unrecognized timer number in OSPF string
+%ASA-4-613025: Invalid build flag number for LSA IP_address, type number
+%ASA-4-613026: Can not allocate memory for area structure
+%ASA-4-613030: Router is currently an ASBR while having only one area which is a stub area
+%ASA-4-613031: No IP address for interface inside
+%ASA-4-613036: Can not use configured neighbor: cost and database-filter options are allowed onlyfor a point-to-multipoint network
+%ASA-4-613037: Can not use configured neighbor: poll and priority options are allowed only for aNBMA network
+%ASA-4-613038: Can not use configured neighbor: cost or database-filter option is required forpoint-to-multipoint broadcast network
+%ASA-4-613039: Can not use configured neighbor: neighbor command is allowed only on NBMA andpoint-to-multipoint networks
+%ASA-4-613040: OSPF-1 Area string: Router IP_address originating invalid type number LSA, IDIP_address, Metric number on Link ID IP_address Link Type number
+%ASA-4-613042: OSPF process number lacks forwarding address for type 7 LSA IP_address in NSSAstring - P-bit cleared
+%ASA-4-620002: Unsupported CTIQBE version: hex: from interface_name:IP_address/port tointerface_name:IP_address/port
+%ASA-4-709008: (Primary | Secondary) Configuration sync in progress. Command: ‘command’ executedfrom (terminal/http) will not be replicated to or executed by the standby unit.
+%ASA-4-709013: Failover configuration replication hash comparison timeout expired.
+%ASA-4-711002: Task ran for elapsed_time msecs, process = process_name, PC = PC Tracebeback =traceback
+%ASA-4-711004: Task ran for msec msec, Process = process_name, PC = pc, Call stack = call stack
+%ASA-4-713154: DNS lookup for peer_description Server [server_name] failed!
+%ASA-4-713157: Timed out on initial contact to server [server_name or IP_address] Tunnel could notbe established.
+%ASA-4-713207: Terminating connection: IKE Initiator and tunnel group specifies L2TP Over IPSec
+%ASA-4-713239: IP_Address: Tunnel Rejected: The maximum tunnel count allowed has been reached
+%ASA-4-713240: Received DH key with bad length: received length=rlength expected length=elength
+%ASA-4-713241: IE Browser Proxy Method setting_number is Invalid
+%ASA-4-713242: Remote user is authenticated using Hybrid Authentication. Not starting IKE rekey.
+%ASA-4-713243: META-DATA Unable to find the requested certificate
+%ASA-4-713244: META-DATA Received Legacy Authentication Method(LAM) type type is differentfrom the last type received type.
+%ASA-4-713245: META-DATA Unknown Legacy Authentication Method(LAM) type type received.
+%ASA-4-713246: META-DATA Unknown Legacy Authentication Method(LAM) attribute type typereceived.
+%ASA-4-713247: META-DATA Unexpected error: in Next Card Code mode while not doing SDI.
+%ASA-4-713249: META-DATA Received unsupported authentication results: result
+%ASA-4-713251: META-DATA Received authentication failure message
+%ASA-4-713255: IP = peer-IP, Received ISAKMP Aggressive Mode message 1 with unknown tunnelgroup name group-name
+%ASA-4-713903: Group = group policy, Username = user name, IP = remote IP, ERROR: Failed toinstall Redirect URL: redirect URL Redirect ACL: non_exist for assigned IP.
+%ASA-4-716007: Group group User user WebVPN Unable to create session.
+%ASA-4-716022: Unable to connect to proxy server reason.
+%ASA-4-716023: Group name User user Session could not be established: session limit ofmaximum_sessions reached.
+%ASA-4-716044: Group group-name User user-name IP IP_address AAA parameter param-name valueparam-value out of range.
+%ASA-4-716045: Group group-name User user-name IP IP_address AAA parameter param-name valueinvalid.
+%ASA-4-716046: Group group-name-name User user-name IP IP_address User ACL access-list-namefrom AAA doesn't exist on the device, terminating connection.
+%ASA-4-716047: Group group-name User user-name IP IP_address User ACL access-list from AAAignored, AV-PAIR ACL used instead.
+%ASA-4-716048: Group group-name User user-name IP IP_address No memory to parse ACL.
+%ASA-4-716052: Group group-name User user-name IP IP_address Pending session terminated.
+%ASA-4-717026: Name lookup failed for hostname hostname during PKI operation.
+%ASA-4-717031: Failed to find a suitable trustpoint for the issuer: issuer Reason: reason_string
+%ASA-4-717035: OCSP status is being checked for certificate. certificate_identifier.
+%ASA-4-717037: Tunnel group search using certificate maps failed for peer certificate:certificate_identifier.
+%ASA-4-717052: Group group name User user name IP IP Address Session disconnected due to periodiccertificate authentication failure. Subject Name id subject name Issuer Name id issuer name Serial Numberid serial number
+%ASA-4-720001: (VPN-unit) Failed to initialize with Chunk Manager.
+%ASA-4-720007: (VPN-unit) Failed to allocate chunk from Chunk Manager.
+%ASA-4-720008: (VPN-unit) Failed to register to High Availability Framework.
+%ASA-4-720009: (VPN-unit) Failed to create version control block.
+%ASA-4-720011: (VPN-unit) Failed to allocate memory
+%ASA-4-720013: (VPN-unit) Failed to insert certificate in trust point trustpoint_name
+%ASA-4-720022: (VPN-unit) Cannot find trust point trustpoint
+%ASA-4-720033: (VPN-unit) Failed to queue add to message queue.
+%ASA-4-720038: (VPN-unit) Corrupted message from active unit.
+%ASA-4-720043: (VPN-unit) Failed to send type message id to standby unit
+%ASA-4-720044: (VPN-unit) Failed to receive message from active unit
+%ASA-4-720047: (VPN-unit) Failed to sync SDI node secret file for server IP_address on the standbyunit.
+%ASA-4-720051: (VPN-unit) Failed to add new SDI node secret file for server id on the standby unit.
+%ASA-4-720052: (VPN-unit) Failed to delete SDI node secret file for server id on the standby unit.
+%ASA-4-720053: (VPN-unit) Failed to add cTCP IKE rule during bulk sync, peer=IP_address, port=port
+%ASA-4-720054: (VPN-unit) Failed to add new cTCP record, peer=IP_address, port=port.
+%ASA-4-720055: (VPN-unit) VPN Stateful failover can only be run in single/non-transparent mode.
+%ASA-4-720064: (VPN-unit) Failed to update cTCP database record for peer=IP_address, port=portduring bulk sync.
+%ASA-4-720065: (VPN-unit) Failed to add new cTCP IKE rule, peer=peer, port=port.
+%ASA-4-720066: (VPN-unit) Failed to activate IKE database.
+%ASA-4-720067: (VPN-unit) Failed to deactivate IKE database.
+%ASA-4-720068: (VPN-unit) Failed to parse peer message.
+%ASA-4-720069: (VPN-unit) Failed to activate cTCP database.
+%ASA-4-720070: (VPN-unit) Failed to deactivate cTCP database.
+%ASA-4-720073: VPN Session failed to replicate - ACL acl_name not found
+%ASA-4-721007: (device) Fail to update access list list_name on standby unit.
+%ASA-4-721011: (device) Fail to add access list rule list_name, line line_no on standby unit.
+%ASA-4-721013: (device) Fail to enable APCF XML file file_name on the standby unit.
+%ASA-4-721015: (device) Fail to disable APCF XML file file_name on the standby unit.
+%ASA-4-721017: (device) Fail to create WebVPN session for user user_name, IP ip_address.
+%ASA-4-721019: (device) Fail to delete WebVPN session for client user user_name, IP ip_address.
+%ASA-4-722001: IP IP_address Error parsing SVC connect request.
+%ASA-4-722002: IP IP_address Error consolidating SVC connect request.
+%ASA-4-722003: IP IP_address Error authenticating SVC connect request.
+%ASA-4-722004: Group group User user-name IP IP_address Error responding to SVC connect request.
+%ASA-4-722015: Group group User user-name IP IP_address Unknown SVC frame type: type-num
+%ASA-4-722016: Group group User user-name IP IP_address Bad SVC frame length: length expected:expected-length
+%ASA-4-722017: Group group User user-name IP IP_address Bad SVC framing: 525446, reserved: 0
+%ASA-4-722018: Group group User user-name IP IP_address Bad SVC protocol version: version,expected: expected-version
+%ASA-4-722019: Group group User user-name IP IP_address Not enough data for an SVC header:length
+%ASA-4-722039: Group group, User user, IP ip, SVC 'vpn-filter acl' is an IPv6 ACL; ACL not applied.
+%ASA-4-722040: Group group, User user, IP ip, SVC 'ipv6-vpn-filter acl' is an IPv4 ACL; ACL notapplied
+%ASA-4-722041: TunnelGroup tunnel_group GroupPolicy group_policy User username IP peer_addressNo IPv6 address available for SVC connection
+%ASA-4-722042: Group group User user IP ip Invalid Cisco SSL Tunneling Protocol version.
+%ASA-4-722047: Group group User user IP ip Tunnel terminated: SVC not enabled or invalid SVCimage on the ASA.
+%ASA-4-722048: Group group User user IP ip Tunnel terminated: SVC not enabled for the user.
+%ASA-4-722049: Group group User user IP ip Session terminated: SVC not enabled or invalid imageon the ASA.
+%ASA-4-722050: Group group User user IP ip Session terminated: SVC not enabled for the user.
+%ASA-4-722054: Group group policy User user name IP remote IP SVC terminating connection: Failedto install Redirect URL: redirect URL Redirect ACL: non_exist for assigned IP
+%ASA-4-724001: Group group-name User user-name IP IP_address WebVPN session not allowed.Unable to determine if Cisco Secure Desktop was running on the client's workstation.
+%ASA-4-724002: Group group-name User user-name IP IP_address WebVPN session not terminated.Cisco Secure Desktop was not running on the client's workstation.
+%ASA-4-733100: Object drop rate rate_ID exceeded. Current burst rate is rate_val per second, maxconfigured rate is rate_val; Current average rate is rate_val per second, max configured rate is rate_val;Cumulative total count is total_cnt
+%ASA-4-733101: Object objectIP (is targeted|is attacking). Current burst rate is rate_val per second,max configured rate is rate_val; Current average rate is rate_val per second, max configured rate israte_val; Cumulative total count is total_cnt.
+%ASA-4-733102: Threat-detection adds host %I to shun list
+%ASA-4-733103: Threat-detection removes host %I from shun list
+%ASA-4-733104: TD_SYSLOG_TCP_INTERCEPT_AVERAGE_RATE_EXCEED
+%ASA-4-733105: TD_SYSLOG_TCP_INTERCEPT_BURST_RATE_EXCEED
+%ASA-4-735015: CPU var1: Temp: var2 var3, Warm
+%ASA-4-735016: Chassis Ambient var1: Temp: var2 var3, Warm
+%ASA-4-735018: Power Supply var1: Temp: var2 var3, Critical
+%ASA-4-735019: Power Supply var1: Temp: var2 var3, Warm
+%ASA-4-735026: CPU cpu_num Voltage Regulator is running beyond the max thermal operatingtemperature and the device will be shutting down immediately. The chassis and CPU need to be inspectedimmediately for ventilation issues.
+%ASA-4-737012: IPAA: Address assignment failed
+%ASA-4-737013: IPAA: Error freeing address ip-address, not found
+%ASA-4-737019: IPAA: Unable to get address from group-policy or tunnel-group local pools
+%ASA-4-737028: IPAA: Adding ip-address to standby: failed
+%ASA-4-737030: IPAA: Adding %m to standby: address already in use
+%ASA-4-737032: IPAA: Removing ip-address from standby: not found
+%ASA-4-737033: IPAA: Unable to assign addr_allocator provided IP address ip_addr to client. This IPaddress has already been assigned by previous_addr_allocator
+%ASA-4-737038: IPAA: Session=session, specified address ip-address was in-use, trying to get another.
+%ASA-4-737203: VPNFIP: Pool=pool, WARN: message
+%ASA-4-737402: POOLIP: Pool=pool, Failed to return ip-address to pool (recycle=recycle). Reason:message
+%ASA-4-737404: POOLIP: Pool=pool, WARN: message
+%ASA-4-741005: Coredump operation variable 1 failed with error variable 2 variable 3
+%ASA-4-741006: Unable to write Coredump Helper configuration, reason variable 1
+%ASA-4-746004: user identity: Total number of activated user groups exceeds the maximum numberof max_groups groups for this platform.
+%ASA-4-746006: user-identity: Out of sync with AD Agent, start bulk download
+%ASA-4-746011: Total number of users created exceeds the maximum number of max_users for thisplatform.
+%ASA-4-747008: Clustering: New cluster member name with serial number serial-number-A rejecteddue to name conflict with existing unit with serial number serial-number-B.
+%ASA-4-747015: Clustering: Forcing stray member unit-name to leave the cluster.
+%ASA-4-747016: Clustering: Found a split cluster with both unit-name-A and unit-name-B as masterunits. Master role retained by unit-name-A, unit-name-B will leave, then join as a slave.
+%ASA-4-747017: Clustering: Failed to enroll unit unit-name due to maximum member limit limit-valuereached.
+%ASA-4-747019: Clustering: New cluster member name rejected due to Cluster Control Link IP subnetmismatch (ip-address/ip-mask on new unit, ip-address/ip-mask on local unit).
+%ASA-4-747020: Clustering: New cluster member unit-name rejected due to encryption license mismatch.
+%ASA-4-747025: Clustering: New cluster member unit-name rejected due to firewall mode mismatch.
+%ASA-4-747026: Clustering: New cluster member unit-name rejected due to cluster interface namemismatch (ifc-name on new unit, ifc-name on local unit).
+%ASA-4-747027: Clustering: Failed to enroll unit unit-name due to insufficient size of cluster poolpool-name in context-name.
+%ASA-4-747028: Clustering: New cluster member unit-name rejected due to interface mode mismatch(mode-name on new unit, mode-name on local unit).
+%ASA-4-747029: Clustering: Unit unit-name is quitting due to Cluster Control Link down.
+%ASA-4-747034: Unit %s is quitting due to Cluster Control Link down (%d times after last rejoin).Rejoin will be attempted after %d minutes.
+%ASA-4-747035: Unit %s is quitting due to Cluster Control Link down. Clustering must be manuallyenabled on the unit to rejoin.
+%ASA-4-748002: Clustering configuration on the chassis is missing or incomplete; clustering is disabled.
+%ASA-4-748003: Module slot_number in chassis chassis_number is leaving the cluster due to a chassishealth check failure
+%ASA-4-748201: <Application name> application on module <module id> in chassis <chassis id> is<status>.
+%ASA-4-750003: Local: local IP:local port Remote: remote IP:remote port Username: usernameNegotiation aborted due to ERROR: error
+%ASA-4-750012: Selected IKEv2 encryption algorithm (IKEV2 encry algo) is not strong enough tosecure proposed IPSEC encryption algorithm (IPSEC encry algo).
+%ASA-4-750014: Local:<self ip>:<self port> Remote:<peer ip>:<peer port> Username:<TG orUsername> IKEv2 Session aborted. Reason: Initial Contact received for Local ID: <self ID>, RemoteID: <peer ID> from remote peer:<peer ip>:<peer port> to <self ip>:<self port>
+%ASA-4-750015: Local:<self ip>:<self port> Remote:<peer ip>:<peer port> Username:<TG orUsername> IKEv2 deleting IPSec SA. Reason: invalid SPI notification received for SPI 0x<SPI>; localtraffic selector = Address Range: <start address>-<end address> Protocol: <protocol number> Port Range:<start port>-<end port> ; remote traffic selector = Address Range: <start address>-<end address> Protocol:<protocol number> Port Range: <start port>-<end port>
+%ASA-4-751014: Local: localIP:port Remote remoteIP:port Username: username/group WarningConfiguration Payload request for attribute attribute ID could not be processed. Error: error
+%ASA-4-751015: Local: localIP:port Remote remoteIP:port Username: username/group SA requestrejected by CAC. Reason: reason
+%ASA-4-751016: Local: localIP:port Remote remoteIP:port Username: username/group L2L peerinitiated a tunnel with the same outer and inner addresses. Peer could be Originate only - Possiblemisconfiguration!
+%ASA-4-751019: Local:LocalAddr Remote:RemoteAddr Username:username Failed to obtain anlicenseType license. Maximum license limit limit exceeded.
+%ASA-4-751021: Local:variable 1:variable 2 Remote:variable 3:variable 4 Username:variable 5 variable6 with variable 7 encryption is not supported with this version of the AnyConnect Client. Please upgradeto the latest Anyconnect Client.
+%ASA-4-751027: Local:local IP:local port Remote:peer IP:peer port Username:username IKEv2 ReceivedINVALID_SELECTORS Notification from peer. Peer received a packet (SPI=spi). The decapsulatedinner packet didn’t match the negotiated policy in the SA. Packet destination pkt_daddr, port pkt_dest_port,source pkt_saddr, port pkt_src_port, protocol pkt_prot.
+%ASA-4-752009: IKEv2 Doesn't support Multiple Peers
+%ASA-4-752010: IKEv2 Doesn't have a proposal specified
+%ASA-4-752011: IKEv1 Doesn't have a transform set specified
+%ASA-4-752012: IKEv protocol was unsuccessful at setting up a tunnel. Map Tag = mapTag. MapSequence Number = mapSeq.
+%ASA-4-752013: Tunnel Manager dispatching a KEY_ACQUIRE message to IKEv2 after a failedattempt. Map Tag = mapTag. Map Sequence Number = mapSeq.
+%ASA-4-752014: Tunnel Manager dispatching a KEY_ACQUIRE message to IKEv1 after a failedattempt. Map Tag = mapTag. Map Sequence Number = mapSeq.
+%ASA-4-752017: IKEv2 Backup L2L tunnel initiation denied on interface interface matching cryptomap name, sequence number number. Unsupported configuration.
+%ASA-4-753001: Unexpected IKEv2 packet received from <IP>:<port>. Error: <reason>
+%ASA-4-768003: SSH: connection timed out: username username, IP ip
+%ASA-4-769009: UPDATE: Image booted image_name is different from boot images.
+%ASA-4-770001: Resource resource allocation is more than the permitted list of limit for this platform.If this condition persists, the ASA will be rebooted.
+%ASA-4-770003: Resource resource allocation is less than the minimum requirement of value for thisplatform. If this condition persists, performance will be lower than normal.
+%ASA-4-775002: Reason - protocol connection conn_id from interface_name:real_address/real_port[(idfw_user)] to interface_name:real_address/real_port is action locally
+%ASA-4-775004: Scansafe: Primary server ip_address is not reachable
+%ASA-4-776201: CTS PAC: CTS PAC for Server IP_address, A-ID PAC issuer name will expire innumber days
+%ASA-4-776304: CTS Policy: Unresolved security-group name "sgname" referenced, policies basedon this name will be inactive
+%ASA-4-776305: CTS Policy: Security-group table cleared, all polices referencing security-group nameswill be deactivated
+%ASA-4-776312: CTS Policy: Previously resolved security-group name "sgname" is now unresolved,policies based on this name will be deactivated
+%ASA-4-802006: IP ip_address MDM request details has been rejected: details.
+%ASA-4-815003: Object-Group-Search threshold exceeded <current value> threshold (10000) for packetUDP from <source IP address/port> to <destination IP address/port>

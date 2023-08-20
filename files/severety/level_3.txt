@@ -1,0 +1,617 @@
+%ASA-3-105010: (Primary) Failover message block alloc failed
+%ASA-3-105050: ASAv ethernet interface mismatch
+%ASA-3-105052: HA cipher in use algorithm name strong encryption is AVAILABLE, please reboot to use strong cipher and preferably change the key in use.
+%ASA-3-105509: (Primary|Secondary) Error sending message_name message to peer unit peer-ip, error: error_string
+%ASA-3-105510: (Primary|Secondary) Error receiving message from peer unit peer-ip, error: error_string
+%ASA-3-105511: (Primary|Secondary) Incomplete read of message header of message from peer unit peer-ip: bytes bytes read of expected header_length header bytes
+%ASA-3-105512: (Primary|Secondary) Error receiving message body of message from peer unit peer-ip, error: error_string
+%ASA-3-105513: (Primary|Secondary) Incomplete read of message body of message from peer unit peer-ip: bytes bytes read of expected message_length message body bytes
+%ASA-3-105514: (Primary|Secondary) Error occurred when responding to message_name message received from peer unit peer-ip, error: error_string
+%ASA-3-105515: (Primary|Secondary) Error receiving message_name message from peer unit peer-ip, error: error_string
+%ASA-3-105516: (Primary|Secondary) Incomplete read of message header of message_name message from peer unit peer-ip: bytes bytes read of expected header_length header bytes
+%ASA-3-105517: (Primary|Secondary) Error receiving message body of message_name message from peer unit peer-ip, error: error_string
+%ASA-3-105518: (Primary|Secondary) Incomplete read of message body of message_name message from peer unit peer-ip: bytes bytes read of expected message_length message body bytes
+%ASA-3-105519: (Primary|Secondary) Invalid response to message_name message received from peer unit peer-ip: type message_type, version message_version, length message_length
+%ASA-3-105545: (Primary|Secondary) Error starting load balancer probe socket on port port, error code: error_code
+%ASA-3-105546: (Primary|Secondary) Error starting load balancer probe handler
+%ASA-3-105547: (Primary|Secondary) Error generating encryption key for Azure secret key
+%ASA-3-105548: (Primary|Secondary) Error storing encryption key for Azure secret key
+%ASA-3-105549: (Primary|Secondary) Error retrieving encryption key for Azure secret key
+%ASA-3-105550: (Primary|Secondary) Error encrypting Azure secret key
+%ASA-3-105551: (Primary|Secondary) Error encrypting Azure secret key
+%ASA-3-106010: Deny inbound protocol src [interface_name: source_address/source_port] [([idfw_user | FQDN_string], sg_info)] dst [interface_name: dest_address/dest_port}[([idfw_user | FQDN_string], sg_info)]
+%ASA-3-106011: Deny inbound (No xlate) protocol src Interface:IP/port dst Interface-nameif:IP/port
+%ASA-3-106014: Deny inbound icmp src interface_name: IP_address [([idfw_user | FQDN_string], sg_info)] dst interface_name: IP_address [([idfw_user | FQDN_string], sg_info)] (type dec, code dec)
+%ASA-3-109010: Auth from inside_address/inside_port to outside_address/outside_port failed (too many pending auths) on interface interface_name.
+%ASA-3-109013: User must authenticate before using this service
+%ASA-3-109016: Can't find authorization ACL acl_ID for user 'user'
+%ASA-3-109018: Downloaded ACL acl_ID is empty
+%ASA-3-109019: Downloaded ACL acl_ID has parsing error; ACE string
+%ASA-3-109020: Downloaded ACL has config error; ACE
+%ASA-3-109023: User from source_address/source_port to dest_address/dest_port on interface outside_interface must authenticate before using this service.
+%ASA-3-109026: [aaa protocol] Invalid reply digest received; shared server key may be mismatched.
+%ASA-3-109032: Unable to install ACL access_list, downloaded for user username; Error in ACE: ace.
+%ASA-3-109035: Exceeded maximum number (<max_num>) of DAP attribute instances for user <user>
+%ASA-3-109037: Exceeded 5000 attribute values for the attribute name attribute for user username
+%ASA-3-109038: Attribute internal-attribute-name value string-from-server from AAA server could not be parsed as a type internal-attribute-name string representation of the attribute name
+%ASA-3-109103: CoA action-type from coa-source-ip failed for user username, with session ID: audit-session-id.
+%ASA-3-109104: CoA action-type from coa-source-ip failed for user username, session ID: audit-session-id. Action not supported.
+%ASA-3-109105: Failed to determine the egress interface for locally generated traffic destined to <protocol> <IP>:<port>
+%ASA-3-109203: UAUTH Session session, User username, Assigned IP IP Address, Failed adding entry.
+%ASA-3-109205: UAUTH Session session, User username, Assigned IP IP Address, Failed applying filter.
+%ASA-3-109206: UAUTH Session session, User username, Assigned IP IP Address, Removing stale entry added hours ago.
+%ASA-3-109208: UAUTH Session session, User username, Assigned IP IP Address, Failed updating entry - no entry.
+%ASA-3-109209: UAUTH Session session, User username, Assigned IP IP Address, Failed updating filter for entry.
+%ASA-3-109212: UAUTH Session session, User username, Assigned IP IP Address, Failed removing entry.
+%ASA-3-109213: UAUTH Session session, User username, Assigned IP IP Address Failed removing entry.
+%ASA-3-113001: Unable to open AAA session. Session limit [limit] reached.
+%ASA-3-113018: User: user, Unsupported downloaded ACL Entry: ACL_entry, Action: action
+%ASA-3-113020: Kerberos error: Clock skew with server ip_address greater than 300 seconds
+%ASA-3-113021: Attempted console login failed. User username did NOT have appropriate Admin Rights.
+%ASA-3-114006: Failed to get port statistics in 4GE SSM I/O card (error error_string).
+%ASA-3-114007: Failed to get current msr in 4GE SSM I/O card (error error_string).
+%ASA-3-114008: Failed to enable port after link is up in 4GE SSM I/O card due to either I2C serial bus access error or switch access error.
+%ASA-3-114009: Failed to set multicast address in 4GE SSM I/O card (error error_string).
+%ASA-3-114010: Failed to set multicast hardware address in 4GE SSM I/O card (error error_string).
+%ASA-3-114011: Failed to delete multicast address in 4GE SSM I/O card (error error_string).
+%ASA-3-114012: Failed to delete multicast hardware address in 4GE SSM I/O card (error error_string).
+%ASA-3-114013: Failed to set mac address table in 4GE SSM I/O card (error error_string).
+%ASA-3-114014: Failed to set mac address in 4GE SSM I/O card (error error_string).
+%ASA-3-114015: Failed to set mode in 4GE SSM I/O card (error error_string).
+%ASA-3-114016: Failed to set multicast mode in 4GE SSM I/O card (error error_string).
+%ASA-3-114017: Failed to get link status in 4GE SSM I/O card (error error_string).
+%ASA-3-114018: Failed to set port speed in 4GE SSM I/O card (error error_string).
+%ASA-3-114019: Failed to set media type in 4GE SSM I/O card (error error_string).
+%ASA-3-114020: Port link speed is unknown in 4GE SSM I/O card.
+%ASA-3-114021: Failed to set multicast address table in 4GE SSM I/O card due to error.
+%ASA-3-114022: Failed to pass broadcast traffic in 4GE SSM I/O card due to error_string
+%ASA-3-114023: Failed to cache/flush mac table in 4GE SSM I/O card due to error_string.
+%ASA-3-115001: Error in process: process name fiber: fiber name, component: component name, subcomponent: subcomponent name, file: filename, line: line number, cond: condition.
+%ASA-3-120010: Notify command command to SCH client client failed. Reason reason.
+%ASA-3-199015: syslog
+%ASA-3-201002: Too many TCP connections on {static|xlate} global_address! econns nconns
+%ASA-3-201004: Too many UDP connections on {static|xlate} global_address! udp connections limit
+%ASA-3-201005: FTP data connection failed for IP_address IP_address
+%ASA-3-201006: RCMD backconnection failed for IP_address/port.
+%ASA-3-201008: Disallowing new connections.
+%ASA-3-201009: TCP connection limit of number for host IP_address on interface_name exceeded
+%ASA-3-201011: Connection limit exceeded cnt/limit for dir packet from sip/sport to dip/dport on interface if_name.
+%ASA-3-201013: Per-client connection limit exceeded curr num/limit for [input|output] packet from ip/port to ip/port on interface interface_name
+%ASA-3-202001: Out of address translation slots!
+%ASA-3-202005: Non-embryonic in embryonic list outside_address/outside_port inside_address/inside_port
+%ASA-3-202010: [NAT | PAT] pool exhausted for pool-name, port range [1-511 | 512-1023 | 1024-65535]. Unable to create protocol connection from in-interface:src-ip/src-port to out-interface:dst-ip/dst-port
+%ASA-3-202016: "%d: Unable to pre-allocate SIP %s secondary channel for message " \ "from %s:%A/%d to %s:%A/%d with PAT and missing port information."
+%ASA-3-208005: (function:line_num) clear command return code
+%ASA-3-210001: LU sw_module_name error = number
+%ASA-3-210002: LU allocate block (bytes) failed.
+%ASA-3-210003: Unknown LU Object number
+%ASA-3-210005: LU allocate secondary(optional) connection failed for protocol[TCP|UDP] connectionfrom ingress interface name:Real IP Address/Real Port to egress interface name:Real IP Address/RealPort
+%ASA-3-210006: LU look NAT for IP_address failed
+%ASA-3-210007: LU allocate xlate failed for type[static | dynamic]-[NAT | PAT] secondary(optional)protocol translation from ingress interface name:Real IP Address/real port (Mapped IP Address/MappedPort) to egress interface name:Real IP Address/Real Port (Mapped IP Address/Mapped Port)
+%ASA-3-210008: LU no xlate for inside_address/inside_port outside_address/outside_port
+%ASA-3-210010: LU make UDP connection for outside_address:outside_port inside_address:inside_portfailed
+%ASA-3-210020: LU PAT port port reserve failed
+%ASA-3-210021: LU create static xlate global_address ifc interface_name failed
+%ASA-3-211001: Memory allocation Error
+%ASA-3-211003: Error in computed percentage CPU usage value
+%ASA-3-212001: Unable to open SNMP channel (UDP port port) on interface interface_number, errorcode = code
+%ASA-3-212002: Unable to open SNMP trap channel (UDP port port) on interface interface_number,error code = code
+%ASA-3-212003: Unable to receive an SNMP request on interface interface_number, error code = code,will try again.
+%ASA-3-212004: Unable to send an SNMP response to IP Address IP_address Port port interfaceinterface_number, error code = code
+%ASA-3-212005: incoming SNMP request (number bytes) on interface interface_name exceeds databuffer size, discarding this SNMP request.
+%ASA-3-212006: Dropping SNMP request from src_addr/src_port to ifc:dst_addr/dst_port because:reason username.
+%ASA-3-212010: Configuration request for SNMP user %s failed. Host %s reason.
+%ASA-3-212011: SNMP engineBoots is set to maximum value. Reason: %s User intervention necessary.
+%ASA-3-212012: Unable to write SNMP engine data to persistent storage.
+%ASA-3-213001: PPTP control daemon socket io string, errno = number.
+%ASA-3-213002: PPTP tunnel hashtable insert failed, peer = IP_address.
+%ASA-3-213003: PPP virtual interface interface_number isn't opened.
+%ASA-3-213004: PPP virtual interface interface_number client ip allocation failed.
+%ASA-3-213005: Dynamic-Access-Policy action (DAP) action aborted
+%ASA-3-213006: Unable to read dynamic access policy record.
+%ASA-3-216002: Unexpected event (major: major_id, minor: minor_id) received by task_string infunction at line: line_num
+%ASA-3-216003: Unrecognized timer timer_ptr, timer_id received by task_string in function at line:line_num
+%ASA-3-219002: I2C_API_name error, slot = slot_number, device = device_number, address = address,byte count = count. Reason: reason_string
+%ASA-3-302019: H.323 library_name ASN Library failed to initialize, error code number
+%ASA-3-302302: ACL = deny; no sa created
+%ASA-3-304003: URL Server IP_address timed out URL url
+%ASA-3-304006: URL Server IP_address not responding
+%ASA-3-305005: No translation group found for protocol src interface_name: source_address/source_port[(idfw_user)] dst interface_nam: dest_address/dest_port [(idfw_user)]
+%ASA-3-305006: {outbound static|identity|portmap|regular) translation creation failed for protocol srcinterface_name:source_address/source_port [(idfw_user)] dst interface_name:dest_address/dest_port[(idfw_user)]
+%ASA-3-305008: Free unallocated global IP address.
+%ASA-3-305016: Unable to create protocol connection from real_interface:real_host_ip/real_source_portto real_dest_interface:real_dest_ip/real_dest_port due to reason.
+%ASA-3-305017: Pba-interim-logging: Active ICMP block of ports for translation from <source deviceIP> to <destination device IP>/<Active Port Block >
+%ASA-3-305019: MAP node address <ip>/<port> has inconsistent Port Set ID encoding
+%ASA-3-305020: MAP node with address <ip> is not allowed to use port <port>\n
+%ASA-3-313001: Denied ICMP type=number, code=code from IP_address on interface interface_name
+%ASA-3-313008: Denied ICMPv6 type=number, code=code from IP_address on interface interface_name
+%ASA-3-315004: Fail to establish SSH session because RSA host key retrieval failed.
+%ASA-3-315012: Weak SSH type (alg) provided from client ‘IP’ on interface int. Connection failed.Not FIPS 140-2 compliant
+%ASA-3-316001: Denied new tunnel to IP_address. VPN peer limit (platform_vpn_peer_limit) exceeded
+%ASA-3-316002: VPN Handle error: protocol=protocol, src in_if_num:src_addr, dst out_if_num:dst_addr
+%ASA-3-317001: No memory available for limit_slow
+%ASA-3-317002: Bad path index of number for IP_address, number max
+%ASA-3-317003: IP routing table creation failure - reason
+%ASA-3-317004: IP routing table limit warning
+%ASA-3-317005: IP routing table limit exceeded - reason, IP_address netmask
+%ASA-3-317006: Pdb index error pdb, pdb_index, pdb_type
+%ASA-3-317012: Interface IP route counter negative - nameif-string-value
+%ASA-3-318001: Internal error: reason
+%ASA-3-318002: Flagged as being an ABR without a backbone area
+%ASA-3-318003: Reached unknown state in neighbor state machine
+%ASA-3-318004: area string lsid IP_address mask netmask adv IP_address type number
+%ASA-3-318005: lsid ip_address adv IP_address type number gateway gateway_address metric numbernetwork IP_address mask netmask protocol hex attr hex net-metric number
+%ASA-3-318006: if interface_name if_state number
+%ASA-3-318007: OSPF is enabled on interface_name during idb initialization
+%ASA-3-318008: OSPF process number is changing router-id. Reconfigure virtual link neighbors withour new router-id
+%ASA-3-318009: OSPF: Attempted reference of stale data encountered in function, line: line_num
+%ASA-3-318101: Internal error: %REASON
+%ASA-3-318102: Flagged as being an ABR without a backbone area T
+%ASA-3-318103: Reached unknown state in neighbor state machine
+%ASA-3-318104: DB already exist : area %AREA_ID_STR lsid %i adv %i type 0x%x
+%ASA-3-318105: lsid %i adv %i type 0x%x gateway %i metric %d network %i mask %i protocol %#xattr %#x net-metric %d
+%ASA-3-318106: if %IF_NAME if_state %d
+%ASA-3-318107: OSPF is enabled on %IF_NAME during idb initialization
+%ASA-3-318108: OSPF process %d is changing router-id. Reconfigure virtual link neighbors with ournew router-id
+%ASA-3-318109: OSPFv3 has received an unexpected message: %0x/%0x
+%ASA-3-318110: Invalid encrypted key %s.
+%ASA-3-318111: SPI %u is already in use with ospf process %d
+%ASA-3-318112: SPI %u is already in use by a process other than ospf process %d.
+%ASA-3-318113: %s %s is already configured with SPI %u.
+%ASA-3-318114: The key length used with SPI %u is not valid
+%ASA-3-318115: %s error occured when attempting to create an IPsec policy for SPI %u
+%ASA-3-318116: SPI %u is not being used by ospf process %d.
+%ASA-3-318117: The policy for SPI %u could not be removed because it is in use.
+%ASA-3-318118: %s error occured when attemtping to remove the IPsec policy with SPI %u
+%ASA-3-318119: Unable to close secure socket with SPI %u on interface %s
+%ASA-3-318120: OSPFv3 was unable to register with IPsec
+%ASA-3-318121: IPsec reported a GENERAL ERROR: message %s, count %d
+%ASA-3-318122: IPsec sent a %s message %s to OSPFv3 for interface %s. Recovery attempt %d .
+%ASA-3-318123: IPsec sent a %s message %s to OSPFv3 for interface %IF_NAME. Recovery aborted
+%ASA-3-318125: Init failed for interface %IF_NAME
+%ASA-3-318126: Interface %IF_NAME is attached to more than one area
+%ASA-3-318127: Could not allocate or find the neighbor
+%ASA-3-319001: Acknowledge for arp update for IP address dest_address not received (number).
+%ASA-3-319002: Acknowledge for route update for IP address dest_address not received (number).
+%ASA-3-319003: Arp update for IP address address to NPn failed.
+%ASA-3-319004: Route update for IP address dest_address failed (number).
+%ASA-3-320001: The subject name of the peer cert is not allowed for connection
+%ASA-3-321007: System is low on free memory blocks of size block_size (free_blocks CNT out ofmax_blocks MAX)
+%ASA-3-322001: Deny MAC address MAC_address, possible spoof attempt on interface interface
+%ASA-3-322002: ARP inspection check failed for arp {request|response} received from hostMAC_address on interface interface. This host is advertising MAC Address MAC_address_1 for IPAddress IP_address, which is {statically|dynamically} bound to MAC Address MAC_address_2.
+%ASA-3-322003: ARP inspection check failed for arp {request|response} received from host MAC_addresson interface interface. This host is advertising MAC Address MAC_address_1 for IP Address IP_address,which is not bound to any MAC Address.
+%ASA-3-323001: Module module_id experienced a control channel communications failure.
+%ASA-3-323002: Module module_id is not able to shut down, shut down request not answered.
+%ASA-3-323003: Module module_id is not able to reload, reload request not answered.
+%ASA-3-323004: Module module_id failed to write software vnewver (currently vver), reason.Hw-module reset is required before further use.
+%ASA-3-323005: Module module_id can not be started completely
+%ASA-3-323007: Module in slot slot experienced a firware failure and the recovery is in progress.
+%ASA-3-324000: Drop GTPv version message msg_type fromsource_interface:source_address/source_port to dest_interface:dest_address/dest_port Reason: reason
+%ASA-3-324001: GTPv0 packet parsing error from source_interface:source_address/source_port todest_interface:dest_address/dest_port, TID: tid_value, Reason: reason
+%ASA-3-324002: No PDP[MCB] exists to process GTPv0 msg_type fromsource_interface:source_address/source_port to dest_interface:dest_address/dest_port, TID: tid_value
+%ASA-3-324003: No matching request to process GTPv version msg_type fromsource_interface:source_address/source_port to source_interface:dest_address/dest_port
+%ASA-3-324004: GTP packet with version number from source_interface:source_address/source_portto dest_interface:dest_address/dest_port is not supported
+%ASA-3-324005: Unable to create tunnel from source_interface:source_address/source_port todest_interface:dest_address/dest_port
+%ASA-3-324006: GSN IP_address tunnel limit tunnel_limit exceeded, PDP Context TID tid failed
+%ASA-3-324007: Unable to create GTP connection for response from: source_address/0 todest_address/dest_port
+%ASA-3-324008: No PDP exists to update the data sgsn [ggsn] PDPMCB Info REID: teid_value, RequestTEID; teid_value, Local GSN: IPaddress (VPIfNum), Remove GSN: IPaddress (VPIfNum)
+%ASA-3-324009: Drop GTP message G-PDU from inside_interface :inside_ip /inside_port tooutside_interface :outside_ip /outside_port <Reason>
+%ASA-3-324300: Radius Accounting Request from from_addr has an incorrect request authenticator
+%ASA-3-324301: Radius Accounting Request has a bad header length hdr_len, packet length pkt_len
+%ASA-3-325001: Router ipv6_address on interface has conflicting ND (Neighbor Discovery) settings
+%ASA-3-326001: Unexpected error in the timer library: error_message
+%ASA-3-326002: Error in error_message: error_message
+%ASA-3-326004: An internal error occurred while processing a packet queue
+%ASA-3-326005: Mrib notification failed for (IP_address, IP_address)
+%ASA-3-326006: Entry-creation failed for (IP_address, IP_address)
+%ASA-3-326007: Entry-update failed for (IP_address, IP_address)
+%ASA-3-326008: MRIB registration failed
+%ASA-3-326009: MRIB connection-open failed
+%ASA-3-326010: MRIB unbind failed
+%ASA-3-326011: MRIB table deletion failed
+%ASA-3-326012: Initialization of string functionality failed
+%ASA-3-326013: Internal error: string in string line %d (%s)
+%ASA-3-326014: Initialization failed: error_message error_message
+%ASA-3-326015: Communication error: error_message error_message
+%ASA-3-326016: Failed to set un-numbered interface for interface_name (string)
+%ASA-3-326017: Interface Manager error - string in string: string
+%ASA-3-326019: string in string: string
+%ASA-3-326020: List error in string: string
+%ASA-3-326021: Error in string: string
+%ASA-3-326022: Error in string: string
+%ASA-3-326023: string - IP_address: string
+%ASA-3-326024: An internal error occurred while processing a packet queue.
+%ASA-3-326025: string
+%ASA-3-326026: Server unexpected error: error_message
+%ASA-3-326027: Corrupted update: error_message
+%ASA-3-326028: Asynchronous error: error_message
+%ASA-3-327001: IP SLA Monitor: Cannot create a new process
+%ASA-3-327002: IP SLA Monitor: Failed to initialize, IP SLA Monitor functionality will not work
+%ASA-3-327003: IP SLA Monitor: Generic Timer wheel timer functionality failed to initialize
+%ASA-3-328001: Attempt made to overwrite a set stub function in string.
+%ASA-3-329001: The string0 subblock named string1 was not removed
+%ASA-3-331001: Dynamic DNS Update for 'fqdn_name' = ip_address failed
+%ASA-3-332001: Unable to open cache discovery socket, WCCP V2 closing down.
+%ASA-3-332002: Unable to allocate message buffer, WCCP V2 closing down.
+%ASA-3-336001: Route desination_network stuck-in-active state in EIGRP-ddb_name as_num. Cleaningup
+%ASA-3-336002: Handle handle_id is not allocated in pool.
+%ASA-3-336003: No buffers available for bytes byte packet
+%ASA-3-336004: Negative refcount in pakdesc pakdesc.
+%ASA-3-336005: Flow control error, error, on interface_name.
+%ASA-3-336006: num peers exist on IIDB interface_name.
+%ASA-3-336007: Anchor count negative
+%ASA-3-336008: Lingering DRDB deleting IIDB, dest network, nexthop address (interface), originorigin_str
+%ASA-3-336009: ddb_name as_id: Internal Error
+%ASA-3-336012: Interface interface_names going down and neighbor_links links exist
+%ASA-3-336013: Route iproute, iproute_successors successors, db_successors rdbs
+%ASA-3-336014: "EIGRP_PDM_Process_name, event_log"
+%ASA-3-336015: Unable to open socket for AS as_number"
+%ASA-3-336016: Unknown timer type timer_type expiration
+%ASA-3-336018: process_name as_number: prefix_source threshold prefix level (prefix_threshold)reached
+%ASA-3-336019: process_name as_number: prefix_source prefix limit reached (prefix_threshold).
+%ASA-3-338305: Failed to download dynamic filter data file from updater server url
+%ASA-3-338306: Failed to authenticate with dynamic filter updater server url
+%ASA-3-338307: Failed to decrypt downloaded dynamic filter database file
+%ASA-3-338309: The license on this ASA does not support dynamic filter updater feature.
+%ASA-3-338310: Failed to update from dynamic filter updater server url, reason: reason string
+%ASA-3-339001: DNSCRYPT certificate update failed for <num_tries> tries
+%ASA-3-339002: Umbrella device registration failed with error code <err_code>
+%ASA-3-339003: Umbrella device registration was successful
+%ASA-3-339004: Umbrella device registration failed due to missing token
+%ASA-3-339005: Umbrella device registration failed after <num_tries> retries
+%ASA-3-339006: Umbrella resolver <current resolver ipv46> is reachable, resuming Umbrella redirect.
+%ASA-3-339007: Umbrella resolver <current resolver ipv46> is unreachable, moving to fail-open.Starting probe to resolver
+%ASA-3-339008: Umbrella resolver <current resolver ipv46> is unreachable, moving to fail-close
+%ASA-3-340001: Loopback-proxy info: error_string context id context_id, context type =version/request_type/address_type client socket (internal)= client_address_internal/client_port_internalserver socket (internal)= server_address_internal/server_port_internal server socket (external)=server_address_external/server_port_external remote socket (external)=remote_address_external/remote_port_external
+%ASA-3-341003: Policy Agent failed to start for VNMC vnmc_ip_addr
+%ASA-3-341004: Storage device not available: Attempt to shutdown module %s failed.
+%ASA-3-341005: Storage device not available. Shutdown issued for module %s.
+%ASA-3-341006: Storage device not available. Failed to stop recovery of module %s .
+%ASA-3-341007: Storage device not available. Further recovery of module %s was stopped. This maytake several minutes to complete.
+%ASA-3-341008: Storage device not found. Auto-boot of module %s cancelled. Install drive and reloadto try again.
+%ASA-3-341011: Storage device with serial number ser_no in bay bay_no faulty.
+%ASA-3-342002: REST API Agent failed, reason: <reason>
+%ASA-3-342003: REST API Agent failure notification received. Agent will be restarted automatically.
+%ASA-3-342004: Failed to automatically restart the REST API Agent after 5 unsuccessful attempts.Use the 'no rest-api agent' and 'rest-api agent' commands to manually restart the Agent.
+%ASA-3-342006: Filed to install REST API image, reason: <reason>
+%ASA-3-342008: Failed to uninstall REST API image, reason: <reason>
+%ASA-3-402140: CRYPTO: RSA key generation error: modulus len len
+%ASA-3-402141: CRYPTO: Key zeroization error: key set type, reason reason
+%ASA-3-402142: CRYPTO: Bulk data op error: algorithm alg, mode mode
+%ASA-3-402143: CRYPTO: alg type key op
+%ASA-3-402144: CRYPTO: Digital signature error: signature algorithm sig, hash algorithm hash
+%ASA-3-402145: CRYPTO: Hash generation error: algorithm hash
+%ASA-3-402146: CRYPTO: Keyed hash generation error: algorithm hash, key len len
+%ASA-3-402147: CRYPTO: HMAC generation error: algorithm alg
+%ASA-3-402148: CRYPTO: Random Number Generator error
+%ASA-3-402149: CRYPTO: weak encryption type (length). Operation disallowed. Not FIPS 140-2compliant
+%ASA-3-402150: CRYPTO: Deprecated hash algorithm used for RSA operation (hash alg). Operationdisallowed. Not FIPS 140-2 compliant
+%ASA-3-403501: PPPoE - Bad host-unique in PADO - packet dropped. Intf:interface_name AC:ac_name
+%ASA-3-403502: PPPoE - Bad host-unique in PADS - dropping packet. Intf:interface_name AC:ac_name
+%ASA-3-403503: PPPoE:PPP link down:reason
+%ASA-3-403504: PPPoE:No vpdn group group_name for PPPoE is created
+%ASA-3-403507: PPPoE:PPPoE client on interface interface failed to locate PPPoE vpdn groupgroup_name
+%ASA-3-414001: Failed to save logging buffer using file name filename to FTP server ftp_server_addresson interface interface_name: [fail_reason]
+%ASA-3-414002: Failed to save logging buffer to flash:/syslog directory using file name: filename:[fail_reason]
+%ASA-3-414003: TCP Syslog Server intf: IP_Address/port not responding. New connections are[permitted|denied] based on logging permit-hostdown policy.
+%ASA-3-414005: TCP Syslog Server intf: IP_Address/port connected, New connections are permittedbased on logging permit-hostdown policy
+%ASA-3-414006: TCP Syslog Server configured and logging queue is full. New connections deniedbased on logging permit-hostdown policy.
+%ASA-3-418018: neighbor IP_Address Down User reset OR neighbor IP_Address IPv4 Unicast topologybase removed from session User reset OR neighbor IP_Address Up OR neighbor IP_Address IPv4 Unicasttopology base removed from session BGP Notification sent
+%ASA-3-418019: sent to neighbor IP_Address, Reason: reason, Bytes: count
+%ASA-3-418040: unsupported or mal-formatted message received from IP_Address
+%ASA-3-420001: IPS card not up and fail-close mode used, dropping ICMP packet ifc_in:SIP toifc_out:DIP (typeICMP_TYPE, code ICMP_CODE)
+%ASA-3-420006: Virtual Sensor not present and fail-close mode used, dropping protocol packet fromifc_in:SIP/SPORT to ifc_out:DIP/DPORT
+%ASA-3-420008: IPS module license disabled and fail-close mode used, dropping packet.
+%ASA-3-421001: TCP|UDP flow from interface_name:ip/port to interface_name:ip/port is droppedbecause application has failed.
+%ASA-3-421003: Invalid data plane encapsulation.
+%ASA-3-421007: TCP|UDP flow from interface_name:IP_address/port to interface_name:IP_address/portis skipped because application has failed.
+%ASA-3-425006: Redundant interface redundant_interface_name switch active member to interface_namefailed.
+%ASA-3-429001: CXSC card not up and fail-close mode used. Dropping protocol packet frominterface_name:ip_address/port to interface_name:ip_address/port
+%ASA-3-429004: Unable to set up authentication-proxy rule for the cx action on interface interface_namefor policy_type service-policy.
+%ASA-3-444303: %SMART_LIC-3-AGENT_REG_FAILED: Smart Agent for licensing registrationwith Cisco licensing cloud failed.
+%ASA-3-444303: %SMART_LIC-3-AGENT_DEREG_FAILED: Smart Agent for licensing deregistrationwith CSSM failed.
+%ASA-3-444303: %SMART_LIC-3-OUT_OF_COMPLIANCE: One or more entitlements are out ofcompliance.
+%ASA-3-444303: %SMART_LIC-3-EVAL_EXPIRED: Evaluation period expired.
+%ASA-3-444303: %SMART_LIC-3-BAD_MODE: An unknown mode was specified.
+%ASA-3-444303: %SMART_LIC-3-BAD_NOTIF: A bad notification type was specified.
+%ASA-3-444303: %SMART_LIC-3-ID_CERT_EXPIRED: Identity certificate expired. Agent willtransition to the unidentified (not registered) state.
+%ASA-3-444303: %SMART_LIC-3-ID_CERT_RENEW_NOT_STARTED: Identity certificate startdate not reached yet.
+%ASA-3-444303: %SMART_LIC-3-ID_CERT_RENEW_FAILED: Identity certificate renewal failed.
+%ASA-3-444303: %SMART_LIC-3-ENTITLEMENT_RENEW_FAILED: Entitlement authorizationwith Cisco licensing cloud failed.
+%ASA-3-444303: %SMART_LIC-3-COMM_FAILED: Communications failure with Cisco licensingcloud.
+%ASA-3-444303: %SMART_LIC-3-CERTIFICATE_VALIDATION: Certificate validation failed bysmart agent.
+%ASA-3-444303: %SMART_LIC-3-AUTH_RENEW_FAILED: Authorization renewal with Ciscolicensing cloud failed.
+%ASA-3-444303: %SMART_LIC-3-INVALID_TAG: The entitlement tag is invalid.
+%ASA-3-444303: %SMART_LIC-3-INVALID_ROLE_STATE: The current role is not allowed to moveto the new role.
+%ASA-3-444303: %SMART_LIC-3-EVAL_WILL_EXPIRE_WARNING: Evaluation period will expirein time.
+%ASA-3-444303: %SMART_LIC-3-EVAL_EXPIRED_WARNING: Evaluation period expired on time.
+%ASA-3-444303: %SMART_LIC-3-ID_CERT_EXPIRED_WARNING: This device's registration willexpire in time.
+%ASA-3-444303: %SMART_LIC-3-CONFIG_OUT_OF_SYNC: Trusted Store Enable flag not in syncwith System Configuration, TS flag Config flag.
+%ASA-3-444303: %SMART_LIC-3-REG_EXPIRED_CLOCK_CHANGE: Smart Licensing registrationhas expired because the system time was changed outside the validity period of the registration period.The agent will transition to the un-registered state in 60 minutes.
+%ASA-3-444303: %SMART_LIC-3-ROOT_CERT_MISMATCH_PROD: Certificate type mismatch.
+%ASA-3-444303: %SMART_LIC-3-HOT_STANDBY_OUT_OF_SYNC: Smart Licensing agent onhot standby is out of sync with active Smart Licensing agent.
+%ASA-3-444714: Azure failed to retrieve Wireserver IPv4 address.
+%ASA-3-505016: Module module_id application changed from: name version version state state to:name version state state.
+%ASA-3-500005: connection terminated from in_ifc_name:src_adddress/src_port toout_ifc_name:dest_address/dest_port due to invalid combination of inspections on same flow. Inspectinspect_name is not compatible with inspect inspect_name_2
+%ASA-3-507003: The flow of type protocol from the originating interface: src_ip/src_port todest_if:dest_ip/dest_port terminated by inspection engine, reason -
+%ASA-3-520001: error_string
+%ASA-3-520002: bad new ID table size
+%ASA-3-520003: bad id in error_string (id: 0xid_num)
+%ASA-3-520004: error_string
+%ASA-3-520005: error_string
+%ASA-3-520010: Bad queue elem – qelem_ptr: flink flink_ptr, blink blink_ptr, flink->blinkflink_blink_ptr, blink->flink blink_flink_ptr
+%ASA-3-520011: Null queue elem
+%ASA-3-520013: Regular expression access check with bad list acl_ID
+%ASA-3-520020: No memory available
+%ASA-3-520021: Error deleting trie entry, error_message
+%ASA-3-520022: Error adding mask entry, error_message
+%ASA-3-520023: Invalid pointer to head of tree, 0x<radix_node_ptr>
+%ASA-3-520024: Orphaned mask #radix_mask_ptr, refcount= radix_mask_ptr ‘s ref count at #radix_node_address, next=# radix_node_next
+%ASA-3-520025: No memory for radix initialization: error_msg
+%ASA-3-602305: IPSEC: SA creationerror, source source address, destination destination address, reason error string
+%ASA-3-602306: IPSEC: SA change peer IP error, SPI: IPsec SPI, (src {original src IP address | originalsrc port}, dest {original dest IP address | original dest port} => src {new src IP address | new src port},dest: {new dest IP address | new dest port}), reason failure reason
+%ASA-3-610001: NTP daemon interface interface_name: Packet denied from IP_address
+%ASA-3-610002: NTP daemon interface interface_name: Authentication failed for packet from IP_address
+%ASA-3-611313: VPN Client: Backup Server List Error: reason
+%ASA-3-613004: Internal error: memory allocation failure
+%ASA-3-613005: Flagged as being an ABR without a backbone area
+%ASA-3-613006: Reached unknown state in neighbor state machine
+%ASA-3-613007: area string lsid IP_address mask netmask type number
+%ASA-3-613008: if inside if_state number
+%ASA-3-613011: OSPF process number is changing router-id. Reconfigure virtual link neighbors withour new router-id
+%ASA-3-613013: OSPF LSID IP_address adv IP_address type number gateway IP_address metricnumber forwarding addr route IP_address /mask type number has no corresponding LSA
+%ASA-3-613029: Router-ID IP_address is in use by ospf process number
+%ASA-3-613016: Area stringrouter-LSA of length number bytes plus update overhead bytes is too large to flood.
+%ASA-3-613032: Init failed for interface inside, area is being deleted. Try again.
+%ASA-3-613033: Interface inside is attached to more than one area
+%ASA-3-613034: Neighbor IP_address not configured
+%ASA-3-613035: Could not allocate or find neighbor IP_address
+%ASA-3-702305: IPSEC: An directiontunnel_type SA (SPI=spi) between local_IP and remote_IP (username) is rekeying due to sequencenumber rollover.
+%ASA-3-710003: {TCP|UDP} access denied by ACL from source_IP/source_port tointerface_name:dest_IP/service
+%ASA-3-713004: device scheduled for reboot or shutdown, IKE key acquire message on interfaceinterface num, for Peer IP_address ignored
+%ASA-3-713008: Key ID in ID payload too big for pre-shared IKE tunnel
+%ASA-3-713009: OU in DN in ID payload too big for Certs IKE tunnel
+%ASA-3-713012: Unknown protocol (protocol). Not adding SA w/spi=SPI value
+%ASA-3-713014: Unknown Domain of Interpretation (DOI): DOI value
+%ASA-3-713016: Unknown identification type, Phase 1 or 2, Type ID_Type
+%ASA-3-713017: Identification type not supported, Phase 1 or 2, Type ID_Type
+%ASA-3-713018: Unknown ID type during find of group name for certs, Type ID_Type
+%ASA-3-713020: No Group found by matching OU(s) from ID payload: OU_value
+%ASA-3-713022: No Group found matching peer_ID or IP_address for Pre-shared key peer IP_address
+%ASA-3-713032: Received invalid local Proxy Range IP_address - IP_address
+%ASA-3-713033: Received invalid remote Proxy Range IP_address - IP_address
+%ASA-3-713042: IKE Initiator unable to find policy: Intf interface_number, Src: source_address, Dst:dest_address
+%ASA-3-713043: Cookie/peer address IP_address session already in progress
+%ASA-3-713047: Unsupported Oakley group: Group <Diffie-Hellman group>
+%ASA-3-713048: Error processing payload: Payload ID: id
+%ASA-3-713056: Tunnel rejected: SA (SA_name) not found for group (group_name)!
+%ASA-3-713060: Tunnel Rejected: User (user) not member of group (group_name), group-lock checkfailed.
+%ASA-3-713061: Tunnel rejected: Crypto Map Policy not found for Src:source_address, Dst:dest_address!
+%ASA-3-713062: IKE Peer address same as our interface address IP_address
+%ASA-3-713063: IKE Peer address not configured for destination IP_address
+%ASA-3-713065: IKE Remote Peer did not negotiate the following: proposal attribute
+%ASA-3-713072: Password for user (user) too long, truncating to number characters
+%ASA-3-713081: Unsupported certificate encoding type encoding_type
+%ASA-3-713082: Failed to retrieve identity certificate
+%ASA-3-713083: Invalid certificate handle
+%ASA-3-713084: Received invalid phase 1 port value (port) in ID payload
+%ASA-3-713085: Received invalid phase 1 protocol (protocol) in ID payload
+%ASA-3-713086: Received unexpected Certificate payload Possible invalid Auth Method (Auth method(auth numerical value))
+%ASA-3-713088: Set Cert file handle failure: no IPSec SA in group group_name
+%ASA-3-713098: Aborting: No identity cert specified in IPSec SA (SA_name)!
+%ASA-3-713102: Phase 1 ID Data length number too long - reject tunnel!
+%ASA-3-713105: Zero length data in ID payload received during phase 1 or 2 processing
+%ASA-3-713107: IP_Address request attempt failed!
+%ASA-3-713109: Unable to process the received peer certificate
+%ASA-3-713112: Failed to process CONNECTED notify (SPI SPI_value)!
+%ASA-3-713014: Unknown Domain of Interpretation (DOI): DOI value
+%ASA-3-713016: Unknown identification type, Phase 1 or 2, Type ID_Type
+%ASA-3-713017: Identification type not supported, Phase 1 or 2, Type ID_Type
+%ASA-3-713118: Detected invalid Diffie-Helmann group_descriptor group_number, in IKE area
+%ASA-3-713122: Keep-alives configured keepalive_type but peer IP_address support keep-alives (type= keepalive_type)
+%ASA-3-713123: IKE lost contact with remote peer, deleting connection (keepalive type: keepalive_type)
+%ASA-3-713124: Received DPD sequence number rcv_sequence_# in DPD Action, description expectedseq #
+%ASA-3-713127: Xauth required but selected Proposal does not support xauth, Check priorities of ikexauth proposals in ike proposal list
+%ASA-3-713129: Received unexpected Transaction Exchange payload type: payload_id
+%ASA-3-713132: Cannot obtain an IP_address for remote peer
+%ASA-3-713133: Mismatch: Overriding phase 2 DH Group(DH group DH group_id) with phase 1group(DH group DH group_number
+%ASA-3-713134: Mismatch: P1 Authentication algorithm in the crypto map entry different fromnegotiated algorithm for the L2L connection
+%ASA-3-713138: Group group_name not found and BASE GROUP default preshared key not configured
+%ASA-3-713140: Split Tunneling Policy requires network list but none configured
+%ASA-3-713141: Client-reported firewall does not match configured firewall: action tunnel. Received-- Vendor: vendor(id), Product product(id), Caps: capability_value. Expected -- Vendor: vendor(id),Product: product(id), Caps: capability_value
+%ASA-3-713142: Client did not report firewall in use, but there is a configured firewall: action tunnel.Expected -- Vendor: vendor(id), Product product(id), Caps: capability_value
+%ASA-3-713146: Could not add route for Hardware Client in network extension mode, address:IP_address, mask: netmask
+%ASA-3-713149: Hardware client security attribute attribute_name was enabled but not requested.
+%ASA-3-713152: Unable to obtain any rules from filter ACL_tag to send to client for CPP, terminatingconnection.
+%ASA-3-713159: TCP Connection to Firewall Server has been lost, restricted tunnels are now allowedfull network access
+%ASA-3-713161: Remote user (session Id - id) network access has been restricted by the Firewall Server
+%ASA-3-713162: Remote user (session Id - id) has been rejected by the Firewall Server
+%ASA-3-713163: Remote user (session Id - id) has been terminated by the Firewall Server
+%ASA-3-713165: Client IKE Auth mode differs from the group's configured Auth mode
+%ASA-3-713166: Headend security gateway has failed our user authentication attempt - check configuredusername and password
+%ASA-3-713167: Remote peer has failed user authentication - check configured username and password
+%ASA-3-713168: Re-auth enabled, but tunnel must be authenticated interactively!
+%ASA-3-713174: Hardware Client connection rejected! Network Extension Mode is not allowed forthis group!
+%ASA-3-713182: IKE could not recognize the version of the client! IPSec Fragmentation Policy willbe ignored for this connection!
+%ASA-3-713185: Error: Username too long - connection aborted
+%ASA-3-713186: Invalid secondary domain name list received from the authentication server. ListReceived: list_text Character index (value) is illegal
+%ASA-3-713189: Attempted to assign network or broadcast IP_address, removing (IP_address) frompool.
+%ASA-3-713191: Maximum concurrent IKE negotiations exceeded!
+%ASA-3-713193: Received packet with missing payload, Expected payload: payload_id
+%ASA-3-713194: Sending IKE|IPSec Delete With Reason message: termination_reason
+%ASA-3-713195: Tunnel rejected: Originate-Only: Cannot accept incoming tunnel yet!
+%ASA-3-713198: User Authorization failed: user User authorization failed.
+%ASA-3-713203: IKE Receiver: Error reading from socket.
+%ASA-3-713205: Could not add static route for client address: IP_address
+%ASA-3-713206: Tunnel Rejected: Conflicting protocols specified by tunnel-group and group-policy
+%ASA-3-713208: Cannot create dynamic rule for Backup L2L entry rule rule_id
+%ASA-3-713209: Cannot delete dynamic rule for Backup L2L entry rule id
+%ASA-3-713210: Cannot create dynamic map for Backup L2L entry rule_id
+%ASA-3-713212: Could not add route for L2L peer coming in on a dynamic map. address: IP_address,mask: netmask
+%ASA-3-713214: Could not delete route for L2L peer that came in on a dynamic map. address: IP_address,mask: netmask
+%ASA-3-713217: Skipping unrecognized rule: action: action client type: client_type client version:client_version
+%ASA-3-713218: Tunnel Rejected: Client Type or Version not allowed.
+%ASA-3-713226: Connection failed with peer IP_address, no trust-point defined in tunnel-grouptunnel_group
+%ASA-3-713227: Rejecting new IPSec SA negotiation for peer Peer_address. A negotiation was alreadyin progress for local Proxy Local_address/Local_netmask, remote Proxy Remote_address/Remote_netmask
+%ASA-3-713230: Internal Error, ike_lock trying to lock bit that is already locked for type type
+%ASA-3-713231: Internal Error, ike_lock trying to unlock bit that is not locked for type type
+%ASA-3-713232: SA lock refCnt = value, bitmask = hexvalue, p1_decrypt_cb = value, qm_decrypt_cb= value, qm_hash_cb = value, qm_spi_ok_cb = value, qm_dh_cb = value, qm_secret_key_cb = value,qm_encrypt_cb = value
+%ASA-3-713238: Invalid source proxy address: 0.0.0.0! Check private address on remote client
+%ASA-3-713258: IP = var1, Attempting to establish a phase2 tunnel on var2 interface but phase1 tunnelis on var3 interface. Tearing down old phase1 tunnel due to a potential routing change.
+%ASA-3-713254: Group = groupname, Username = username, IP = peerip, Invalid IPSec/UDP port =portnum, valid range is minport - maxport, except port 4500, which is reserved for IPSec/NAT-T
+%ASA-3-713260: Output interface %d to peer was not found
+%ASA-3-713261: IPV6 address on output interface %d was not found
+%ASA-3-713262: Rejecting new IPSec SA negotiation for peer Peer_address. A negotiation was alreadyin progress for local Proxy Local_address/Local_prefix_len, remote ProxyRemote_address/Remote_prefix_len
+%ASA-3-713266: Could not add route for L2L peer coming in on a dynamic map. address: IP_address,mask: /prefix_len
+%ASA-3-713268: Could not delete route for L2L peer that came in on a dynamic map. address: IP_address,mask: /prefix_len
+%ASA-3-713270: Could not add route for Hardware Client in network extension mode, address:IP_addres>, mask: /prefix_len
+%ASA-3-713272: Terminating tunnel to Hardware Client in network extension mode, unable to deletestatic route for address: IP_address, mask: /prefix_len
+%ASA-3-713274: Could not delete static route for client address: IP_Address IP_Address address ofclient whose route is being removed
+%ASA-3-713275: IKEv1 Unsupported certificate keytype %s found at trustpoint %s
+%ASA-3-713276: Dropping new negotiation - IKEv1 in-negotiation context limit of %u reached
+%ASA-3-713902: Descriptive_event_string.
+%ASA-3-716056: Group group-name User user-name IP IP_address Authentication to SSO server name:name type type failed reason: reason
+%ASA-3-716057: Group group User user IP ip Session terminated, no type license available.
+%ASA-3-716061: Group DfltGrpPolicy User user IP ip addr IPv6 User Filter tempipv6 configured forAnyConnect. This setting has been deprecated, terminating connection
+%ASA-3-716158: Failed to create SAML logout request, initiated by SP. Reason: reason
+%ASA-3-716159: Failed to process SAML logout request, initiated by SP. Reason: reason
+%ASA-3-716160: Failed to create SAML authentication request. Reason: reason
+%ASA-3-716162: Failed to consume SAML assertion. Reason: reason
+%ASA-3-716600: Rejected size-recv KB Hostscan data from IP src-ip. Hostscan results exceed default| configured limit of size-conf KB.
+%ASA-3-716601: Rejected size-recv KB Hostscan data from IP src-ip. System-wide limit onthe amountof Hostscan data stored on ASA exceeds the limit of data-max KB.
+%ASA-3-716602: Memory allocation error. Rejected size-recv KB Hostscan data from IP src-ip.
+%ASA-3-717001: Querying keypair failed.
+%ASA-3-717002: Certificate enrollment failed for trustpoint trustpoint_name. Reason: reason_string.
+%ASA-3-717009: Certificate validation failed. Reason: reason_string.
+%ASA-3-717010: CRL polling failed for trustpoint trustpoint_name.
+%ASA-3-717012: Failed to refresh CRL cache entry from the server for trustpoint trustpoint_name attime_of_failure
+%ASA-3-717015: CRL received from issuer is too large to process (CRL size = crl_size, maximum CRLsize = max_crl_size)
+%ASA-3-717017: Failed to query CA certificate for trustpoint trustpoint_name from enrollment_url
+%ASA-3-717018: CRL received from issuer has too many entries to process (number of entries =number_of_entries, maximum number allowed = max_allowed)
+%ASA-3-717019: Failed to insert CRL for trustpoint trustpoint_name. Reason: failure_reason.
+%ASA-3-717020: Failed to install device certificate for trustpoint label. Reason: reason string.
+%ASA-3-717021: Certificate data could not be verified. Locate Reason: reason_string serial number:serial number, subject name: subject name, key length key length bits.
+%ASA-3-717023: SSL failed to set device certificate for trustpoint trustpoint name. Reason: reason_string.
+%ASA-3-717027: Certificate chain failed validation. reason_string.
+%ASA-3-717032: OCSP status check failed. Reason: reason_string
+%ASA-3-717039: Local CA Server internal error detected: error.
+%ASA-3-717042: Failed to enable Local CA Server. Reason: reason.
+%ASA-3-717044: Local CA server certificate enrollment related error for user: user. Error: error.
+%ASA-3-717046: Local CA Server CRL error: error.
+%ASA-3-717051: SCEP Proxy: Denied processing the request type type received from IP client ipaddress, User username, TunnelGroup tunnel group name, GroupPolicy group policy name to CA ca ipaddress. Reason: msg
+%ASA-3-717057: Automatic import of trustpool certificate bundle has failed. < Maximum retry attemptsreached. Failed to reach CA server> | <Cisco root bundle signature validation failed> | <Failed to updatetrustpool bundle in flash> | <Failed to install trustpool bundle in memory>
+%ASA-3-717060: Peer certificate with serial number: <serial>, subject: <subject_name>, issuer:<issuer_name> failed to match the configured certificate map <map_name>
+%ASA-3-717063: protocol Certificate enrollment failed for the trustpoint tpname with the CA ca
+%ASA-3-719002: Email Proxy session pointer from source_address has been terminated due to reasonerror.
+%ASA-3-719008: Email Proxy service is shutting down.
+%ASA-3-722007: Group group User user-name IP IP_address SVC Message: type-num/ERROR: message
+%ASA-3-722008: Group group User user-name IP IP_address SVC Message: type-num/ERROR: message
+%ASA-3-722009: Group group User user-name IP IP_address SVC Message: type-num/ERROR: message
+%ASA-3-722020: TunnelGroup tunnel_group GroupPolicy group_policy User user-name IP IP_addressNo address available for SVC connection
+%ASA-3-722021: Group group User user-name IP IP_address Unable to start compression due to lackof memory resources
+%ASA-3-722035: Group group User user-name IP IP_address Received large packet length thresholdnum).
+%ASA-3-722045: Connection terminated: no SSL tunnel initialization data.
+%ASA-3-722046: Group group User user IP ip Session terminated: unable to establish tunnel.
+%ASA-3-725015: Error verifying client certificate. Public key size in client certificate exceeds themaximum supported key size.
+%ASA-3-734004: DAP: Processing error: internal error code
+%ASA-3-735010: IPMI: Environment Monitoring has failed to update one or more of its records.
+%ASA-3-737002: IPAA: Received unknown message 'num'
+%ASA-3-737027: IPAA: No data for address request
+%ASA-3-737202: VPNFIP: Pool=pool, ERROR: message
+%ASA-3-737403: POOLIP: Pool=pool, ERROR: message
+%ASA-3-742001: failed to read master key for password encryption from persistent store
+%ASA-3-742002: failed to set master key for password encryption
+%ASA-3-742003: failed to save master key for password encryption, reason reason_text
+%ASA-3-742004: failed to sync master key for password encryption, reason reason_text
+%ASA-3-742005: cipher text enc_pass is not compatible with the configured master key or the ciphertext has been tampered with
+%ASA-3-742006: password decryption failed due to unavailable memory
+%ASA-3-742007: password encryption failed due to unavailable memory
+%ASA-3-742008: password enc_pass decryption failed due to decoding error
+%ASA-3-742009: password encryption failed due to decoding error
+%ASA-3-742010: encrypted password enc_pass is not well formed
+%ASA-3-743010: EOBC RPC server failed to start for client module client name.
+%ASA-3-743011: EOBC RPC call failed, return code code string.
+%ASA-3-746003: user-identity: activated import user groups | activated host names | user-to-IP addressdatabases download failed - reason
+%ASA-3-746005: user-identity: The AD Agent AD agent IP address cannot be reached - reason [action]
+%ASA-3-746010: user-identity: update import-user domain_name\\group_name - Import Failed [reason]
+%ASA-3-746016: user-identity: DNS lookup failed, reason: reason
+%ASA-3-746019: user-identity: Update | Remove AD Agent AD agent IP Address IP-user mappinguser_IP - domain_name\user_name failed
+%ASA-3-747001: Clustering: Recovered from state machine event queue depleted. Event (event-id,ptr-in-hex, ptr-in-hex) dropped. Current state state-name, stack ptr-in-hex, ptr-in-hex, ptr-in-hex, ptr-in-hex,ptr-in-hex, ptr-in-hex
+%ASA-3-747010: Clustering: RPC call failed, message message-name, return code code-value.
+%ASA-3-747012: Clustering: Failed to replicate global object id hex-id-value in domain domain-nameto peer unit-name, continuing operation.
+%ASA-3-747013: Clustering: Failed to remove global object id hex-id-value in domain domain-namefrom peer unit-name, continuing operation.
+%ASA-3-747014: Clustering: Failed to install global object id hex-id-value in domain domain-name,continuing operation.
+%ASA-3-747018: Clustering: State progression failed due to timeout in module module-name.
+%ASA-3-747021: Clustering: Master unit unit-name is quitting due to interface health check failure onfailed-interface.
+%ASA-3-747022: Clustering: Asking slave unit unit-name to quit because it failed interface health checkx times, rejoin will be attempted after y min. Failed interface: interface-name.
+%ASA-3-747023: Clustering: Master unit unit-name is quitting due to card name card health checkfailure, and master Security Service Card state is state-name.
+%ASA-3-747024: Clustering: Asking slave unit unit-name to quit due to card name card health checkfailure, and its Security Service Card state is state-name.
+%ASA-3-747030: Clustering: Asking slave unit unit-name to quit because it failed interface health checkx times (last failure on interface-name), Clustering must be manually enabled on the unit to re-join.
+%ASA-3-747031: Clustering: Platform mismatch between cluster master (platform-type) and joiningunit unit-name (platform-type). unit-name aborting cluster join.
+%ASA-3-747032: Clustering: Service module mismatch between cluster master (module-name) andjoining unit unit-name (module-name) in slot slot-number. unit-name aborting cluster join.
+%ASA-3-747033: Clustering: Interface mismatch between cluster master and joining unit unit-name.unit-name aborting cluster join.
+%ASA-3-747036: Application software mismatch between cluster master %s[Master unit name](%s[Master application software name]) and joining unit (%s[Joining unit application software name]).%s[Joining member name] aborting cluster join.
+%ASA-3-747037: Asking slave unit %s to quit due to its Security Service Module health check failure%d times, and its Security Service Module state is %s. Rejoin will be attempted after %d minutes.
+%ASA-3-747038: Asking slave unit %s to quit due to Security Service Module health check failure %dtimes, and its Security Service Card Module is %s. Clustering must be manually enabled on this unit torejoin.
+%ASA-3-747039: Unit %s is quitting due to system failure for %d time(s) (last failure is %s[clustersystem failure reason]). Rejoin will be attempted after %d minutes.
+%ASA-3-747040: Unit %s is quitting due to system failure for %d time(s) (last failure is %s[clustersystem failure reason]). Clustering must be manually enabled on the unit to rejoin.
+%ASA-3-747041: Unit %s is quitting due to system failure for %d time(s) (last failure is %s[clustersystem failure reason]). Clustering must be manually enabled on the unit to rejoin.Master unit %s isquitting due to interface health check failure on %s[interface name], %d times. Clustering must bemanually enabled on the unit to rejoin.
+%ASA-3-747042: Clustering: Master received the config hash string request message from an unknownmember, id <cluster-member-id>
+%ASA-3-747043: Clustering: Get config hash string from master error.
+%ASA-3-748005: Failed to bundle the ports for module slot_number in chassis chassis_number; clusteringis disabled
+%ASA-3-748006: Asking module slot_number in chassis chassis_number to leave the cluster due to aport bundling failure
+%ASA-3-748100: <application_name> application status is changed from <status> to <status>.
+%ASA-3-748101: Peer unit <unit_id> reported its <application_name> application status is <status>.
+%ASA-3-748102: Master unit <unit_id> is quitting due to <application_name> Application health checkfailure, and master's application state is <status>.
+%ASA-3-748103: Asking slave unit <unit_id> to quit due to <application_name> Application healthcheck failure, and slave's application state is <status>.
+%ASA-3-748202: Module <module_id> in chassis <chassis id> is leaving the cluster due to <aplpicationname> application failure.
+%ASA-3-750011: Tunnel Rejected: Selected IKEv2 encryption algorithm (IKEV2 encry algo) is notstrong enough to secure proposed IPSEC encryption algorithm (IPSEC encry algo).
+%ASA-3-751001: Local: localIP:port Remote:remoteIP:port Username: username/group Failed tocomplete Diffie-Hellman operation. Error: error
+%ASA-3-751002: Local: localIP:port Remote:remoteIP:port Username: username/group No presharedkey or trustpoint configured for self in tunnel group group
+%ASA-3-751004: Local: localIP:port Remote:remoteIP:port Username: username/group No remoteauthentication method configured for peer in tunnel group group
+%ASA-3-751005: Local: localIP:port Remote:remoteIP:port Username: username/group AnyConnectclient reconnect authentication failed. Session ID: sessionID, Error: error
+%ASA-3-751006: Local: localIP:port Remote:remoteIP:port Username: username/group Certificateauthentication failed. Error: error
+%ASA-3-751008: Local: localIP:port Remote:remoteIP:port Username: username/group Group=group,Tunnel rejected: IKEv2 not enabled in group policy
+%ASA-3-751009: Local: localIP:port Remote:remoteIP:port Username: username/group Unable to findtunnel group for peer.
+%ASA-3-751010: Local: localIP:port Remote:remoteIP:port Username: username/group Unable todetermine self-authentication method. No crypto map setting or tunnel group found.
+%ASA-3-751011: Local: localIP:port Remote:remoteIP:port Username: username/group Failed userauthentication. Error: error
+%ASA-3-751012: Local: localIP:port Remote:remoteIP:port Username: username/group Failure occurredduring Configuration Mode processing. Error: error
+%ASA-3-751013: Local: localIP:port Remote:remoteIP:port Username: username/group Failed to processConfiguration Payload request for attribute attribute ID. Error: error
+%ASA-3-751017: Local: localIP:port Remote remoteIP:port Username: username/group ConfigurationError error description
+%ASA-3-751018: Terminating the VPN connection attempt from landing group. Reason: This connectionis group locked to locked group.
+%ASA-3-751020: Local:%A:%u Remote:%A:%u Username:%s An %s remote access connection failed.Attempting to use an NSA Suite B crypto algorithm (%s) without an AnyConnect Premium license.
+%ASA-3-751022: Local: local-ip Remote: remote-ip Username:username Tunnel rejected: Crypto MapPolicy not found for remote traffic selectorrem-ts-start/rem-ts-end/rem-ts.startport/rem-ts.endport/rem-ts.protocol local traffic selectorlocal-ts-start/local-ts-end/local-ts.startport/local-ts.endport/local-ts.protocol!
+%ASA-3-751024: Local:ip addr Remote:ip addr Username:username IKEv2 IPv6 User Filter tempipv6configured. This setting has been deprecated, terminating connection
+%ASA-3-752006: Tunnel Manager failed to dispatch a KEY_ACQUIRE message. Probablemis-configuration of the crypto map or tunnel-group. Map Tag = Tag. Map Sequence Number = num,SRC Addr: address port: port Dst Addr: address port: port.
+%ASA-3-752007: Tunnel Manager failed to dispatch a KEY_ACQUIRE message. Entry already inTunnel Manager. Map Tag = mapTag. Map Sequence Number = mapSeq.
+%ASA-3-752015: Tunnel Manager has failed to establish an L2L SA. All configured IKE versions failedto establish the tunnel. Map Tag = mapTag. Map Sequence Number = mapSeq.
+%ASA-3-768003: QUOTA: management session quota exceeded for user <X>: current 3, user limit 3
+%ASA-3-768004: QUOTA: management session quota exceeded for <ssh/telnet/http> protocol: current2, protocol limit 2
+%ASA-3-769006: UPDATE: ASA boot system image image_name was not found on disk
+%ASA-3-776001: CTS SXP: Configured source IP source ip error
+%ASA-3-776002: CTS SXP: Invalid message from peer peer IP: error
+%ASA-3-776003: CTS SXP: Connection with peer peer IP failed: error
+%ASA-3-776004: CTS SXP: Fail to start listening socket after TCP process restart.
+%ASA-3-776005: CTS SXP: Binding Binding IP - SGname(SGT) from peer IP instance connectioninstance num error.
+%ASA-3-776006: CTS SXP: Internal error: error
+%ASA-3-776007: CTS SXP: Connection with peer peer IP (instance connection instance num) statechanged from original state to Off.
+%ASA-3-776020: CTS SXP: Unable to locate egress interface to peer peer IP.
+%ASA-3-776202: CTS PAC for Server IP_address, A-ID PAC issuer name has expired
+%ASA-3-776203: Unable to retrieve CTS Environment data due to: reason
+%ASA-3-776204: CTS Environment data has expired
+%ASA-3-776254: CTS SGT-MAP: Binding manager unable to action binding binding IP - SGname(SGT) from source name.
+%ASA-3-776313: CTS Policy: Failure to update policies for security-group "sgname"-sgt
+%ASA-3-768001: QUOTA: resource utilization is high: requested req, current curr, warning level level
+%ASA-3-768002: QUOTA: resource quota exceeded: requested req, current curr, limit limit
+%ASA-3-772002: PASSWORD: console login warning, user username, cause: password expired
+%ASA-3-772004: PASSWORD: session login failed, user username, IP ip, cause: password expired
+%ASA-3-779003: STS: Failed to read tag-switching table - reason
+%ASA-3-779004: STS: Failed to write tag-switching table - reason
+%ASA-3-779005: STS: Failed to parse tag-switching request from http - reason
+%ASA-3-779006: STS: Failed to save tag-switching table to flash - reason
+%ASA-3-779007: STS: Failed to replicate tag-switching table to peer - reason
+%ASA-3-840001: Failed to create the backup for an IKEv2 session <Local IP>, <Remote IP>
+%ASA-3-850001: SNORT ID (<snort-instance-id>/<snort-process-id>) Automatic-Application-Bypassdue to delay of <delay>ms (threshold <AAB-threshold>ms) with <connection-info>
+%ASA-3-850002: SNORT ID (<snort-instance-id>/<snort-process-id>) Automatic-Application-Bypassdue to SNORT not responding to traffics for <timeout-delay>ms(threshold <AAB-threshold>ms)
+%ASA-3-8300003: Failed to send session redistribution message to <variable 1>
+%ASA-3-8300005: Failed to receive session move response from <variable 1>

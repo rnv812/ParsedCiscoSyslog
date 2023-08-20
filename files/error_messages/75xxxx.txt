@@ -1,0 +1,1576 @@
+750001
+
+Error Message
+
+%ASA-5-750001: Local:local IP :local port Remote:remote IP : remote port
+Username: username Received request to request an IPsec tunnel; local traffic
+selector = local selectors: range, protocol, port range ; remote traffic
+selector = remote selectors: range, protocol, port range
+
+Explanation
+
+A request is being made for an operation on the IPsec tunnel such as a rekey, a
+request to establish a connection, and so on.
+- local IP:local port - Local IP address for this request. The Secure Firewall
+ASA IP address and port number used for this connection
+- remote IP:remote port - Remote IP address for this request. Peer IP address
+and port number that the connection is coming from
+- username - Username of the requester for remote access, if known, or the
+tunnel group
+- local selectors - Locally configured traffic selectors or proxies that are
+being used for this IPsec tunnel
+- remote selectors - Remote peers requested traffic selectors or proxies for
+this IPsec tunnel
+
+Recommended Action
+
+None required.
+
+750002
+
+Error Message
+
+%ASA-5-750002: Local:local IP :local port Remote: remote IP : remote port
+Username: username Received a IKE_INIT_SA request
+
+Explanation
+
+An incoming tunnel or SA initiation request (IKE_INIT_SA request) has been
+received.
+- local IP:local port - Local IP address for this request. The Secure Firewall
+ASA IP address and port number used for this connection
+- remote IP:remote port - Remote IP address for this request. Peer IP address
+and port number that the connection is coming from
+- username - Username of the requester for remote access, if known, or the
+tunnel group
+
+Recommended Action
+
+None required.
+
+750003
+
+Error Message
+
+%ASA-4-750003: Local: local IP:local port Remote: remote IP:remote port
+Username: username Negotiation aborted due to ERROR: error
+
+Explanation
+
+The negotiation of an SA was aborted because of the provided error reason.
+- local IP:local port - Local IP address for this request. The Secure Firewall
+ASA IP address and port number used for this connection
+- remote IP:remote port - Remote IP address for this request. Peer IP address
+and port number that the connection is coming from
+- username - Username of the requester for remote access, if known yet
+- error - Error reason for aborting the negotiation. Errors include the
+following:
+  - Failed to send data on the network
+  - Asynchronous request queued
+  - Failed to enqueue packet
+  - A supplied parameter is incorrect
+  - Failed to allocate memory
+  - Failed the cookie negotiation
+  - Failed to find a matching policy
+  - Failed to locate an item in the database
+  - Failed to initialize the policy database
+  - Failed to insert a policy into the database
+  - The peer's proposal is invalid
+  - Failed to compute the DH value
+  - Failed to construct a NONCE
+  - An expected payload is missing from the packet
+  - Failed to compute the SKEYSEED
+  - Failed to create child SA keys
+  - The peer's KE payload contained the wrong DH group
+  - Received invalid KE notify, yet we've tried all configured DH groups
+  - Failed to compute a hash value
+  - Failed to authenticate the IKE SA
+  - Failed to compute or verify a signature
+  - Failed to validate the certificate
+  - The certificate has been revoked and is consequently invalid
+  - Failed to build or process a certificate request
+  - We requested a certificate, but the peer supplied none
+  - While sending the certificate chain, peer did not send its certificate as
+  the first in the chain
+  - Detected an unsupported ID type
+  - Failed to construct an encrypted payload
+  - Failed to decrypt an encrypted payload
+  - Detected an invalid value in the packet
+  - The initiator bit is asserted in packet from original responder
+  - The initiator bit isn't asserted in packet from original initiator
+  - The message response bit is asserted in a packet from the exchange initiator
+  - The message response bit isn't asserted in a packet from the exchange
+  responder
+  - Detected an invalid IKE SPI
+  - Packet is a retransmission
+  - Detected an invalid protocol ID
+  - Detected unsupported critical payload
+  - Detected an invalid traffic selector type
+  - Failed to create new SA
+  - Failed to delete SA
+  - Failed to add new SA into session DB
+  - Failed to add session to PSH
+  - Failed to delete session from osal
+  - Failed to delete a session from the database
+  - Failed to add request to SA
+  - Throttling request queue exceeds reasonable limit, increase the window size
+  on peer
+  - Received an IKE msg id outside supported window
+  - Detected unsupported version number
+  - Received no proposal chosen notify
+  - Detected an error notify payload
+  - Detected NAT-d hash doesn't match
+  - Initialize sadb failed
+  - Initialize session db failed
+  - Failed to get PSH
+  - Negotiation context locked currently in use
+  - Negotiation context was not freed!
+  - Invalid data state found
+  - Failed to open PKI session
+  - Failed to insert public keys
+  - No certificate found
+  - Unsupported cert encoding found or Peer requested HTTP URL but never sent
+  HTTP_LOOKUP_SUPPORTED Notification
+  - Sending BUNDLE URL is not supported at least for now. However, processing a
+  BUNDLE URL is supported
+  - Local certificate has expired
+  - Failed to construct State Machine
+  - Error encountered while navigating State Machine
+  - SM Validation failed
+  - Could not find neg context
+  - Failed to add work request to SM Q
+  - Nonce payload is missing
+  - Traffic selector payload is missing
+  - Unsupported DH group
+  - Expected keypair is unavailable
+  - Packet isn't encrypted
+  - Packet is missing KE payload
+  - Packet is missing SA payload
+  - Invalid SA
+  - Invalid negotiation context
+  - Remote or local ID isn't defined
+  - Invalid connection id
+  - Unsupported auth method
+  - Ipsec policy not found
+  - Failed to initialize the event priority queue
+  - Failed to enqueue an item to a list
+  - Failed to remove an item from list
+  - Data in the event priority queue is NULL or corrupt
+  - No local IKE policy found
+  - Can't delete IKE SA due to in-progress task
+  - Expected Cookie Notify not received
+  - Failed to generate auth data: My auth info missing
+  - Failed to generate auth data: Failed to sign data
+  - Failed to generate auth data: Signature operation successful but unable to
+  locate generated auth material
+  - Failed to receive the AUTH msg before the timer expired
+  - Maximum number of retransmissions reached
+  - Initial exchange failed
+  - Auth exchange failed
+  - Create child exchange failed
+  - Platform errors
+  - Failed to log a message
+  - Unwanted debug level turned on
+  - There are additional TS possible
+  - A single pairs of addresses is required
+  - Invalid session
+  - There was no IPSEC policy found for received TS
+  - Cannot remove request from window
+  - There was no proposal found in configured policy
+  - Nat-t test failure
+  - No pskey found
+  - Invalid compression algorithm
+  - Failed to get profile name from platform service handle
+  - Failed to find profile
+  - Initiator failed to match profile sent by IPSEC with profile found by peer
+  id or certificate
+  - Failed to get peer id from platform service handle
+  - The transform attribute is invalid
+  - Extensible Authentication Protocol failed
+  - Authenticator sent NULL EAP message
+  - The config attribute is invalid
+  - Failed to calculate packet hash
+  - The AAA context is deleted
+  - Cannot alloc AAA ID
+  - Cannot alloc AAA request
+  - Cannot init AAA request
+  - The Authen list is not configured
+  - Fail to send AAA request
+  - Fail to alloc IP addr
+  - Invalid message context
+  - Key Auth memory failure
+  - EAP method does not generate MSK
+  - Failed to register new SA with platform
+  - Failed to async process session register, error: %d
+  - Failed to insert SA due to ipsec rekey collision
+  - Failed while handling a ipsec rekey collision
+  - Failed to accept rekey on SA that caused a rekey collision
+  - Failed to start timer to ensure IPsec collision SA SPI %s/%s will be deleted
+  by the peer
+  - Error/Debug codes and strings are not matched
+  - Failed to initialize SA lifetime
+  - Failed to find rekey SA
+  - Failed to generate DH shared secret
+  - Failed to retrieve issuer public key hash list
+  - Failed to build certificate payload
+  - Unable to initialize the timer
+  - Failed to generate DH shared secret
+  - Failed to initialized authorization request
+  - Incorrect author record received from AAA
+  - Failed to fetch the keys from AAA
+  - Failed to add attribute to AAA request
+  - Failed to send tunnel password request to AAA
+  - Failed to allocate AAA context
+  - Insertion to policy AVL tree failed
+  - Deletion from policy AVL tree failed
+  - No Matching node found in policy AVL tree
+  - No Matching policy found
+  - No Matching proposal found
+  - Proposal is incomplete to be attached to the policy
+  - Proposal is in use
+  - Peer authentication method configured is mismatching with the method
+  proposed by peer
+  - Failed to find the session in osal
+  - Failed to allocate event
+  - Failed to create accounting record
+  - Accounting not required
+  - Accounting not started for this session
+  - NAT-T disabled via cli
+  -Negotiating limit reached, deny SA request
+  - SA is already in negotiation, hence not negotiating again
+  - AAA group authorization failed
+  - AAA user authorization failed
+  - %% Dropping received fragment, as fragmentation is not negotiated for this
+  SA!
+  - Maximum number of received fragments reached for the SA
+  - Number of fragments exceeds maximum allowed
+  - Assembled packet length %d is greater than maximum ikev2 packet size %d
+  - Received fragment numbers were NOT continuous or
+  IKEV2_FRAG_FLAG_LAST_FRAGMENT flag
+  was set on the wrong packet
+  - Received fragment is not valid, hence being dropped
+  - AAA group authorization failed
+  - AAA user authorization failed
+  - AAA author not configured in IKEv2 profile
+  - Failed to extract the skeyid
+  - Failed to send a failover msg to the standby unit
+  - Detected unsupported failover version
+  - Request was received but failover is not enabled
+  - Received an active unit request but the negotiated role is %s
+  - Received a standby unit request but the negotiated role is %s
+  - Invalid IP Version
+  - GDOI is not yet supported in IKEv2
+  - Failed to allocate PSH from platform
+  - Redirect the session to another gateway
+  - Redirect check failed
+  - Accept the session on this gateway after Redirect check
+  - Detected unsupported Redirect gateway ID type
+  - Redirect accepted, initiate new request
+  - Redirect accepted, clean-up IKEv2 SA, platform will initiate new request
+  - SA got redirected, it should not do any CREATE_CHILD_SA exchange
+  - DH public key computation failed
+  - DH secret computation failed
+  - IN-NEG IKEv2 Rekey SA got deleted
+  - Number of cert req exceeds the reasonable limit (%d)
+  - The negotiation context has been freed
+  - Assembled packet length %d is greater than maximum ikev2 packet size %d
+  - Received fragment numbers were NOT continuous or
+  IKEV2_FRAG_FLAG_LAST_FRAGMENT flag was set on the wrong packet
+  - AAA author not configured in IKEv2 profile
+  - Assembled packet is not valid, hence being dropped
+  - Invalid VCID context
+
+Recommended Action
+
+Review the syslog and follow the flow of the logs to determine if this syslog is
+the final in the exchange and if it is the cause of a potential failure or a
+transient error that was renegotiated through. For example, a peer may suggest a
+DH group via the KE payload that is not configured that causes an initial
+request to fail, but the correct DH group is communicated so that the peer can
+come back with the correct group in a new request.
+
+750004
+
+Error Message
+
+%ASA-5-750004: Local: local IP: local port Remote: remote IP: remote port
+Username: username Sending COOKIE challenge to throttle possible DoS
+
+Explanation
+
+An incoming connection request was challenged with a cookie based on the cookie
+challenge thresholds that are configured to prevent a possible DoS attack.
+- local IP:local port - Local IP address for this request. The Secure Firewall
+ASA IP address and port number used for this connection
+- remote IP:remote port - Remote IP address for this request. Peer IP address
+and port number that the connection is coming from
+- username - Username of the requester for remote access, if known yet
+
+Recommended Action
+
+None required.
+
+750005
+
+Error Message
+
+%ASA-5-750005: Local: local IP: local port Remote: remote IP: remote port
+Username: username IPsec rekey collision detected. I am lowest nonce initiator,
+deleting SA with inbound SPI SPI
+
+Explanation
+
+A rekey collision was detected (both peers trying to initiate a rekey at the
+same time), and it was resolved by keeping the one initiated by this Secure
+Firewall ASA because it had the lowest nonce. This action caused the indicated
+SA referenced by the SPI to be deleted.
+- local IP:local port - Local IP address for this request. The Secure Firewall
+ASA IP address and port number used for this connection
+- remote IP:remote port - Remote IP address for this request. Peer IP address
+and port number that the connection is coming from
+- username - Username of the requester for remote access, if known yet
+- SPI - SPI handle of the SA being deleted by resolving the rekey collision that
+was detected
+
+Recommended Action
+
+None required.
+
+750006
+
+Error Message
+
+%ASA-5-750006: Local: local IP: local port Remote: remote IP: remote port
+Username: username SA UP. Reason: reason
+
+Explanation
+
+An SA came up for the given reason, such as for a newly established connection
+or a rekey.
+- local IP:local port - Local IP address for this request. The Secure Firewall
+ASA IP address and port number used for this connection
+- remote IP:remote port - Remote IP address for this request. Peer IP address
+and port number that the connection is coming from
+- username - Username of the requester for remote access, if known yet
+- reason - Reason that the SA came into the UP state
+
+Recommended Action
+
+None required.
+
+750007
+
+Error Message
+
+%ASA-5-750007: Local: local IP: local port Remote: remote IP: remote port
+Username: username SA DOWN. Reason: reason
+
+Explanation
+
+An SA was torn down or deleted for the given reason, such as a request by the
+peer, operator request (via an administrator action), rekey, and so on.
+- local IP:local port - Local IP address for this request. The Secure Firewall
+ASA IP address and port number used for this connection
+- remote IP:remote port - Remote IP address for this request. Peer IP address
+and port number that the connection is coming from
+- username - Username of the requester for remote access, if known yet
+- reason - Reason that the SA came into the DOWN state
+
+Recommended Action
+
+None required.
+
+750008
+
+Error Message
+
+%ASA-5-750008: Local: local IP: local port Remote: remote IP: remote port
+Username: username SA rejected due to system resource low
+
+Explanation
+
+An SA request was rejected to alleviate a low system resource condition.
+- local IP:local port - Local IP address for this request. The Secure Firewall
+ASA IP address and port number used for this connection
+- remote IP:remote port - Remote IP address for this request. Peer IP address
+and port number that the connection is coming from
+- username - Username of the requester for remote access, if known yet
+
+Recommended Action
+
+Check CAC settings for IKEv2 to determine if this is expected behavior based on
+configured thresholds; otherwise, if the condition persists, investigate further
+to alleviate the issue.
+
+750009
+
+Error Message
+
+%ASA-5-750009: Local: local IP: local port Remote: remote IP: remote port
+Username: username SA request rejected due to CAC limit reached: Rejection
+reason: reason
+
+Explanation
+
+A Connection Admission Control (CAC) limiting threshold was reached, which
+caused the SA request to be rejected.
+- local IP:local port - Local IP address for this request. The Secure Firewall
+ASA IP address and port number used for this connection
+- remote IP:remote port - Remote IP address for this request. Peer IP address
+and port number that the connection is coming from
+- username - Username of the requester for remote access, if known yet
+- reason - Reason that the SA was rejected
+
+Recommended Action
+
+Check CAC settings for IKEv2 to determine if this is expected behavior based on
+configured thresholds; otherwise, if the condition persists, investigate further
+to alleviate the issue.
+
+750010
+
+Error Message
+
+%ASA-5-750010: Local: local-ip Remote: remote-ip Username:username IKEv2 local
+throttle-request queue depth threshold of threshold reached; increase the window
+size on peer peer for better performance
+
+Explanation
+
+The Secure Firewall ASA overflowed its throttle request queue to the specified
+peer, indicating that the peer is slow. The throttle request queue holds
+requests destined for the peer, which cannot be sent immediately because the
+maximum number of requests allowed to be in-flight based on the IKEv2 window
+size were already in-flight. As in-flight requests are completed, requests are
+pulled off of the throttle request queue and sent to the peer. If the peer is
+not processing these requests quickly, the throttle queue backs up.
+- local-ip - Local peer IP address
+- remote-ip - Remote peer IP address
+- username - Username of the requester for remote access or tunnel group name
+for L2L, if known yet
+- threshold - Queue depth threshold of the local throttle-request queue reached
+- peer - Remote peer IP address
+
+Recommended Action
+
+If possible, increase the IKEv2 window size on the remote peer to allow more
+concurrent requests to be in-flight, which may improve performance.
+Note: The Secure Firewall ASA does not currently support an increased IKEv2 window size setting.
+
+750011
+
+Error Message
+
+%ASA-3-750011: Tunnel Rejected: Selected IKEv2 encryption algorithm (IKEV2 encry
+algo ) is not strong enough to secure proposed IPSEC encryption algorithm (IPSEC
+encry algo ).
+
+Explanation
+
+The tunnel was rejected because the selected IKEv2 encryption algorithm is not
+strong enough to secure the proposed IPSEC encryption algorithm.
+
+Recommended Action
+
+Configure a stronger IKEv2 encryption algorithm to match or exceed the strength
+of the IPsec child SA encryption algorithm.
+
+750012
+
+Error Message
+
+%ASA-4-750012: Selected IKEv2 encryption algorithm (IKEV2 encry algo ) is not
+strong enough to secure proposed IPSEC encryption algorithm (IPSEC encry algo ).
+
+Explanation
+
+The selected IKEv2 encryption algorithm is not strong enough to secure the
+proposed IPSEC encryption algorithm.
+
+Recommended Action
+
+Configure a stronger IKEv2 encryption algorithm to match or exceed the strength
+of the IPsec child SA encryption algorithm.
+
+750013
+
+Error Message
+
+%ASA-5-750013 - IKEv2 SA (iSPI <ISPI> rRSP <rSPI>) Peer Moved: Previous
+<prev_remote_ip>:<prev_remote_port>/<prev_local_ip>:<prev_local_port>. Updated
+<new_remote_ip>:<new_remote_port>/<new_local_ip>:<new_local_port>
+
+Explanation
+
+The new mobike feature allows peer IP to be changed without tearing down the
+tunnel. For example, a mobile device (smartphone) acquires new IP after
+connecting to a different network.The following list describes the message
+values:
+- ip - Specifies the previous, the new local, and remote IP addresses
+- port - Specifies the previous, the new local, and remote port information
+- SPI - Indicates the Initiator and Responder SPI
+- iSPI - Specifies the Initiator SPI
+- rSPI - Specifies the Responder SPI
+
+Recommended Action
+
+Contact the Development engineers.
+
+750014
+
+Error Message
+
+%ASA-4-750014: Local:<self ip>:<self port> Remote:<peer ip>:<peer port>
+Username:<TG or Username> IKEv2 Session aborted. Reason: Initial Contact
+received for Local ID: <self ID>, Remote ID: <peer ID> from remote peer:<peer
+ip>:<peer port> to <self ip>:<self port>
+
+Explanation
+
+For ASA IKEv2, the initial contact (IC) processing is done based on peer IP/Port
+and ASA IP/Port pairs and the stale sessions get deleted based on these IP/Port
+pairs. This could be a problem with NAT as IP/Port of peer may change for
+connections and the stale sessions would not get cleaned up based on IP/Port
+pairs. As per the IKEv2 RFC , the Initial Contact processing will be switched to
+use Identity pairs so that the stale sessions can be identified based on peer
+and ASA identities and clear them. The identities can be IPs, hostnames,
+Certificate DNs, and so on. This syslog displays the exact reason for clearing
+the stale sessions. This syslog will be generated on ASA after clearing a stale
+session from a peer while negotiating a new IKEv2 session with the same peer.
+This syslog is applicable only for standalone and clustering site-to-site VPNs
+and not for RA.
+
+Recommended Action
+
+IKEv2 session Initial Contact processing is done to reset state between peers
+and clear the stale sessions. If sessions are getting cleared unexpectedly due
+to Initial Contact processing, ensure that all peers are configured with unique
+identities.
+
+750015
+
+Error Message
+
+%ASA-4-750015: Local:<self ip>:<self port> Remote:<peer ip>:<peer port>
+Username:<TG or Username> IKEv2 deleting IPSec SA. Reason: invalid SPI
+notification received for SPI 0x<SPI>; local traffic selector = Address Range:
+<start address>-<end address> Protocol: <protocol number> Port Range: <start
+port>-<end port> ; remote traffic selector = Address Range: <start address>-<end
+address> Protocol: <protocol number> Port Range: <start port>-<end port>
+
+Explanation
+
+When an ESP packet gets dropped due to invalid SPI, an INFORMATIONAL exchange
+with the peer has been added. When peer receives this notification, the child SA
+causing INVALID_SPI scenario will be cleared, thereby sync the child SAs sooner
+and reducing the traffic loss. This IKEv2 syslog is introduced when the child SA
+gets cleared due to INVALID_SPI INFORMATIONAL exchange. The following describes
+the message values:
+- SPI - SPI in hex for which INVALID_SPI notification was received.
+
+Recommended Action
+
+An out-of-sync IKEv2 child condition was detected and handled. No action is
+required.
+
+750016
+
+Error Message
+
+%ASA7-750016: Local: localIP:port Remote:remoteIP:port Username: username IKEv2
+Need to send a DPD message to peer
+
+Explanation
+
+The device may have terminated a connection to the peer. Dead peer detection
+needs to be performed for the specified peer to determine if it is still alive.
+The following describes the message values:
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username - The username associated with this connection attempt
+
+Recommended Action
+
+No action is required.
+
+751001
+
+Error Message
+
+%ASA-3-751001: Local: localIP:port Remote:remoteIP:port Username: username/group
+Failed to complete Diffie-Hellman operation. Error: error
+
+Explanation
+
+A failure to complete a Diffie-Hellman operation occurred, as indicated by the
+error.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- error - The error string that indicates the specific error
+
+Recommended Action
+
+A low memory issue or other internal error that should be resolved has occurred.
+If it persists, use the memory tracking tool to isolate the issue.
+
+751002
+
+Error Message
+
+%ASA-3-751002: Local: localIP:port Remote:remoteIP:port Username: username/group
+No preshared key or trustpoint configured for self in tunnel group group
+
+Explanation
+
+The Secure Firewall ASA was unable to find any type of authentication
+information in the tunnel group that it could use to authenticate itself to the
+peer.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- group - The name of the tunnel group
+
+Recommended Action
+
+Check the tunnel group configuration, and configure a preshared key or
+certificate for self-authentication in the indicated tunnel group.
+
+751003
+
+Error Message
+
+%ASA-7-751003: Local: localIP:port Remote:remoteIP:port Username: username/group
+Need to send a DPD message to peer
+
+Explanation
+
+Dead peer detection needs to be performed for the specified peer to determine if
+it is still alive. The Secure Firewall ASA may have terminated a connection to
+the peer.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+
+Recommended Action
+
+None required.
+
+751004
+
+Error Message
+
+%ASA-3-751004: Local: localIP:port Remote:remoteIP:port Username: username/group
+No remote authentication method configured for peer in tunnel group group
+
+Explanation
+
+A method to authenticate the remote peer was not found in the configuration to
+allow the connection.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- group - The name of the tunnel group
+
+Recommended Action
+
+Check the configuration to make sure that a valid remote peer authentication
+setting is present.
+
+751005
+
+Error Message
+
+%ASA-3-751005: Local: localIP:port Remote:remoteIP:port Username: username/group
+AnyConnect client reconnect authentication failed. Session ID: sessionID ,
+Error: error
+
+Explanation
+
+A failure occurred during an AnyConnect client reconnection attempt using the
+session token.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- sessionID - The session ID used to try to reconnect
+- error - The error string to indicate the specific error that occurred during
+the reconnection attempt
+
+Recommended Action
+
+Take action according to the error specified, if necessary. The error may
+indicate that a session was removed instead of remaining in resume state because
+a client disconnect was detected or sessions were cleared on the Secure Firewall
+ASA. If necessary, also compare this message to the event logs on the Anyconnect
+client.
+
+751006
+
+Error Message
+
+%ASA-3-751006: Local: localIP:port Remote:remoteIP:port Username: username/group
+Certificate authentication failed. Error: error
+
+Explanation
+
+A failure related to certificate authentication occurred.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- error - The error string to indicate the specific certificate authentication
+failure
+
+Recommended Action
+
+Take action according to the error specified, if necessary. Check the
+certificate trustpoint configuration and make sure that the necessary CA
+certificate exists to be able to correctly verify client certificate chains. Use
+the debug crypto ca commands to isolate the failure.
+
+751007
+
+Error Message
+
+%ASA-5-751007: Local: localIP:port Remote:remoteIP:port Username: username/group
+Configured attribute not supported for IKEv2. Attribute: attribute
+
+Explanation
+
+A configured attribute could not be applied to the IKE version 2 connection
+because it is not supported for IKE version 2 connections.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- attribute - The attribute that is configured to be applied
+
+Recommended Action
+
+None required, To eliminate this message from being generated, you can remove
+the IKE version 2 configuration setting.
+
+751008
+
+Error Message
+
+%ASA-3-751008: Local: localIP:port Remote:remoteIP:port Username: username/group
+Group=group , Tunnel rejected: IKEv2 not enabled in group policy
+
+Explanation
+
+IKE version 2 is not allowed based on the enabled protocols for the indicated
+group to which a connection attempt was mapped, and the connection was rejected.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- group - The tunnel group used for connection
+
+Recommended Action
+
+Check the group policy VPN tunnel protocol setting and enable IKE version 2, if
+desired.
+
+751009
+
+Error Message
+
+%ASA-3-751009: Local: localIP:port Remote:remoteIP:port Username: username/group
+Unable to find tunnel group for peer.
+
+Explanation
+
+A tunnel group could not be found for the peer.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+
+Recommended Action
+
+Check the configuration and tunnel group mapping rules, then configure them to
+allow the peer to land on a configured group.
+
+751010
+
+Error Message
+
+%ASA-3-751010: Local: localIP:port Remote:remoteIP:port Username: username/group
+Unable to determine self-authentication method. No crypto map setting or tunnel
+group found.
+
+Explanation
+
+A method for authenticating the Secure Firewall ASA to the peer could not be
+found in either the tunnel group or crypto map.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+
+Recommended Action
+
+Check the configuration, and configure a self-authentication method in the
+crypto map for the initiator L2L or in the applicable tunnel group.
+
+751011
+
+Error Message
+
+%ASA-3-751011: Local: localIP:port Remote:remoteIP:port Username: username/group
+Failed user authentication. Error: error
+
+Explanation
+
+A failure occured during user authentication within EAP for an IKE version 2
+remote access connection.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- error - The error string that indicates the specific error
+
+Recommended Action
+
+Make sure that the correct authentication credentials were provided and debug
+further to determine the exact cause of failure, if necessary.
+
+751012
+
+Error Message
+
+%ASA-3-751012: Local: localIP:port Remote:remoteIP:port Username: username/group
+Failure occurred during Configuration Mode processing. Error: error
+
+Explanation
+
+A failure occurred during configuration mode processing while settings were
+being applied to the connection.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- error - The error string that indicates the specific error
+
+Recommended Action
+
+Take action based on the indicated error. Use the debug crypto ikev2 commands to
+determine the cause of the failure, or debug the indicated subsystem that is
+specified by the error, if necessary.
+
+751013
+
+Error Message
+
+%ASA-3-751013: Local: localIP:port Remote:remoteIP:port Username: username/group
+Failed to process Configuration Payload request for attribute attribute ID .
+Error: error
+
+Explanation
+
+The Configuration Payload request failed to process and generate a Configuration
+Payload response for an attribute that was requested by the peer.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- attribute ID - The attribute ID on which the failure occurred
+- error - The error string that indicates the specific error
+
+Recommended Action
+
+A memory error, configuration error, or another type of error has occurred. Use
+the debug crypto ikev2 commands to help isolate the cause of the failure.
+
+751014
+
+Error Message
+
+%ASA-4-751014: Local: localIP:port Remote remoteIP:port Username: username/group
+Warning Configuration Payload request for attribute attribute ID could not be
+processed. Error: error
+
+Explanation
+
+A warning occurred while processing a CP request to generate a CP response for a
+requested attribute.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- attribute ID - The attribute ID on which the failure occurred
+- error - The error string that indicates the specific error
+
+Recommended Action
+
+Take action based on the attribute indicated in the warning and the indicated
+warning message. For example, a newer client is being used with an older Secure
+Firewall ASA image, which does not understand a new attribute that has been
+added to the client. An upgrade of the Secure Firewall ASA image may be
+necessary to allow the attribute to be processed.
+
+751015
+
+Error Message
+
+%ASA-4-751015: Local: localIP:port Remote remoteIP:port Username: username/group
+SA request rejected by CAC. Reason: reason
+
+Explanation
+
+The connection was rejected by the call admission control to protect the Secure
+Firewall ASA based on configured thresholds or conditions indicated by the
+reason listed.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- reason - The reason that the SA request was rejected
+
+Recommended Action
+
+Check the reason and resolve the condition if a new connection should have been
+accepted or change the configured thresholds.
+
+751016
+
+Error Message
+
+%ASA-4-751016: Local: localIP:port Remote remoteIP:port Username: username/group
+L2L peer initiated a tunnel with the same outer and inner addresses. Peer could
+be Originate only - Possible misconfiguration!
+
+Explanation
+
+The peer may be configured for originate-only connections based on the received
+outer and inner IP addresses for the tunnel.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+
+Recommended Action
+
+Check the L2L peer configuration.
+
+751017
+
+Error Message
+
+%ASA-3-751017: Local: localIP:port Remote remoteIP:port Username: username/group
+Configuration Error error description
+
+Explanation
+
+An error in the configuration that prevented the connection has been detected.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- error description - A brief description of the configuration error
+
+Recommended Action
+
+Correct the configuration based on the indicated error.
+
+751018
+
+Error Message
+
+%ASA-3-751018: Terminating the VPN connection attempt from attempted group .
+Reason: This connection is group locked to locked group .
+
+Explanation
+
+The tunnel group over which the connection is attempted is not the same as the
+tunnel group set in the group lock.
+- attempted group - The tunnel group over which the connection came in
+- locked group - The tunnel group that the connection is locked or restricted to
+
+Recommended Action
+
+Check the group-lock value in the group policy or the user attributes.
+
+751019
+
+Error Message
+
+%ASA-4-751019: Local:LocalAddr Remote:RemoteAddr Username:username Failed to
+obtain an licenseType license. Maximum license limit limit exceeded.
+
+Explanation
+
+A session creation failed because the maximum license limit was exceeded, which
+caused a failure to either initiate or respond to a tunnel request.
+- LocalAddr - Local address for this connection attempt
+- RemoteAddr - Remote peer address for this connection attempt
+- username - Username for the peer attempting the connection
+- licenseType - License type that was exceeded (other VPN or AnyConnect
+Premium/Essentials)
+- limit - Number of licenses allowed and was exceeded
+
+Recommended Action
+
+Make sure that enough licenses are available for all allowed users and/or obtain
+more licenses to allow the rejected connections. For multiple context mode,
+allow more licenses for the context that reported the failure, if necessary.
+
+751020
+
+Error Message
+
+%ASA-3-751020: Local:%A:%u Remote:%A:%u Username:%s An %s remote access
+connection failed. Attempting to use an NSA Suite B crypto algorithm (%s)
+without an AnyConnect Premium license.
+
+Explanation
+
+An IKEv2 remote access tunnel could not be created because the AnyConnect
+Premium license was applied but explicitly disabled with the
+anyconnect-essentials command in the webvpn configuration mode.
+
+Recommended Action
+
+Make sure that an AnyConnect Premium license is installed on the Secure Firewall
+ASA is configured in the remote access IKEv2 policies or IPsec proposals.
+
+751021
+
+Error Message
+
+%ASA-4-751021: Local:variable 1 :variable 2 Remote:variable 3 :variable 4
+Username:variable 5 variable 6 with variable 7 encryption is not supported with
+this version of the AnyConnect Client. Please upgrade to the latest Anyconnect
+Client.
+
+Explanation
+
+An out-of-date AnyConnect client tried to connect to an Secure Firewall ASA that
+has IKEv2 with AES-GCM encryption policy configured.
+- variable 1 - Local IP address
+- variable 2 - Local port
+- variable 3 - Remote client IP address
+- variable 4 - Remote client port
+- variable 5 - Username of the AnyConnect client (may be unknown because this
+occurs before the user enters a username)
+- variable 6 - Connection protocol type (IKEv1, IKEv2)
+- variable 7 - Combined mode encryption type (AES-GCM, AES-GCM 256)
+
+Recommended Action
+
+Upgrade the AnyConnect client to the latest version to use IKEv2 with AES-GCM
+encryption.
+
+751022
+
+Error Message
+
+%ASA-3-751022: Local: local-ip Remote: remote-ip Username:username Tunnel
+rejected: Crypto Map Policy not found for remote traffic selector rem-ts-start
+/rem-ts-end /rem-ts.startport /rem-ts.endport /rem-ts.protocol local traffic
+selector local-ts-start /local-ts-end /local-ts.startport /local-ts.endport
+/local-ts.protocol !
+
+Explanation
+
+The Secure Firewall ASA was not able to find security policy information for the
+private networks or hosts indicated in the message. These networks or hosts were
+sent by the initiator and do not match any crypto ACLs at the Secure Firewall
+ASA. This is most likely a misconfiguration.
+- local-ip - Local peer IP address
+- remote-ip - Remote peer IP address
+- username - Username of the requester for remote access, if known yet
+- rem-ts-start - Remote traffic selector start address
+- rem-ts-end - Remote traffic selector end address
+- rem-ts.startport - Remote traffic selector start port
+- rem-ts.endport - Remote traffic selector end port
+- rem-ts.protocol - Remote traffic selector protocol
+- local-ts-start - Local traffic selector start address
+- local-ts-end - Local traffic selector end address
+- local-ts.startport - Local traffic selector start port
+- local-ts.endport - Local traffic selector end port
+- local-ts.protocol - Local traffic selector protocol
+
+Recommended Action
+
+Check the protected network configuration in the crypto ACLs on both sides and
+make sure that the local network on the initiator is the remote network on the
+responder and vice-versa. Pay special attention to wildcard masks and host
+addresses as compared to network addresses. Non-Cisco implementations may have
+the private addresses labeled as proxy addresses or “red” networks.
+
+751023
+
+Error Message
+
+%ASA-6-751023: Local a :p Remote: a :p Username:n Unknown client connection
+
+Explanation
+
+An unknown non-Cisco IKEv2 client has connected to the Secure Firewall ASA.
+- n - The group or username (depending on context)
+- a - An IP address
+- p - The port number
+- ua - The user-agent presented by the client to the Secure Firewall ASA
+
+Recommended Action
+
+Upgrade to a Cisco-supported IKEv2 client.
+
+751024
+
+Error Message
+
+%ASA-3-751024: Local:ip-addr Remote:ip-addr Username:username IKEv2 IPv6 User
+Filter tempipv6 configured. This setting has been deprecated, terminating
+connection
+
+Explanation
+
+The IPv6 VPN filter has been deprecated and if it is configured instead of a
+unified filter for IPv6 traffic access control, the connection will be
+terminated.
+
+Recommended Action
+
+Configure a unified filter with IPv6 entries to control IPv6 traffic for the
+user.
+
+751025
+
+Error Message
+
+%ASA-5-751025: Local: local IP :local port Remote: remote IP :remote port
+Username:username Group:group-policy IPv4 Address=assigned_IPv4_addr IPv6
+address=assigned_IPv6_addr assigned to session.
+
+Explanation
+
+This message displays the assigned IP address information for the AnyConnect
+IKEv2 connection of the specified user.
+- local IP :local port - Local IP address for this request. The Secure Firewall
+ASA IP address and port number used for this connection
+- remote IP :remote port - Remote IP address for this request. Peer IP address
+and port number that the connection is coming from
+- username - Username of the requester for remote access, if known yet
+- group-policy - The group policy that allowed the user to gain access
+- assigned_IPv4_addr - The IPv4 address that is assigned to the client
+- assigned_IPv6_addr - The IPv6 address that is assigned to the client
+
+Recommended Action
+
+None required.
+
+751026
+
+Error Message
+
+%ASA-6-751026: Local: localIP:port Remote: remoteIP:port Username:
+username/group IKEv2 Client OS: client-os Client: client-name client-version
+
+Explanation
+
+The indicated user is attempting to connect with the shown operating system and
+client version.
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- client-os - The operating system reported by the client
+- client-name - The client name reported by the client (usually AnyConnect)
+- client-version - The client version reported by the client
+
+Recommended Action
+
+None required.
+
+751027
+
+Error Message
+
+%ASA-4-751027: Local:local IP :local port Remote:peer IP :peer port
+Username:username IKEv2 Received INVALID_SELECTORS Notification from peer. Peer
+received a packet (SPI=spi ). The decapsulated inner packet didn’t match the
+negotiated policy in the SA. Packet destination pkt_daddr , port pkt_dest_port ,
+source pkt_saddr , port pkt_src_port , protocol pkt_prot .
+
+Explanation
+
+A peer received a packet on an IPsec security association (SA) that did not
+match the negotiated traffic descriptors for that SA. The peer sent an
+INVALID_SELECTORS notification containing the SPI and packet data for the
+offending packet.
+- local IP - The Secure Firewall ASA local IP address
+- local port - The Secure Firewall ASA local port
+- peer IP - Peer IP address
+- peer port - Peer port
+- username - Username
+- spi - SPI of the IPsec SA for the packet
+- pkt_daddr - Packet destination IP address
+- pkt_dest_port - Packet destination port
+- pkt_saddr - Packet source IP address
+- pkt_src_port - Packet source port
+- pkt_prot - Packet protocol
+
+Recommended Action
+
+Copy the error message, the configuration, and any details about the events
+leading up to this error, then submit them to Cisco TAC.
+
+751028
+
+Error Message
+
+%ASA-5-751028: Local:<localIP:port> Remote:<remoteIP:port>
+Username:<username/group> IKEv2 Overriding configured keepalive values of
+threshold:<config_threshold>/retry:<config_retry> to
+threshold:<applied_threshold>/retry:<applied_retry>.
+
+Explanation
+
+When configured for distributed-site to site with clustering, the keepalive
+threshold and retry intervals should be increased to prevent overloading the
+system. If the configured values are below these required values, the required
+values will be applied. The following list describes the message values:
+- localIP:port - The local IP address and port number
+- remoteIP:port - The remote IP address and port number
+- username/group - The username or group associated with this connection attempt
+- config_threshold - The configured keepalive threshold for tunnel-group
+- config_retry - The configured keepalive retry for tunnel-group
+- applied_threshold - The keepalive threshold being applied
+- applied_retry - The keepalive retry being applied
+
+Recommended Action
+
+Configure to at least the required minimum values.
+
+752001
+
+Error Message
+
+%ASA-2-752001: Tunnel Manager received invalid parameter to remove record
+
+Explanation
+
+A failure to remove a record from the tunnel manager that might prevent future
+tunnels to the same peer from initiating has occurred.
+
+Recommended Action
+
+Reloading the device will remove the record, but if the error persists or
+recurs, perform additional debugging of the specific tunnel attempt.
+
+752002
+
+Error Message
+
+%ASA-7-752002: Tunnel Manager Removed entry. Map Tag = mapTag . Map Sequence
+Number = mapSeq .
+
+Explanation
+
+An entry to initiate a tunnel was successfully removed.
+- mapTag - Name of the crypto map for which the initiation entry was removed
+- mapSeq - Sequence number of the crypto map for which the initiation entry was
+removed
+
+Recommended Action
+
+None required.
+
+752003
+
+Error Message
+
+%ASA-5-752003: Tunnel Manager dispatching a KEY_ACQUIRE message to IKEv2. Map
+Tag = mapTag . Map Sequence Number = mapSeq
+
+Explanation
+
+An attempt is being made to initiate an IKEv2 tunnel that was based on the
+crypto map indicated.
+- mapTag - Name of the crypto map for which the initiation entry was removed
+- mapSeq - Sequence number of the crypto map for which the initiation entry was
+removed
+
+Recommended Action
+
+None required.
+
+752004
+
+Error Message
+
+%ASA-5-752004: Tunnel Manager dispatching a KEY_ACQUIRE message to IKEv1. Map
+Tag = mapTag . Map Sequence Number = mapSeq
+
+Explanation
+
+An attempt is being made to initiate an IKEv1 tunnel that was based on the
+crypto map indicated.
+- mapTag - Name of the crypto map for which the initiation entry was removed
+- mapSeq - Sequence number of the crypto map for which the initiation entry was
+removed
+
+Recommended Action
+
+None required.
+
+752005
+
+Error Message
+
+%ASA-2-752005: Tunnel Manager failed to dispatch a KEY_ACQUIRE message. Memory
+may be low. Map Tag = mapTag . Map Sequence Number = mapSeq.
+
+Explanation
+
+An attempt to dispatch a tunnel initiation attempt failed because of an internal
+error, such as a memory allocation failure.
+- mapTag - Name of the crypto map for which the initiation entry was removed
+- mapSeq - Sequence number of the crypto map for which the initiation entry was removed
+
+Recommended Action
+
+Use the memory tracking tools and additional debugging to isolate the issue.
+
+752006
+
+Error Message
+
+%ASA-3-752006: Tunnel Manager failed to dispatch a KEY_ACQUIRE message. Probable
+mis-configuration of the crypto map or tunnel-group. Map Tag = Tag . Map
+Sequence Number = num, SRC Addr: address port: port Dst Addr: address port:
+port.
+
+Explanation
+
+An attempt to dispatch a tunnel initiation attempt failed because of a
+configuration error of the indicated crypto map or associated tunnel group.
+- Tag - Name of the crypto map for which the initiation entry was removed
+- num - Sequence number of the crypto map for which the initiation entry was
+removed
+- address - The source IP address or destination IP address
+- port - The source port number or destination port number
+
+Recommended Action
+
+Check the configuration of the tunnel group and crypto map indicated to make
+sure that it is complete.
+
+752007
+
+Error Message
+
+%ASA-3-752007: Tunnel Manager failed to dispatch a KEY_ACQUIRE message. Entry
+already in Tunnel Manager. Map Tag = mapTag . Map Sequence Number = mapSeq
+
+Explanation
+
+An attempt was made to re-add an existing entry into the tunnel manager.
+- mapTag - Name of the crypto map for which the initiation entry was removed
+- mapSeq - Sequence number of the crypto map for which the initiation entry was
+removed
+
+Recommended Action
+
+If the issue persists, make sure that the configuration of the peer will allow
+the tunnel, and debug further to make sure that the tunnel manager entries are
+being added and removed correctly during tunnel initiation and successful or
+failed initiation attempts. Debug IKE version 2 or IKE version 1 connections
+further, because they may still be in the process of creating the tunnel.
+
+752008
+
+Error Message
+
+%ASA-7-752008: Duplicate entry already in Tunnel Manager
+
+Explanation
+
+A duplicate request to initiate a tunnel was made, and the tunnel manager is
+already attempting to initiate the tunnel.
+
+Recommended Action
+
+None required. If the issue persists, either IKE version 1 or IKE version 2 may
+have attempted a tunnel initiation and not have timed out yet. Debug further
+using the applicable commands to make sure that the tunnel manager entry is
+removed after successful or failed initiation attempts.
+
+752009
+
+%ASA-4-752009: IKEv2 Doesn't support Multiple Peers
+
+Explanation
+
+An attempt to initiate a tunnel with IKE version 2 failed because the crypto map
+is configured with multiple peers, which is not supported for IKE version 2.
+Only IKE version 1 supports multiple peers.
+
+Recommended Action
+
+Check the configuration to make sure that multiple peers are not expected for
+IKE version 2 site-to-site initiation.
+
+752010
+
+Error Message
+
+%ASA-4-752010: IKEv2 Doesn't have a proposal specified
+
+Explanation
+
+No IPsec proposal was found to be able to initiate an IKE version 2 tunnel .
+
+Recommended Action
+
+Check the configuration, then configure an IKE version 2 proposal that can be
+used to initiate the tunnel, if necessary.
+
+752011
+
+Error Message
+
+%ASA-4-752011: IKEv1 Doesn't have a transform set specified
+
+Explanation
+
+No IKE version 1 transform set was found to be able to initiate an IKE version 2
+tunnel.
+
+Recommended Action
+
+Check the configuration, then configure an IKE version 2 transform set that can
+be used to initiate the tunnel, if necessary.
+
+752012
+
+Error Message
+
+%ASA-4-752012: IKEv protocol was unsuccessful at setting up a tunnel. Map Tag =
+mapTag . Map Sequence Number = mapSeq .
+
+Explanation
+
+The indicated protocol failed to initiate a tunnel using the configured crypto
+map.
+- protocol - IKE version number 1 or 2 for IKEv1 or IKEv2
+- mapTag - Name of the crypto map for which the initiation entry was removed
+- mapSeq - Sequence number of the crypto map for which the initiation entry was
+removed
+
+Recommended Action
+
+Check the configuration, then debug further within the indicated protocol to
+determine the cause of the failed tunnel attempt.
+
+752013
+
+Error Message
+
+%ASA-4-752013: Tunnel Manager dispatching a KEY_ACQUIRE message to IKEv2 after a
+failed attempt. Map Tag = mapTag . Map Sequence Number = mapSeq .
+
+Explanation
+
+The tunnel manager is attempting to initiate the tunnel again after it failed.
+- mapTag - Name of the crypto map for which the initiation entry was removed
+- mapSeq - Sequence number of the crypto map for which the initiation entry was
+removed
+
+Recommended Action
+
+Check the configuration, and make sure that the crypto maps are correctly
+configured. Then determine if the tunnel is successfully created on the second
+attempt.
+
+752014
+
+Error Message
+
+%ASA-4-752014: Tunnel Manager dispatching a KEY_ACQUIRE message to IKEv1 after a
+failed attempt. Map Tag = mapTag . Map Sequence Number = mapSeq .
+
+Explanation
+
+The tunnel manager is falling back and attempting to initiate the tunnel using
+IKE version 1 after the tunnel failed.
+- mapTag - Name of the crypto map for which the initiation entry was removed
+- mapSeq - Sequence number of the crypto map for which the initiation entry was
+removed
+
+Recommended Action
+
+Check the configuration, and make sure that the crypto maps are correctly
+configured. Then determine if the tunnel is successfully created on the second
+attempt.
+
+752015
+
+Error Message
+
+%ASA-3-752015: Tunnel Manager has failed to establish an L2L SA. All configured
+IKE versions failed to establish the tunnel. Map Tag = mapTag . Map Sequence
+Number = mapSeq .
+
+Explanation
+
+An attempt to bring up an L2L tunnel to a peer failed after trying with all
+configured protocols.
+- mapTag - Name of the crypto map for which the initiation entry was removed
+- mapSeq - Sequence number of the crypto map for which the initiation entry was
+removed
+
+Recommended Action
+
+Check the configuration, and make sure that the crypto maps are correctly
+configured. Debug the individual protocols to isolate the cause of the failure.
+
+752016
+
+Error Message
+
+%ASA-5-752016: IKEv protocol was successful at setting up a tunnel. Map Tag =
+mapTag . Map Sequence Number = mapSeq.
+
+Explanation
+
+The indicated protocol (IKE version 1 or IKE version 2) successfully created an
+L2L tunnel.
+- protocol - IKE version number 1 or 2 for IKEv1 or IKEv2
+- mapTag - Name of the crypto map for which the initiation entry was removed
+- mapSeq - Sequence number of the crypto map for which the initiation entry was
+removed
+
+Recommended Action
+
+None required.
+
+752017
+
+Error Message
+
+%ASA-4-752017: IKEv2 Backup L2L tunnel initiation denied on interface interface
+matching crypto map name , sequence number number . Unsupported configuration.
+
+Explanation
+
+The Secure Firewall ASA uses IKEv1 to initiate the connection because IKEv2 does
+not support the backup L2L feature.
+
+Recommended Action
+
+None required if IKEv1 is enabled. You must enable IKEv1 to use the backup L2L
+feature.
+
+753001
+
+Error Message
+
+%ASA-4-753001: Unexpected IKEv2 packet received from <IP>:<port>. Error:
+<reason>
+
+Explanation
+
+This syslog is generated when an IKEv2 packet is received when the cluster is
+operating in Distributed VPN clustering mode and fails early consistency and/or
+error checks performed on it in the datapath.
+- <IP> - source IP address from where the packet was received
+- <port> - source port from where the packet was received
+- <reason> - Reason why the packet is considered invalid. This value could be
+Corrupted SPI detected or Expired SPI received.
+
+Recommended Action
+
+None required if IKEv1 is enabled. You must enable IKEv1 to use the backup L2L
+feature.
+

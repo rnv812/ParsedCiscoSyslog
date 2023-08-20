@@ -1,0 +1,115 @@
+%ASA-1-101001: (Primary) Failover cable OK.
+%ASA-1-101002: (Primary) Bad failover cable.
+%ASA-1-101003: (Primary) Failover cable not connected (this unit).
+%ASA-1-101004: (Primary) Failover cable not connected (other unit).
+%ASA-1-101005: (Primary) Error reading failover cable status.
+%ASA-1-103001: (Primary) No response from other firewall (reason code = code).
+%ASA-1-103002: (Primary) Other firewall network interface interface_number OK.
+%ASA-1-103003: (Primary) Other firewall network interface interface_number failed.
+%ASA-1-103004: (Primary) Other firewall reports this firewall failed. Reason: reason-string.
+%ASA-1-103005: (Primary) Other firewall reporting failure. Reason: SSM card failure.
+%ASA-1-103006: (Primary|Secondary) Mate version ver_num is not compatible with ours ver_num.
+%ASA-1-103007: (Primary|Secondary) Mate version ver_num is not identical with ours ver_num
+%ASA-1-103008: Mate hwdib index is not compatible.
+%ASA-1-104001: (Primary) Switching to ACTIVE (cause: string).
+%ASA-1-104002: (Primary) Switching to STANDBY (cause: string).
+%ASA-1-104003: (Primary) Switching to FAILED.
+%ASA-1-104004: (Primary) Switching to OK.
+%ASA-1-104501: (Primary|Secondary) Switching to ACTIVE (cause: reason)
+%ASA-1-104501: (Primary|Secondary) Switching to BACKUP (cause: reason)
+%ASA-1-104502: (Primary|Secondary) Becoming Backup unit failed
+%ASA-1-105001: (Primary) Disabling failover.
+%ASA-1-105002: (Primary) Enabling failover.
+%ASA-1-105003: (Primary) Monitoring on interface interface_name waiting
+%ASA-1-105004: (Primary) Monitoring on interface interface_name normal
+%ASA-1-105005: (Primary) Lost Failover communications with mate on interface interface_name.
+%ASA-1-105006: (Primary) Link status Up on interface interface_name.
+%ASA-1-105007: (Primary) Link status Down on interface interface_name.
+%ASA-1-105008: (Primary) Testing interface interface_name.
+%ASA-1-105009: (Primary) Testing on interface interface_name {Passed|Failed}.
+%ASA-1-105011: (Primary) Failover cable communication failure
+%ASA-1-105020: (Primary) Incomplete/slow config replication
+%ASA-1-105021: (failover_unit) Standby unit failed to sync due to a locked context_name config. Lock held by lock_owner_name.
+%ASA-1-105022: (host) Config replication failed with reason = (reason)
+%ASA-1-105031: Failover LAN interface is up.
+%ASA-1-105032: LAN Failover interface is down.
+%ASA-1-105033: LAN FO cmd Iface down and up again.
+%ASA-1-105034: Receive a LAN_FAILOVER_UP message from peer.
+%ASA-1-105035: Receive a LAN failover interface down msg from peer.
+%ASA-1-105036: dropped a LAN Failover command message.
+%ASA-1-105037: The primary and standby units are switching back and forth as the active unit.
+%ASA-1-105038: (Primary) Interface count mismatch.
+%ASA-1-105039: (Primary) Unable to verify the Interface count with mate. Failover may be disabled in mate.
+%ASA-1-105040: (Primary) Mate failover version is not compatible.
+%ASA-1-105041: cmd failed during sync.
+%ASA-1-105042: (Primary) Failover interface OK.
+%ASA-1-105043: (Primary) Failover interface failed.
+%ASA-1-105044: (Primary) Mate operational mode mode is not compatible with my mode mode.
+%ASA-1-105045: (Primary) Mate license (number contexts) is not compatible with my license (number contexts).
+%ASA-1-105046: (Primary|Secondary) Mate has a different chassis.
+%ASA-1-105047: Mate has a io_card_name1 card in slot slot_number which is different from my io_card_name2
+%ASA-1-105048: (unit) Mate’s service module (application) is different from mine (application).
+%ASA-1-105502: (Primary|Secondary) Restarting Cloud HA on this unit, reason: string.
+%ASA-1-106021: Deny protocol reverse path check from source_address to dest_address on interface interface_name.
+%ASA-1-106022: Deny protocol connection spoof from source_address to dest_address on interface interface_name.
+%ASA-1-106101: Number of cached deny-flows for ACL log has reached limit (number).
+%ASA-1-107001: RIP auth failed from IP_address: version=number, type=string, mode=string, sequence=number on interface interface_name.
+%ASA-1-107002: RIP pkt failed from IP_address: version=number on interface interface_name.
+%ASA-1-111111: error_message.
+%ASA-1-114001: Failed to initialize 4GE SSM I/O card (error error_string).
+%ASA-1-114002: Failed to initialize SFP in 4GE SSM I/O card (error error_string).
+%ASA-1-114003: Failed to run cached commands in 4GE SSM I/O card (error error_string).
+%ASA-1-1199012: Stack smash during new_stack_call in process/fiber process/fiber, call target f, stack size s, process/fiber name of the process/fiber that caused the stack smash.
+%ASA-1-199010: Signal 11 caught in process/fiber(rtcli async executor process)/(rtcli async executor) at address 0xf132e03b, corrective action at 0xca1961a0
+%ASA-1-199013: syslog.
+%ASA-1-199021: System memory utilization has reached the configured watchdog trigger level of Y%. System will now reload.
+%ASA-1-211004: WARNING: Minimum Memory Requirement for ASA version ver not met for ASA image. min MB required, actual MB found.
+%ASA-1-216001: internal error in: function: message
+%ASA-1-216005: ERROR: Duplex-mismatch on interface_name resulted in transmitter lockup. A soft reset of the switch was performed.
+%ASA-1-323006: Module ips experienced a data channel communication failure, data channel is DOWN.
+%ASA-1-332004: Web Cache IP_address/service_ID lost.
+%ASA-1-413007: An unsupported ASA and IPS configuration is installed. mpc_description with ips_description is not supported.
+%ASA-1-413008: There was a backplane PCI communications failure with module module_description_string in slot slot_num.
+%ASA-1-505011: Module ips data channel communication is UP.
+%ASA-1-505014: Module module_id, application down name, version version reason.
+%ASA-1-505015: Module module_id, application up application, version version.
+%ASA-1-709003: (Primary) Beginning configuration replication: Sending to mate.
+%ASA-1-709004: (Primary) End Configuration Replication (ACT).
+%ASA-1-709005: (Primary) Beginning configuration replication: Receiving from mate.
+%ASA-1-709006: (Primary) End Configuration Replication (STB).
+%ASA-1-713900: Descriptive_event_string.
+%ASA-1-716507: Fiber scheduler has reached unreachable code. Cannot continue, terminating.
+%ASA-1-716508: internal error in: function: Fiber scheduler is scheduling rotten fiber. Cannot continuing terminating.
+%ASA-1-716509: internal error in: function: Fiber scheduler is scheduling alien fiber. Cannot continue terminating.
+%ASA-1-716510: internal error in: function: Fiber scheduler is scheduling finished fiber. Cannot continue terminating.
+%ASA-1-716516: internal error in: function: OCCAM has corrupted ROL array. Cannot continue terminating.
+%ASA-1-716519: internal error in: function: OCCAM has corrupted pool list. Cannot continue terminating.
+%ASA-1-716528: Unexpected fiber scheduler error; possible out-of-memory condition.
+%ASA-1-717049: Local CA Server certificate is due to expire in number days and a replacement certificate is available for export.
+%ASA-1-717054: The type certificate in the trustpoint tp name is due to expire in number days. Expiration date and time Subject Name subject name Issuer Name issuer name Serial Number serial number.
+%ASA-1-717055: The type certificate in the trustpoint tp name has expired. Expiration date and time Subject Name subject name Issuer Name issuer name Serial Number serial number.
+%ASA-1-735001: Cooling Fan var1: OK.
+%ASA-1-735002: Cooling Fan var1: Failure Detected.
+%ASA-1-735003: Power Supply var1: OK.
+%ASA-1-735004: Power Supply var1: Failure Detected.
+%ASA-1-735005: Power Supply Unit Redundancy OK.
+%ASA-1-735006: Power Supply Unit Redundancy Lost.
+%ASA-1-735007: CPU var1: Temp: var2 var3, Critical.
+%ASA-1-735008: IPMI: Chassis Ambient var1: Temp: var2 var3, Critical.
+%ASA-1-735011: Power Supply var1: Fan OK.
+%ASA-1-735012: Power Supply var1: Fan Failure Detected.
+%ASA-1-735013: Voltage Channel var1: Voltage OK.
+%ASA-1-735014: Voltage Channel var1: Voltage Critical.
+%ASA-1-735017: Power Supply var1: Temp: var2 var3, OK.
+%ASA-1-735020: CPU var1: Temp: var2 var3 OK.
+%ASA-1-735021: Chassis var1: Temp: var2 var3 OK.
+%ASA-1-735022: CPU# is running beyond the max thermal operating temperature and the device will be shutting down immediately to prevent permanent damage to the CPU.
+%ASA-1-735024: IO Hub var1: Temp: var2 var3, OK.
+%ASA-1-735025: IO Hub var1: Temp: var2 var3, Critical.
+%ASA-1-735027: CPU cpu_num Voltage Regulator is running beyond the max thermal operating temperature and the device will be shutting down immediately. The chassis and CPU need to be inspected immediately for ventilation issues.
+%ASA-1-735029: IO Hub is running beyond the max thermal operating temperature and the device will be shutting down immediately to prevent permanent damage to the circuit.
+%ASA-1-743000: The PCI device with vendor ID: vendor_id device ID: device_id located at bus:device.function bus_num:dev_num, func_num has a link link_attr_name of actual_link_attr_val when it should have a link link_attr_name of expected_link_attr_val.
+%ASA-1-743001: Backplane health monitoring detected link failure.
+%ASA-1-743002: Backplane health monitoring detected link OK.
+%ASA-1-743004: System is not fully operational - PCI device with vendor ID vendor_id (vendor_name), device ID device_id (device_name) not found.
+%ASA-1-770002: Resource resource allocation is more than the permitted limit for this platform. ASA will be rebooted.

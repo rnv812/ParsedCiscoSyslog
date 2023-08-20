@@ -1,0 +1,319 @@
+%ASA-5-105500: (Primary|Secondary) Started HA
+%ASA-5-105501: (Primary|Secondary) Stopping HA
+%ASA-5-105503: (Primary|Secondary) Internal state change from previous_state to new_state
+%ASA-5-105504: (Primary|Secondary) Connected to peer peer-ip:port
+%ASA-5-105520: (Primary|Secondary) Responding to Azure Load Balancer probes
+%ASA-5-105521: (Primary|Secondary) No longer responding to Azure Load Balancer probes
+%ASA-5-105522: (Primary|Secondary) Updating route route_table_name
+%ASA-5-105523: (Primary|Secondary) Updated route route_table_name
+%ASA-5-105542: (Primary|Secondary) Enabling load balancer probe responses
+%ASA-5-105543: (Primary|Secondary) Disabling load balancer probe responses
+%ASA-5-105552: (Primary|Secondary) Stopped HA
+%ASA-5-109012: Authen Session End: user 'user', sid number, elapsed number seconds
+%ASA-5-109029: Parsing downloaded ACL: string
+%ASA-5-109039: AAA Authentication:Dropping an unsupported IPv6/IP46/IP64 packet from lifc:laddrto fifc:faddr
+%ASA-5-109201: UAUTH Session session, User username, Assigned IP IP Address, Succeeded addingentry.
+%ASA-5-109204: UAUTH Session session, User username, Assigned IP IP Address, Succeeded applyingfilter.
+%ASA-5-109207: UAUTH Session session, User username, Assigned IP IP Address, Succeeded updatingentry.
+%ASA-5-109210: UAUTH Session session, User username, Assigned IP IP Address, Successfullyremoved the rules for user during tunnel torn down.
+%ASA-5-111001: Begin configuration: IP_address writing to device
+%ASA-5-111002: Begin configuration: IP_address reading from device
+%ASA-5-111003: IP_address Erase configuration
+%ASA-5-111004: IP_address end configuration: {FAILED|OK}
+%ASA-5-111005: IP_address end configuration: OK
+%ASA-5-111007: Begin configuration: IP_address reading from device.
+%ASA-5-111008: User user executed the command string
+%ASA-5-111010: User username, running application-name from IP ip addr, executed cmd
+%ASA-5-113024: Group tg: Authenticating type connection from ip with username, user_name, fromclient certificate
+%ASA-5-113025: Group tg: FAILED to extract username from certificate while authenticating typeconnection from ip
+%ASA-5-120001: Smart Call-Home Module is started.
+%ASA-5-120002: Smart Call-Home Module is terminated.
+%ASA-5-120008: SCH client client is activated.
+%ASA-5-120009: SCH client client is deactivated.
+%ASA-5-120012: User username chose to choice call-home anonymous reporting at the prompt.
+%ASA-5-121001: msgId id. Telemetry support on the chassis: status.
+%ASA-5-121002: Telemetry support on the blade: status.
+%ASA-5-199001: Reload command executed from Telnet (remote IP_address).
+%ASA-5-199017: syslog
+%ASA-5-199027: Restore operation was aborted at <HH:MM:SS> UTC <DD:MM:YY>
+%ASA-5-212009: Configuration request for SNMP group groupname failed. User username, reason.
+%ASA-5-303004: FTP cmd_string command unsupported - failed strict inspection, terminating connectionfrom source_interface:source_address/source_port to dest_interface:dest_address/dest_interface
+%ASA-5-303005: Strict FTP inspection matched match_string in policy-map policy-name, action_stringfrom src_ifc:sip/sport to dest_ifc:dip/dport
+%ASA-5-304001: user source_address [(idfw_user)] Accessed URL dest_address: url.
+%ASA-5-304002: Access denied URL chars SRC IP_address [(idfw_user)] DEST IP_address: chars
+%ASA-5-305013: Asymmetric NAT rules matched for forward and reverse flows; Connection protocolsrc interface_name:source_address/source_port [(idfw_user)] dst interface_name:dest_address/dst_port[(idfw_user)] denied due to NAT reverse path failure.
+%ASA-5-321001: Resource var1 limit of var2 reached.
+%ASA-5-321002: Resource var1 rate limit of var2 reached.
+%ASA-5-324010: Subscriber <IMSI> PDP Context activated on network MCC/MNC <mcc><mnc>(<IE type>[/<IE type>]) [CellID <cellID>]
+%ASA-5-324011: Subscriber <IMSI> location changed during handoff from MCC/MNC <mcc><mnc>(<IE type>[/<IE type>]) [CellID <cellID>] to MCC/MNC <mcc><mnc> (<IE type>[/<IE type>]) [CellID<cellID>]
+%ASA-5-324012: GTP_PARSE: GTP IE TYPE [GTP IE TYPE NUMBER]: Invalid Length ReceivedLength: Length Received,Minimum Expected Length: Expected Length
+%ASA-5-331002: Dynamic DNS type RR for ('fqdn_name' - ip_address | ip_address - 'fqdn_name')successfully updated in DNS server dns_server_ip
+%ASA-5-332003: Web Cache IP_address/service_ID acquired
+%ASA-5-333002: Timeout waiting for EAP response - context:EAP-context
+%ASA-5-333010: EAP-SQ response Validation Flags TLV indicates PV request - context:EAP-context
+%ASA-5-334002: EAPoUDP association successfully established - host-address
+%ASA-5-334003: EAPoUDP association failed to establish - host-address
+%ASA-5-334005: Host put into NAC Hold state - host-address
+%ASA-5-334006: EAPoUDP failed to get a response from host - host-address
+%ASA-5-335002: Host is on the NAC Exception List - host-address, OS:oper-sys
+%ASA-5-335003: NAC Default ACL applied, ACL:ACL-name - host-address
+%ASA-5-335008: NAC IPSec terminate from dynamic ACL:ACL-name - host-address
+%ASA-5-336010: EIGRP-ddb_name tableid as_id: Neighbor address (%interface) is event_msg: msg
+%ASA-5-338302: Address ipaddr discovered for domain name from list, Adding rule
+%ASA-5-338303: Address ipaddr (name) timed out, Removing rule
+%ASA-5-338308: Dynamic filter updater server dynamically changed from old_server_host:old_server_port to new_server_host: new_server_port
+%ASA-5-402128: CRYPTO: An attempt to allocate a large memory block failed, size: size, limit: limit
+%ASA-5-415004: HTTP - matched matched_string in policy-map map_name, content-type verificationfailed connection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-5-415005: HTTP - matched matched_string in policy-map map_name, URI length exceededconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-5-415006: HTTP - matched matched_string in policy-map map_name, URI matchedconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-5-415007: HTTP - matched matched_string in policy-map map_name, Body matchedconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-5-415008: HTTP - matched matched_string in policy-map map_name, header matchedconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-5-415009: HTTP - matched matched_string in policy-map map_name, method matchedconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-5-415010: matched matched_string in policy-map map_name, transfer encoding matchedconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-5-415011: HTTP - policy-map map_name:Protocol violation connection_action fromint_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-5-415012: HTTP - matched matched_string in policy-map map_name, Unknown mime-typeconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-5-415013: HTTP - policy-map map-name:Malformed chunked encoding connection_action fromint_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-5-415014: HTTP - matched matched_string in policy-map map_name, Mime-type in responsewasn't found in the accept-types of the request connection_action from int_type:IP_address/port_numto int_type:IP_address/port_num
+%ASA-5-415015: HTTP - matched matched_string in policy-map map_name, transfer-encoding unknownconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-5-415018: HTTP - matched matched_string in policy-map map_name, Header length exceededconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-5-415019: HTTP - matched matched_string in policy-map map_name, status line matchedconnection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-5-415020: HTTP - matched matched_string in policy-map map_name, a non-ASCII characterwas matched connection_action from int_type:IP_address/port_num to int_type:IP_address/port_num
+%ASA-5-425005: Interface interface_name become active in redundant interface redundant_interface_name
+%ASA-5-4302310: SCTP packet received from src_ifc:src_ip/src_port to dst_ifc:dst_ip/dst_port containsunsupported Hostname Parameter.
+%ASA-5-434004: SFR requested ASA to bypass further packet redirection and process flow from%s:%A/%d to %s:%A/%d locally
+%ASA-5-444100: Shared request request failed. Reason: reason
+%ASA-5-444101: Shared license service is active. License server address: address
+%ASA-5-444305: %SMART_LIC-5-SYSTEM_CLOCK_CHANGED: Smart Agent for LicensingSystem clock has been changed.
+%ASA-5-444305: %SMART_LIC-5-IN_COMPLIANCE: All entitlements are authorized.
+%ASA-5-444305: %SMART_LIC-5-EVAL_START: Entering evaluation period.
+%ASA-5-444305: %SMART_LIC-5-AUTHORIZATION_EXPIRED: Authorization expired.
+%ASA-5-444305: %SMART_LIC-5-COMM_RESTORED: Communications with Cisco licensing cloudrestored.
+%ASA-5-444305: %SMART_LIC-5-COMM_INIT_FAILED: Failed to initialize communications withthe Cisco Licensing Cloud.
+%ASA-5-500001: ActiveX content in java script is modified: src src ip dest dest ip on interface interfacename
+%ASA-5-500002: Java content in java script is modified: src src ip dest dest ip on interface interfacename
+%ASA-5-500003: Bad TCP hdr length (hdrlen=bytes, pktlen=bytes) from source_address/source_portto dest_address/dest_port, flags: tcp_flags, on interface interface_name
+%ASA-5-501101: User transitioning priv level
+%ASA-5-502101: New user added to local dbase: Uname: user Priv: privilege_level Encpass: string
+%ASA-5-502102: User deleted from local dbase: Uname: user Priv: privilege_level Encpass: string
+%ASA-5-502103: User priv level changed: Uname: user From: privilege_level To: privilege_level
+%ASA-5-502111: New group policy added: name: policy_name Type: policy_type
+%ASA-5-502112: Group policy deleted: name: policy_name Type: policy_type
+%ASA-5-503001: Process number, Nbr IP_address on interface_name from string to string, reason
+%ASA-5-503002: The last key has expired for interface <nameif>, packets sent using last valid key
+%ASA-5-503003: Packet <sent | received> on interface <nameif> with expired Key ID <key-id>
+%ASA-5-503004: Key ID <key-id> in key chain <key-chain-name> does not have a key
+%ASA-5-503005: Key ID <key-id> in key chain <key-chain-name> does not have a cryptographicalgorithm
+%ASA-5-504001: Security context context_name was added to the system
+%ASA-5-504002: Security context context_name was removed from the system
+%ASA-5-505001: Module module_id is shutting down. Please wait...
+%ASA-5-505002: Module ips is reloading. Please wait...
+%ASA-5-505003: Module module_id is resetting. Please wait...
+%ASA-5-505004: Module module_id shutdown is complete.
+%ASA-5-505005: Module module_name is initializing control communication. Please wait...
+%ASA-5-505006: Module module_id is Up.
+%ASA-5-505007: Module module_id is recovering. Please wait...
+%ASA-5-505008: Module module_id software is being updated to vnewver (currently vver)
+%ASA-5-505009: Module module_id software was updated to vnewver (previously vver)
+%ASA-5-505010: Module in slot slot removed.
+%ASA-5-505012: Module module_id, application stopped application, version version
+%ASA-5-505013: Module module_id application changed from: application version version to:newapplication version newversion.
+%ASA-5-506001: event_source_string event_string
+%ASA-5-507001: Terminating TCP-Proxy connection from interface_inside:source_address/source_portto interface_outside:dest_address/dest_port - reassembly limit of limit bytes exceeded
+%ASA-5-508001: DCERPC message_type non-standard version_type version version_number fromsrc_if:src_ip/src_port to dest_if:dest_ip/dest_port, terminating connection.
+%ASA-5-508002: DCERPC response has low endpoint port port_number from src_if:src_ip/src_port todest_if:dest_ip/dest_port, terminating connection.
+%ASA-5-509001: Connection attempt from src_intf:src_ip/src_port [([idfw_user | FQDN_string],sg_info)] to dst_intf:dst_ip/dst_port [([idfw_user | FQDN_string], sg_info)] was prevented by "no forward"command.
+%ASA-5-503101: Process %d, Nbr %i on %s from %s to %s, %s
+%ASA-5-611103: User logged out: Uname: user
+%ASA-5-611104: Serial console idle timeout exceeded
+%ASA-5-612001: Auto Update succeeded:filename, version:number
+%ASA-5-711005: Traceback: call_stack
+%ASA-5-713006: Failed to obtain state for message Id message_number, Peer Address: IP_address
+%ASA-5-713010: IKE area: failed to find centry for message Id message_number
+%ASA-5-713041: IKE Initiator: new or rekey Phase 1 or 2, Intf interface_number, IKE Peer IP_addresslocal Proxy Address IP_address, remote Proxy Address IP_address, Crypto map (crypto map tag)
+%ASA-5-713049: Security negotiation complete for tunnel_type type (group_name) Initiator/Responder,Inbound SPI = SPI, Outbound SPI = SPI
+%ASA-5-713050: Connection terminated for peer IP_address. Reason: termination reason Remote ProxyIP_address, Local Proxy IP_address
+%ASA-5-713068: Received non-routine Notify message: notify_type (notify_value)
+%ASA-5-713073: Responder forcing change of Phase 1/Phase 2 rekeying duration from larger_value tosmaller_value seconds
+%ASA-5-713074: Responder forcing change of IPSec rekeying duration from larger_value tosmaller_value Kbs
+%ASA-5-713075: Overriding Initiator's IPSec rekeying duration from larger_value to smaller_valueseconds
+%ASA-5-713076: Overriding Initiator's IPSec rekeying duration from larger_value to smaller_valueKbs
+%ASA-5-713092: Failure during phase 1 rekeying attempt due to collision
+%ASA-5-713115: Client rejected NAT enabled IPSec request, falling back to standard IPSec
+%ASA-5-713119: Group group IP ip PHASE 1 COMPLETED
+%ASA-5-713120: PHASE 2 COMPLETED (msgid=msg_id)
+%ASA-5-713130: Received unsupported transaction mode attribute: attribute id
+%ASA-5-713131: Received unknown transaction mode attribute: attribute_id
+%ASA-5-713135: message received, redirecting tunnel to IP_address.
+%ASA-5-713136: IKE session establishment timed out [IKE_state_name], aborting!
+%ASA-5-713137: Reaper overriding refCnt [ref_count] and tunnelCnt [tunnel_count] -- deleting SA!
+%ASA-5-713139: group_name not found, using BASE GROUP default preshared key
+%ASA-5-713144: Ignoring received malformed firewall record; reason - error_reason TLV typeattribute_value correction
+%ASA-5-713148: Terminating tunnel to Hardware Client in network extension mode, unable to deletestatic route for address: IP_address, mask: netmask
+%ASA-5-713155: DNS lookup for Primary VPN Server [server_name] successfully resolved after aprevious failure. Resetting any Backup Server init.
+%ASA-5-713156: Initializing Backup Server [server_name or IP_address]
+%ASA-5-713158: Client rejected NAT enabled IPSec Over UDP request, falling back to IPSec OverTCP
+%ASA-5-713178: IKE Initiator received a packet from its peer without a Responder cookie
+%ASA-5-713179: IKE AM Initiator received a packet from its peer without a payload_type payload
+%ASA-5-713196: Remote L2L Peer IP_address initiated a tunnel with same outer and inner addresses.Peer could be Originate Only - Possible misconfiguration!
+%ASA-5-713197: The configured Confidence Interval of number seconds is invalid for this tunnel_typeconnection. Enforcing the second default.
+%ASA-5-713199: Reaper corrected an SA that has not decremented the concurrent IKE negotiationscounter (counter_value)!
+%ASA-5-713201: Duplicate Phase Phase packet detected. Action
+%ASA-5-713216: Rule: action [Client type]: version Client: type version allowed/ not allowed
+%ASA-5-713229: Auto Update - Notification to client client_ip of update string: message_string.
+%ASA-5-713237: ACL update (access_list) received during re-key re-authentication will not be appliedto the tunnel.
+%ASA-5-713248: META-DATA Rekey initiation is being disabled during CRACK authentication.
+%ASA-5-713250: META-DATA Received unknown Internal Address attribute: attribute
+%ASA-5-713252: Group = group, Username = user, IP = ip, Integrity Firewall Server is not available.VPN Tunnel creation rejected for client.
+%ASA-5-713253: Group = group, Username = user, IP = ip, Integrity Firewall Server is not available.Entering ALLOW mode. VPN Tunnel created for client.
+%ASA-5-713257: Phase var1 failure: Mismatched attribute types for class var2 : Rcv'd: var3 Cfg'd: var4
+%ASA-5-713259: Group = groupname, Username = username, IP = peerIP, Session is being torn down.Reason: reason
+%ASA-5-713904: Descriptive_event_string.
+%ASA-5-716053: SAML Server added: name: name Type: SP
+%ASA-5-716054: SAML Server deleted: name: name Type: SP
+%ASA-5-717013: Removing a cached CRL to accommodate an incoming CRL. Issuer: issuer
+%ASA-5-717014: Unable to cache a CRL received from CDP due to size limitations (CRL size = size,available cache space = space)
+%ASA-5-717050: SCEP Proxy: Processed request type type from IP client ip address, User username,TunnelGroup tunnel_group name, GroupPolicy group-policy name to CA IP ca ip address
+%ASA-5-717053: Group group name User user name IP IP Address Periodic certificate authenticationsucceeded. Subject Name id subject name Issuer Name id issuer name Serial Number id serial number
+%ASA-5-717061: Starting protocol certificate enrollment for the trustpoint tpname with the CA ca_name.Request Type type Mode mode
+%ASA-5-717062: protocol Certificate enrollment succeeded for the trustpoint tpname with the CA ca.Received a new certificate with Subject Name subject Issuer Name issuer Serial Number serial
+%ASA-5-717064: Keypair keyname in the trustpoint tpname is regenerated for mode protocol certificaterenewal
+%ASA-5-718002: Create peer IP_address failure, already at maximum of number_of_peers
+%ASA-5-718005: Fail to send to IP_address, port port
+%ASA-5-718006: Invalid load balancing state transition [cur=state_number][event=event_number]
+%ASA-5-718007: Socket open failure failure_code: failure_text
+%ASA-5-718008: Socket bind failure failure_code: failure_text
+%ASA-5-718009: Send HELLO response failure to IP_address
+%ASA-5-718010: Sent HELLO response to IP_address
+%ASA-5-718011: Send HELLO request failure to IP_address
+%ASA-5-718012: Sent HELLO request to IP_address
+%ASA-5-718014: Master peer IP_address is not answering HELLO
+%ASA-5-718015: Received HELLO request from IP_address
+%ASA-5-718016: Received HELLO response from IP_address
+%ASA-5-718024: Send CFG UPDATE failure to IP_address
+%ASA-5-718028: Send OOS indicator failure to IP_address
+%ASA-5-718031: Received OOS obituary for IP_address
+%ASA-5-718032: Received OOS indicator from IP_address
+%ASA-5-718033: Send TOPOLOGY indicator failure to IP_address
+%ASA-5-718042: Unable to ARP for IP_address
+%ASA-5-718043: Updating/removing duplicate peer entry IP_address
+%ASA-5-718044: Deleted peer IP_address
+%ASA-5-718045: Created peer IP_address
+%ASA-5-718048: Create of secure tunnel failure for peer IP_address
+%ASA-5-718050: Delete of secure tunnel failure for peer IP_address
+%ASA-5-718052: Received GRAT-ARP from duplicate master MAC_address
+%ASA-5-718053: Detected duplicate master, mastership stolen MAC_address
+%ASA-5-718054: Detected duplicate master MAC_address and going to SLAVE
+%ASA-5-718055: Detected duplicate master MAC_address and staying MASTER
+%ASA-5-718057: Queue send failure from ISR, msg type failure_code
+%ASA-5-718060: Inbound socket select fail: context=context_ID.
+%ASA-5-718061: Inbound socket read fail: context=context_ID.
+%ASA-5-718062: Inbound thread is awake (context=context_ID).
+%ASA-5-718063: Interface interface_name is down.
+%ASA-5-718064: Admin. interface interface_name is down.
+%ASA-5-718065: Cannot continue to run (public=up/down, private=up/down, enable=LB_state,master=IP_address, session=Enable/Disable).
+%ASA-5-718066: Cannot add secondary address to interface interface_name, ip IP_address.
+%ASA-5-718067: Cannot delete secondary address to interface interface_name, ip IP_address.
+%ASA-5-718068: Start VPN Load Balancing in context context_ID.
+%ASA-5-718069: Stop VPN Load Balancing in context context_ID.
+%ASA-5-718070: Reset VPN Load Balancing in context context_ID.
+%ASA-5-718071: Terminate VPN Load Balancing in context context_ID.
+%ASA-5-718072: Becoming master of Load Balancing in context context_ID.
+%ASA-5-718073: Becoming slave of Load Balancing in context context_ID.
+%ASA-5-718074: Fail to create access list for peer context_ID.
+%ASA-5-718075: Peer IP_address access list not set.
+%ASA-5-718076: Fail to create tunnel group for peer IP_address.
+%ASA-5-718077: Fail to delete tunnel group for peer IP_address.
+%ASA-5-718078: Fail to create crypto map for peer IP_address.
+%ASA-5-718079: Fail to delete crypto map for peer IP_address.
+%ASA-5-718080: Fail to create crypto policy for peer IP_address.
+%ASA-5-718081: Fail to delete crypto policy for peer IP_address.
+%ASA-5-718082: Fail to create crypto ipsec for peer IP_address.
+%ASA-5-718083: Fail to delete crypto ipsec for peer IP_address.
+%ASA-5-718084: Public/cluster IP not on the same subnet: public IP_address, mask netmask, clusterIP_address
+%ASA-5-718085: Interface interface_name has no IP address defined.
+%ASA-5-718086: Fail to install LB NP rules: type rule_type, dst interface_name, port port.
+%ASA-5-718087: Fail to delete LB NP rules: type rule_type, rule rule_ID.
+%ASA-5-719014: Email Proxy is changing listen port from old_port to new_port for mail protocolprotocol.
+%ASA-5-720016: (VPN-unit) Failed to initialize default timer #index.
+%ASA-5-720017: (VPN-unit) Failed to update LB runtime data
+%ASA-5-720018: (VPN-unit) Failed to get a buffer from the underlying core high availability subsystem.Error code code.
+%ASA-5-720019: (VPN-unit) Failed to update cTCP statistics.
+%ASA-5-720020: (VPN-unit) Failed to send type timer message.
+%ASA-5-720021: (VPN-unit) HA non-block send failed for peer msg message_number. HA error code.
+%ASA-5-720035: (VPN-unit) Fail to look up CTCP flow handle
+%ASA-5-720036: (VPN-unit) Failed to process state update message from the active peer.
+%ASA-5-720071: (VPN-unit) Failed to update cTCP dynamic data.
+%ASA-5-720072: Timeout waiting for Integrity Firewall Server [interface,ip] to become available.
+%ASA-5-722037: Group group User user-name IP IP_address SVC closing connection: reason.
+%ASA-5-722038: Group group-name User user-name IP IP_address SVC terminating session: reason.
+%ASA-5-722005: Group group User user-name IP IP_address Unable to update session information forSVC connection.
+%ASA-5-722006: Group group User user-name IP IP_address Invalid address IP_address assigned toSVC connection.
+%ASA-5-722010: Group group User user-name IP IP_address SVC Message: type-num/NOTICE:message
+%ASA-5-722011: Group group User user-name IP IP_address SVC Message: type-num/NOTICE:message
+%ASA-5-722012: Group group User user-name IP IP_address SVC Message: type-num/INFO: message
+%ASA-5-722028: Group group User user-name IP IP_address Stale SVC connection closed.
+%ASA-5-722032: Group group User user-name IP IP_address New SVC connection replacing oldconnection.
+%ASA-5-722033: Group group User user-name IP IP_address First SVC connection established forSVC session.
+%ASA-5-722034: Group group User user-name IP IP_address New SVC connection, no existingconnection.
+%ASA-5-722037: Group group User user-name IP IP_address SVC closing connection: reason.
+%ASA-5-722038: Group group-name User user-name IP IP_address SVC terminating session: reason.
+%ASA-5-722043: Group group User user IP ip DTLS disabled: unable to negotiate cipher.
+%ASA-5-722044: Group group User user IP ip Unable to request ver address for SSL tunnel.
+%ASA-5-730009: Group groupname, User username, IP ipaddr, CAS casaddr, capacity exceeded,terminating connection.
+%ASA-5-734002: DAP: User user, Addr ipaddr: Connection terminated by the following DAP records:DAP record names
+%ASA-5-737003: IPAA: DHCP configured, no viable servers found for tunnel-group 'tunnel-group'
+%ASA-5-737004: IPAA: DHCP configured, request failed for tunnel-group 'tunnel-group'
+%ASA-5-737007: IPAA: Local pool request failed for tunnel-group 'tunnel-group'
+%ASA-5-737008: IPAA: 'tunnel-group' not found
+%ASA-5-737011: IPAA: AAA assigned address ip-address, not permitted, retrying
+%ASA-5-737018: IPAA: DHCP request attempt num failed
+%ASA-5-737021: IPAA: Address from local pool (ip-address) duplicates address from DHCP
+%ASA-5-737022: IPAA: Address from local pool (ip-address) duplicates address from AAA
+%ASA-5-737023: IPAA: Unable to allocate memory to store local pool address ip-address
+%ASA-5-737024: IPAA: Local pool assignment failed for suggested IP ip-address, retrying
+%ASA-5-737025: IPAA: Not releasing local pool ip-address, due to local pool duplicate issue
+%ASA-5-737034: IPAA: Session=<session>, <IP version> address: <explanation>
+%ASA-5-737204: VPNFIP: Pool=pool, NOTIFY: message
+%ASA-5-737405: POOLIP: Pool=pool, NOTIFY: message
+%ASA-5-746007: user-identity: NetBIOS response failed from User user_name at user_ip
+%ASA-5-746012: user-identity: Add IP-User mapping IP Address - domain_name\user_name result -reason
+%ASA-5-746013: user-identity: Delete IP-User mapping IP Address - domain_name\user_name result- reason
+%ASA-5-746014: user-identity: [FQDN] fqdn address IP Address obsolete
+%ASA-5-746015: user-identity: [FQDN] fqdn resolved IP address
+%ASA-5-747002: Clustering: Recovered from state machine dropped event (event-id, ptr-in-hex,ptr-in-hex). Intended state: state-name. Current state: state-name.
+%ASA-5-747003: Clustering: Recovered from state machine failure to process event (event-id, ptr-in-hex,ptr-in-hex) at state state-name.
+%ASA-5-747007: Clustering: Recovered from finding stray config sync thread, stack ptr-in-hex, ptr-in-hex,ptr-in-hex, ptr-in-hex, ptr-in-hex, ptr-in-hex.
+%ASA-5-748001: Module slot_number in chassis chassis_number is leaving the cluster due to a chassisconfiguration change
+%ASA-5-748004: Module slot_number in chassis chassis_number is re-joining the cluster due to achassis health check recovery
+%ASA-5-748203: Module <module_id> in chassis <chassis id> is re-joining the cluster due to a servicechain application recovery.
+%ASA-5-750001: Local:local IP:local port Remote:remote IP: remote port Username: username Receivedrequest to request an IPsec tunnel; local traffic selector = local selectors: range, protocol, port range;remote traffic selector = remote selectors: range, protocol, port range
+%ASA-5-750002: Local:local IP:local port Remote: remote IP: remote port Username: username Receiveda IKE_INIT_SA request
+%ASA-5-750004: Local: local IP: local port Remote: remote IP: remote port Username: usernameSending COOKIE challenge to throttle possible DoS
+%ASA-5-750005: Local: local IP: local port Remote: remote IP: remote port Username: username IPsecrekey collision detected. I am lowest nonce initiator, deleting SA with inbound SPI SPI
+%ASA-5-750006: Local: local IP: local port Remote: remote IP: remote port Username: username SAUP. Reason: reason
+%ASA-5-750007: Local: local IP: local port Remote: remote IP: remote port Username: username SADOWN. Reason: reason
+%ASA-5-750008: Local: local IP: local port Remote: remote IP: remote port Username: username SArejected due to system resource low
+%ASA-5-750009: Local: local IP: local port Remote: remote IP: remote port Username: username SArequest rejected due to CAC limit reached: Rejection reason: reason
+%ASA-5-750010: Local: local-ip Remote: remote-ip Username:username IKEv2 local throttle-requestqueue depth threshold of threshold reached; increase the window size on peer peer for better performance
+%ASA-5-750013: IKEv2 SA (iSPI <ISPI> rRSP <rSPI>) Peer Moved: Previous<prev_remote_ip>:<prev_remote_port>/<prev_local_ip>:<prev_local_port>. Updated<new_remote_ip>:<new_remote_port>/<new_local_ip>:<new_local_port>
+%ASA-5-751007: Local: localIP:port Remote:remoteIP:port Username: username/group Configuredattribute not supported for IKEv2. Attribute: attribute
+%ASA-5-751025: Local: local IP:local port Remote: remote IP:remote port Username:usernameGroup:group-policy IPv4 Address=assigned_IPv4_addr IPv6 address=assigned_IPv6_addr assigned tosession.
+%ASA-5-751028: Local:<localIP:port> Remote:<remoteIP:port> Username:<username/group> IKEv2Overriding configured keepalive values of threshold:<config_threshold>/retry:<config_retry> tothreshold:<applied_threshold>/retry:<applied_retry>.
+%ASA-5-752003: Tunnel Manager dispatching a KEY_ACQUIRE message to IKEv2. Map Tag =mapTag. Map Sequence Number = mapSeq.
+%ASA-5-752004: Tunnel Manager dispatching a KEY_ACQUIRE message to IKEv1. Map Tag =mapTag. Map Sequence Number = mapSeq.
+%ASA-5-752016: IKEv protocol was successful at setting up a tunnel. Map Tag = mapTag. Map SequenceNumber = mapSeq.
+%ASA-5-776009: CTS SXP: password changed.
+%ASA-5-776010: CTS SXP: SXP default source IP is changed original source IP final source IP.
+%ASA-5-776011: CTS SXP: operational state.
+%ASA-5-776252: CTS SGT-MAP: CTS SGT-MAP: Binding binding IP - SGname(SGT) from sourcename deleted from binding manager.
+%ASA-5-776309: CTS Policy: Previously known security-group tag sgt is now unknown
+%ASA-5-776310: CTS Policy: Security-group name "sgname" remapped from security-group tag old_sgtto new_sgt
+%ASA-5-769001: UPDATE: ASA image src was added to system boot list
+%ASA-5-769002: UPDATE: ASA image src was copied to dest
+%ASA-5-769003: UPDATE: ASA image src was renamed to dest
+%ASA-5-769004: UPDATE: ASA image src_file failed verification, reason: failure_reason
+%ASA-5-769005: UPDATE: ASA image image_name passed image verification
+%ASA-5-771001: CLOCK: System clock set, source: src, before: time, after: time
+%ASA-5-771002: CLOCK: System clock set, source: src, IP ip, before: time, after: time
+%ASA-5-771002: CLOCK: System clock set, source: src, IP ip, before: time, after: time
+%ASA-5-8300006: Cluster topology change detected. VPN session redistribution aborted.
